@@ -1,0 +1,276 @@
+{
+    "console": [],
+    "result": {
+        "passages": [
+            {
+                "Name": "SceneName_Initializer",
+                "Pid": "1",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "innerText": "set: $characters to (a: \"Tadeo\",\"Christian\",\"Nicole\",\"Lea\",\"Sean\")",
+                        "name": "set",
+                        "text": "(set: $characters to (a: \"Tadeo\",\"Christian\",\"Nicole\",\"Lea\",\"Sean\"))",
+                        "tokens": [
+                            {
+                                "text": "set:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "characters",
+                                "text": "$characters",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "to",
+                                "type": "to"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "innerText": "a: \"Tadeo\",\"Christian\",\"Nicole\",\"Lea\",\"Sean\"",
+                                "name": "a",
+                                "text": "(a: \"Tadeo\",\"Christian\",\"Nicole\",\"Lea\",\"Sean\")",
+                                "tokens": [
+                                    {
+                                        "text": "a:",
+                                        "type": "macroName"
+                                    },
+                                    {
+                                        "text": " ",
+                                        "type": "whitespace"
+                                    },
+                                    {
+                                        "innerText": "Tadeo",
+                                        "text": "\"Tadeo\"",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "text": ",",
+                                        "type": "comma"
+                                    },
+                                    {
+                                        "innerText": "Christian",
+                                        "text": "\"Christian\"",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "text": ",",
+                                        "type": "comma"
+                                    },
+                                    {
+                                        "innerText": "Nicole",
+                                        "text": "\"Nicole\"",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "text": ",",
+                                        "type": "comma"
+                                    },
+                                    {
+                                        "innerText": "Lea",
+                                        "text": "\"Lea\"",
+                                        "type": "string"
+                                    },
+                                    {
+                                        "text": ",",
+                                        "type": "comma"
+                                    },
+                                    {
+                                        "innerText": "Sean",
+                                        "text": "\"Sean\"",
+                                        "type": "string"
+                                    }
+                                ],
+                                "type": "macro"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "set: $leftCharacter to 'Tadeo'",
+                        "name": "set",
+                        "text": "(set: $leftCharacter to 'Tadeo')",
+                        "tokens": [
+                            {
+                                "text": "set:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "leftCharacter",
+                                "text": "$leftCharacter",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "to",
+                                "type": "to"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "innerText": "Tadeo",
+                                "text": "'Tadeo'",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "set: $rightCharacter to 'Lea'",
+                        "name": "set",
+                        "text": "(set: $rightCharacter to 'Lea')",
+                        "tokens": [
+                            {
+                                "text": "set:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "rightCharacter",
+                                "text": "$rightCharacter",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "to",
+                                "type": "to"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "innerText": "Lea",
+                                "text": "'Lea'",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Continue\",\"SceneName01A\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Continue\",\"SceneName01A\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Continue",
+                                "text": "\"Continue\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "SceneName01A",
+                                "text": "\"SceneName01A\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "Enter Scene",
+                        "type": "text"
+                    }
+                ]
+            },
+            {
+                "Name": "SceneName01A",
+                "Pid": "2",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "innerText": "set: $rightCharacter to 'Christian'",
+                        "name": "set",
+                        "text": "(set: $rightCharacter to 'Christian')",
+                        "tokens": [
+                            {
+                                "text": "set:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "rightCharacter",
+                                "text": "$rightCharacter",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "to",
+                                "type": "to"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "innerText": "Christian",
+                                "text": "'Christian'",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Tadeo:\"Hey, Christian, I fucking love you.\"",
+                        "type": "text"
+                    }
+                ]
+            }
+        ],
+        "startPid": "1"
+    }
+}
