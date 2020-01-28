@@ -12,7 +12,7 @@ public class CombatManager : MonoBehaviour
         ending          //may need to make more ending states
     }
 
-    enum PlayerState
+    enum WrestlerState
     {
         standing,
         grounded,
@@ -20,18 +20,19 @@ public class CombatManager : MonoBehaviour
     }
     public int turnCount;           //how many turns the match has gone on for
     public int tapCount;            //how many turns a pin has been happening
-    public List<string> possiblePlayerMovesKeys;
-    public Dictionary<string, bool> possiblePlayerMoves; //moves the player can currently do
+    public List<string> possiblePlayerMoves;
     public GameObject[] buttons;
     public GameObject playerRef;
     public bool isPlayerPinned;
     public bool isOpponentPinned;
 
+    private int currentCenterButton;
     private string playerMove;
     private string enemyMove;
 
     private MatchState matchState;
-
+    private WrestlerState playerState;
+    private WrestlerState enemyState;
     //CONSTANTS
     #region Constants
 
@@ -58,13 +59,16 @@ public class CombatManager : MonoBehaviour
     //private Vector3 right2Button = new Vector3(-4f, -0.5f, -0.5f);
     //private Vector3 right3Button = new Vector3(-5f, 0.5f, 0f);
 
-    private Vector3[] buttonPlacement = {new Vector3(5f, 0.5f, 0f),
-                                        new Vector3(4f, -0.5f, -0.5f),
-                                        new Vector3(2.75f, -1.5f, -1f),
+    private Vector3[] buttonPlacement = {
                                          new Vector3(0f, -3.5f, -1.5f),
                                         new Vector3(-2.75f, -1.5f, -1f),
                                         new Vector3(-4f, -0.5f, -0.5f),
-                                        new Vector3(-5f, 0.5f, 0f) };
+                                        new Vector3(-5f, 0.5f, 0f),
+                                        new Vector3(5f, 0.5f, 0f),
+                                        new Vector3(4f, -0.5f, -0.5f),
+                                        new Vector3(2.75f, -1.5f, -1f)
+
+                                        };
 
 
 
@@ -85,25 +89,43 @@ public class CombatManager : MonoBehaviour
         turnCount = 0;
         Player.maxStamina = 100f;
         Player.stamina = Player.maxStamina;
-        updatePossibleMoves();
         matchState = MatchState.decisionPhase;
+        playerState = WrestlerState.pinned;
+        enemyState = WrestlerState.standing;
+
+
+        updatePossibleMoves();
 
     }
 
-    
+
     // Update is called once per frame
     void Update()
     {
-
-        
 
         //Main Combat Switch statement
         switch (matchState)
         {
             case MatchState.decisionPhase:
 
+                //moving menu left and right logic
+                if (Input.GetKeyDown(KeyCode.A))
+                {
+                    updateMenu(false);
+                }
+                else if (Input.GetKeyDown(KeyCode.D))
+                {
+                    updateMenu(true);
+                }
+
+                //if space hit, select the current button in the middle
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    decideMove();
+                }
                 break;
             case MatchState.actionPhase:
+                actionPhaseAnimating();
                 break;
             case MatchState.loading:
                 break;
@@ -117,66 +139,50 @@ public class CombatManager : MonoBehaviour
     void updatePossibleMoves()
     {
         Debug.Log("wwodihofja");
-        possiblePlayerMoves = new Dictionary<string, bool>();
-        possiblePlayerMovesKeys = new List<string>();
+        possiblePlayerMoves = new List<string>();
 
-        if (isPlayerPinned)
+        if (playerState == WrestlerState.pinned)
         {
             //check if can kickout eligible
             if (Player.stamina > 15f)
             {
-                possiblePlayerMoves.Add("Kickout", true);
-                possiblePlayerMovesKeys.Add("Kickout");
+                possiblePlayerMoves.Add("Kickout");
 
             }
 
             //check if can sell
-            possiblePlayerMoves.Add("Sell", true);
-            possiblePlayerMovesKeys.Add("Sell");
+            possiblePlayerMoves.Add("Sell");
 
         }
-        else
+        else if(playerState == WrestlerState.standing)
         {
-            possiblePlayerMoves.Add("Sell", true);
-            possiblePlayerMovesKeys.Add("Sell");
+            possiblePlayerMoves.Add("Sell");
 
             //ATTACK
-            possiblePlayerMovesKeys.Add("Attack");
+            
             if (Player.stamina >= ATTACK_STAMINA)
-                possiblePlayerMoves.Add("Attack", true);
-            else
-                possiblePlayerMoves.Add("Attack", false);
+                possiblePlayerMoves.Add("Attack");
+            
 
             //taunt
-            possiblePlayerMoves.Add("Taunt", true);
-            possiblePlayerMovesKeys.Add("Taunt");
+            
+            possiblePlayerMoves.Add("Taunt");
 
-            //block check
-            possiblePlayerMovesKeys.Add("Block");
+            //block check            
             if (Player.stamina >= BLOCK_STAMINA)
-                possiblePlayerMoves.Add("Block", true);
-            else
-                possiblePlayerMoves.Add("Block", false);
+                possiblePlayerMoves.Add("Block");
 
-
-            //check for pin
-            possiblePlayerMovesKeys.Add("Pin");
+            //check for pin            
             if (Player.stamina >= PIN_STAMINA)
-                possiblePlayerMoves.Add("Pin", true);
-            else
-                possiblePlayerMoves.Add("Pin", false);
+                possiblePlayerMoves.Add("Pin");
 
 
-            //finisher
-            possiblePlayerMovesKeys.Add("Finisher");
+            //finisher            
             if (Player.stamina >= SPECIAL_MOVE_STAMINA)
-                possiblePlayerMoves.Add("Finisher", true);
-            else
-                possiblePlayerMoves.Add("Finisher", false);
+                possiblePlayerMoves.Add("Finisher");
 
             //recover
-            possiblePlayerMovesKeys.Add("Recover");
-            possiblePlayerMoves.Add("Recover", true);
+            possiblePlayerMoves.Add("Recover");          
 
 
         }
@@ -190,16 +196,142 @@ public class CombatManager : MonoBehaviour
     {
         Debug.Log("we settin menu");
         buttons = new GameObject[possiblePlayerMoves.Count];
+        currentCenterButton = 0;
         for (int i = 0; i < possiblePlayerMoves.Count; i++)
-        {
+        {            
             buttons[i] = Instantiate(Resources.Load("Prefabs/buttonTEMP")) as GameObject;
-            buttons[i].transform.GetChild(0).GetComponent<TextMesh>().text = possiblePlayerMovesKeys[i];
+            buttons[i].transform.GetChild(0).GetComponent<TextMesh>().text = possiblePlayerMoves[i];
             buttons[i].transform.position = playerRef.transform.position + buttonPlacement[i];
         }
+        buttons[0].transform.localScale = new Vector3(1.6f, 1.6f, 1.6f);
+        Debug.Log(possiblePlayerMoves[currentCenterButton]);
 
     }
 
-    void decidingMove()
+    //moves the menu selection
+    void updateMenu(bool movingRight)
+    {
+        
+        if (movingRight)
+        {
+            //change current selection
+            currentCenterButton--;
+            if (currentCenterButton < 0)
+                currentCenterButton = possiblePlayerMoves.Count - 1;
+
+            //move all the buttons to new positions
+            for (int i = 0; i < possiblePlayerMoves.Count; i++)
+            {
+                //set scale
+                if (i == currentCenterButton)
+                    buttons[i].transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+                else
+                    buttons[i].transform.localScale = Vector3.one;
+
+
+                if (i - currentCenterButton == -1)
+                    buttons[i].transform.position = playerRef.transform.position + buttonPlacement[possiblePlayerMoves.Count-1];
+                else
+                {
+                    
+                    if (i - currentCenterButton < -1)
+                    {
+                        buttons[i].transform.position = playerRef.transform.position + buttonPlacement[i - currentCenterButton + possiblePlayerMoves.Count];
+
+                    }
+                    else
+                        buttons[i].transform.position = playerRef.transform.position + buttonPlacement[i -currentCenterButton];
+
+                }
+            }
+
+        }          
+        else            //Moving left
+        {
+
+            //change current selection
+            currentCenterButton++;
+            if (currentCenterButton >= possiblePlayerMoves.Count)
+                currentCenterButton = 0;
+
+            //move all the buttons to new positions
+            for (int i = 0; i < possiblePlayerMoves.Count; i++)
+            {
+                //set scale
+                if (i == currentCenterButton)
+                    buttons[i].transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+                else
+                    buttons[i].transform.localScale = Vector3.one;
+
+
+                if (i - currentCenterButton == -1)
+                    buttons[i].transform.position = playerRef.transform.position + buttonPlacement[possiblePlayerMoves.Count - 1];
+                else
+                {
+
+                    if (i - currentCenterButton < -1)
+                    {
+                        buttons[i].transform.position = playerRef.transform.position + buttonPlacement[i - currentCenterButton + possiblePlayerMoves.Count];
+
+                    }
+                    else
+                        buttons[i].transform.position = playerRef.transform.position + buttonPlacement[i - currentCenterButton];
+
+                }
+            }
+        }
+
+        Debug.Log(possiblePlayerMoves[currentCenterButton]);
+        //set the scale of the buttons rights
+        //Debug.Log(currentCenterButton);
+        //foreach (string k in possiblePlayerMovesKeys)
+        //{
+        //    Debug.Log(k);
+        //}
+        
+
+    }
+
+
+    //confirms the player move as well as deciding opponent move.
+    void decideMove()
+    {
+        playerMove = possiblePlayerMoves[currentCenterButton];
+
+        //deciding enemy move               TEMP for now, enemy will just copy player move for 
+        enemyMove= possiblePlayerMoves[currentCenterButton];
+
+        #region Move interaction logic
+
+        switch (playerMove)
+        {
+            case "Attack":
+                break;
+            case "Pin":
+                break;
+            case "Block":
+                break;
+            case "Finisher":
+                break;
+            case "Sell":
+                break;
+            case "Recover":
+                break;
+            case "Taunt":
+                break;
+            default:
+                break;
+        }
+
+        #endregion
+
+
+        matchState = MatchState.actionPhase;
+        turnCount++;
+    }
+
+    //this method is to be used for positioning during action phase. The actual choosing of the animation should be able to be done through editor's animator.
+    void actionPhaseAnimating()
     {
 
     }
