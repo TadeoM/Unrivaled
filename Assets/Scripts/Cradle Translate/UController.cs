@@ -1,26 +1,40 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cradle;
+using Cradle.StoryFormats.Harlowe;
 
 public class UController : MonoBehaviour
 {
-    public UStory currentStory;
+    public TwineTextPlayer storyController;
+    public List<string> CurrentDialogue { get; set; }
+    private int count = 0;
+    private int wordIndex = 0;
 
-
-    // Start is called before the first frame update
-    void Start()
+    private void Update()
     {
-        
+        if(count % 10 == 0)
+        {
+            DisplayDialogue(null, CurrentDialogue[wordIndex]);
+            wordIndex++;
+        }
+        if (Input.anyKeyDown)
+            InputCheck();
+        count++;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void InputCheck()
     {
-        
+        if (Input.GetKeyDown(KeyCode.KeypadEnter))
+            Debug.Log("Something");
     }
 
-    public void ChangeStory(UStory newStory)
+    public void ChangeStory(Story newStory)
     {
-        currentStory = newStory;
+        storyController.Story = newStory;
+    }
+
+    public void DisplayDialogue(GameObject textObject, string text)
+    {
     }
 }

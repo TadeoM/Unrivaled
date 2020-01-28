@@ -23,9 +23,9 @@ public class TwineTextPlayer : MonoBehaviour {
 
 	static string prevWord = "";
 	static string currWord = "";
-	static bool newWordChecked = false;
 	static string leftChar = "";
 	static string rightChar = "";
+	int count = 0;
 
 	static Regex rx_splitText = new Regex(@"(\s+|[^\s]+)");
 
@@ -202,9 +202,7 @@ public class TwineTextPlayer : MonoBehaviour {
 					// only change the current word if it is not white space
 					if (word.Trim() != "")
 					{
-						prevWord = currWord;
 						currWord = word;
-						newWordChecked = false;
 					}
 
 					Text uiWord = (Text)Instantiate(WordTemplate);
