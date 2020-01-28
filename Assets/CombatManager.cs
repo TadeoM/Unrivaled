@@ -20,12 +20,14 @@ public class CombatManager : MonoBehaviour
     }
     public int turnCount;           //how many turns the match has gone on for
     public int tapCount;            //how many turns a pin has been happening
+    public float audienceInterest;
     public List<string> possiblePlayerMoves;
     public GameObject[] buttons;
     public GameObject playerRef;
     public bool isPlayerPinned;
     public bool isOpponentPinned;
 
+    public string currentBattleID;
     private int currentCenterButton;
     private string playerMove;
     private string enemyMove;
@@ -90,9 +92,10 @@ public class CombatManager : MonoBehaviour
         Player.maxStamina = 100f;
         Player.stamina = Player.maxStamina;
         matchState = MatchState.decisionPhase;
-        playerState = WrestlerState.pinned;
+        playerState = WrestlerState.standing;
         enemyState = WrestlerState.standing;
 
+        
 
         updatePossibleMoves();
 
@@ -298,14 +301,46 @@ public class CombatManager : MonoBehaviour
     {
         playerMove = possiblePlayerMoves[currentCenterButton];
 
-        //deciding enemy move               TEMP for now, enemy will just copy player move for 
-        enemyMove= possiblePlayerMoves[currentCenterButton];
+        //deciding enemy move               TEMP for now, enemy will just sell no matter what
+        if (currentBattleID == "Ziggler")
+        {
+            enemyMove = "Sell";
+            switch (playerMove)
+            {
+                case "Attack":
+                    audienceInterest += 5f;
+                    break;
+                case "Pin":
+                    enemyState = WrestlerState.pinned;
+                    audienceInterest += 5f;
+                    break;
+                case "Block":
+                    audienceInterest -= 5f;
+                    break;
+                case "Finisher":
+                    audienceInterest += 12f;
+                    break;
+                case "Sell":
+                    audienceInterest -= 7f;
+                    break;
+                case "Recover":
+                    audienceInterest -= 2f;
+                    break;
+                case "Taunt":
+                    audienceInterest -= 2f;
+                    break;
+                default:
+                    break;
+            }
+
+        }
+
 
         #region Move interaction logic
 
         switch (playerMove)
         {
-            case "Attack":
+            case "Attack":               
                 break;
             case "Pin":
                 break;
