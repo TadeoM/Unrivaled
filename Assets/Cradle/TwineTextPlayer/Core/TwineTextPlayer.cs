@@ -8,10 +8,12 @@ using Cradle;
 using Cradle.StoryFormats.Harlowe;
 
 [ExecuteInEditMode]
-public class TwineTextPlayer : MonoBehaviour {
+public class TwineTextPlayer : MonoBehaviour
+{
 
 	public Story Story;
 	public GameObject[] portraits;
+	public UController controller;
 	public List<Sprite> charactersInScene;
 	public RectTransform Container;
 	public Button LinkTemplate;
@@ -21,6 +23,14 @@ public class TwineTextPlayer : MonoBehaviour {
 	public bool AutoDisplay = true;
 	public bool ShowNamedLinks = true;
 
+	public List<StoryOutput> currentDialogue;
+	public List<RectTransform> currentRect;
+	public List<int> linkIndices;
+	public int currLinkIndex = 0;
+	public List<StoryLink> links;
+	private int wordIndex = 0;
+
+
 	static string prevWord = "";
 	static string currWord = "";
 	static string leftChar = "";
@@ -29,18 +39,27 @@ public class TwineTextPlayer : MonoBehaviour {
 
 	static Regex rx_splitText = new Regex(@"(\s+|[^\s]+)");
 
-	void Start () {
+	private void Awake()
+	{
+		currentDialogue = new List<StoryOutput>();
+		currentRect = new List<RectTransform>();
+		linkIndices = new List<int>();
+		links = new List<StoryLink>();
+	}
+
+	void Start()
+	{
 		if (!Application.isPlaying)
 			return;
 
 		LinkTemplate.gameObject.SetActive(false);
 		((RectTransform)LinkTemplate.transform).SetParent(null);
 		LinkTemplate.transform.hideFlags = HideFlags.HideInHierarchy;
-		
+
 		WordTemplate.gameObject.SetActive(false);
 		WordTemplate.rectTransform.SetParent(null);
 		WordTemplate.rectTransform.hideFlags = HideFlags.HideInHierarchy;
-		
+
 		LineBreakTemplate.gameObject.SetActive(false);
 		LineBreakTemplate.SetParent(null);
 		LineBreakTemplate.hideFlags = HideFlags.HideInHierarchy;
@@ -57,7 +76,7 @@ public class TwineTextPlayer : MonoBehaviour {
 		this.Story.OnOutput += Story_OnOutput;
 		this.Story.OnOutputRemoved += Story_OnOutputRemoved;
 		portraits[0].GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Art/CharacterPortraits/tadeo");
-		
+
 		if (StartStory)
 			this.Story.Begin();
 	}
@@ -77,7 +96,7 @@ public class TwineTextPlayer : MonoBehaviour {
 	// .....................
 	// Clicks
 
-	#if UNITY_EDITOR
+#if UNITY_EDITOR
 	void Update()
 	{
 		if (Application.isPlaying)
@@ -90,8 +109,19 @@ public class TwineTextPlayer : MonoBehaviour {
 				story.AutoPlay = false;
 		}
 	}
-	#endif
-	
+#endif
+
+	private void FixedUpdate()
+	{
+		if (count % 10 == 0 && wordIndex < currentDialogue.Count)
+		{
+			AddToUI(currentRect[wordIndex], currentDialogue[wordIndex], wordIndex);
+			wordIndex++;
+		}
+
+		count++;
+	}
+
 	public void Clear()
 	{
 		for (int i = 0; i < Container.childCount; i++)
@@ -102,7 +132,7 @@ public class TwineTextPlayer : MonoBehaviour {
 	void Story_OnPassageEnter(StoryPassage passage)
 	{
 		Clear();
-		
+
 	}
 
 	void Story_OnOutput(StoryOutput output)
@@ -111,7 +141,7 @@ public class TwineTextPlayer : MonoBehaviour {
 			return;
 
 		DisplayOutput(output);
-		if(this.Story.Vars.GetMember("characters").ToString() != null)
+		if (this.Story.Vars.GetMember("characters").ToString() != null)
 		{
 			if (leftChar != this.Story.Vars.GetMember("leftCharacter"))
 			{
@@ -122,7 +152,7 @@ public class TwineTextPlayer : MonoBehaviour {
 
 				while (characters.GetLength(0) > i && !found)
 				{
-					
+
 					if (this.Story.Vars.GetMember("characters")[i] == this.Story.Vars.GetMember("leftCharacter"))
 					{
 						string charName = this.Story.Vars.GetMember("characters")[i].ToString().ToLower();
@@ -158,7 +188,6 @@ public class TwineTextPlayer : MonoBehaviour {
 							charactersInScene.Add(charSprite);
 
 						portraits[1].GetComponent<SpriteRenderer>().sprite = charSprite;
-						Debug.Log("Person speaking: " + prevWord);
 						found = true;
 					}
 
@@ -199,44 +228,25 @@ public class TwineTextPlayer : MonoBehaviour {
 				{
 					string word = m.Value;
 
-					// only change the current word if it is not white space
-					if (word.Trim() != "")
+					/*// only change the current word if it is not white space
+					if (word.Trim() != "" && word != null)
 					{
 						currWord = word;
-					}
+						controller.AddWord(currWord, false, null);
+					}*/
 
 					Text uiWord = (Text)Instantiate(WordTemplate);
 					uiWord.gameObject.SetActive(true);
 					uiWord.text = word;
 					uiWord.name = word;
-					AddToUI(uiWord.rectTransform, output, uiInsertIndex);
+
+					currentDialogue.Add(output);
+					currentRect.Add(uiWord.rectTransform);
+
+					//AddToUI(uiWord.rectTransform, output, uiInsertIndex);
 
 					if (uiInsertIndex >= 0)
 						uiInsertIndex++;
-
-					/*if (!newWordChecked && currWord == ":" && this.Story.Vars.GetMember("characters").Contains(prevWord))
-					{
-						newWordChecked = true;
-						int i = 0;
-						bool found = false;
-						while (this.Story.Vars.GetMember("characters")[i] != null && !found)
-						{
-							if (this.Story.Vars.GetMember("characters")[i] == prevWord)
-							{
-								string charName = this.Story.Vars.GetMember("characters")[i].ToString().ToLower();
-								Sprite charSprite = Resources.Load<Sprite>("Art/CharacterPortraits/" + charName);
-
-								if(charSprite != null)
-									charactersInScene.Add(charSprite);
-
-								portraits[1].GetComponent<SpriteRenderer>().sprite = charSprite;
-								Debug.Log("Person speaking: " + prevWord);
-								found = true;
-							}
-
-							i++;
-						}
-					}*/
 				}
 			}
 		}
@@ -246,6 +256,13 @@ public class TwineTextPlayer : MonoBehaviour {
 			var link = (StoryLink)output;
 			if (!ShowNamedLinks && link.IsNamed)
 				return;
+
+			// only change the current word if it is not white space
+			/*if (link.Text.Trim() != "" && link.Text != null)
+			{
+				currWord = link.Text;
+				controller.AddWord(currWord, true, link);
+			}*/
 
 			Button uiLink = (Button)Instantiate(LinkTemplate);
 			uiLink.gameObject.SetActive(true);
@@ -257,7 +274,11 @@ public class TwineTextPlayer : MonoBehaviour {
 			{
 				this.Story.DoLink(link);
 			});
-			AddToUI((RectTransform)uiLink.transform, output, uiInsertIndex);
+
+			currentDialogue.Add(output);
+			currentRect.Add((RectTransform)uiLink.transform);
+
+			//AddToUI((RectTransform)uiLink.transform, output, uiInsertIndex);
 		}
 		else if (output is LineBreak)
 		{

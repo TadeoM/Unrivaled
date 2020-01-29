@@ -501,6 +501,10 @@ PrefabInstance:
       propertyPath: portraits.Array.data[1]
       value: 
       objectReference: {fileID: 765199384}
+    - target: {fileID: 11453716, guid: c4ae6fc83f0d4f64091afc0dccd76dd6, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 2114893841}
     - target: {fileID: 11453722, guid: c4ae6fc83f0d4f64091afc0dccd76dd6, type: 3}
       propertyPath: m_FontData.m_FontStyle
       value: 3
@@ -743,3 +747,29 @@ MonoBehaviour:
   StartPassage: SceneName_Initializer
   AdditionalCues: []
   DebugMode: 0
+--- !u!114 &2114893836 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 11453716, guid: c4ae6fc83f0d4f64091afc0dccd76dd6,
+    type: 3}
+  m_PrefabInstance: {fileID: 2114699216}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114893834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99c8fea63e749a74b9ad6e36ead8cfe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2114893841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114893834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6a4344d05f513f4e95178d0f2b57155, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  storyController: {fileID: 2114893836}
+  dialogue: {fileID: 0}
