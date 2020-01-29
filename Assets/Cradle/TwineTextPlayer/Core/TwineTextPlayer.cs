@@ -228,12 +228,6 @@ public class TwineTextPlayer : MonoBehaviour
 				{
 					string word = m.Value;
 
-					/*// only change the current word if it is not white space
-					if (word.Trim() != "" && word != null)
-					{
-						currWord = word;
-						controller.AddWord(currWord, false, null);
-					}*/
 
 					Text uiWord = (Text)Instantiate(WordTemplate);
 					uiWord.gameObject.SetActive(true);
@@ -243,7 +237,6 @@ public class TwineTextPlayer : MonoBehaviour
 					currentDialogue.Add(output);
 					currentRect.Add(uiWord.rectTransform);
 
-					//AddToUI(uiWord.rectTransform, output, uiInsertIndex);
 
 					if (uiInsertIndex >= 0)
 						uiInsertIndex++;
@@ -257,12 +250,7 @@ public class TwineTextPlayer : MonoBehaviour
 			if (!ShowNamedLinks && link.IsNamed)
 				return;
 
-			// only change the current word if it is not white space
-			/*if (link.Text.Trim() != "" && link.Text != null)
-			{
-				currWord = link.Text;
-				controller.AddWord(currWord, true, link);
-			}*/
+
 
 			Button uiLink = (Button)Instantiate(LinkTemplate);
 			uiLink.gameObject.SetActive(true);
@@ -278,21 +266,24 @@ public class TwineTextPlayer : MonoBehaviour
 			currentDialogue.Add(output);
 			currentRect.Add((RectTransform)uiLink.transform);
 
-			//AddToUI((RectTransform)uiLink.transform, output, uiInsertIndex);
 		}
 		else if (output is LineBreak)
 		{
 			var br = (RectTransform)Instantiate(LineBreakTemplate);
 			br.gameObject.SetActive(true);
 			br.gameObject.name = "(br)";
-			AddToUI(br, output, uiInsertIndex);
+
+			currentDialogue.Add(output);
+			currentRect.Add(br);
 		}
 		else if (output is OutputGroup)
 		{
 			// Add an empty indicator to later positioning
 			var groupMarker = new GameObject();
 			groupMarker.name = output.ToString();
-			AddToUI(groupMarker.AddComponent<RectTransform>(), output, uiInsertIndex);
+
+			/*currentDialogue.Add(output);
+			currentRect.Add(groupMarker.AddComponent<RectTransform>());*/
 		}
 	}
 
