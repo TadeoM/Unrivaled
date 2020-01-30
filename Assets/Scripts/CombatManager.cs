@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CombatManager : MonoBehaviour
 {
@@ -26,11 +27,17 @@ public class CombatManager : MonoBehaviour
     public GameObject playerRef;
     public bool isPlayerPinned;
     public bool isOpponentPinned;
-
     public string currentBattleID;
-    private int currentCenterButton;
-    private string playerMove;
-    private string enemyMove;
+    private int currentCenterButton;        //place in the button array that the player is currently hovering
+    private string playerMove;      //the action theplayer is going to take
+    private string enemyMove;       //the action the opponent is going to take
+    private float tempTimer;        //temp being used 
+
+
+    //Combat UI Elements
+    private GameObject TimerGO;
+    private GameObject staminaMeterFill;
+    private GameObject audienceMeterFill;
 
     private MatchState matchState;
     private WrestlerState playerState;
@@ -41,7 +48,7 @@ public class CombatManager : MonoBehaviour
     #region Stamina Constants
     //Stamine requirements for moves
     public const float KICKOUT_STAMINA = 15f;     //temp number
-    public const float SPECIAL_MOVE_STAMINA = 15f;     //temp number
+    public const float FISHER_STAMINA = 15f;     //temp number
     public const float ATTACK_STAMINA = 15f;     //temp number
     public const float PIN_STAMINA = 15f;     //this is stamina required to pin
     public const float BLOCK_STAMINA = 15f;     //this is stamina required to pin
@@ -95,7 +102,9 @@ public class CombatManager : MonoBehaviour
         playerState = WrestlerState.standing;
         enemyState = WrestlerState.standing;
 
-        
+        staminaMeterFill = GameObject.FindGameObjectWithTag("MeterFill");
+        audienceMeterFill = GameObject.FindGameObjectWithTag("audienceMeter");
+        TimerGO = GameObject.FindGameObjectWithTag("CombatTimer");
 
         updatePossibleMoves();
 
@@ -110,7 +119,7 @@ public class CombatManager : MonoBehaviour
         switch (matchState)
         {
             case MatchState.decisionPhase:
-
+                Debug.Log("In Decision Phase");
                 //moving menu left and right logic
                 if (Input.GetKeyDown(KeyCode.A))
                 {
@@ -128,6 +137,8 @@ public class CombatManager : MonoBehaviour
                 }
                 break;
             case MatchState.actionPhase:
+                Debug.Log("In Action Phase");
+
                 actionPhaseAnimating();
                 break;
             case MatchState.loading:
@@ -141,10 +152,16 @@ public class CombatManager : MonoBehaviour
 
     void updatePossibleMoves()
     {
-        Debug.Log("wwodihofja");
+        
         possiblePlayerMoves = new List<string>();
 
-        if (playerState == WrestlerState.pinned)
+
+        if(enemyState == WrestlerState.pinned)
+        {
+            possiblePlayerMoves.Add("Hold");
+            possiblePlayerMoves.Add("Release");
+        }
+        else if (playerState == WrestlerState.pinned)
         {
             //check if can kickout eligible
             if (Player.stamina > 15f)
@@ -181,7 +198,7 @@ public class CombatManager : MonoBehaviour
 
 
             //finisher            
-            if (Player.stamina >= SPECIAL_MOVE_STAMINA)
+            if (Player.stamina >= FISHER_STAMINA)
                 possiblePlayerMoves.Add("Finisher");
 
             //recover
@@ -197,7 +214,7 @@ public class CombatManager : MonoBehaviour
 
     void setMenu()
     {
-        Debug.Log("we settin menu");
+        
         buttons = new GameObject[possiblePlayerMoves.Count];
         currentCenterButton = 0;
         for (int i = 0; i < possiblePlayerMoves.Count; i++)
@@ -207,7 +224,7 @@ public class CombatManager : MonoBehaviour
             buttons[i].transform.position = playerRef.transform.position + buttonPlacement[i];
         }
         buttons[0].transform.localScale = new Vector3(1.6f, 1.6f, 1.6f);
-        Debug.Log(possiblePlayerMoves[currentCenterButton]);
+        
 
     }
 
@@ -284,7 +301,7 @@ public class CombatManager : MonoBehaviour
             }
         }
 
-        Debug.Log(possiblePlayerMoves[currentCenterButton]);
+        
         //set the scale of the buttons rights
         //Debug.Log(currentCenterButton);
         //foreach (string k in possiblePlayerMovesKeys)
@@ -301,7 +318,12 @@ public class CombatManager : MonoBehaviour
     {
         playerMove = possiblePlayerMoves[currentCenterButton];
 
-        //deciding enemy move               TEMP for now, enemy will just sell no matter what
+        #region Opponent Logic
+        //In this region, we decide the enemy's move based on the scenario.
+
+        //for testing, I made this Ziggler logic where he mostly just sells
+        #region Ziggler (Test Opponent)
+                
         if (currentBattleID == "Ziggler")
         {
             enemyMove = "Sell";
@@ -335,24 +357,47 @@ public class CombatManager : MonoBehaviour
 
         }
 
+        #endregion
+        #endregion
 
-        #region Move interaction logic
+        #region Global Move interaction
 
         switch (playerMove)
         {
-            case "Attack":               
+            case "Attack":
+                Player.stamina -= ATTACK_STAMINA;
                 break;
             case "Pin":
+                Player.stamina -= PIN_STAMINA;
                 break;
             case "Block":
+                Player.stamina -= BLOCK_STAMINA;
                 break;
             case "Finisher":
+                Player.stamina -= FISHER_STAMINA;
                 break;
             case "Sell":
+                
                 break;
             case "Recover":
+                //if not interupted restore stamina
+                if (enemyMove != "Attack" && enemyMove != "Finisher" && enemyMove != "Pin")
+                {
+                    Player.stamina += 30f;
+                    if (Player.stamina > Player.maxStamina)
+                        Player.stamina = Player.maxStamina;
+                }
+                
                 break;
             case "Taunt":
+                if (enemyMove != "Attack"   && 
+                    enemyMove != "Finisher" && 
+                    enemyMove != "Pin"      &&
+                    enemyMove!= "Sell")
+                {
+                    audienceInterest += 5;
+                }
+
                 break;
             default:
                 break;
@@ -360,15 +405,41 @@ public class CombatManager : MonoBehaviour
 
         #endregion
 
-
-        matchState = MatchState.actionPhase;
         turnCount++;
+        updateCombatUI();
+
+        tempTimer = 2f;
+        matchState = MatchState.actionPhase;
+        foreach (GameObject gameObject in buttons)
+        {
+            Destroy(gameObject);
+        }
+        possiblePlayerMoves = null;
+
+
     }
 
     //this method is to be used for positioning during action phase. The actual choosing of the animation should be able to be done through editor's animator.
     void actionPhaseAnimating()
     {
+        //for now we just use a timer then go back to decision phase;
+        if(tempTimer<=0)
+        {
+            matchState = MatchState.decisionPhase;
+            updatePossibleMoves();
+            Debug.Log("Stamina" + Player.stamina);
+        }
+        else
+        {
+            tempTimer -= Time.deltaTime;
+        }
 
     }
 
+
+    void updateCombatUI()
+    {
+        staminaMeterFill.transform.localScale = new Vector3(Player.stamina / Player.maxStamina, staminaMeterFill.transform.localScale.y, 1f);
+        TimerGO.GetComponent<Text>().text = (turnCount * 5)+"";
+    }
 }
