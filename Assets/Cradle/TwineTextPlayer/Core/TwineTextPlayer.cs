@@ -25,17 +25,17 @@ public class TwineTextPlayer : MonoBehaviour
 
 	public List<StoryOutput> currentDialogue;
 	public List<RectTransform> currentRect;
+	public List<string> fillDialogue;
 	public List<int> linkIndices;
 	public int currLinkIndex = 0;
 	public List<StoryLink> links;
 	private int wordIndex = 0;
 
-
-	static string prevWord = "";
-	static string currWord = "";
+	float timeToWait;
 	static string leftChar = "";
 	static string rightChar = "";
-	int count = 0;
+	bool cont = true;
+	float count = 0;
 
 	static Regex rx_splitText = new Regex(@"(\s+|[^\s]+)");
 
@@ -45,6 +45,8 @@ public class TwineTextPlayer : MonoBehaviour
 		currentRect = new List<RectTransform>();
 		linkIndices = new List<int>();
 		links = new List<StoryLink>();
+		fillDialogue = new List<string>();
+		timeToWait = 10;
 	}
 
 	void Start()
@@ -113,13 +115,16 @@ public class TwineTextPlayer : MonoBehaviour
 
 	private void FixedUpdate()
 	{
-		if (count % 10 == 0 && wordIndex < currentDialogue.Count)
+		if (cont && wordIndex < currentRect.Count)
 		{
+			Debug.Log("Begin");
 			AddToUI(currentRect[wordIndex], currentDialogue[wordIndex], wordIndex);
 			wordIndex++;
+			/*timeToWait = fillDialogue[wordIndex].Length * Time.deltaTime ;
+			Debug.Log(timeToWait);
+			count = timeToWait;*/
 		}
-
-		count++;
+		//count -= Time.deltaTime;
 	}
 
 	public void Clear()
@@ -228,15 +233,14 @@ public class TwineTextPlayer : MonoBehaviour
 				{
 					string word = m.Value;
 
-
 					Text uiWord = (Text)Instantiate(WordTemplate);
 					uiWord.gameObject.SetActive(true);
-					uiWord.text = word;
+					uiWord.text = ""; // word
 					uiWord.name = word;
 
 					currentDialogue.Add(output);
 					currentRect.Add(uiWord.rectTransform);
-
+					fillDialogue.Add(word);
 
 					if (uiInsertIndex >= 0)
 						uiInsertIndex++;
@@ -247,17 +251,16 @@ public class TwineTextPlayer : MonoBehaviour
 		{
 			//Debug.Log(output);
 			var link = (StoryLink)output;
+			
 			if (!ShowNamedLinks && link.IsNamed)
 				return;
-
-
 
 			Button uiLink = (Button)Instantiate(LinkTemplate);
 			uiLink.gameObject.SetActive(true);
 			uiLink.name = "[[" + link.Text + "]]";
 
 			Text uiLinkText = uiLink.GetComponentInChildren<Text>();
-			uiLinkText.text = link.Text;
+			uiLinkText.text = ""; // link.Text
 			uiLink.onClick.AddListener(() =>
 			{
 				this.Story.DoLink(link);
@@ -265,7 +268,7 @@ public class TwineTextPlayer : MonoBehaviour
 
 			currentDialogue.Add(output);
 			currentRect.Add((RectTransform)uiLink.transform);
-
+			fillDialogue.Add(link.Text);
 		}
 		else if (output is LineBreak)
 		{
@@ -275,6 +278,7 @@ public class TwineTextPlayer : MonoBehaviour
 
 			currentDialogue.Add(output);
 			currentRect.Add(br);
+			fillDialogue.Add("");
 		}
 		else if (output is OutputGroup)
 		{
@@ -285,15 +289,43 @@ public class TwineTextPlayer : MonoBehaviour
 			/*currentDialogue.Add(output);
 			currentRect.Add(groupMarker.AddComponent<RectTransform>());*/
 		}
+
 	}
 
 	void AddToUI(RectTransform rect, StoryOutput output, int index)
 	{
 		rect.SetParent(Container);
+		
 		if (index >= 0)
 			rect.SetSiblingIndex(index);
 
 		var elem = rect.gameObject.AddComponent<TwineTextPlayerElement>();
 		elem.SourceOutput = output;
+
+		StartCoroutine("PlayText");
+	}
+
+	IEnumerator PlayText()
+	{
+		Text text;
+
+		if (currentDialogue[wordIndex] is StoryLink)
+		{
+			text = currentRect[wordIndex].GetComponentInChildren<Text>();
+		}
+		else
+		{
+			text = currentRect[wordIndex].GetComponent<Text>();
+		}
+
+		foreach (char c in fillDialogue[wordIndex])
+		{
+			text.text += c;
+			cont = false;
+
+			yield return new WaitForSeconds(0.125f);
+		}
+		Debug.Log("Done");
+		cont = true;
 	}
 }
