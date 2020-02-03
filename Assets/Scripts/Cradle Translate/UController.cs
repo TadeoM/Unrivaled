@@ -1,26 +1,36 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 using Cradle;
 using Cradle.StoryFormats.Harlowe;
+enum Location
+{
+    House,
+    Gym,
+    Wendys,
+    Stage,
+}
 
 public class UController : MonoBehaviour
 {
     public TwineTextPlayer storyController;
     public List<string> CurrentDialogue { get; set; }
-    private int count = 0;
-    private int wordIndex = 0;
+    private int currDay;
+    private int locationIndexer;
+    private Location currLocation;
+
+    private void Awake()
+    {
+        currDay = 1;
+        locationIndexer = 0;
+        currLocation = (Location)locationIndexer;
+        ChangeStory();
+    }
 
     private void Update()
     {
-        if(count % 10 == 0)
-        {
-            DisplayDialogue(null, CurrentDialogue[wordIndex]);
-            wordIndex++;
-        }
-        if (Input.anyKeyDown)
-            InputCheck();
-        count++;
+
     }
 
     public void InputCheck()
@@ -29,12 +39,18 @@ public class UController : MonoBehaviour
             Debug.Log("Something");
     }
 
-    public void ChangeStory(Story newStory)
+    public void ChangeStory()
     {
-        storyController.Story = newStory;
-    }
-
-    public void DisplayDialogue(GameObject textObject, string text)
-    {
+        string newStoryName = (Location)locationIndexer + "_Day" + currDay;
+        // Find all assets labelled with 'architecture' :
+        string[] guids1 = AssetDatabase.FindAssets(newStoryName);
+        
+        foreach (string guid1 in guids1)
+        {
+            Debug.Log(AssetDatabase.GUIDToAssetPath(guid1));
+        }
+        //storyController.Story = "";
+        locationIndexer++;
+        currDay++;
     }
 }

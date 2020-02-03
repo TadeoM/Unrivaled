@@ -213,30 +213,6 @@ public class TwineTextPlayer : MonoBehaviour {
 
 					if (uiInsertIndex >= 0)
 						uiInsertIndex++;
-
-					/*if (!newWordChecked && currWord == ":" && this.Story.Vars.GetMember("characters").Contains(prevWord))
-					{
-						newWordChecked = true;
-						int i = 0;
-						bool found = false;
-						while (this.Story.Vars.GetMember("characters")[i] != null && !found)
-						{
-							if (this.Story.Vars.GetMember("characters")[i] == prevWord)
-							{
-								string charName = this.Story.Vars.GetMember("characters")[i].ToString().ToLower();
-								Sprite charSprite = Resources.Load<Sprite>("Art/CharacterPortraits/" + charName);
-
-								if(charSprite != null)
-									charactersInScene.Add(charSprite);
-
-								portraits[1].GetComponent<SpriteRenderer>().sprite = charSprite;
-								Debug.Log("Person speaking: " + prevWord);
-								found = true;
-							}
-
-							i++;
-						}
-					}*/
 				}
 			}
 		}
