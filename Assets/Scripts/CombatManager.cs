@@ -34,10 +34,13 @@ public class CombatManager : MonoBehaviour
     private float tempTimer;        //temp being used 
 
 
-    //Combat UI Elements
+    //Combat UI Elements\
+    public GameObject endingText;
     private GameObject TimerGO;
     private GameObject staminaMeterFill;
     private GameObject audienceMeterFill;
+    private float audienceMeterFillStartingXScale;
+
 
     private MatchState matchState;
     private WrestlerState playerState;
@@ -96,16 +99,26 @@ public class CombatManager : MonoBehaviour
     {
         tapCount = 0;
         turnCount = 0;
+        audienceInterest = 15f;
+
         Player.maxStamina = 100f;
         Player.stamina = Player.maxStamina;
         matchState = MatchState.decisionPhase;
         playerState = WrestlerState.standing;
         enemyState = WrestlerState.standing;
 
+
         staminaMeterFill = GameObject.FindGameObjectWithTag("MeterFill");
         audienceMeterFill = GameObject.FindGameObjectWithTag("audienceMeter");
+        audienceMeterFillStartingXScale = audienceMeterFill.transform.localScale.x;
         TimerGO = GameObject.FindGameObjectWithTag("CombatTimer");
 
+        currentBattleID = "Ziggler";
+
+
+        endingText.GetComponent<MeshRenderer>().enabled = false;
+
+        updateCombatUI();
         updatePossibleMoves();
 
     }
@@ -119,7 +132,7 @@ public class CombatManager : MonoBehaviour
         switch (matchState)
         {
             case MatchState.decisionPhase:
-                Debug.Log("In Decision Phase");
+                
                 //moving menu left and right logic
                 if (Input.GetKeyDown(KeyCode.A))
                 {
@@ -137,7 +150,7 @@ public class CombatManager : MonoBehaviour
                 }
                 break;
             case MatchState.actionPhase:
-                Debug.Log("In Action Phase");
+                
 
                 actionPhaseAnimating();
                 break;
@@ -327,37 +340,15 @@ public class CombatManager : MonoBehaviour
         if (currentBattleID == "Ziggler")
         {
             enemyMove = "Sell";
-            switch (playerMove)
+            if(enemyState == WrestlerState.grounded)
             {
-                case "Attack":
-                    audienceInterest += 5f;
-                    break;
-                case "Pin":
-                    enemyState = WrestlerState.pinned;
-                    audienceInterest += 5f;
-                    break;
-                case "Block":
-                    audienceInterest -= 5f;
-                    break;
-                case "Finisher":
-                    audienceInterest += 12f;
-                    break;
-                case "Sell":
-                    audienceInterest -= 7f;
-                    break;
-                case "Recover":
-                    audienceInterest -= 2f;
-                    break;
-                case "Taunt":
-                    audienceInterest -= 2f;
-                    break;
-                default:
-                    break;
+                enemyMove = "Get Up";
             }
 
         }
 
         #endregion
+
         #endregion
 
         #region Global Move interaction
@@ -366,18 +357,129 @@ public class CombatManager : MonoBehaviour
         {
             case "Attack":
                 Player.stamina -= ATTACK_STAMINA;
+                if (enemyMove == "Block")
+                {
+                    //attack gets blocked
+                }
+                else if(enemyMove == "Finisher")
+                {
+                    audienceInterest -= 5f;
+                    //enemy's finisher is ruined
+                }
+                else if(enemyMove == "Sell")
+                {
+                    audienceInterest += 6f;
+
+                }
+                else if(enemyMove == "Taunt")
+                {
+                    audienceInterest += 3f;
+                }
+                else if(enemyMove=="Recover")
+                {
+                    audienceInterest += 4f;
+                }
+                else
+                {
+                    audienceInterest += 1f;
+                }
+                
                 break;
             case "Pin":
                 Player.stamina -= PIN_STAMINA;
+                if(enemyMove=="Sell")
+                {
+                    enemyState = WrestlerState.pinned;
+                    audienceInterest += 5f;
+                }
+                else if(enemyMove =="Attack")
+                {
+                    Player.stamina -= 5f;
+                }
+                else if(enemyMove=="Taunt"||
+                        enemyMove=="Recover"||
+                        enemyMove=="Block")
+                {
+                    enemyState = WrestlerState.pinned;
+                    audienceInterest += 3f;
+                }
+                else if(enemyMove=="Finisher")
+                {
+                    audienceInterest += 7f;
+                }
+                else
+                {
+                    //clash
+                }
                 break;
             case "Block":
                 Player.stamina -= BLOCK_STAMINA;
+                if(enemyMove=="Attack")
+                {
+                    audienceInterest += 2f;
+                }
+                else if(enemyMove=="Pin")
+                {
+                    playerState = WrestlerState.pinned;
+                }
+                else if(enemyMove=="Taunt"||
+                        enemyMove == "Block"||
+                        enemyMove == "Recover")
+                {
+
+                }
+                else if (enemyMove == "Sell")
+                {
+                    audienceInterest -= 10f;
+                }
+                else
+                {
+                    audienceInterest -= 5f;
+                }
                 break;
             case "Finisher":
                 Player.stamina -= FISHER_STAMINA;
+                if(enemyMove == "Sell")
+                {
+                    audienceInterest += 15f;
+                }
+                else if(enemyMove=="Recover"||
+                        enemyMove == "Taunt"||
+                        enemyMove == "Get Up")
+                {
+                    audienceInterest += 10f;
+                }
+                else
+                {
+                    audienceInterest -= 5f;
+                }
                 break;
             case "Sell":
-                
+                if (enemyMove == "Sell")
+                {
+                    audienceInterest -= 15f;
+                }
+                else if(enemyMove == "Block"||
+                        enemyMove == "Recover"||
+                        enemyMove == "Taunt")
+                {
+                    audienceInterest -= 10f;
+                }
+                else if(enemyMove == "Pin")
+                {
+                    audienceInterest += 5f;
+                    playerState = WrestlerState.pinned;
+                }
+                else if(enemyMove=="Attack")
+                {
+                    audienceInterest += 6f;
+                    playerState = WrestlerState.grounded;
+                }
+                else if (enemyMove == "Finisher")
+                {
+                    audienceInterest += 15f;
+                    playerState = WrestlerState.grounded;
+                }
                 break;
             case "Recover":
                 //if not interupted restore stamina
@@ -386,6 +488,15 @@ public class CombatManager : MonoBehaviour
                     Player.stamina += 30f;
                     if (Player.stamina > Player.maxStamina)
                         Player.stamina = Player.maxStamina;
+                }
+                else if (enemyMove == "Finisher")
+                {
+                    audienceInterest += 10f;
+                }
+                else if(enemyMove == "Pin")
+                {
+                    audienceInterest += 4f;
+                    playerState = WrestlerState.pinned;
                 }
                 
                 break;
@@ -399,10 +510,39 @@ public class CombatManager : MonoBehaviour
                 }
 
                 break;
+            case "Hold":
+                if(enemyState == WrestlerState.pinned)
+                {
+                    tapCount++;
+                    if (tapCount >= 3)
+                    {
+                        endMatch(true);
+                        return;
+                    }
+                }
+                break;
+            case "Release":
+                if (enemyState == WrestlerState.pinned)
+                {
+                    tapCount = 0;
+                    enemyState = WrestlerState.grounded;
+                    //may move this, we will see
+                }
+                break;
             default:
+                Debug.LogWarning("No accurate player move");
                 break;
         }
 
+
+        if(enemyMove=="Get Up" &&enemyState == WrestlerState.grounded)
+        {
+            enemyState = WrestlerState.standing;
+
+        }
+
+        if (Player.stamina > Player.maxStamina)
+            Player.stamina = Player.maxStamina;
         #endregion
 
         turnCount++;
@@ -415,7 +555,9 @@ public class CombatManager : MonoBehaviour
             Destroy(gameObject);
         }
         possiblePlayerMoves = null;
-
+        Debug.Log("Stamina" + Player.stamina);
+        Debug.Log("Audience Interest" + audienceInterest);
+        Debug.Log("Player Move: " + playerMove + "\nEnemy Move: " + enemyMove);
 
     }
 
@@ -427,7 +569,7 @@ public class CombatManager : MonoBehaviour
         {
             matchState = MatchState.decisionPhase;
             updatePossibleMoves();
-            Debug.Log("Stamina" + Player.stamina);
+            
         }
         else
         {
@@ -436,10 +578,28 @@ public class CombatManager : MonoBehaviour
 
     }
 
+    void endMatch(bool playerWin)
+    {
+        matchState = MatchState.ending;
+        endingText.GetComponent<MeshRenderer>().enabled = true;
+
+        if (playerWin)
+        {
+            endingText.GetComponent<TextMesh>().text = "You win!!";
+        }
+        else
+        {
+            endingText.GetComponent<TextMesh>().text = "You Lose :((";
+
+        }
+    }
 
     void updateCombatUI()
     {
+        //scaling the stamina and audience meters to match their values
         staminaMeterFill.transform.localScale = new Vector3(Player.stamina / Player.maxStamina, staminaMeterFill.transform.localScale.y, 1f);
+        audienceMeterFill.transform.localScale = new Vector3( (audienceInterest/100f)*audienceMeterFillStartingXScale , audienceMeterFill.transform.localScale.y, 1f);
+
         TimerGO.GetComponent<Text>().text = (turnCount * 5)+"";
     }
 }
