@@ -2,19 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
-using Cradle;
-using Cradle.StoryFormats.Harlowe;
 enum Location
 {
-    House,
+    JadeRoom,
     Gym,
     Wendys,
+    Stage,
+}
+enum Characters
+{
+    Luther,
+    Ava,
+    Jade,
     Stage,
 }
 
 public class UController : MonoBehaviour
 {
-    public TwineTextPlayer storyController;
     public List<string> CurrentDialogue { get; set; }
     private int currDay;
     private int locationIndexer;
@@ -41,15 +45,36 @@ public class UController : MonoBehaviour
 
     public void ChangeStory()
     {
-        string newStoryName = (Location)locationIndexer + "_Day" + currDay;
+        string newStoryName = (Location)locationIndexer + "_Ava_Day" + currDay;
+
         // Find all assets labelled with 'architecture' :
         string[] guids1 = AssetDatabase.FindAssets(newStoryName);
+        //Story[] stories = Resources.LoadAll<Story>("Stories/Twine/Stories");
         
-        foreach (string guid1 in guids1)
+        Debug.Log(guids1.Length);
+        MonoBehaviour nextStory = null; //storyController.gameObject.AddComponent<Story>();
+
+        string temp = AssetDatabase.GUIDToAssetPath(guids1[0]);
+        string[] t = temp.Split('/');
+        temp = "";
+        for (int i = 2; i < t.Length; i++)
         {
-            Debug.Log(AssetDatabase.GUIDToAssetPath(guid1));
+            temp += t[i] + "/";
         }
-        //storyController.Story = "";
+        temp = temp.Split('.')[0];
+        //nextStory = AssetDatabase.LoadAssetAtPath<Story>(guid1);
+        Debug.Log(temp);
+        //nextStory = AssetDatabase.LoadAssetAtPath<Story>(temp);
+
+        var newStoryTemp = Resources.LoadAll(temp)[1];
+
+        Debug.Log(newStoryTemp.GetType());
+        //nextStory = newStoryTemp;
+        MonoScript tempClass = (MonoScript)newStoryTemp;
+        Debug.Log(tempClass.GetClass());
+
+        System.Type tempType = tempClass.GetClass();
+        
         locationIndexer++;
         currDay++;
     }
