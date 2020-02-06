@@ -240,8 +240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1943999428848982953, guid: 39b6d48ecdc0f9c45b967c6d8ac21694,
-    type: 3}
+  selectedFlowchart: {fileID: 201062580}
 --- !u!4 &990159172
 Transform:
   m_ObjectHideFlags: 1
@@ -469,6 +468,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 201062582, guid: 39b6d48ecdc0f9c45b967c6d8ac21694, type: 3}
+      propertyPath: value
+      value: JadeRoom_Ava_Day1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943999428848982953, guid: 39b6d48ecdc0f9c45b967c6d8ac21694,
+        type: 3}
+      propertyPath: selectedBlocks.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1943999428858893185, guid: 39b6d48ecdc0f9c45b967c6d8ac21694,
         type: 3}
       propertyPath: m_LocalPosition.x

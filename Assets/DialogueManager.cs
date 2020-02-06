@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using UnityEngine.SceneManagement;
 using Fungus;
 
 public class DialogueManager : MonoBehaviour
@@ -49,10 +50,18 @@ public class DialogueManager : MonoBehaviour
             {
                 case "nextDialogue":
                     nextDialogueName = flowchartVariables[i].GetValue() as string;
+                    if (nextDialogueName.Contains("goToCombat"))
+                    {
+                        
+                    }
                     break;
                 case "avaIncrease":
                     break;
                 case "lutherIncrease":
+                    break;
+                case "goToCombat":
+                    if((bool)flowchartVariables[i].GetValue())
+                        SceneManager.LoadScene("CombatTestScene");
                     break;
                 default:
                     break;
