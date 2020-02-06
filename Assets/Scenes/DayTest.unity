@@ -240,8 +240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1943999428848982953, guid: 39b6d48ecdc0f9c45b967c6d8ac21694,
-    type: 3}
+  selectedFlowchart: {fileID: 201062580}
 --- !u!4 &990159172
 Transform:
   m_ObjectHideFlags: 1
@@ -469,6 +468,51 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1943999428848977491, guid: 39b6d48ecdc0f9c45b967c6d8ac21694,
+        type: 3}
+      propertyPath: nodeRect.x
+      value: 58
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943999428848977491, guid: 39b6d48ecdc0f9c45b967c6d8ac21694,
+        type: 3}
+      propertyPath: nodeRect.y
+      value: 59
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943999428848977491, guid: 39b6d48ecdc0f9c45b967c6d8ac21694,
+        type: 3}
+      propertyPath: nodeRect.height
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943999428848977491, guid: 39b6d48ecdc0f9c45b967c6d8ac21694,
+        type: 3}
+      propertyPath: useCustomTint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943999428848977491, guid: 39b6d48ecdc0f9c45b967c6d8ac21694,
+        type: 3}
+      propertyPath: itemId
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943999428848977491, guid: 39b6d48ecdc0f9c45b967c6d8ac21694,
+        type: 3}
+      propertyPath: tint.r
+      value: 0.07484871
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943999428848977491, guid: 39b6d48ecdc0f9c45b967c6d8ac21694,
+        type: 3}
+      propertyPath: tint.g
+      value: 0.5471698
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943999428848977491, guid: 39b6d48ecdc0f9c45b967c6d8ac21694,
+        type: 3}
+      propertyPath: tint.b
+      value: 0.16579108
+      objectReference: {fileID: 0}
+    - target: {fileID: 1943999428848982953, guid: 39b6d48ecdc0f9c45b967c6d8ac21694,
+        type: 3}
+      propertyPath: selectedBlocks.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1943999428858893185, guid: 39b6d48ecdc0f9c45b967c6d8ac21694,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -529,7 +573,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: JadeRoom_Noone_Day0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 201062582, guid: 39b6d48ecdc0f9c45b967c6d8ac21694, type: 3}
+    - {fileID: 201062583, guid: 39b6d48ecdc0f9c45b967c6d8ac21694, type: 3}
+    - {fileID: 1817797300407111370, guid: 39b6d48ecdc0f9c45b967c6d8ac21694, type: 3}
+    - {fileID: 2791098633433604459, guid: 39b6d48ecdc0f9c45b967c6d8ac21694, type: 3}
+    - {fileID: 201062584, guid: 39b6d48ecdc0f9c45b967c6d8ac21694, type: 3}
+    - {fileID: 1943999428849014209, guid: 39b6d48ecdc0f9c45b967c6d8ac21694, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 39b6d48ecdc0f9c45b967c6d8ac21694, type: 3}
 --- !u!1001 &6900213823325433914
 PrefabInstance:
