@@ -27,12 +27,13 @@ PrefabInstance:
       propertyPath: conversationText.stringVal
       value: 'jade babyChristian left: This is the Gym Ava Day 1 Dialogue
 
-        anthony anthony right <<<: Shut the fuck up Jade'
+        anthony
+        anthony right <<<: Shut the fuck up Jade'
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -43,11 +44,21 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 153741467425100199}
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: version
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: selectedBlocks.Array.data[0]
+      value: 
+      objectReference: {fileID: 4495633982580766367}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -58,6 +69,16 @@ PrefabInstance:
         type: 3}
       propertyPath: nodeRect.y
       value: 63.5625
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: nodeRect.height
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: itemId
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549899373137, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -119,17 +140,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gym_Ava_Day1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 201062583, guid: f00e7bd22836d09478bb370a8a1d4209, type: 3}
+    - {fileID: 201062587, guid: f00e7bd22836d09478bb370a8a1d4209, type: 3}
+    - {fileID: 4341892549888379921, guid: f00e7bd22836d09478bb370a8a1d4209, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f00e7bd22836d09478bb370a8a1d4209, type: 3}
---- !u!114 &153741467425100199 stripped
+--- !u!114 &4495633982580766367 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 201062587, guid: f00e7bd22836d09478bb370a8a1d4209,
+  m_CorrespondingSourceObject: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
     type: 3}
   m_PrefabInstance: {fileID: 153741467589093660}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
