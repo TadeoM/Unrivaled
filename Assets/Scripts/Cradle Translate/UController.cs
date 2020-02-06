@@ -1,26 +1,41 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Cradle;
-using Cradle.StoryFormats.Harlowe;
+using UnityEditor;
+enum Location
+{
+    JadeRoom,
+    Gym,
+    Cafe,
+    Streets,
+    Ring
+}
+enum Characters
+{
+    Luther,
+    Ava,
+    Jade,
+    Stage,
+}
 
 public class UController : MonoBehaviour
 {
-    public TwineTextPlayer storyController;
     public List<string> CurrentDialogue { get; set; }
-    private int count = 0;
-    private int wordIndex = 0;
+    private int currDay;
+    private int locationIndexer;
+    private Location currLocation;
+
+    private void Awake()
+    {
+        currDay = 1;
+        locationIndexer = 0;
+        currLocation = (Location)locationIndexer;
+        ChangeStory();
+    }
 
     private void Update()
     {
-        if(count % 10 == 0)
-        {
-            DisplayDialogue(null, CurrentDialogue[wordIndex]);
-            wordIndex++;
-        }
-        if (Input.anyKeyDown)
-            InputCheck();
-        count++;
+
     }
 
     public void InputCheck()
@@ -29,12 +44,39 @@ public class UController : MonoBehaviour
             Debug.Log("Something");
     }
 
-    public void ChangeStory(Story newStory)
+    public void ChangeStory()
     {
-        storyController.Story = newStory;
-    }
+        string newStoryName = (Location)locationIndexer + "_Ava_Day" + currDay;
 
-    public void DisplayDialogue(GameObject textObject, string text)
-    {
+        // Find all assets labelled with 'architecture' :
+        string[] guids1 = AssetDatabase.FindAssets(newStoryName);
+        //Story[] stories = Resources.LoadAll<Story>("Stories/Twine/Stories");
+        
+        Debug.Log(guids1.Length);
+        MonoBehaviour nextStory = null; //storyController.gameObject.AddComponent<Story>();
+
+        string temp = AssetDatabase.GUIDToAssetPath(guids1[0]);
+        string[] t = temp.Split('/');
+        temp = "";
+        for (int i = 2; i < t.Length; i++)
+        {
+            temp += t[i] + "/";
+        }
+        temp = temp.Split('.')[0];
+        //nextStory = AssetDatabase.LoadAssetAtPath<Story>(guid1);
+        Debug.Log(temp);
+        //nextStory = AssetDatabase.LoadAssetAtPath<Story>(temp);
+
+        var newStoryTemp = Resources.LoadAll(temp)[1];
+
+        Debug.Log(newStoryTemp.GetType());
+        //nextStory = newStoryTemp;
+        MonoScript tempClass = (MonoScript)newStoryTemp;
+        Debug.Log(tempClass.GetClass());
+
+        System.Type tempType = tempClass.GetClass();
+        
+        locationIndexer++;
+        currDay++;
     }
 }
