@@ -53,7 +53,7 @@ public class UController : MonoBehaviour
         //Story[] stories = Resources.LoadAll<Story>("Stories/Twine/Stories");
         
         Debug.Log(guids1.Length);
-        MonoBehaviour nextStory = null; //storyController.gameObject.AddComponent<Story>();
+        //MonoBehaviour nextStory = null; //storyController.gameObject.AddComponent<Story>();
 
         string temp = AssetDatabase.GUIDToAssetPath(guids1[0]);
         string[] t = temp.Split('/');
