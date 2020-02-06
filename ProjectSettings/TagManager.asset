@@ -7,6 +7,9 @@ TagManager:
   - portrait
   - portraits
   - dialogue
+  - CombatTimer
+  - MeterFill
+  - audienceMeter
   layers:
   - Default
   - TransparentFX
