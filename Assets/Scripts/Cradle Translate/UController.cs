@@ -6,8 +6,9 @@ enum Location
 {
     JadeRoom,
     Gym,
-    Wendys,
-    Stage,
+    Cafe,
+    Streets,
+    Ring
 }
 enum Characters
 {
