@@ -1,20 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &201062583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4341892549899699295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scope: 0
-  key: myInteger
-  value: 75
 --- !u!114 &201062587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33,7 +18,8 @@ MonoBehaviour:
     stringRef: {fileID: 0}
     stringVal: 'jade angry left: Sup, Fuckers!
 
-      jade laughing right <<<: Shut the fuck up Jade'
+      jade laughing right <<<: Shut
+      the fuck up Jade'
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -136,7 +122,7 @@ PrefabInstance:
     - target: {fileID: 11430050, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a, type: 3}
       propertyPath: variables.Array.data[0]
       value: 
-      objectReference: {fileID: 201062583}
+      objectReference: {fileID: 0}
     - target: {fileID: 11433304, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a, type: 3}
       propertyPath: commandList.Array.size
       value: 1

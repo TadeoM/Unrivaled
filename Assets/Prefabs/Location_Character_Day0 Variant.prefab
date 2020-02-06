@@ -29,7 +29,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 1
   key: nextDialogue
-  value: JadeRoom_Noone_Day0
+  value: JadeRoom_Ava_Day1
 --- !u!114 &201062583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,7 +155,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -201,7 +201,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 201062584}
+      objectReference: {fileID: 2791098633433604459}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -311,3 +311,15 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2791098633537755600}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2791098633433604459 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 201062587, guid: f00e7bd22836d09478bb370a8a1d4209,
+    type: 3}
+  m_PrefabInstance: {fileID: 2791098633537755600}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943999428859223439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
