@@ -25,6 +25,9 @@ public class CombatManager : MonoBehaviour
     public List<string> possiblePlayerMoves;
     public GameObject[] buttons;
     public GameObject playerRef;
+    private Animator playerAnimRef;
+    public GameObject oppoRef;
+    private Animator oppoAnimRef;
     public bool isPlayerPinned;
     public bool isOpponentPinned;
     public string currentBattleID;
@@ -115,6 +118,14 @@ public class CombatManager : MonoBehaviour
 
         currentBattleID = "Ziggler";
 
+        if(playerRef)
+        {
+            playerAnimRef = playerRef.GetComponentInChildren<Animator>();
+            //playerAnimRef = playerRef.GetComponent<Animator>();
+
+
+        }
+
 
         endingText.GetComponent<MeshRenderer>().enabled = false;
 
@@ -132,7 +143,8 @@ public class CombatManager : MonoBehaviour
         switch (matchState)
         {
             case MatchState.decisionPhase:
-                
+                setAllAnimsFalse(playerAnimRef);
+                playerAnimRef.SetBool("Idling", true);
                 //moving menu left and right logic
                 if (Input.GetKeyDown(KeyCode.A))
                 {
@@ -575,7 +587,19 @@ public class CombatManager : MonoBehaviour
         {
             tempTimer -= Time.deltaTime;
         }
+        if (playerMove == "Attack")
+        {
+            playerAnimRef.SetBool("Attacking", true);
+        }
+    }
 
+    //this method sets all the bools used to transition animations to false
+    void setAllAnimsFalse(Animator animRef)
+    {
+        for (int i = 0; i < animRef.parameterCount; i++)
+        {
+            animRef.SetBool(i, false);
+        }
     }
 
     void endMatch(bool playerWin)
