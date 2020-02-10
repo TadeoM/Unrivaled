@@ -1,7 +1,31 @@
 fileFormatVersion: 2
 guid: 6d3c363f6721be049973130b30533e74
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 253494963894238827
+    second: FemaleRun_Sheet_0
+  - first:
+      213: 1931568460409559469
+    second: FemaleRun_Sheet_1
+  - first:
+      213: 7074211007191708531
+    second: FemaleRun_Sheet_2
+  - first:
+      213: -1440710387265078782
+    second: FemaleRun_Sheet_3
+  - first:
+      213: -3114032216990626006
+    second: FemaleRun_Sheet_0
+  - first:
+      213: -1807075075454433342
+    second: FemaleRun_Sheet_1
+  - first:
+      213: 7989319358637771262
+    second: FemaleRun_Sheet_2
+  - first:
+      213: 4180381952894588051
+    second: FemaleRun_Sheet_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -108,7 +132,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: FemaleRun_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 152
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2fc62f823cb8c4d0800000000000000
+      internalID: -3114032216990626006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRun_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 0
+        width: 152
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7831d0bcafbe6e0800000000000000
+      internalID: -1807075075454433342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRun_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 0
+        width: 152
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef981c0a0a3cfde60800000000000000
+      internalID: 7989319358637771262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FemaleRun_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 0
+        width: 152
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3945cbfcc33b30a30800000000000000
+      internalID: 4180381952894588051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
