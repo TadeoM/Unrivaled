@@ -13,7 +13,7 @@ public class CombatManager : MonoBehaviour
         ending          //may need to make more ending states
     }
 
-    enum WrestlerState
+    public enum WrestlerState
     {
         standing,
         grounded,
@@ -26,7 +26,8 @@ public class CombatManager : MonoBehaviour
     public GameObject[] buttons;
     public GameObject playerRef;
     private Animator playerAnimRef;
-    public GameObject oppoRef;
+    public GameObject oppoRefGO;
+    public Fighter oppoRef;
     private Animator oppoAnimRef;
     public bool isPlayerPinned;
     public bool isOpponentPinned;
@@ -110,14 +111,15 @@ public class CombatManager : MonoBehaviour
         playerState = WrestlerState.standing;
         enemyState = WrestlerState.standing;
 
+        oppoRef = oppoRefGO.GetComponent<Fighter>();
+        Debug.Log(oppoRef);
 
         staminaMeterFill = GameObject.FindGameObjectWithTag("MeterFill");
         audienceMeterFill = GameObject.FindGameObjectWithTag("audienceMeter");
         audienceMeterFillStartingXScale = audienceMeterFill.transform.localScale.x;
         TimerGO = GameObject.FindGameObjectWithTag("CombatTimer");
 
-        currentBattleID = "Ziggler";
-
+        
         if(playerRef)
         {
             playerAnimRef = playerRef.GetComponentInChildren<Animator>();
@@ -343,25 +345,7 @@ public class CombatManager : MonoBehaviour
     {
         playerMove = possiblePlayerMoves[currentCenterButton];
 
-        #region Opponent Logic
-        //In this region, we decide the enemy's move based on the scenario.
-
-        //for testing, I made this Ziggler logic where he mostly just sells
-        #region Ziggler (Test Opponent)
-                
-        if (currentBattleID == "Ziggler")
-        {
-            enemyMove = "Sell";
-            if(enemyState == WrestlerState.grounded)
-            {
-                enemyMove = "Get Up";
-            }
-
-        }
-
-        #endregion
-
-        #endregion
+        enemyMove=oppoRef.decideMove(playerMove, turnCount,playerState.ToString(),enemyState.ToString());
 
         #region Global Move interaction
 
@@ -550,7 +534,7 @@ public class CombatManager : MonoBehaviour
         if(enemyMove=="Get Up" &&enemyState == WrestlerState.grounded)
         {
             enemyState = WrestlerState.standing;
-
+            
         }
 
         if (Player.stamina > Player.maxStamina)
@@ -576,6 +560,7 @@ public class CombatManager : MonoBehaviour
     //this method is to be used for positioning during action phase. The actual choosing of the animation should be able to be done through editor's animator.
     void actionPhaseAnimating()
     {
+        
         //for now we just use a timer then go back to decision phase;
         if(tempTimer<=0)
         {
