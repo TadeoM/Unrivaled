@@ -8,10 +8,12 @@ using Fungus;
 public class DialogueManager : MonoBehaviour
 {
     public Flowchart flowchart;
-    public int nextDialogueName;
+    public string nextDialogueName;
     public int goToNextIndex;
     public bool check = true;
     public List<Variable> flowchartVariables;
+    public GameObject characters;
+    public GameObject stage;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,14 +36,32 @@ public class DialogueManager : MonoBehaviour
                 if (check && (bool)temp)
                     GetNextDialogue();
             }
-        }        
+        }
+        List<Block> executingBlocks = flowchart.GetExecutingBlocks();
+        //Debug.Log(executingBlocks.Count);
+    }
+    public void ResetBlocks()
+    {
+        flowchart.Reset(true, true);
+    }
+
+    public void StartDialogue()
+    {
+        flowchart.ExecuteBlock(nextDialogueName + "_Init");
+    }
+
+    public void StopDialogue()
+    {
+        List<Block> executingBlocks = flowchart.GetExecutingBlocks();
+        Debug.Log(executingBlocks.Count);
+        flowchart.StopAllBlocks();
     }
 
     void GetNextDialogue()
     {
         check = false;
-        Debug.Log("Here");
-        string nextDialogueName = "";
+        nextDialogueName = "";
+        bool waitInCombat = false;
 
         for (int i = 0; i < flowchartVariables.Count; i++)
         {
@@ -59,20 +79,37 @@ public class DialogueManager : MonoBehaviour
                 case "lutherIncrease":
                     break;
                 case "goToCombat":
-                    if((bool)flowchartVariables[i].GetValue())
-                        SceneManager.LoadScene("CombatTestScene");
+                    waitInCombat = true;
                     break;
                 default:
                     break;
             }
         }
-        Debug.Log(nextDialogueName);
+        if (!waitInCombat)
+        {
+            Destroy(flowchart.gameObject);
 
-        Destroy(flowchart.gameObject);
-        
-        var newDialogue = AssetDatabase.LoadAssetAtPath<Flowchart>("Assets/Resources/Stories/" + nextDialogueName + ".prefab");
-        flowchart = Instantiate(newDialogue);
-        GetVariables();
+            var newDialogue = AssetDatabase.LoadAssetAtPath<Flowchart>("Assets/Resources/Stories/" + nextDialogueName + ".prefab");
+            flowchart = Instantiate(newDialogue);
+            GetVariables();
+        }
+        else
+        {
+            flowchart = null;
+            SceneManager.LoadScene("CombatTestScene");
+
+            var newDialogue = AssetDatabase.LoadAssetAtPath<Flowchart>("Assets/Resources/Stories/" + nextDialogueName + ".prefab");
+            
+            DontDestroyOnLoad(Instantiate(characters));
+            DontDestroyOnLoad(Instantiate(stage));
+            flowchart = null;
+            flowchart = Instantiate(newDialogue);
+            DontDestroyOnLoad(flowchart);
+            flowchart.StopAllBlocks();
+            GetVariables();
+
+            
+        }
     }
 
     void GetVariables()

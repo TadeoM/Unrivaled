@@ -1,12 +1,12 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &7824199120223220946
+--- !u!114 &6834170537987160329
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7571519500472144651}
+  m_GameObject: {fileID: 5711990266591913978}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
@@ -15,107 +15,13 @@ MonoBehaviour:
   scope: 0
   key: goToCombat
   value: 0
---- !u!114 &4757528492572532489
+--- !u!114 &7601730608015746222
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7571519500472144651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scope: 1
-  key: nextDialogue
-  value: JadeRoom_Ava_Day1
---- !u!114 &4757528492572532488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7571519500472144651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scope: 1
-  key: goToNext
-  value: 0
---- !u!114 &4757528492572532487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7571519500472144651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 3
-  indentLevel: 0
-  variable: {fileID: 4757528492572532488}
-  setOperator: 0
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 0
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
---- !u!114 &6574199883308214645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7571519500472144651}
+  m_GameObject: {fileID: 5711990266591913978}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
@@ -124,7 +30,37 @@ MonoBehaviour:
   scope: 0
   key: backGround
   value: enterName
---- !u!1001 &6148240992680679252
+--- !u!114 &8089829103360529106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5711990266591913978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: nextDialogue
+  value: JadeRoom_Ava_Day1
+--- !u!114 &8089829103360529107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5711990266591913978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: goToNext
+  value: 0
+--- !u!1001 &8287908262294905765
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -133,21 +69,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 201062587, guid: f00e7bd22836d09478bb370a8a1d4209, type: 3}
       propertyPath: conversationText.stringVal
-      value: 'jade babychristian left: Sup, Fuckers!
+      value: 'jade tadeo left: He swings with a mighty blow!
 
-        anthony anthony right
-        <<<: Shut the fuck up Jade
-
-
-        jade: I WANT MORE TALK
-
-        anthony:
-        yo shut up bruh'
+'
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -183,41 +112,31 @@ PrefabInstance:
         type: 3}
       propertyPath: variables.Array.data[0]
       value: 
-      objectReference: {fileID: 4757528492572532489}
+      objectReference: {fileID: 8089829103360529106}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[1]
       value: 
-      objectReference: {fileID: 4757528492572532488}
+      objectReference: {fileID: 8089829103360529107}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 6148240992538587119}
+      objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
       value: 
-      objectReference: {fileID: 6574199883308214645}
+      objectReference: {fileID: 7601730608015746222}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[3]
       value: 
-      objectReference: {fileID: 7824199120223220946}
+      objectReference: {fileID: 6834170537987160329}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
-        type: 3}
-      propertyPath: commandList.Array.data[1]
-      value: 
-      objectReference: {fileID: 4757528492572532487}
-    - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
-        type: 3}
-      propertyPath: nodeRect.y
-      value: 58.875
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -226,8 +145,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
+      propertyPath: commandList.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: nodeRect.y
+      value: 58.875
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
       propertyPath: nodeRect.x
       value: 142.5625
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: blockName
+      value: Combat_Ava_Day1_Init
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549899373137, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -287,7 +221,7 @@ PrefabInstance:
     - target: {fileID: 4341892549899699295, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: m_Name
-      value: Gym_Ava_Day1
+      value: Combat_Ava_Day1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549899699295, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -296,21 +230,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f00e7bd22836d09478bb370a8a1d4209, type: 3}
---- !u!1 &7571519500472144651 stripped
+--- !u!1 &5711990266591913978 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4341892549899699295, guid: f00e7bd22836d09478bb370a8a1d4209,
     type: 3}
-  m_PrefabInstance: {fileID: 6148240992680679252}
+  m_PrefabInstance: {fileID: 8287908262294905765}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6148240992538587119 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 201062587, guid: f00e7bd22836d09478bb370a8a1d4209,
-    type: 3}
-  m_PrefabInstance: {fileID: 6148240992680679252}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7571519500472144651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
