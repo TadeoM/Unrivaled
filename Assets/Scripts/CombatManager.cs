@@ -39,12 +39,15 @@ public class CombatManager : MonoBehaviour
     private GameObject TimerGO;
     private GameObject staminaMeterFill;
     private GameObject audienceMeterFill;
+    
     private float audienceMeterFillStartingXScale;
 
 
     private MatchState matchState;
     private WrestlerState playerState;
     private WrestlerState enemyState;
+
+    private DialogueManager dialogueManager;
     //CONSTANTS
     #region Constants
 
@@ -120,7 +123,7 @@ public class CombatManager : MonoBehaviour
 
         updateCombatUI();
         updatePossibleMoves();
-
+        dialogueManager = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
     }
 
 
@@ -558,7 +561,12 @@ public class CombatManager : MonoBehaviour
         Debug.Log("Stamina" + Player.stamina);
         Debug.Log("Audience Interest" + audienceInterest);
         Debug.Log("Player Move: " + playerMove + "\nEnemy Move: " + enemyMove);
-
+        if(dialogueManager.flowchart != null)
+        {
+            dialogueManager.ResetBlocks();
+            dialogueManager.StopDialogue();
+            dialogueManager.StartDialogue();
+        }
     }
 
     //this method is to be used for positioning during action phase. The actual choosing of the animation should be able to be done through editor's animator.
