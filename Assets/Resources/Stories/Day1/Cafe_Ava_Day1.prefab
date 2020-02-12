@@ -1,5 +1,370 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9014572173924246292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8972579919125905034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 41
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: 'Ava avaSad: Awww, that''s okay. Rest up! I''ll text you then.'
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &-7551546200812420010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8972579919125905034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 32
+  indentLevel: 0
+  text: You're supposed to boo the heel, right? The bad guy.
+  description: 
+  targetBlock: {fileID: -558968133379789284}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &-5777020484695663835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8972579919125905034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 39
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: 'Ava avaHappy: Cool!'
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &-5553486268644070649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8972579919125905034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 159.40567
+    y: 737.64417
+    width: 183.15611
+    height: 40
+  tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
+  useCustomTint: 1
+  itemId: 1
+  blockName: Gym_Ava_ChoiceTree2
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 5439406392113663049}
+  - {fileID: -4344327849579615368}
+  - {fileID: -7551546200812420010}
+  suppressAllAutoSelections: 0
+--- !u!114 &-5550816094497166860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8972579919125905034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 37
+  indentLevel: 0
+  text: Got back to the gym? I'd rather just relax at home...
+  description: 
+  targetBlock: {fileID: -4446815347225910677}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &-4446815347225910677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8972579919125905034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 272.94064
+    y: 1018.90735
+    width: 178.90645
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 23
+  blockName: Gym_Ava_Day1_B_End
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: -9014572173924246292}
+  suppressAllAutoSelections: 0
+--- !u!114 &-4344327849579615368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8972579919125905034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 31
+  indentLevel: 0
+  text: So, the bad guy is called a heel around here?
+  description: 
+  targetBlock: {fileID: -558968133379789284}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &-4153120304763675855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8972579919125905034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 28
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 7385828488686203651}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &-558968133379789284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8972579919125905034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 137.08437
+    y: 835.1607
+    width: 194.48854
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 23
+  blockName: Gym_Ava_Day1_Continue
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 2082185481516316496}
+  - {fileID: 7470124629255094870}
+  suppressAllAutoSelections: 0
+--- !u!114 &1875051204559686929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8972579919125905034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 36
+  indentLevel: 0
+  text: Alright, let's head back to the gym.
+  description: 
+  targetBlock: {fileID: 8482844487837882881}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &2082185481516316496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8972579919125905034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 34
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Jade: Sorry, still getting used to the terminology. Back in Cascadia,
+      we never really used the labels, just followed the fans. \nJade: Is AOW that
+      strict about that kind of thing?\r\nAva: Well, not so much in Division 1, but
+      in the lower divisions? Absolutely. \nAva: People really want to believe that
+      whatever they\u2019re watching is real. Even if it\u2019s painfully obvious
+      that it\u2019s not. So, outside of the ring, you gotta make sure to act the
+      same. \nAva: You know, kayfabe, presenting everything on screen like it\u2019s
+      real? Have to keep up the act in and outside of the ring.\r\nJade: I guess
+      I never thought much of it. There wasn\u2019t much room to believe what you
+      were watching where I was before. A bunch of them were less than half organic
+      anyway.\r\nAva avaHappy: That does remind me, you have to let me know what
+      made you stay full organic!\nJade: Maybe later. It\u2019s a\u2026 long story.\r\nAva
+      avaNeutral: I got you. We can trade stories some time.\nAva: Anyway, you have
+      a match coming up Monday right? We should definitely talk about it for a bit.\r\nJade:
+      Oh, okay, sure!\r\nAva: Silly, can\u2019t be here, we need somewhere super
+      secret! Like the AOW gym or something.\r\n"
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &2804426963092481174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8972579919125905034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 27
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Ava: Oh, that\u2019s kind of like Claudio. I think you two would
+      get along!"
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &3334142254935479642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8972579919125905034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: -18.399689
+    y: 517.5698
+    width: 157.65813
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 20
+  blockName: Gym_Ava_A_Route
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 2804426963092481174}
+  - {fileID: -4153120304763675855}
+  suppressAllAutoSelections: 0
 --- !u!114 &4713397446941626672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14,19 +379,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 18.138103
-    y: 529.20435
-    width: 162.53459
+    x: 197.58965
+    y: 524.006
+    width: 157.65813
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 20
-  blockName: Gym_Ava_AB_Route
+  blockName: Gym_Ava_B_Route
   description: 
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 8535046792212358012}
   - {fileID: 6742613851733299654}
+  suppressAllAutoSelections: 0
+--- !u!114 &4913512193473796397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8972579919125905034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 139.33492
+    y: 930.92664
+    width: 184.57266
+    height: 40
+  tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
+  useCustomTint: 1
+  itemId: 1
+  blockName: Gym_Ava_ChoiceTree3
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1875051204559686929}
+  - {fileID: -5550816094497166860}
   suppressAllAutoSelections: 0
 --- !u!114 &5339854179224591526
 MonoBehaviour:
@@ -42,9 +435,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 103.679016
-    y: 418.78436
-    width: 181.02242
+    x: 143.86996
+    y: 411.75104
+    width: 181.73955
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -73,7 +466,7 @@ MonoBehaviour:
   indentLevel: 0
   text: I'm more a rebel type.
   description: 
-  targetBlock: {fileID: 4713397446941626672}
+  targetBlock: {fileID: 3334142254935479642}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -163,9 +556,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 322.52338
-    y: 526.7001
-    width: 155.30023
+    x: 389.84314
+    y: 529.71436
+    width: 157.65813
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -195,11 +588,7 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "???: Man, you\u2019re just going to ignore your mentor like that?
-      \nJade stops her set immediately and turns around.\nJade jadeSad: Wait, you\u2019re
-      Ava? I\u2019m sorry! I\u2019m actually a big fan of your D-1 work! \nJade:
-      I just didn\u2019t know who it was\u2026\nAva: Don't worry about it! I haven't
-      been out much. \nAva avaHappy: Jade, right?"
+    stringVal: "Ava avaHappy: Hehe, that\u2019s kind of like me!"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -290,9 +679,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 127.679016
-    y: 313.78436
-    width: 160.92694
+    x: 153.80315
+    y: 310.77002
+    width: 161.90779
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -385,6 +774,31 @@ MonoBehaviour:
   scope: 1
   key: nextDialogue
   value: JadeRoom_Ava_Day1
+--- !u!114 &5439406392113663049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8972579919125905034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 30
+  indentLevel: 0
+  text: Heel? Like, the bad guy, right?
+  description: 
+  targetBlock: {fileID: -558968133379789284}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!114 &5469903795373766134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -514,9 +928,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 190.54819
-    y: 619.37866
-    width: 136.81241
+    x: 196.44096
+    y: 647.6638
+    width: 137.82637
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -526,6 +940,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 9169890467848670081}
+  - {fileID: 4661036988828991606}
   suppressAllAutoSelections: 0
 --- !u!114 &8133869601460849375
 MonoBehaviour:
@@ -548,6 +963,33 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
+--- !u!114 &8482844487837882881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8972579919125905034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 23.123077
+    y: 1017.7289
+    width: 178.90645
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 23
+  blockName: Gym_Ava_Day1_A_End
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: -5777020484695663835}
+  suppressAllAutoSelections: 0
 --- !u!114 &8535046792212358012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -564,18 +1006,8 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: '???: Don''t worry, I got you.
-
-      Jade finishes her set with the
-      help of ??? and turns around.
-
-      Jade jadeHappy: Wait, you''re-- You''re
-      Ava! Sweet Spike! I''ve watched you a lot in Division 1 AOW!
-
-      Ava avaHappy:
-      Awww, thank you!
-
-      Ava avaNeutral: Jade, right?'
+    stringVal: "Ava: Oh wow, that\u2019s kind of like Luther. Looks like you got
+      Division 1 champ coming in your future if you\u2019re taking after him!"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -604,19 +1036,18 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Jade: Yeah, Jade! Jade Valentine.\r\nAva: Awesome! That\u2019s a
-      cool name. \r\nAva avaNeutral: Sorry about not showing up before, had to go
-      to the doctor for some check ups before Monday.\r\nJade: Your leg, right?\r\nAva:
-      Yep! It should be pretty much normal by now.\r\nAva: Man, it\u2019s been rough
-      since then. All that rehab and stuff. \r\nAva: Now, I\u2019m back in Division
-      3!\r\nJade: Is there anything like, majorly wrong with Division 3? \r\nJade:
-      I never got to watch any of it since it only stays in Laurentia. \r\nAva: I
-      mean, not really. Less money. Less exposure. That\u2019s to be expected though.
-      \r\nAva: It\u2019s only one city, even if that city is massive. \r\nAva avaHappy:
-      Anyway... \r\nAva: Are you done working out?\r\nJade: I mean-- Not particularly.\r\nAva:
-      Gah, you\u2019re done working out. \nAva: Wanna go get something to eat? There\u2019s
-      a caf\xE9 nearby.\r\nJade: Well, I don\u2019t know\u2026\r\nAva: I\u2019m buying~\r\nJade
-      jadeHappy: Well, in that case... \r\nAva: Awesome! Let\u2019s go!\r\n"
+    stringVal: "Jade: Oh, uh, nice!\r\nAnother customer comes to the table\r\nRandom:
+      Ms\u2026 Ms\u2014Ms. Sweet Spike! C-C-Can I get an a-autograph???\nRandom:My
+      hat! P-Please autograph my hat!\r\nAva avaAngry: Eh? You think I will soil
+      my name by putting it on some random loser\u2019s hat? \nAva: Tch, tell you
+      what, if I see you at the show, then maybe I\u2019ll look in your direction
+      again. \nAva: For now, get the fuck out of my sight.\r\nJade: ...\nRandom:
+      Th-THANK YOU SWEET SPIKE! I LOVE YOU!\r\nThe random guy leaves.\r\nJade jadeNeutral:
+      Woah, that was pretty harsh. I thought you were\u2026 you know, sweet? You
+      turned into a bad guy?\r\nAva avaNeutral: Yeah, I was sweeter before the injury,
+      but the heads of AOW want me to be heel for my return to Division 1. \nAva:
+      Makes sense you didn\u2019t know since you were all the way out in the west
+      coast in Cascadia. \nAva: But yeah, I\u2019m a heel now.\r\n"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -629,6 +1060,48 @@ MonoBehaviour:
   fadeWhenDone:
     booleanRef: {fileID: 0}
     booleanVal: 1
+--- !u!114 &4661036988828991606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8972579919125905034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 42
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: -5553486268644070649}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &7470124629255094870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8972579919125905034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 43
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 4913512193473796397}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!1001 &4666997641813605077
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -652,12 +1125,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -677,17 +1150,17 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 57.918316
+      value: 410.50702
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: -158.76363
+      value: -414.45502
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: zoom
-      value: 0.9952495
+      value: 0.5647507
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -703,7 +1176,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 5339854179224591527}
+      objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -718,7 +1191,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 5339854179224591526}
+      objectReference: {fileID: 4913512193473796397}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size
