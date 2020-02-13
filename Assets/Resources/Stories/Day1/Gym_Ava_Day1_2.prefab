@@ -56,7 +56,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 103.679016
     y: 418.78436
-    width: 224.54547
+    width: 221.70738
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -144,7 +144,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 129.67902
     y: 515.78436
-    width: 204.18184
+    width: 201.21957
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -283,7 +283,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 127.679016
     y: 313.78436
-    width: 169.27274
+    width: 168.04883
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -373,7 +373,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 1
   key: nextDialogue
-  value: JadeRoom_Ava_Day1
+  value: JadeRoom_Ava_Day2
 --- !u!114 &7978296650722735219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -491,7 +491,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -516,17 +516,17 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 181.46664
+      value: 111.260345
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: -347.88968
+      value: -74.519966
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: zoom
-      value: 0.54999995
+      value: 0.8199997
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -542,8 +542,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 140730412586225889, guid: b3a2ca4551825e64bbde8467541bbac4,
-        type: 3}
+      objectReference: {fileID: 7978296649918453240}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]

@@ -182,7 +182,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 292.72858
     y: 824.0967
-    width: 241.97696
+    width: 252.90787
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -284,9 +284,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -266.4047
-    y: 1409.1598
-    width: 244.84229
+    x: -227.63248
+    y: 1347.7703
+    width: 254.20027
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -567,7 +567,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 488.3112
     y: 1252.786
-    width: 327.9368
+    width: 345.96115
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -684,7 +684,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 109.23468
     y: 519.5054
-    width: 236.2463
+    width: 246.44583
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -760,9 +760,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 499.12296
-    y: 1401.1747
-    width: 244.84229
+    x: 405.42343
+    y: 1415.7141
+    width: 255.49268
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -819,9 +819,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 109.49993
-    y: 1401.9083
-    width: 244.84229
+    x: 19.031433
+    y: 1430.987
+    width: 254.20027
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -944,7 +944,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 418.6455
     y: 345.43158
-    width: 327.9368
+    width: 349.83838
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -972,7 +972,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 83.646515
     y: 659.6896
-    width: 256.3036
+    width: 271.00156
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -1000,7 +1000,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 85.77241
     y: 1254.1561
-    width: 259.16895
+    width: 272.29398
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -1091,7 +1091,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 1
   key: nextDialogue
-  value: JadeRoom_Ava_Day1
+  value: 
 --- !u!114 &5041598568586989669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1138,7 +1138,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 127.67902
     y: 162.04181
-    width: 207.59303
+    width: 218.01288
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -1363,7 +1363,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -251.95844
     y: 506.03818
-    width: 236.2463
+    width: 246.44583
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1418,7 +1418,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 77.21227
     y: 300.56647
-    width: 256.3036
+    width: 271.00156
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -1431,6 +1431,27 @@ MonoBehaviour:
   - {fileID: 5041598569391239661}
   - {fileID: 5041598569391239660}
   suppressAllAutoSelections: 0
+--- !u!114 &5083390744388204148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8662201529759679751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 86
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 4471861907201243760}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!114 &5169925466553822164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1520,7 +1541,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 70.82796
     y: 965.1624
-    width: 259.16895
+    width: 272.29398
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -1580,7 +1601,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -196.02406
     y: 832.2681
-    width: 241.97696
+    width: 252.90787
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1610,7 +1631,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 484.4634
     y: 486.24
-    width: 236.2463
+    width: 247.73824
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1651,9 +1672,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -311.63898
-    y: 1099.4532
-    width: 244.84229
+    x: 82.545166
+    y: 1107.5305
+    width: 254.20027
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1665,6 +1686,7 @@ MonoBehaviour:
   - {fileID: 1911628565715861725}
   - {fileID: 8143618071073144145}
   - {fileID: 8574604511096101754}
+  - {fileID: 5083390744388204148}
   suppressAllAutoSelections: 0
 --- !u!114 &7109643839252461152
 MonoBehaviour:
@@ -1701,9 +1723,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 431.73224
-    y: 1103.7086
-    width: 244.84229
+    x: 420.42368
+    y: 1037.4731
+    width: 254.20027
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1956,7 +1978,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -1981,17 +2003,17 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 338.0396
+      value: 246.53726
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: -30.516592
+      value: -615.61115
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: zoom
-      value: 0.34900022
+      value: 0.61900014
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -2007,7 +2029,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5879979625783961531}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -2022,7 +2044,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 5041598569391239663}
+      objectReference: {fileID: -23887933422399951}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size
