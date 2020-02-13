@@ -182,7 +182,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 292.72858
     y: 824.0967
-    width: 254.01134
+    width: 241.97696
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -286,7 +286,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -266.4047
     y: 1409.1598
-    width: 254.01134
+    width: 244.84229
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -567,7 +567,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 488.3112
     y: 1252.786
-    width: 350.28635
+    width: 327.9368
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -684,11 +684,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 109.23468
     y: 519.5054
-    width: 247.13455
+    width: 236.2463
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 20
+  itemId: 74
   blockName: Gym_Dante_Day2_Planning_B_Route
   description: 
   eventHandler: {fileID: 0}
@@ -762,11 +762,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 499.12296
     y: 1401.1747
-    width: 256.3036
+    width: 244.84229
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 20
+  itemId: 75
   blockName: Gym_Dante_Day2_Planning_C_Route4
   description: 
   eventHandler: {fileID: 0}
@@ -821,11 +821,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 109.49993
     y: 1401.9083
-    width: 254.01134
+    width: 244.84229
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 20
+  itemId: 76
   blockName: Gym_Dante_Day2_Planning_B_Route4
   description: 
   eventHandler: {fileID: 0}
@@ -944,11 +944,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 418.6455
     y: 345.43158
-    width: 357.16315
+    width: 327.9368
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
-  itemId: 1
+  itemId: 77
   blockName: Gym_Dante_Day2_Planning_ChoiceTree1 (No C Option))
   description: 
   eventHandler: {fileID: 0}
@@ -972,11 +972,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 83.646515
     y: 659.6896
-    width: 274.6417
+    width: 256.3036
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
-  itemId: 1
+  itemId: 78
   blockName: Gym_Dante_Day2_Planning_ChoiceTree2
   description: 
   eventHandler: {fileID: 0}
@@ -1000,11 +1000,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 85.77241
     y: 1254.1561
-    width: 274.6417
+    width: 259.16895
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
-  itemId: 1
+  itemId: 79
   blockName: Gym_Dante_Day2_Planning_ChoiceTree4
   description: 
   eventHandler: {fileID: 0}
@@ -1138,7 +1138,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 127.67902
     y: 162.04181
-    width: 219.6274
+    width: 207.59303
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -1363,11 +1363,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: -251.95844
     y: 506.03818
-    width: 247.13455
+    width: 236.2463
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 5
+  itemId: 80
   blockName: Gym_Dante_Day2_Planning_A_Route
   description: 
   eventHandler: {fileID: 0}
@@ -1418,11 +1418,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 77.21227
     y: 300.56647
-    width: 274.6417
+    width: 256.3036
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
-  itemId: 1
+  itemId: 81
   blockName: Gym_Dante_Day2_Planning_ChoiceTree1
   description: 
   eventHandler: {fileID: 0}
@@ -1520,11 +1520,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 70.82796
     y: 965.1624
-    width: 274.6417
+    width: 259.16895
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
-  itemId: 1
+  itemId: 82
   blockName: Gym_Dante_Day2_Planning_ChoiceTree3
   description: 
   eventHandler: {fileID: 0}
@@ -1580,11 +1580,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: -196.02406
     y: 832.2681
-    width: 254.01134
+    width: 241.97696
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 5
+  itemId: 83
   blockName: Gym_Dante_Day2_Planning_A_Route2
   description: 
   eventHandler: {fileID: 0}
@@ -1610,7 +1610,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 484.4634
     y: 486.24
-    width: 249.4268
+    width: 236.2463
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1653,11 +1653,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: -311.63898
     y: 1099.4532
-    width: 254.01134
+    width: 244.84229
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 5
+  itemId: 84
   blockName: Gym_Dante_Day2_Planning_A_Route3
   description: 
   eventHandler: {fileID: 0}
@@ -1703,11 +1703,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 431.73224
     y: 1103.7086
-    width: 254.01134
+    width: 244.84229
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 20
+  itemId: 85
   blockName: Gym_Dante_Day2_Planning_B_Route3
   description: 
   eventHandler: {fileID: 0}
@@ -1981,12 +1981,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 805.08795
+      value: 338.0396
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: -357.16394
+      value: -30.516592
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -2022,7 +2022,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: -3724509713580019277}
+      objectReference: {fileID: 5041598569391239663}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size
