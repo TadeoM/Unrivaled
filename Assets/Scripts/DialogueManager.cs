@@ -97,6 +97,7 @@ public class DialogueManager : MonoBehaviour
             {
                 case "nextDialogue":
                     nextDialogueName = flowchartVariables[i].GetValue() as string;
+                    
                     if (nextDialogueName.Contains("goToCombat"))
                     {
                         
@@ -113,11 +114,15 @@ public class DialogueManager : MonoBehaviour
                     break;
             }
         }
+
+        string[] temp = nextDialogueName.Split('_');
+        string folder = temp[2];
+
         if (!waitInCombat)
         {
             Destroy(flowchart.gameObject);
 
-            var newDialogue = AssetDatabase.LoadAssetAtPath<Flowchart>("Assets/Resources/Stories/" + nextDialogueName + ".prefab");
+            var newDialogue = AssetDatabase.LoadAssetAtPath<Flowchart>("Assets/Resources/Stories/"+ folder + "/" + nextDialogueName + ".prefab");
             flowchart = Instantiate(newDialogue);
             GetVariables();
         }
@@ -126,11 +131,10 @@ public class DialogueManager : MonoBehaviour
             flowchart = null;
             SceneManager.LoadScene("CombatTestScene");
 
-            var newDialogue = AssetDatabase.LoadAssetAtPath<Flowchart>("Assets/Resources/Stories/" + nextDialogueName + ".prefab");
+            var newDialogue = AssetDatabase.LoadAssetAtPath<Flowchart>("Assets/Resources/Stories/" + folder + "/" + nextDialogueName + ".prefab");
             
             DontDestroyOnLoad(Instantiate(characters));
             DontDestroyOnLoad(Instantiate(stage));
-            flowchart = null;
             flowchart = Instantiate(newDialogue);
             DontDestroyOnLoad(flowchart);
             flowchart.StopAllBlocks();
