@@ -31,6 +31,7 @@ public class DialogueManager : MonoBehaviour
         if(flowchartVariables.Count > 0)
         {
             var temp = flowchartVariables[goToNextIndex].GetValue();
+            
             if (temp is System.Boolean)
             {
                 if (check && (bool)temp)
@@ -38,7 +39,6 @@ public class DialogueManager : MonoBehaviour
             }
         }
         List<Block> executingBlocks = flowchart.GetExecutingBlocks();
-        //Debug.Log(executingBlocks.Count);
     }
     public void ResetBlocks()
     {
