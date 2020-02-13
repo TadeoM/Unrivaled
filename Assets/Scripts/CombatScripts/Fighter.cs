@@ -26,5 +26,5 @@ public abstract class Fighter : MonoBehaviour
 
     public abstract string decideMove(string playerMove, int turnCount, string playerState, string oppoState);
 
-
+    public abstract void readInPlanning(string path);
 }

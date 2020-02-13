@@ -28,4 +28,9 @@ public class Ziggler : Fighter
 
     }
 
+    public override void readInPlanning(string path)
+    {
+        //we readin
+    }
+
 }
