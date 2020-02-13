@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System.IO;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
@@ -14,6 +15,9 @@ public class DialogueManager : MonoBehaviour
     public List<Variable> flowchartVariables;
     public GameObject characters;
     public GameObject stage;
+
+    private int opIndex;
+    private string organizedPlay;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +25,15 @@ public class DialogueManager : MonoBehaviour
 
         flowchart = GameObject.FindGameObjectWithTag("dialogue").GetComponent<Flowchart>();
         GetVariables();
+        if (!Directory.Exists(Application.dataPath + "/FightPlans"))
+        {
+
+            Directory.CreateDirectory(Application.dataPath + "/FightPlans");
+        }
+        //Create Text file.. but dont know how.. How to create the Text file to save to.
+        //save to textfile
+
+        
 
         // at the end of using a flowchart, check the values of the relationship meter variables and add them to the corresponding character
     }
@@ -37,8 +50,23 @@ public class DialogueManager : MonoBehaviour
                 if (check && (bool)temp)
                     GetNextDialogue();
             }
+            temp = flowchartVariables[opIndex].GetValue();
+            if(temp is System.String)
+            {
+                if(organizedPlay != (string)temp)
+                {
+                    organizedPlay = (string)temp;
+                    Debug.Log(Application.dataPath);
+                    string path = Application.dataPath + "/FightPlans";
+
+                    if (!File.Exists(path))
+                    {
+                        File.WriteAllText(Application.dataPath + "/FightPlans/" + flowchart.GetName() + ".txt", organizedPlay);
+                    }
+                }
+            }
         }
-        List<Block> executingBlocks = flowchart.GetExecutingBlocks();
+        
     }
     public void ResetBlocks()
     {
@@ -127,6 +155,10 @@ public class DialogueManager : MonoBehaviour
                 case "avaIncrease":
                     break;
                 case "lutherIncrease":
+                    break;
+                case "organizedPlay":
+                    organizedPlay = flowchartVariables[i].GetValue() as string;
+                    opIndex = i;
                     break;
                 default:
                     break;
