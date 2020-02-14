@@ -107,8 +107,9 @@ public class DialogueManager : MonoBehaviour
                     break;
                 case "lutherIncrease":
                     break;
-                case "goToCombat":
-                    waitInCombat = true;
+                case "goToCombat": 
+                    if((bool)flowchartVariables[i].GetValue() == true)
+                        waitInCombat = true;
                     break;
                 default:
                     break;
@@ -118,7 +119,7 @@ public class DialogueManager : MonoBehaviour
         string[] temp = nextDialogueName.Split('_');
         string folder = temp[2];
 
-        if (!waitInCombat)
+        if (waitInCombat == false)
         {
             Destroy(flowchart.gameObject);
 
