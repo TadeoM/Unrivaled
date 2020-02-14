@@ -1,12 +1,12 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &3356027591786705917
+--- !u!114 &4623960796308021161
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788626225820757998}
+  m_GameObject: {fileID: 6223656172213748523}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
@@ -15,109 +15,107 @@ MonoBehaviour:
   scope: 0
   key: goToCombat
   value: 0
---- !u!114 &1285216294
+--- !u!114 &7978296649918453220
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788626225820757998}
+  m_GameObject: {fileID: 6223656172213748523}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scope: 1
-  key: nextDialogue
-  value: JadeRoom_Ava_Day1
---- !u!114 &1285216295
+  itemId: 9
+  indentLevel: 0
+  text: What's the meeting even for?
+  description: 
+  targetBlock: {fileID: 7978296649918453241}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &7978296649918453221
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788626225820757998}
+  m_GameObject: {fileID: 6223656172213748523}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scope: 1
-  key: goToNext
-  value: 0
---- !u!114 &1817797299310374490
+  nodeRect:
+    serializedVersion: 2
+    x: 103.679016
+    y: 418.78436
+    width: 222.57147
+    height: 40
+  tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
+  useCustomTint: 1
+  itemId: 1
+  blockName: Gym_Ava_Day1_2_ChoiceTree1
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 7978296649918453220}
+  - {fileID: 7978296649918453243}
+  - {fileID: 7978296649918453242}
+  suppressAllAutoSelections: 0
+--- !u!114 &7978296649918453235
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788626225820757998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scope: 0
-  key: backGround
-  value: enterName
---- !u!114 &2089466279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788626225820757998}
+  m_GameObject: {fileID: 6223656172213748523}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentBlock: {fileID: 2089466282}
+  parentBlock: {fileID: 7978296649918453246}
   suppressBlockAutoSelect: 0
   waitForFrames: 1
---- !u!114 &2089466280
+--- !u!114 &7978296649918453240
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788626225820757998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 17
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 2089466289}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
---- !u!114 &2089466281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788626225820757998}
+  m_GameObject: {fileID: 6223656172213748523}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 16
+  itemId: 13
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Jade: Ah\u2026 maybe I should\u2019ve just gone back to the gym.\r\nJade:
-      It was a bit rude to just blow her off like that I think.\r\n*Bzzz Bzzz*\r\nJade:
-      Oh-- It\u2019s Ava.\r\nAva: So, I forgot to tell you something pretty important.
-      It\u2019s about AOW stuff.\r\nJade: What is it?\r\nAva: Well, idk if you guys
-      planned things or anything like that in Cascadia, but AOW is *SUPER* strict
-      about planning and all that.\r\n"
+    stringVal: "Ava: Well, AOW likes to keep things tight so everyone\u2019s in the
+      loop. The meeting is for planning what you\u2019ll be doing during the matches.
+      \nAva: They like to keep things prim and proper to an extent. So, planning
+      things out is standard protocol. \nAva: Of course, there will be some people
+      you work with who will ad lib on the spot, but generally they want to keep
+      everything according to plan.\r\nJade jadeSad: Oh, *planning* \u2026 What happens
+      if I forget or something? I haven't done much planning before.\r\nAva: Well,
+      some people will get a little more upset than others, but they\u2019ll try
+      to help you out as best as they can. \nAva: I wouldn\u2019t take chances on
+      some of the ones in the locker room regardless.\nAva avaHappy: I think you\u2019ll
+      do fine. Your first partner is this guy named Dante, D-800 if you know about
+      Division 3 AOW at all. \nAva: I don\u2019t know him too well, but he seems
+      nice enough.\r\nJade jadeNeutral: Dante, huh? When can I meet him?\r\nAva:
+      Well, I can try to get in touch with him and set something up by tomorrow.\nAva:
+      I\u2019ll text you in the morning! \nAva avaHappy: I\u2019m going to get going
+      though. Take care, Jade~\r\nJade jadeHappy: See you later, Ava!\r\n"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -130,13 +128,151 @@ MonoBehaviour:
   fadeWhenDone:
     booleanRef: {fileID: 0}
     booleanVal: 1
---- !u!114 &2089466282
+--- !u!114 &7978296649918453241
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788626225820757998}
+  m_GameObject: {fileID: 6223656172213748523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 129.67902
+    y: 515.78436
+    width: 202.00005
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 5
+  blockName: Gym_Ava_Day1_2_Continue
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 7978296649918453240}
+  - {fileID: 7978296649918453247}
+  suppressAllAutoSelections: 0
+--- !u!114 &7978296649918453242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6223656172213748523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 11
+  indentLevel: 0
+  text: A meeting?
+  description: 
+  targetBlock: {fileID: 7978296649918453241}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &7978296649918453243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6223656172213748523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 10
+  indentLevel: 0
+  text: You guys meet up before matches?
+  description: 
+  targetBlock: {fileID: 7978296649918453241}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &7978296649918453244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6223656172213748523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 17
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 7978296649918453221}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &7978296649918453245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6223656172213748523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 16
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Ava avaHappy: So anyway, I wanted to give you some contacts and all
+      that. \nAva: Do you know who you\u2019re going to be working with?\r\nJade:
+      Can\u2019t say that I do.\r\nAva: Really? When did you get hired?\r\nJade:
+      Tuesday.\r\nAva: Oh, I guess that makes sense. They aren\u2019t the most transparent
+      group. Just kind of show up Sunday and go for it. \nAva avaHappy: Anyway, speaking
+      of Sunday\u2026\nAva avaNeutral: Wait\u2014What day did the higher ups tell
+      you to start?\r\nJade: Sunday.\r\nAva avaHappy: Great!\nAva avaNeutral: Let
+      me explain how AOW does things. \nAva: So, each Sunday you\u2019re required
+      to meet with the person/people you\u2019ll be performing with. It can be anywhere
+      discreet, really. Though, a lot of people tend to do it at the gym or in their
+      rooms at home.\r\n"
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &7978296649918453246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6223656172213748523}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
@@ -146,25 +282,25 @@ MonoBehaviour:
     serializedVersion: 2
     x: 127.679016
     y: 313.78436
-    width: 120
+    width: 168.85718
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
   itemId: 18
-  blockName: Start
+  blockName: Gym_Ava_Day1_2_Init
   description: 
-  eventHandler: {fileID: 2089466279}
+  eventHandler: {fileID: 7978296649918453235}
   commandList:
-  - {fileID: 2089466281}
-  - {fileID: 2089466280}
+  - {fileID: 7978296649918453245}
+  - {fileID: 7978296649918453244}
   suppressAllAutoSelections: 0
---- !u!114 &2089466283
+--- !u!114 &7978296649918453247
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788626225820757998}
+  m_GameObject: {fileID: 6223656172213748523}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
@@ -172,7 +308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 14
   indentLevel: 0
-  variable: {fileID: 1285216295}
+  variable: {fileID: 7978296650722735219}
   setOperator: 0
   booleanData:
     booleanRef: {fileID: 0}
@@ -222,181 +358,52 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
---- !u!114 &2089466284
+--- !u!114 &7978296650722735218
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788626225820757998}
+  m_GameObject: {fileID: 6223656172213748523}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 13
-  indentLevel: 0
-  conversationText:
-    stringRef: {fileID: 0}
-    stringVal: "Ava: AOW requires the talent to plan the match the day before. \r\nAva:
-      So look, You have to meet with your opponent on Sundays, the day before the
-      show. During that meeting, you have to plan out what you\u2019ll be doing in
-      the match. \r\nAva: The meetings can happen anywhere as long as it\u2019s not
-      too public, you know? Most go for the gym or their own rooms.\r\nJade: So like\u2026
-      what if I forget something from planning?\r\nAva: Well, some people can help
-      you out mid match by calling things, but not too much, y\u2019know? \r\nAva:
-      Others may not take it too well that they have to carry you. So, just try your
-      best to remember, okay?\r\nJade: Yeah, got it.\r\nAva: One more thing! You
-      have your first match with a guy named Dante. \r\nAva: He\u2019s known as D-800.
-      Ever heard of him?\r\nJade: I don\u2019t think I have.\r\nAva: Oh right, couldn\u2019t
-      watch D-3. Anyway, I can get a meeting set up for you. \r\nAva: I\u2019ll text
-      you in the morning about it. (\u3065\uFF61\u25D5\u203F\u203F\u25D5\uFF61)\u3065
-      Goodnight, Jade!\r\nJade: Night, Ava.\r\n"
-  clearPrevious:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  waitForInput:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  waitForSeconds:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  fadeWhenDone:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
---- !u!114 &2089466285
+  scope: 1
+  key: nextDialogue
+  value: JadeRoom_Ava_Day2
+--- !u!114 &7978296650722735219
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788626225820757998}
+  m_GameObject: {fileID: 6223656172213748523}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 129.67902
-    y: 515.78436
-    width: 258.42114
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 5
-  blockName: JadeRoom_TextAva_RouteA (Copy)
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 2089466284}
-  - {fileID: 2089466283}
-  suppressAllAutoSelections: 0
---- !u!114 &2089466286
+  scope: 1
+  key: goToNext
+  value: 0
+--- !u!114 &8611594468632658446
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788626225820757998}
+  m_GameObject: {fileID: 6223656172213748523}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 11
-  indentLevel: 0
-  text: "I don\u2019t really feel like planning...\n"
-  description: 
-  targetBlock: {fileID: 2089466285}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
---- !u!114 &2089466287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788626225820757998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 10
-  indentLevel: 0
-  text: What are people planning in AOW?
-  description: 
-  targetBlock: {fileID: 2089466285}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
---- !u!114 &2089466288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788626225820757998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 9
-  indentLevel: 0
-  text: 'Strict about planning? '
-  description: 
-  targetBlock: {fileID: 2089466285}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
---- !u!114 &2089466289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788626225820757998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 103.679016
-    y: 418.78436
-    width: 291.0527
-    height: 40
-  tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
-  useCustomTint: 1
-  itemId: 1
-  blockName: JadeRoom_TextAva_ChoiceTree1 (Copy)
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 2089466288}
-  - {fileID: 2089466287}
-  - {fileID: 2089466286}
-  suppressAllAutoSelections: 0
---- !u!1001 &3940723456440904625
+  scope: 0
+  key: backGround
+  value: enterName
+--- !u!1001 &7646934138285983604
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -419,17 +426,22 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.size
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: version
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -439,48 +451,48 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 298.05786
+      value: -72.816414
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: -157.52565
+      value: -238.31798
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: zoom
-      value: 0.75999975
+      value: 0.6999998
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[0]
       value: 
-      objectReference: {fileID: 1285216294}
+      objectReference: {fileID: 7978296650722735218}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[1]
       value: 
-      objectReference: {fileID: 1285216295}
+      objectReference: {fileID: 7978296650722735219}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 2089466283}
+      objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
       value: 
-      objectReference: {fileID: 1817797299310374490}
+      objectReference: {fileID: 8611594468632658446}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[3]
       value: 
-      objectReference: {fileID: 3356027591786705917}
+      objectReference: {fileID: 4623960796308021161}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 2089466285}
+      objectReference: {fileID: 7978296649918453241}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size
@@ -565,7 +577,7 @@ PrefabInstance:
     - target: {fileID: 4341892549899699295, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: m_Name
-      value: JadeRoom_Ava_Day1
+      value: Gym_Ava_Day1_2
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549899699295, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -577,9 +589,9 @@ PrefabInstance:
     - {fileID: 4341892549888379921, guid: f00e7bd22836d09478bb370a8a1d4209, type: 3}
     - {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f00e7bd22836d09478bb370a8a1d4209, type: 3}
---- !u!1 &788626225820757998 stripped
+--- !u!1 &6223656172213748523 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4341892549899699295, guid: f00e7bd22836d09478bb370a8a1d4209,
     type: 3}
-  m_PrefabInstance: {fileID: 3940723456440904625}
+  m_PrefabInstance: {fileID: 7646934138285983604}
   m_PrefabAsset: {fileID: 0}
