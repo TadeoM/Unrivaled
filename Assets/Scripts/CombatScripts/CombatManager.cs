@@ -560,9 +560,9 @@ public class CombatManager : MonoBehaviour
             Destroy(gameObject);
         }
         possiblePlayerMoves = null;
-        Debug.Log("Stamina" + Player.stamina);
-        Debug.Log("Audience Interest" + audienceInterest);
-        Debug.Log("Player Move: " + playerMove + "\nEnemy Move: " + enemyMove);
+        //Debug.Log("Stamina" + Player.stamina);
+        //Debug.Log("Audience Interest" + audienceInterest);
+        //Debug.Log("Player Move: " + playerMove + "\nEnemy Move: " + enemyMove);
         if(dialogueManager.flowchart != null)
         {
             dialogueManager.ResetBlocks();
@@ -602,7 +602,7 @@ public class CombatManager : MonoBehaviour
         //animRef.
         for (int i = 0; i < animRef.parameterCount; i++)
         {
-            Debug.Log(animRef.parameters[i].nameHash);
+            //Debug.Log(animRef.parameters[i].nameHash);
             
         }
     }
