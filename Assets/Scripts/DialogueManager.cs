@@ -123,7 +123,7 @@ public class DialogueManager : MonoBehaviour
         {
             Destroy(flowchart.gameObject);
 
-            var newDialogue = AssetDatabase.LoadAssetAtPath<Flowchart>("Assets/Resources/Stories/"+ folder + "/" + nextDialogueName + ".prefab");
+            var newDialogue = Resources.Load<Flowchart>("Stories/"+ folder + "/" + nextDialogueName);
             flowchart = Instantiate(newDialogue);
             GetVariables();
         }
@@ -132,7 +132,7 @@ public class DialogueManager : MonoBehaviour
             flowchart = null;
             SceneManager.LoadScene("CombatTestScene");
 
-            var newDialogue = AssetDatabase.LoadAssetAtPath<Flowchart>("Assets/Resources/Stories/" + folder + "/" + nextDialogueName + ".prefab");
+            var newDialogue = Resources.Load<Flowchart>("Stories/" + folder + "/" + nextDialogueName);
             
             DontDestroyOnLoad(Instantiate(characters));
             DontDestroyOnLoad(Instantiate(stage));
