@@ -916,7 +916,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnCount: 0
   tapCount: 0
-  audienceInterest: 0
   possiblePlayerMoves: []
   buttons: []
   playerRef: {fileID: 978876936}
@@ -939,7 +938,7 @@ GameObject:
   - component: {fileID: 958385846}
   - component: {fileID: 958385849}
   m_Layer: 0
-  m_Name: Ziggler
+  m_Name: Dante
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1038,7 +1037,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 958385845}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00af61ba64a38ff4f88e07af7490e33a, type: 3}
+  m_Script: {fileID: 11500000, guid: 683ee94247d59144cb38c1b2d32e9da4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fighterName: 

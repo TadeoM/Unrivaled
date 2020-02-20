@@ -21,7 +21,7 @@ public class CombatManager : MonoBehaviour
     }
     public int turnCount;           //how many turns the match has gone on for
     public int tapCount;            //how many turns a pin has been happening
-    public float audienceInterest;
+    public static float audienceInterest;
     public List<string> possiblePlayerMoves;
     public GameObject[] buttons;
     public GameObject playerRef;
@@ -248,6 +248,12 @@ public class CombatManager : MonoBehaviour
 
         setMenu();
 
+    }
+
+    //
+    public static void addAudienceInterest(float deltaInterest)
+    {
+        audienceInterest += deltaInterest;
     }
 
 
@@ -565,9 +571,9 @@ public class CombatManager : MonoBehaviour
             Destroy(gameObject);
         }
         possiblePlayerMoves = null;
-        Debug.Log("Stamina" + Player.stamina);
-        Debug.Log("Audience Interest" + audienceInterest);
-        Debug.Log("Player Move: " + playerMove + "\nEnemy Move: " + enemyMove);
+        //Debug.Log("Stamina" + Player.stamina);
+        //Debug.Log("Audience Interest" + audienceInterest);
+        //Debug.Log("Player Move: " + playerMove + "\nEnemy Move: " + enemyMove);
         if(dialogueManager.flowchart != null)
 
         //Debug.Log("Stamina" + Player.stamina);
@@ -607,16 +613,22 @@ public class CombatManager : MonoBehaviour
         }
         if (playerMove == "Attack")
         {
+            setAllAnimsFalse(playerAnimRef);
+            playerAnimRef.StopPlayback();
+            playerAnimRef.Play("femHit");
             playerAnimRef.SetBool("Attacking", true);
+
         }
     }
 
     //this method sets all the bools used to transition animations to false
     void setAllAnimsFalse(Animator animRef)
     {
+        //animRef.
         for (int i = 0; i < animRef.parameterCount; i++)
         {
-            animRef.SetBool(i, false);
+            //Debug.Log(animRef.parameters[i].nameHash);
+            
         }
     }
 
