@@ -12,30 +12,47 @@ public class CombatManager : MonoBehaviour
         loading,
         ending          //may need to make more ending states
     }
-
+    enum animationState
+    {
+        Idle,
+        Grounded,
+        Attack,
+        Walk,
+        Pin,
+        Pinned,
+        Finisher,
+        Sell,
+        Hurt,
+        Taunt,
+        Recover,
+        Block
+    }
     public enum WrestlerState
     {
         standing,
         grounded,
         pinned
     }
-    public int turnCount;           //how many turns the match has gone on for
-    public int tapCount;            //how many turns a pin has been happening
+    public int turnCount;                   //how many turns the match has gone on for
+    public int tapCount;                    //how many turns a pin has been happening
     public static float audienceInterest;
     public List<string> possiblePlayerMoves;
     public GameObject[] buttons;
     public GameObject playerRef;
-    private Animator playerAnimRef;
     public GameObject oppoRefGO;
     public Fighter oppoRef;
-    private Animator oppoAnimRef;
     public bool isPlayerPinned;
     public bool isOpponentPinned;
     public string currentBattleID;
     private int currentCenterButton;        //place in the button array that the player is currently hovering
-    private string playerMove;      //the action theplayer is going to take
-    private string enemyMove;       //the action the opponent is going to take
-    private float tempTimer;        //temp being used 
+    private string playerMove;              //the action theplayer is going to take
+    private string enemyMove;               //the action the opponent is going to take
+    private float tempTimer;                //temp being used 
+
+    //animation
+    private AnimatorControllerParameter[] playerAnimParams;
+    private Animator playerAnimRef;
+    private Animator oppoAnimRef;
 
 
     //Combat UI Elements\
@@ -126,9 +143,8 @@ public class CombatManager : MonoBehaviour
         if(playerRef)
         {
             playerAnimRef = playerRef.GetComponentInChildren<Animator>();
+            playerAnimParams = playerAnimRef.parameters;
             //playerAnimRef = playerRef.GetComponent<Animator>();
-
-
         }
 
 
@@ -157,7 +173,7 @@ public class CombatManager : MonoBehaviour
         switch (matchState)
         {
             case MatchState.decisionPhase:
-                setAllAnimsFalse(playerAnimRef);
+                setAllAnimsFalse(playerAnimParams);
                 playerAnimRef.SetBool("Idling", true);
                 //moving menu left and right logic
                 if (Input.GetKeyDown(KeyCode.A))
@@ -574,7 +590,7 @@ public class CombatManager : MonoBehaviour
         //Debug.Log("Stamina" + Player.stamina);
         //Debug.Log("Audience Interest" + audienceInterest);
         //Debug.Log("Player Move: " + playerMove + "\nEnemy Move: " + enemyMove);
-        if(dialogueManager.flowchart != null)
+        
 
         //Debug.Log("Stamina" + Player.stamina);
         //Debug.Log("Audience Interest" + audienceInterest);
@@ -613,23 +629,28 @@ public class CombatManager : MonoBehaviour
         }
         if (playerMove == "Attack")
         {
-            setAllAnimsFalse(playerAnimRef);
+            setAllAnimsFalse(playerAnimParams);
             playerAnimRef.StopPlayback();
             playerAnimRef.Play("femHit");
             playerAnimRef.SetBool("Attacking", true);
-
+            
         }
     }
 
     //this method sets all the bools used to transition animations to false
-    void setAllAnimsFalse(Animator animRef)
+    void setAllAnimsFalse(AnimatorControllerParameter[] animContParams)
     {
         //animRef.
-        for (int i = 0; i < animRef.parameterCount; i++)
+        for (int i = 0; i < animContParams.Length; i++)
         {
             //Debug.Log(animRef.parameters[i].nameHash);
             
         }
+    }
+
+    void transitionToAnimation(Animator anim, string newAnimationName)
+    {
+        Debug.Log(
     }
 
     void endMatch(bool playerWin)
