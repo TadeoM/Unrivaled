@@ -23,19 +23,17 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(this);
-
+        characters = GameObject.FindGameObjectWithTag("characters");
         flowchart = GameObject.FindGameObjectWithTag("dialogue").GetComponent<Flowchart>();
         GetVariables();
-        if (!Directory.Exists(Application.dataPath + "/FightPlans"))
+        if (!Directory.Exists(Application.dataPath + "/Resources/FightPlans/"))
         {
-
-            Directory.CreateDirectory(Application.dataPath + "/FightPlans");
+            Directory.CreateDirectory(Application.dataPath + "/Resources/FightPlans");
         }
-        //Create Text file.. but dont know how.. How to create the Text file to save to.
-        //save to textfile
-
-        
-
+        if (!Directory.Exists(Application.dataPath + "/Resources/CharacterStats/"))
+        {
+            Directory.CreateDirectory(Application.dataPath + "/Resources/CharacterStats/");
+        }
         // at the end of using a flowchart, check the values of the relationship meter variables and add them to the corresponding character
     }
 
@@ -142,12 +140,21 @@ public class DialogueManager : MonoBehaviour
                         waitInCombat = true;
                     break;
                 case "organizedPlay":
-                    string path = Application.dataPath + "/Resources/FightPlans";
+                    string path = Application.dataPath + "/Resources/FightPlans/";
 
                     if (!File.Exists(path))
                     {
                         File.WriteAllText(path + flowchart.GetName() + ".txt", organizedPlay);
                     }
+                    break;
+                case "avaMeter":
+                    GetCharacter("Ava", (int)flowchartVariables[i].GetValue());
+                    break;
+                case "danteMeter":
+                    GetCharacter("Dante", (int)flowchartVariables[i].GetValue());
+                    break;
+                case "lutherMeter":
+                    GetCharacter("Luther", (int)flowchartVariables[i].GetValue());
                     break;
                 default:
                     break;
@@ -155,7 +162,6 @@ public class DialogueManager : MonoBehaviour
         }
         // grab the day so that we can access the correct folder
         string[] temp = nextDialogueName.Split('_');
-        
 
         if (waitInCombat == false)
         {
@@ -180,6 +186,21 @@ public class DialogueManager : MonoBehaviour
             DontDestroyOnLoad(flowchart);
             flowchart.StopAllBlocks();
             GetVariables();           
+        }
+    }
+
+    void GetCharacter(string characterName, int increase)
+    {
+        CharacterStats[] characterList = characters.GetComponentsInChildren<CharacterStats>();
+
+        foreach (CharacterStats character in characterList)
+        {
+            if (character.gameObject.name == characterName)
+            {
+                character.RelationshipMeter += increase;
+                character.StoreStats();
+                break;
+            }
         }
     }
 
