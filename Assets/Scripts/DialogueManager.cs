@@ -142,11 +142,11 @@ public class DialogueManager : MonoBehaviour
                         waitInCombat = true;
                     break;
                 case "organizedPlay":
-                    string path = Application.dataPath + "/FightPlans";
+                    string path = Application.dataPath + "/Resources/FightPlans";
 
                     if (!File.Exists(path))
                     {
-                        File.WriteAllText(Application.dataPath + "/FightPlans/" + flowchart.GetName() + ".txt", organizedPlay);
+                        File.WriteAllText(path + flowchart.GetName() + ".txt", organizedPlay);
                     }
                     break;
                 default:
@@ -155,10 +155,11 @@ public class DialogueManager : MonoBehaviour
         }
         // grab the day so that we can access the correct folder
         string[] temp = nextDialogueName.Split('_');
-        string folder = temp[2];
+        
 
         if (waitInCombat == false)
         {
+            string folder = temp[2];
             Destroy(flowchart.gameObject);
 
             var newDialogue = Resources.Load<Flowchart>("Stories/"+ folder + "/" + nextDialogueName);
@@ -167,6 +168,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
+            string folder = temp[2];
             flowchart = null;
             SceneManager.LoadScene("CombatTestScene");
 
