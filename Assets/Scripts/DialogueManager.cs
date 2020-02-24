@@ -111,6 +111,8 @@ public class DialogueManager : MonoBehaviour
                     if((bool)flowchartVariables[i].GetValue() == true)
                         waitInCombat = true;
                     break;
+                case "relationship":
+                    break;
                 default:
                     break;
             }
