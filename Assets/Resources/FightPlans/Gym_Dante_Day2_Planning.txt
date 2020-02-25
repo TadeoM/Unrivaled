@@ -1,0 +1,1 @@
+time:max:40;move:taunt:1-10;move:offense:10-30;
