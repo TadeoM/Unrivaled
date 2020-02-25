@@ -10,6 +10,7 @@ TagManager:
   - CombatTimer
   - MeterFill
   - audienceMeter
+  - characters
   layers:
   - Default
   - TransparentFX
