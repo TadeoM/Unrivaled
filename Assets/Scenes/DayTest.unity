@@ -465,18 +465,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &672831490 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8662201529765692193, guid: c4fec2321e1f28c47ad780a205ece682,
-    type: 3}
-  m_PrefabInstance: {fileID: 1921872104}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 672831424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &962441997 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6900213821923406734, guid: 8e706bd9a2802264aa709bb2f6427681,
@@ -525,7 +513,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 672831490}
+  selectedFlowchart: {fileID: 148678785636091799, guid: 06787e77ba0d229419822abded5c8899,
+    type: 3}
 --- !u!4 &990159172
 Transform:
   m_ObjectHideFlags: 1
