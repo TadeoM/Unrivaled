@@ -1,0 +1,901 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7740554872230331122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5291989801393696283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 27
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Ava avaHappy: Let me show you how it\u2019s done!"
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &-6236656779902393861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5291989801393696283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 24
+  indentLevel: 0
+  text: "Interesting, how\u2019s it done?"
+  description: 
+  targetBlock: {fileID: 152311262817349992}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &152311262817349992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5291989801393696283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 462.40622
+    y: 519.4208
+    width: 191.09093
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 5
+  blockName: Arean_Ava_Day6_RouteC
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1612795613671109198}
+  - {fileID: -7740554872230331122}
+  - {fileID: 3894927788997582857}
+  suppressAllAutoSelections: 0
+--- !u!114 &316503805376156283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5291989801393696283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 20
+  indentLevel: 0
+  variable: {fileID: 2588640793509125259}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &343572595379232772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5291989801393696283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 21
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: 'Ava avaNeutral: I dunno, people are bad at naming things.'
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &972692059199878993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5291989801393696283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: goToCombat
+  value: 0
+--- !u!114 &1612795613671109198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5291989801393696283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 26
+  indentLevel: 0
+  variable: {fileID: 2588640793509125259}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &2588640793239633153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5291989801393696283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 16.951721
+    y: 515.78436
+    width: 189.63638
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 23
+  blockName: Arena_Ava_Day6_RouteA
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 2588640793239633159}
+  - {fileID: 343572595379232772}
+  - {fileID: -120645498432597013}
+  suppressAllAutoSelections: 0
+--- !u!114 &2588640793239633155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5291989801393696283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 10
+  indentLevel: 0
+  text: "Oh! I\u2019ve actually heard of this one before!"
+  description: 
+  targetBlock: {fileID: 3027879068201301764}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &2588640793239633156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5291989801393696283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 17
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 2588640793239633181}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &2588640793239633157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5291989801393696283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 16
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Ava avaHappy: I told you we\u2019d get in here fine!\r\nJade: Honestly,
+      I\u2019m not sure why I didn\u2019t believe you.\r\nJade: Why did you want
+      to come here anyway? It\u2019s all\u2026 quiet and empty.\r\nAva: Well, we
+      can give you a nice, shiny new finisher!\r\nJade: But, I already have one\u2026\r\nAva
+      avaNeutral: It\u2019s not shiny though!\r\nJade: It\u2019s\u2026 it\u2019s
+      a shining wizard\u2026\r\nAva: Damn\u2026 Well, new promotion equals new finisher
+      anyway.\r\nAva: At least, that\u2019s how I always went about it.\r\nJade:
+      Is your finisher still a Moonsault?\r\nAva avaHappy: Nope! I had to tone it
+      down a little for D3. Most people tend to stick to something similar.\r\nAva
+      avaNeutral: However, I have an idea for you.\r\nAva: You\u2019re pretty strong,
+      right?\r\nJade: I mean\u2014It depends.\r\nAva: You can lift me, right?\r\nJade
+      jadeHappy: Oh, yeah, I think so.\r\nAva avaHappy: Perfect! I have the perfect
+      move then.\r\nAva: It\u2019s a really old school move, nobody really uses it
+      anymore. I\u2019m sure the fans would love it if you did it!\r\nAva avaNeurtal:
+      It\u2019s called Go 2 Sleep, or GTS for short.\r\nAva avaHappy: It\u2019s a
+      knee strike.\r"
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &2588640793239633158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5291989801393696283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 245.86082
+    y: 306.51163
+    width: 144.54547
+    height: 40
+  tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
+  useCustomTint: 1
+  itemId: 18
+  blockName: Arena_Ava_Day6
+  description: 
+  eventHandler: {fileID: 2588640793239633163}
+  commandList:
+  - {fileID: 2588640793239633157}
+  - {fileID: 2588640793239633156}
+  suppressAllAutoSelections: 0
+--- !u!114 &2588640793239633159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5291989801393696283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 14
+  indentLevel: 0
+  variable: {fileID: 2588640793509125259}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &2588640793239633163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5291989801393696283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 2588640793239633158}
+  suppressBlockAutoSelect: 0
+  waitForFrames: 1
+--- !u!114 &2588640793239633180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5291989801393696283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 9
+  indentLevel: 0
+  text: ' G*T*S? Not G*2*S?'
+  description: 
+  targetBlock: {fileID: 2588640793239633153}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &2588640793239633181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5291989801393696283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 212.76994
+    y: 404.23895
+    width: 221.63638
+    height: 40
+  tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
+  useCustomTint: 1
+  itemId: 1
+  blockName: Arena_Ava_Day6_ChoiceTree1
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 2588640793239633180}
+  - {fileID: 2588640793239633155}
+  - {fileID: -6236656779902393861}
+  suppressAllAutoSelections: 0
+--- !u!114 &2588640793509125258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5291989801393696283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: nextDialogue
+  value: JadeRoom_Ava_Day2
+--- !u!114 &2588640793509125259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5291989801393696283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: goToNext
+  value: 0
+--- !u!114 &3027879068201301764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5291989801393696283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 249.67899
+    y: 643.05707
+    width: 154.72728
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 5
+  blockName: Arena_Ava_Day6_1
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 316503805376156283}
+  - {fileID: 5555994215510412749}
+  suppressAllAutoSelections: 0
+--- !u!114 &4239767505836944118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5291989801393696283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: backGround
+  value: enterName
+--- !u!114 &5555994215510412749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5291989801393696283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 22
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Ava avaHappy: Alright, lift me up on your shoulders.\r\nJade jadeNeutral:
+      Okay\u2026\r\nJade lifts Ava up on her shoulders in a fireman\u2019s carry
+      rather easily.\r\nAva: Alright, so what you do is you toss me up and just lift
+      your knee.\r\nAva: I put my face on your knee and act like you just broke my
+      nose basically.\r\nAva: Go for it!\r\nJade tosses Ava in the air slightly and
+      lifts her knee. Ava lands on her feet and puts her hands on Jade\u2019s elevated
+      knee.\r\nAva avaHappy: That\u2019s the motion!\r\nJade: Really? That\u2019s
+      it?\r\nAva avaNeutral: Yep, it\u2019s a pretty easy move to do, most of the
+      work is going to be on the other person.\r\nJade: Well, that\u2019s nice at
+      least.\r\nAva: Now that you have the new finisher, let\u2019s practice it a
+      couple times, I\u2019ll actually sell too.\r\nAva: Afterwards, we can just
+      do some basic ring workouts.\r\nJade: Alright, I\u2019m up for it!\r\nJade
+      and Ava spend a few hours in the ring practicing different maneuvers, eventually
+      working out several different mock matches in the comfort of the empty arena.\r\nAn
+      intense performer, Ava brought out the best in Jade, taking it as serious as
+      if it were a D1 main event. However, after about 30 minutes of one match, the
+      two quickly devolved into trying new things, jumping off the top rope, and
+      messing around in reckless ways.\r\nAva did several of her top rope moves,
+      sometimes landing on the mat when Jade moved out of the way of the move to
+      mess with Ava, which was promptly returned when Jade also attempted top rope
+      acrobatics of her own.\r\nAva avaHappy: Whew! That felt amazing!\r\nJade: (Ugh\u2026
+      speak for yourself\u2026) Y-Yeah!\r\nAva avaNeutral: I\u2019m definitely going
+      to be feeling it tomorrow, lucky I don\u2019t have a match.\r\nJade: Same\u2026
+      Honestly.\r\nJade: My stomach still kind of hurts from those splashes.\r\nAva
+      avaHappy: Yeah\u2026 my bad.\r\nAva: Kind of earned it when you moved out of
+      the way on my moonsault, I\u2019ll feel that one for days haha!\r\nJade: Hahah\u2026
+      yeah\u2026\r\nAva avaNeutral: Anyway, let\u2019s just head out. I\u2019ll walk
+      with you back to your place.\r\nAva: we can get a smoothie or something on
+      the way.\r\nJade jadeHappy: Alright, sounds good to me.\r\n"
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &3894927788997582857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5291989801393696283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 28
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 3027879068201301764}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &-120645498432597013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5291989801393696283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 29
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 3027879068201301764}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!1001 &8444650531705612868
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 201062587, guid: f00e7bd22836d09478bb370a8a1d4209, type: 3}
+      propertyPath: conversationText.stringVal
+      value: "Jade: Ah\u2026 maybe I should\u2019ve just gone back to the gym.\r\nJade:
+        It was a bit rude to just blow her off like that I think.\r\n*Bzzz Bzzz*\r\nJade:
+        Oh-- It\u2019s Ava.\r\nAva: So, I forgot to tell you something pretty important.
+        It\u2019s about AOW stuff.\r\nJade: What is it?\r\nAva: Well, idk if you
+        guys planned things or anything like that in Cascadia, but AOW is *SUPER*
+        strict about planning and all that.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 201062587, guid: f00e7bd22836d09478bb370a8a1d4209, type: 3}
+      propertyPath: itemId
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: selectedCommands.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: selectedBlocks.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: variables.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: version
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: blockViewHeight
+      value: 330
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: scrollPos.x
+      value: 48.739418
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: scrollPos.y
+      value: -16.980639
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: zoom
+      value: 0.54999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: variables.Array.data[0]
+      value: 
+      objectReference: {fileID: 2588640793509125258}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: variables.Array.data[1]
+      value: 
+      objectReference: {fileID: 2588640793509125259}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: selectedCommands.Array.data[0]
+      value: 
+      objectReference: {fileID: 2588640793239633155}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: variables.Array.data[2]
+      value: 
+      objectReference: {fileID: 4239767505836944118}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: variables.Array.data[3]
+      value: 
+      objectReference: {fileID: 972692059199878993}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: selectedBlocks.Array.data[0]
+      value: 
+      objectReference: {fileID: 3027879068201301764}
+    - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: commandList.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: commandList.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: commandList.Array.data[1]
+      value: 
+      objectReference: {fileID: 201062584, guid: 39b6d48ecdc0f9c45b967c6d8ac21694,
+        type: 3}
+    - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: nodeRect.y
+      value: 58.875
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: nodeRect.x
+      value: 142.5625
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549899373137, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549899373137, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549899373137, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549899373137, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549899373137, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549899373137, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549899373137, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549899373137, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549899373137, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549899373137, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549899373137, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549899699295, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: m_Name
+      value: Arena_Ava_Day6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549899699295, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: m_TagString
+      value: dialogue
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 201062587, guid: f00e7bd22836d09478bb370a8a1d4209, type: 3}
+    - {fileID: 4341892549888379921, guid: f00e7bd22836d09478bb370a8a1d4209, type: 3}
+    - {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: f00e7bd22836d09478bb370a8a1d4209, type: 3}
+--- !u!1 &5291989801393696283 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4341892549899699295, guid: f00e7bd22836d09478bb370a8a1d4209,
+    type: 3}
+  m_PrefabInstance: {fileID: 8444650531705612868}
+  m_PrefabAsset: {fileID: 0}
