@@ -15,8 +15,11 @@ public class DialogueManager : MonoBehaviour
     public List<Variable> flowchartVariables;
     public GameObject characters;
     public GameObject stage;
+    public GameObject fadeImage;
 
     private int opIndex;
+    private int backgroundIndex;
+    private string currBackground;
     private string organizedPlay;
     private string prevPlanning;
     // Start is called before the first frame update
@@ -58,7 +61,7 @@ public class DialogueManager : MonoBehaviour
 
                     string[] actions = organizedPlay.Split(';');
                     bool replace = false;
-                    Debug.Log("new for loop");
+
                     if(actions.Length > 1 && temp.ToString().Length > 1)
                     {
                         for (int i = 0; i < actions.Length-1; i++)
@@ -77,10 +80,7 @@ public class DialogueManager : MonoBehaviour
                             }
                         }
                     }
-                    else
-                    {
-                        Debug.Log("Skipped");
-                    }
+
 
                     if (!replace)
                     {
@@ -94,8 +94,13 @@ public class DialogueManager : MonoBehaviour
                             organizedPlay += actions[i];
                         }
                     }
-                    Debug.Log(organizedPlay);
                 }
+            }
+
+            temp = flowchartVariables[backgroundIndex].GetValue();
+            if(temp.ToString() != currBackground)
+            {
+                ChangeBackground(temp.ToString());
             }
         }
         
@@ -117,6 +122,9 @@ public class DialogueManager : MonoBehaviour
         flowchart.StopAllBlocks();
     }
 
+    /// <summary>
+    /// Grabs the information needed to go to the next dialogue or to combat and saves relationship increases.
+    /// </summary>
     void GetNextDialogue()
     {
         check = false;
@@ -168,27 +176,26 @@ public class DialogueManager : MonoBehaviour
             string folder = temp[2];
             Destroy(flowchart.gameObject);
 
-            var newDialogue = Resources.Load<Flowchart>("Stories/"+ folder + "/" + nextDialogueName);
-            flowchart = Instantiate(newDialogue);
-            GetVariables();
+            Flowchart newDialogue = Resources.Load<Flowchart>("Stories/"+ folder + "/" + nextDialogueName);
+            StartCoroutine(Fade(newDialogue, waitInCombat));
+            Debug.Log("Finished Fade Coroutine");
+            
         }
         else
         {
             string folder = temp[2];
-            flowchart = null;
-            SceneManager.LoadScene("CombatTestScene");
 
             var newDialogue = Resources.Load<Flowchart>("Stories/" + folder + "/" + nextDialogueName);
-            
-            DontDestroyOnLoad(Instantiate(characters));
-            DontDestroyOnLoad(Instantiate(stage));
-            flowchart = Instantiate(newDialogue);
-            DontDestroyOnLoad(flowchart);
-            flowchart.StopAllBlocks();
-            GetVariables();           
+
+            StartCoroutine(Fade(newDialogue, waitInCombat));          
         }
     }
 
+    /// <summary>
+    /// Gets a specified character and stores the stats for saving.
+    /// </summary>
+    /// <param name="characterName"></param>
+    /// <param name="increase"></param>
     void GetCharacter(string characterName, int increase)
     {
         CharacterStats[] characterList = characters.GetComponentsInChildren<CharacterStats>();
@@ -203,7 +210,9 @@ public class DialogueManager : MonoBehaviour
             }
         }
     }
-
+    /// <summary>
+    /// Gets variables for the flowchart
+    /// </summary>
     void GetVariables()
     {
         flowchartVariables = flowchart.Variables;
@@ -224,10 +233,64 @@ public class DialogueManager : MonoBehaviour
                     organizedPlay = flowchartVariables[i].GetValue() as string;
                     opIndex = i;
                     break;
+                case "background":
+                    currBackground = flowchartVariables[i].GetValue().ToString();
+                    backgroundIndex = i;
+                    ChangeBackground(flowchartVariables[i].GetValue().ToString());
+                    break;
                 default:
                     break;
             }
         }
         check = true;
+    }
+
+    void ChangeBackground(string newBG)
+    {
+        currBackground = newBG;
+        GameObject newBackground = Resources.Load<GameObject>("Prefabs/" + currBackground);
+        Instantiate(newBackground);
+    }
+
+    IEnumerator Fade(Flowchart newDialogue, bool toCombat)
+    {
+        var tempOBJ = Instantiate(fadeImage);
+        DontDestroyOnLoad(tempOBJ);
+        float time = 2;
+        for (float ft = 0; ft <= time; ft += 1 * Time.deltaTime)
+        {
+            Debug.Log(ft / time);
+            Color temp = tempOBJ.GetComponent<SpriteRenderer>().color;
+            temp.a = ft / (time/2);
+            tempOBJ.GetComponent<SpriteRenderer>().color = temp;
+            yield return null;
+        }
+        if (toCombat)
+        {
+            flowchart = null;
+            SceneManager.LoadScene("CombatTestScene");
+            yield return null;
+        }
+
+        for (float ft = time; ft >= 0; ft -= 1 * Time.deltaTime)
+        {
+            Debug.Log(ft / time);
+            Color temp = tempOBJ.GetComponent<SpriteRenderer>().color;
+            temp.a = ft / (time/2);
+            tempOBJ.GetComponent<SpriteRenderer>().color = temp;
+            yield return null;
+        }
+        Destroy(tempOBJ);
+        flowchart = Instantiate(newDialogue);
+        flowchart.StopAllBlocks();
+        if (toCombat)
+        {
+            DontDestroyOnLoad(flowchart);
+            DontDestroyOnLoad(Instantiate(characters));
+            DontDestroyOnLoad(Instantiate(stage));
+        }
+    
+        GetVariables();
+        yield return null;
     }
 }

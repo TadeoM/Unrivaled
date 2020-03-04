@@ -11,6 +11,7 @@ TagManager:
   - MeterFill
   - audienceMeter
   - characters
+  - background
   layers:
   - Default
   - TransparentFX
