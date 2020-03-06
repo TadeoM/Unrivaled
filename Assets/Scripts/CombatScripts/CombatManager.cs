@@ -12,7 +12,7 @@ public class CombatManager : MonoBehaviour
         loading,
         ending          //may need to make more ending states
     }
-    enum animationState
+    enum animation
     {
         Idle,
         Grounded,
@@ -52,7 +52,9 @@ public class CombatManager : MonoBehaviour
     //animation
     private AnimatorControllerParameter[] playerAnimParams;
     private Animator playerAnimRef;
+    private animation currentPlayerAnim;
     private Animator oppoAnimRef;
+    private animation currentOppoAnim;
 
 
     //Combat UI Elements\
@@ -96,13 +98,13 @@ public class CombatManager : MonoBehaviour
     //private Vector3 right3Button = new Vector3(-5f, 0.5f, 0f);
 
     private Vector3[] buttonPlacement = {
-                                         new Vector3(0f, -3.5f, -1.5f),
-                                        new Vector3(-2.75f, -1.5f, -1f),
-                                        new Vector3(-4f, -0.5f, -0.5f),
-                                        new Vector3(-5f, 0.5f, 0f),
-                                        new Vector3(5f, 0.5f, 0f),
-                                        new Vector3(4f, -0.5f, -0.5f),
-                                        new Vector3(2.75f, -1.5f, -1f)
+                                        new Vector3(0f, -2.5f, -1.5f),
+                                        new Vector3(-1.75f, -1.5f, -1f),
+                                        new Vector3(-2f, -0.5f, -0.5f),
+                                        new Vector3(-3f, 0.5f, 0f),
+                                        new Vector3(3f, 0.5f, 0f),
+                                        new Vector3(2f, -0.5f, -0.5f),
+                                        new Vector3(1.75f, -1.5f, -1f)
 
                                         };
 
@@ -145,6 +147,8 @@ public class CombatManager : MonoBehaviour
             playerAnimRef = playerRef.GetComponentInChildren<Animator>();
             playerAnimParams = playerAnimRef.parameters;
             //playerAnimRef = playerRef.GetComponent<Animator>();
+            currentPlayerAnim = animation.Idle;
+            currentOppoAnim = animation.Idle;
         }
 
 
@@ -173,8 +177,12 @@ public class CombatManager : MonoBehaviour
         switch (matchState)
         {
             case MatchState.decisionPhase:
-                setAllAnimsFalse(playerAnimParams);
-                playerAnimRef.SetBool("Idling", true);
+                if (playerState == WrestlerState.standing)
+                    transitionToAnimation(animation.Idle, "femIdle", true);
+                else if (playerState == WrestlerState.pinned)
+                    transitionToAnimation(animation.Pinned, "femPinned", true);
+                else
+                    transitionToAnimation(animation.Grounded, "femPinned", true);
                 //moving menu left and right logic
                 if (Input.GetKeyDown(KeyCode.A))
                 {
@@ -503,7 +511,7 @@ public class CombatManager : MonoBehaviour
                 else if(enemyMove=="Attack")
                 {
                     audienceInterest += 6f;
-                    playerState = WrestlerState.grounded;
+                    
                 }
                 else if (enemyMove == "Finisher")
                 {
@@ -589,7 +597,7 @@ public class CombatManager : MonoBehaviour
         possiblePlayerMoves = null;
         //Debug.Log("Stamina" + Player.stamina);
         //Debug.Log("Audience Interest" + audienceInterest);
-        //Debug.Log("Player Move: " + playerMove + "\nEnemy Move: " + enemyMove);
+        Debug.Log("Player Move: " + playerMove + "\nEnemy Move: " + enemyMove);
         
 
         //Debug.Log("Stamina" + Player.stamina);
@@ -627,30 +635,65 @@ public class CombatManager : MonoBehaviour
         {
             tempTimer -= Time.deltaTime;
         }
+
+        #region player animating
         if (playerMove == "Attack")
         {
-            setAllAnimsFalse(playerAnimParams);
-            playerAnimRef.StopPlayback();
-            playerAnimRef.Play("femHit");
-            playerAnimRef.SetBool("Attacking", true);
-            
+            transitionToAnimation(animation.Attack, "femHit", true);
         }
-    }
-
-    //this method sets all the bools used to transition animations to false
-    void setAllAnimsFalse(AnimatorControllerParameter[] animContParams)
-    {
-        //animRef.
-        for (int i = 0; i < animContParams.Length; i++)
+        else if(playerMove == "Block")
         {
-            //Debug.Log(animRef.parameters[i].nameHash);
-            
+            transitionToAnimation(animation.Block, "femBlock", true);
         }
+        else if(playerMove == "Taunt")
+        {
+            transitionToAnimation(animation.Taunt, "femTaunt", true);
+        }
+        else if (playerMove == "Pin")
+        {
+            transitionToAnimation(animation.Pin, "femPin", true);
+        }
+        else if(playerMove == "Sell")
+        {
+            transitionToAnimation(animation.Sell, "femSell", true);
+        }
+        else if (playerMove == "Finisher")
+        {
+            transitionToAnimation(animation.Finisher, "femHit", true);
+        }
+        else if(playerMove=="Recover")
+        {
+            transitionToAnimation(animation.Recover, "femRecovery", true);
+        }
+        #endregion
+
+        #region oppo animating
+        string oppoName = oppoRefGO.name;
+
+        #endregion
+
     }
 
-    void transitionToAnimation(Animator anim, string newAnimationName)
+
+
+    void transitionToAnimation(animation anim, string newAnimationName,bool isPlayer)
     {
-        Debug.Log(
+        if (isPlayer)
+        {
+            if(currentPlayerAnim!=anim)
+            {
+                playerAnimRef.Play(newAnimationName);
+                currentPlayerAnim = anim;
+            }
+        }
+        else
+        {
+            if (currentOppoAnim != anim)
+            {
+                oppoAnimRef.Play(newAnimationName);
+                currentOppoAnim = anim;
+            }
+        }
     }
 
     void endMatch(bool playerWin)
