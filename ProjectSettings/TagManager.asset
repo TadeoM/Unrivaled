@@ -12,6 +12,7 @@ TagManager:
   - audienceMeter
   - characters
   - background
+  - diagManager
   layers:
   - Default
   - TransparentFX

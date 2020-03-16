@@ -560,15 +560,6 @@ public class CombatManager : MonoBehaviour
             Destroy(gameObject);
         }
         possiblePlayerMoves = null;
-        //Debug.Log("Stamina" + Player.stamina);
-        //Debug.Log("Audience Interest" + audienceInterest);
-        //Debug.Log("Player Move: " + playerMove + "\nEnemy Move: " + enemyMove);
-        if(dialogueManager.flowchart != null)
-        {
-            dialogueManager.ResetBlocks();
-            dialogueManager.StopDialogue();
-            dialogueManager.StartDialogue();
-        }
     }
 
     //this method is to be used for positioning during action phase. The actual choosing of the animation should be able to be done through editor's animator.

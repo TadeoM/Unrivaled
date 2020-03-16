@@ -17,18 +17,19 @@ public class DialogueManager : MonoBehaviour
     public GameObject stage;
     public GameObject fadeImage;
 
-    private int opIndex;
-    private int backgroundIndex;
+    private int opIndex = -1;
+    private int backgroundIndex = -1;
     private string currBackground;
     private string organizedPlay;
     private string prevPlanning;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         DontDestroyOnLoad(this);
         characters = GameObject.FindGameObjectWithTag("characters");
-        flowchart = GameObject.FindGameObjectWithTag("dialogue").GetComponent<Flowchart>();
-        GetVariables();
+       /* flowchart = GameObject.FindGameObjectWithTag("dialogue").GetComponent<Flowchart>();
+        GetVariables();*/ // uncomment these things for testing
+
         if (!Directory.Exists(Application.dataPath + "/Resources/FightPlans/"))
         {
             Directory.CreateDirectory(Application.dataPath + "/Resources/FightPlans");
@@ -52,74 +53,63 @@ public class DialogueManager : MonoBehaviour
                 if (check && (bool)temp)
                     GetNextDialogue();
             }
-            temp = flowchartVariables[opIndex].GetValue();
-            if(temp is System.String)
+            if(opIndex > 0)
             {
-                if(prevPlanning != (string)temp)
+                temp = flowchartVariables[opIndex].GetValue();
+                if (temp is System.String)
                 {
-                    prevPlanning = temp.ToString();
-
-                    string[] actions = organizedPlay.Split(';');
-                    bool replace = false;
-
-                    if(actions.Length > 1 && temp.ToString().Length > 1)
+                    if (prevPlanning != (string)temp)
                     {
-                        for (int i = 0; i < actions.Length-1; i++)
+                        prevPlanning = temp.ToString();
+
+                        string[] actions = organizedPlay.Split(';');
+                        bool replace = false;
+
+                        if (actions.Length > 1 && temp.ToString().Length > 1)
                         {
-                            string[] newAction = temp.ToString().Split(':');
-                            string[] inspectAction = actions[i].Split(':');
-                            if (newAction[1].Contains("max") && inspectAction[1].Contains("max"))
+                            for (int i = 0; i < actions.Length - 1; i++)
                             {
-                                replace = true;
-                                actions[i] = temp.ToString();
-                            }
-                            else if (newAction[2].Contains(inspectAction[2]))
-                            {
-                                replace = true;
-                                actions[i] = temp.ToString();
+                                string[] newAction = temp.ToString().Split(':');
+                                string[] inspectAction = actions[i].Split(':');
+                                if (newAction[1].Contains("max") && inspectAction[1].Contains("max"))
+                                {
+                                    replace = true;
+                                    actions[i] = temp.ToString();
+                                }
+                                else if (newAction[2].Contains(inspectAction[2]))
+                                {
+                                    replace = true;
+                                    actions[i] = temp.ToString();
+                                }
                             }
                         }
-                    }
 
 
-                    if (!replace)
-                    {
-                        organizedPlay += (string)temp;
-                    }
-                    else
-                    {
-                        organizedPlay = "";
-                        for (int i = 0; i < actions.Length; i++)
+                        if (!replace)
                         {
-                            organizedPlay += actions[i];
+                            organizedPlay += (string)temp;
+                        }
+                        else
+                        {
+                            organizedPlay = "";
+                            for (int i = 0; i < actions.Length; i++)
+                            {
+                                organizedPlay += actions[i];
+                            }
                         }
                     }
                 }
             }
-
-            temp = flowchartVariables[backgroundIndex].GetValue();
-            if(temp.ToString() != currBackground)
+           
+            if(backgroundIndex > 0)
             {
-                ChangeBackground(temp.ToString());
+                temp = flowchartVariables[backgroundIndex].GetValue();
+                if (temp.ToString() != currBackground)
+                {
+                    ChangeBackground(temp.ToString());
+                }
             }
         }
-        
-    }
-    public void ResetBlocks()
-    {
-        flowchart.Reset(true, true);
-    }
-
-    public void StartDialogue()
-    {
-        flowchart.ExecuteBlock(nextDialogueName + "_Init");
-    }
-
-    public void StopDialogue()
-    {
-        List<Block> executingBlocks = flowchart.GetExecutingBlocks();
-        Debug.Log(executingBlocks.Count);
-        flowchart.StopAllBlocks();
     }
 
     /// <summary>
@@ -130,14 +120,22 @@ public class DialogueManager : MonoBehaviour
         check = false;
         nextDialogueName = "";
         bool waitInCombat = false;
-
         // go through all variables and respective 
         for (int i = 0; i < flowchartVariables.Count; i++)
         {
             switch (flowchartVariables[i].Key)
             {
                 case "nextDialogue":
+                    
                     nextDialogueName = flowchartVariables[i].GetValue() as string;
+                    using (StreamWriter writer = new StreamWriter(Application.dataPath + "/Resources/Saves/save.txt"))
+                    {
+                        writer.WriteLine(System.DateTime.Now);
+                        writer.WriteLine(nextDialogueName);
+                        writer.WriteLine("Daily");
+                        writer.WriteLine("Relationship Meter names");
+
+                    }
                     break;
                 case "avaIncrease":
                     break;
@@ -178,7 +176,6 @@ public class DialogueManager : MonoBehaviour
 
             Flowchart newDialogue = Resources.Load<Flowchart>("Stories/"+ folder + "/" + nextDialogueName);
             StartCoroutine(Fade(newDialogue, waitInCombat));
-            Debug.Log("Finished Fade Coroutine");
             
         }
         else
@@ -252,6 +249,13 @@ public class DialogueManager : MonoBehaviour
         Instantiate(newBackground);
     }
 
+    public void InitialStartLoad(string location)
+    {
+        Flowchart newDialogue = Resources.Load<Flowchart>(location);
+        flowchart = Instantiate(newDialogue);
+        GetVariables();
+    }
+
     IEnumerator Fade(Flowchart newDialogue, bool toCombat)
     {
         var tempOBJ = Instantiate(fadeImage);
@@ -259,7 +263,6 @@ public class DialogueManager : MonoBehaviour
         float time = 2;
         for (float ft = 0; ft <= time; ft += 1 * Time.deltaTime)
         {
-            Debug.Log(ft / time);
             Color temp = tempOBJ.GetComponent<SpriteRenderer>().color;
             temp.a = ft / (time/2);
             tempOBJ.GetComponent<SpriteRenderer>().color = temp;
@@ -274,7 +277,6 @@ public class DialogueManager : MonoBehaviour
 
         for (float ft = time; ft >= 0; ft -= 1 * Time.deltaTime)
         {
-            Debug.Log(ft / time);
             Color temp = tempOBJ.GetComponent<SpriteRenderer>().color;
             temp.a = ft / (time/2);
             tempOBJ.GetComponent<SpriteRenderer>().color = temp;
