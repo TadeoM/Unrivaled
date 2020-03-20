@@ -47,7 +47,9 @@ public class CombatManager : MonoBehaviour
     private int currentCenterButton;        //place in the button array that the player is currently hovering
     private string playerMove;              //the action theplayer is going to take
     private string enemyMove;               //the action the opponent is going to take
-    private float tempTimer;                //temp being used 
+    private float tempTimer;                //temp being used
+    private Vector3 startingPlayerPos;
+    private Vector3 startingOppoPos;
 
     //animation
     private AnimatorControllerParameter[] playerAnimParams;
@@ -640,6 +642,7 @@ public class CombatManager : MonoBehaviour
         if (playerMove == "Attack")
         {
             transitionToAnimation(animation.Attack, "femHit", true);
+
         }
         else if(playerMove == "Block")
         {
@@ -681,6 +684,28 @@ public class CombatManager : MonoBehaviour
         if (isPlayer)
         {
             if(currentPlayerAnim!=anim)
+            {
+                playerAnimRef.Play(newAnimationName);
+                currentPlayerAnim = anim;
+            }
+        }
+        else
+        {
+            if (currentOppoAnim != anim)
+            {
+                oppoAnimRef.Play(newAnimationName);
+                currentOppoAnim = anim;
+            }
+        }
+    }
+
+
+
+    void transitionToAnimation(animation anim, string newAnimationName, bool isPlayer,int frameDelay)
+    {
+        if (isPlayer)
+        {
+            if (currentPlayerAnim != anim)
             {
                 playerAnimRef.Play(newAnimationName);
                 currentPlayerAnim = anim;
