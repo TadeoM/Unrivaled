@@ -13,8 +13,7 @@ public class Menu : MonoBehaviour
     }
     public void StartGame()
     {
-        SceneManager.LoadScene(1);
-        Destroy(this);
+        StartCoroutine(NewGame());
     }
 
     public void LoadGame()
@@ -52,6 +51,21 @@ public class Menu : MonoBehaviour
         dialogueManager.InitialStartLoad("Stories/" + folder + "/" + info[1]);
         yield return null;
   
+        Destroy(this);
+        yield return null;
+    }
+
+    IEnumerator NewGame()
+    {
+
+        SceneManager.LoadScene(1);
+        yield return null;
+       
+        GameObject altemp = GameObject.FindGameObjectWithTag("diagManager");
+        DialogueManager dialogueManager = GameObject.FindGameObjectWithTag("diagManager").GetComponent<DialogueManager>();
+        dialogueManager.InitialStartLoad("Stories/Day1/Gym_Ava_Day1");
+        yield return null;
+
         Destroy(this);
         yield return null;
     }
