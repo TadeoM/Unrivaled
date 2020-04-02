@@ -401,8 +401,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scope: 0
-  key: backGround
-  value: enterName
+  key: background
+  value: gymBackground
 --- !u!1001 &7646934138285983604
 PrefabInstance:
   m_ObjectHideFlags: 0

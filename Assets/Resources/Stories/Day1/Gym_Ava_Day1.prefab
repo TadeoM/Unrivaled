@@ -16,7 +16,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 189.23499
     y: 622.4115
-    width: 138.04814
+    width: 135.98451
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -207,8 +207,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 165.39928
-    y: 413.53156
-    width: 180.69646
+    y: 415.25125
+    width: 178.97678
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -252,7 +252,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 174.9541
     y: 309.84476
-    width: 160.06018
+    width: 158.34048
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -415,7 +415,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 319.89697
     y: 524.07367
-    width: 157.30869
+    width: 154.90111
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -473,7 +473,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 18.138103
     y: 529.20435
-    width: 164.18744
+    width: 163.49956
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -498,8 +498,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scope: 0
-  key: backGround
-  value: enterName
+  key: background
+  value: gymBackground
 --- !u!114 &4820901612837945993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -656,7 +656,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -717,7 +717,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 2561554905222945279}
+      objectReference: {fileID: 2561554905222945272}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

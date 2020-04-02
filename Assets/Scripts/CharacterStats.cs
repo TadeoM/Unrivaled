@@ -11,15 +11,13 @@ public class CharacterStats : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
     }
 
     public void StoreStats()
     {
-        Debug.Log("ALSO HERE");
         string path = Application.dataPath + "/Resources/CharacterStats/";
-
         string textToMake = "meter:"+RelationshipMeter.ToString();
+
         if (!File.Exists(path))
         {
             File.WriteAllText(path + characterName + ".txt", textToMake);
