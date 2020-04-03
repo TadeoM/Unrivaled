@@ -1,0 +1,1290 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &658147903441672106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 21
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Ava avaHappy: Oh, right!\r\nAva avaNeutral: That *might* be the plan,
+      but we can\u2019t know for sure. That\u2019s only what usually happens with
+      these kinds of storylines you know?\r\nAva avaHappy: I still think you\u2019d
+      be champion eventually though!\r"
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &772210964870732323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 42
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 7575207121589371657}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &805857208556220890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 68
+  indentLevel: 0
+  variable: {fileID: 3839983630854769126}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &1394781838299091953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 57
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Ava avaNeutral: What do you mean?\r\nJade jadeNeutral: Ava, you were
+      one of my favorites to watch while I was just starting to learn how to wrestle.\r\nJade:
+      I inspired my entire style after you, and when you got injured, I went even
+      harder because I thought that\u2019s what you would do.\r\nJade: If it weren\u2019t
+      for you in D1, I wouldn\u2019t be the wrestler I am today.\r\nAva avaSad: Jade\u2026\r\nAva
+      avaHappy: You\u2019re gonna make me tear up talking like that\u2026 Come on
+      now\u2026!\r\nJade jadeHappy: I\u2019m just saying, you\u2019re amazing Ava!\r\nAva
+      avaNeutral: Thank you so much, Ava\u2026 Those words really meant a lot.\r\nAva
+      avaHappy: I don\u2019t wanna get too gushy though. You have drinks, right?\r\nJade
+      jadeNeutral: Uh, yeah, in the cabinet over there.\r\nAva: Awesome! Let\u2019s
+      drink up!\r\nJade jadeHappy: Bottoms up!\r"
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &1401929672532192242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 46
+  indentLevel: 0
+  text: "Hmm\u2026 It seems too soon."
+  description: 
+  targetBlock: {fileID: 3082969059393049819}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &1458730240881391352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 60
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Ava avaNeutral: Well, you\u2019ve grown a lot stronger and you\u2019re
+      a great performer\u2026\r\nAva avaNeutral: But\u2026 you\u2019re right.\r\nAva:
+      You\u2019ll never make people as happy as her.\r\nJade jadeNeutral: Wait, what
+      do you mean?\r\nAva: \u2026\r\nJade: Who are you talking about?\r\nAva: \u2026\r\nJade:
+      Who\u2019s \u201Cher?\u201D Ava?\r\nAva: The girl reading this right now.\r"
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &2006738001222705724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: goToCombat
+  value: 0
+--- !u!114 &3082969059393049819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 442.35287
+    y: 534.3505
+    width: 157.42622
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 74
+  blockName: JadeRoom_C_Route
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 7946743136925083747}
+  - {fileID: 5372693060702642407}
+  suppressAllAutoSelections: 0
+--- !u!114 &3154228918855755478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: -41.029823
+    y: 957.4986
+    width: 167.19225
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 20
+  blockName: JadeRoom_A_Route_1
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 4820962805695124779}
+  - {fileID: 9145122924328231434}
+  suppressAllAutoSelections: 0
+--- !u!114 &3202131658350018459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: backGround
+  value: enterName
+--- !u!114 &3839983630587373670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 3839983630587373675}
+  suppressBlockAutoSelect: 0
+  waitForFrames: 1
+--- !u!114 &3839983630587373672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 16
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Ava avaHappy: Hey hey!\r\nJade jadeHappy: Hey Ava!\r\nAva: Your match
+      last night was actually pretty good! I liked it a lot!\r\nAva: And the turn
+      was amazing, that crowd was *so* loud! You should be proud of yourself.\r\nJade
+      jadeNeutral: Yeah\u2026\r\nAva avaNeutral: How do you feel about it all?\r\nJade:
+      I don\u2019t really know\u2026\r\nJade: Like, I\u2019m happy that everything
+      went well, but I felt weird when I got boos.\r\nAva: You\u2019ll get used to
+      it. You know Claudio was the same way when he was told to be heel?\r\nJade:
+      Yeah\u2026 he seems like such a nice guy.\r\nAva: He really is! Though, it
+      was connecting with the fans, so they told him to go heel. And he like, shot
+      up in popularity because of it.\r\nAva avaHappy: So, you could be champion
+      soon.\r"
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &3839983630587373673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 17
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 3839983630587373680}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &3839983630587373675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 147.60298
+    y: 286.96133
+    width: 274.61847
+    height: 40
+  tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
+  useCustomTint: 1
+  itemId: 18
+  blockName: JadeRoom_Dante_DanteRoute_Day16_Init
+  description: 
+  eventHandler: {fileID: 3839983630587373670}
+  commandList:
+  - {fileID: 3839983630587373672}
+  - {fileID: 3839983630587373673}
+  suppressAllAutoSelections: 0
+--- !u!114 &3839983630587373678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 10
+  indentLevel: 0
+  text: " I thought you said I\u2019d be face again?"
+  description: 
+  targetBlock: {fileID: 4483896175448614374}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &3839983630587373680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 184.81087
+    y: 411.70557
+    width: 222.53304
+    height: 40
+  tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
+  useCustomTint: 1
+  itemId: 49
+  blockName: JadeRoom_Day16_ChoiceTree1
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 3839983630587373678}
+  - {fileID: 3839983630587373681}
+  - {fileID: 1401929672532192242}
+  suppressAllAutoSelections: 0
+--- !u!114 &3839983630587373681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 9
+  indentLevel: 0
+  text: You think so?
+  description: 
+  targetBlock: {fileID: 4965484670333271261}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &3839983630854769126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: goToNext
+  value: 0
+--- !u!114 &3839983630854769127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: nextDialogue
+  value: Cafe_Ava_Day1
+--- !u!114 &3957424380174431036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 36
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Ava avaHappy: Yep! Face or heel, I think you\u2019re making a good
+      connection with the fans.\r\nAva avaNeutral: You\u2019ll be a champion soon,
+      I\u2019m sure of it.\r"
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &3964160271474237182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 66
+  indentLevel: 0
+  text: "Nah, I\u2019m not *that* special."
+  description: 
+  targetBlock: {fileID: 9137200194976959104}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &4483896175448614374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 22.214252
+    y: 533.3542
+    width: 155.79855
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 73
+  blockName: JadeRoom_A_Route
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 658147903441672106}
+  - {fileID: 5299199033277913461}
+  suppressAllAutoSelections: 0
+--- !u!114 &4820962805695124779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 54
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Ava avaHappy: Of course, Jade!\r\nJade jadeHappy: I\u2019m a lot
+      more relaxed about the whole thing now. Thank you so much for helping me with
+      everything to.\r\nJade: I truly couldn\u2019t have done any of it without your
+      help.\r\nAva: You\u2019re too nice.\r\nAva avaNeutral: Let\u2019s not get too
+      gushy though! You have drinks, right?\r\nJade jadeNeutral: Yeah, some vodka
+      in the cabinet.\r\nAva avaHappy: Awesome, let\u2019s drink up then! Too many
+      happy things going on right now!\r\nJade jadeHappy: Heh, bottoms up!\r"
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &4912390089692625880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 65
+  indentLevel: 0
+  text: "You don\u2019t give yourself enough credit."
+  description: 
+  targetBlock: {fileID: 5584691312499491885}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &4965484670333271261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 233.13629
+    y: 530.2814
+    width: 155.79855
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 72
+  blockName: JadeRoom_B_Route
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 3957424380174431036}
+  - {fileID: 5041933731143896795}
+  suppressAllAutoSelections: 0
+--- !u!114 &5041933731143896795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 37
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 6997450317906641679}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &5114598713914409810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 64
+  indentLevel: 0
+  text: "Wow\u2026 Thanks Ava."
+  description: 
+  targetBlock: {fileID: 3154228918855755478}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &5299199033277913461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 33
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 6997450317906641679}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &5372693060702642407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 52
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 6997450317906641679}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &5581076457545948149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 67
+  indentLevel: 0
+  variable: {fileID: 3839983630854769126}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &5584691312499491885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 231.01596
+    y: 958.90985
+    width: 167.19225
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 70
+  blockName: JadeRoom_B_Route_2
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1394781838299091953}
+  - {fileID: 805857208556220890}
+  suppressAllAutoSelections: 0
+--- !u!114 &6971982163448512102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 41
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Jade jadeHappy: I guess I\u2019ll just have to take your word for
+      it.\r\nAva avaHappy: Yep!\r\nAva avaNeutral: Honestly, we may just be a team
+      until the next SuperShow happens. I think it\u2019s in two and a half months.\r\nJade
+      jadeNeutral: Oh, I remember the SuperShows from D1. Is anything different at
+      all for D3?\r\nAva: Not really? You know that the shows usually have blowoff
+      matches and big title changes and all that. I guess in D3 it\u2019s always
+      held at the biggest arena in Laurentia\u2026\r\nAva: Oh! Actually, sometimes
+      they broadcast it nationwide.\r\nJade: R-Really? I\u2019ve never seen those
+      promoted or anything.\r\nAva: They\u2019re on like, really niche channels so
+      that\u2019s why. It\u2019s all good.\r\nAva: But yeah, otherwise from the arena
+      and the scale of the event, nothing really changes for us.\r\nAva avaHappy:
+      I think that\u2019s the major thing that we\u2019ll be doing. Then, you should
+      be on your way to a title on route to the next SuperShow!\r\nJade jadeHappy:
+      I hope everything pans out like you say.\r\nAva: Trust me!\r\nAva avaNeutral:
+      By the way, Jade. I do want to say something.\r\nJade jadeNeutral: Go ahead.\r\nAva:
+      You know, you\u2019ve grown so much as a performer in such little time. It\u2019s
+      actually unbelievable.\r\nAva: I\u2019ve never seen anyone with that amount
+      of talent in the ring, not even myself.\r\nAva avaHappy: You really inspire
+      me, Jade\u2026\r\nAva: Don\u2019t ever change.\r"
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &6997450317906641679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 253.13606
+    y: 680.8407
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 39
+  blockName: JadeRoom_1
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 6971982163448512102}
+  - {fileID: 772210964870732323}
+  suppressAllAutoSelections: 0
+--- !u!114 &7575207121589371657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 199.32211
+    y: 802.36676
+    width: 222.53304
+    height: 40
+  tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
+  useCustomTint: 1
+  itemId: 1
+  blockName: JadeRoom_Day16_ChoiceTree2
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 5114598713914409810}
+  - {fileID: 4912390089692625880}
+  - {fileID: 3964160271474237182}
+  suppressAllAutoSelections: 0
+--- !u!114 &7946743136925083747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 51
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Ava avaNeutral: Well, it may not be in the *near* future, but it\u2019s
+      in the future for sure.\r\nAva avaHappy: You\u2019re making good connections
+      with the fans so far. So, it\u2019s gotta be in your future to be a champion!\r"
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &9137200194976959104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 509.5714
+    y: 965.7486
+    width: 170.44759
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 48
+  blockName: JadeRoom_C_Route_3
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1458730240881391352}
+  - {fileID: 5581076457545948149}
+  suppressAllAutoSelections: 0
+--- !u!114 &9145122924328231434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339140094728568704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 69
+  indentLevel: 0
+  variable: {fileID: 3839983630854769126}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
+--- !u!1001 &1303372613675957215
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 201062587, guid: f00e7bd22836d09478bb370a8a1d4209, type: 3}
+      propertyPath: conversationText.stringVal
+      value: "Jade: Ah\u2026 maybe I should\u2019ve just gone back to the gym.\r\nJade:
+        It was a bit rude to just blow her off like that I think.\r\n*Bzzz Bzzz*\r\nJade:
+        Oh-- It\u2019s Ava.\r\nAva: So, I forgot to tell you something pretty important.
+        It\u2019s about AOW stuff.\r\nJade: What is it?\r\nAva: Well, idk if you
+        guys planned things or anything like that in Cascadia, but AOW is *SUPER*
+        strict about planning and all that.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 201062587, guid: f00e7bd22836d09478bb370a8a1d4209, type: 3}
+      propertyPath: itemId
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: selectedCommands.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: selectedBlocks.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: variables.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: version
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: blockViewHeight
+      value: 326
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: scrollPos.x
+      value: 564.3699
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: scrollPos.y
+      value: 42.730495
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: zoom
+      value: 0.4915001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: variables.Array.data[0]
+      value: 
+      objectReference: {fileID: 3839983630854769127}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: variables.Array.data[1]
+      value: 
+      objectReference: {fileID: 3839983630854769126}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: selectedCommands.Array.data[0]
+      value: 
+      objectReference: {fileID: 772210964870732323}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: variables.Array.data[2]
+      value: 
+      objectReference: {fileID: 3202131658350018459}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: variables.Array.data[3]
+      value: 
+      objectReference: {fileID: 2006738001222705724}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: selectedBlocks.Array.data[0]
+      value: 
+      objectReference: {fileID: 6997450317906641679}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: selectedBlocks.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: commandList.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: commandList.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: commandList.Array.data[1]
+      value: 
+      objectReference: {fileID: 201062584, guid: 39b6d48ecdc0f9c45b967c6d8ac21694,
+        type: 3}
+    - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: nodeRect.y
+      value: 58.875
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: nodeRect.x
+      value: 142.5625
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549899373137, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549899373137, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549899373137, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549899373137, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549899373137, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549899373137, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549899373137, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549899373137, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549899373137, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549899373137, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549899373137, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549899699295, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: m_Name
+      value: JadeRoom_Ava_AvaRoute_Day16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549899699295, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: m_TagString
+      value: dialogue
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 201062587, guid: f00e7bd22836d09478bb370a8a1d4209, type: 3}
+    - {fileID: 4341892549888379921, guid: f00e7bd22836d09478bb370a8a1d4209, type: 3}
+    - {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: f00e7bd22836d09478bb370a8a1d4209, type: 3}
+--- !u!1 &3339140094728568704 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4341892549899699295, guid: f00e7bd22836d09478bb370a8a1d4209,
+    type: 3}
+  m_PrefabInstance: {fileID: 1303372613675957215}
+  m_PrefabAsset: {fileID: 0}

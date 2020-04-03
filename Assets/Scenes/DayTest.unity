@@ -513,7 +513,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 0}
+  selectedFlowchart: {fileID: 3339140094721472934, guid: d056cca0becff2d43a769c7d27091aeb,
+    type: 3}
 --- !u!4 &990159172
 Transform:
   m_ObjectHideFlags: 1
