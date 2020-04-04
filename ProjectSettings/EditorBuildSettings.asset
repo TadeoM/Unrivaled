@@ -10,7 +10,7 @@ EditorBuildSettings:
     guid: 1df495c5bbba57e40a9f0688a7607bf1
   - enabled: 1
     path: Assets/Scenes/Daily.unity
-    guid: c19fc7eaa43022c4189209f5d3ed4a71
+    guid: a9863493305a28e4488b16209cb657b7
   - enabled: 1
     path: Assets/Scenes/CombatTestScene.unity
     guid: efab488f1f22d0744977c8772a13b29d

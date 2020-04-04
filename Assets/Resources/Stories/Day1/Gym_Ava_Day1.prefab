@@ -16,7 +16,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 189.23499
     y: 622.4115
-    width: 135.98451
+    width: 138.04814
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -206,9 +206,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 165.39928
+    x: 163.67958
     y: 415.25125
-    width: 178.97678
+    width: 180.69646
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -250,9 +250,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 174.9541
+    x: 173.2344
     y: 309.84476
-    width: 158.34048
+    width: 160.06018
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -301,7 +301,8 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "???: Yo, are you okay? Looks like you\u2019re struggling."
+    stringVal: "Jade jadeHappy left:\n???: Yo, are you okay? Looks like you\u2019re
+      struggling."
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -415,7 +416,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 319.89697
     y: 524.07367
-    width: 154.90111
+    width: 157.30869
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -473,7 +474,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 18.138103
     y: 529.20435
-    width: 163.49956
+    width: 164.18744
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -651,7 +652,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -702,7 +703,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2561554905222945275}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]

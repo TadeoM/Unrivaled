@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 0
 --- !u!196 &4
@@ -512,7 +513,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1755499606}
+  selectedFlowchart: {fileID: 8250246106387040838, guid: 6770167680597a14ba14c6b24e0bba8e,
+    type: 3}
 --- !u!4 &1226317643
 Transform:
   m_ObjectHideFlags: 1
@@ -816,7 +818,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1726345443}
   - component: {fileID: 1726345442}
-  - component: {fileID: 1726345441}
   - component: {fileID: 1726345440}
   - component: {fileID: 1726345439}
   m_Layer: 0
@@ -835,14 +836,6 @@ AudioListener:
   m_GameObject: {fileID: 1726345438}
   m_Enabled: 1
 --- !u!124 &1726345440
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1726345438}
-  m_Enabled: 1
---- !u!92 &1726345441
 Behaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1044,25 +1037,31 @@ MonoBehaviour:
     stringRef: {fileID: 0}
     stringVal: 'john bored left: Oh, so that''s how you use the Conversation command.
 
-      sherlock eyeroll right nowait: Yes, well done John. {w=1.5}
+      sherlock
+      eyeroll right nowait: Yes, well done John. {w=1.5}
 
-      You catch on quickly don''t you?
+      You catch on quickly
+      don''t you?
 
       sherlock >>>:
 
-      hide john "offscreen left": I sure do.
+      hide john "offscreen left": I sure
+      do.
 
 
       -- This is a comment, it doesn''t appear in the conversation
 
 
-      john angry left nowait: Wait {w=0.6}
+      john
+      angry left nowait: Wait {w=0.6}
 
       middle noclear:, what!
 
-      left nofade: There''s no need to be rude Sherlock!
+      left nofade:
+      There''s no need to be rude Sherlock!
 
-      bored: Not like that would stop you.
+      bored: Not like that would stop
+      you.
 
 '
   clearPrevious:
@@ -1157,16 +1156,19 @@ MonoBehaviour:
   luaFile: {fileID: 0}
   luaScript: '-- Gobal variables can be embedded using the {$VarName} syntax.
 
-    adjective = "riveting"
+    adjective
+    = "riveting"
 
 
     conversation [[
 
-    sherlock excited <<<: AHA! So that''s how you do a conversation from Lua!
+    sherlock excited <<<: AHA! So that''s
+    how you do a conversation from Lua!
 
     Fascinating.
 
-    john bored left: Yes, {$adjective}.
+    john bored left: Yes,
+    {$adjective}.
 
 
     john hide:
