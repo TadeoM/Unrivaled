@@ -20,7 +20,8 @@ MonoBehaviour:
       joking. Ava told me about it before she made her debut to D3.\r\nJade: Oh\u2026\r\nLuther:
       Anyway, thanks for letting me work in. I\u2019ll see you around.\nJade: Yeah
       no problem, Luther\u2026 I\u2019ll see you around too!\r\nJade: (The champ,
-      huh? I need to work a bit harder to get to his level\u2026)\r"
+      huh? I need to work a bit harder to get to his level\u2026)\r\nJade hide:\nLuther
+      hide:"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -143,7 +144,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 115.50824
     y: 478.04892
-    width: 195.90155
+    width: 200.81958
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -275,7 +276,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -149.7832
     y: 467.86044
-    width: 195.90155
+    width: 200.81958
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -309,7 +310,7 @@ MonoBehaviour:
       Yeah. She\u2019s fun to work with.\r\nLuther: Anyway, thanks for letting me
       work in. I\u2019ll see you around.\nJade: Yeah no problem, Luther\u2026 I\u2019ll
       see you around too!\r\nJade: (The champ, huh? I need to work a bit harder to
-      get to his level\u2026)\r"
+      get to his level\u2026)\r\nJade hide:\nLuther hide:"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -338,7 +339,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 140.79376
     y: 155.48444
-    width: 168.03271
+    width: 171.96713
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -437,7 +438,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 106.80523
     y: 347.13687
-    width: 220.4917
+    width: 225.7376
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -615,7 +616,7 @@ MonoBehaviour:
   indentLevel: 0
   text: Yep, that's me!
   description: 
-  targetBlock: {fileID: 4886786588072121476}
+  targetBlock: {fileID: 0}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -695,12 +696,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 205.81229
+      value: 327.1237
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: 117.68035
+      value: -211.82764
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -736,7 +737,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 3320459285127644974}
+      objectReference: {fileID: 3320459285127644971}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -751,7 +752,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 3320459285127644982}
+      objectReference: {fileID: 3320459285127644970}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[4]

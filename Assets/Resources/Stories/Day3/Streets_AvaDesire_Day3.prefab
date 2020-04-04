@@ -187,7 +187,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 106.47108
     y: 779.4191
-    width: 260.86935
+    width: 265.65198
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -491,6 +491,70 @@ MonoBehaviour:
   fadeWhenDone:
     booleanRef: {fileID: 0}
     booleanVal: 1
+--- !u!114 &-1880346169416348321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3812695053084132212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 132
+  indentLevel: 0
+  variable: {fileID: 3221129458199398346}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &-1721451435759907276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,7 +571,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 530.22406
     y: 931.2073
-    width: 247.8259
+    width: 251.73892
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -663,7 +727,7 @@ MonoBehaviour:
       kayfabe, especially towards people he\u2019s never met.\r\nJade jadeNeutral:
       Oh, he\u2019s literally always in character\u2026\r\nAva avaHappy: Right! But
       trust me, he\u2019s a great guy! Very easy to talk to!\r\nAva: Anyway, let\u2019s
-      get you ready for tonight!\r\n"
+      get you ready for tonight!\r\nJade hide:\nAva hide:"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -737,8 +801,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 318.28986
-    y: 1397.2834
-    width: 249.9998
+    y: 1395.1095
+    width: 253.47806
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -749,6 +813,7 @@ MonoBehaviour:
   commandList:
   - {fileID: -1066322026056749404}
   - {fileID: 4499922245531123351}
+  - {fileID: -1880346169416348321}
   suppressAllAutoSelections: 0
 --- !u!114 &70745926964119233
 MonoBehaviour:
@@ -829,7 +894,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 412.22012
     y: 470.84387
-    width: 236.95633
+    width: 239.56502
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -855,9 +920,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -99.035126
+    x: -101.20904
     y: 1401.2368
-    width: 249.9998
+    width: 253.47806
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -868,6 +933,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 7008680346689278894}
   - {fileID: 4867735963979204840}
+  - {fileID: 6898341527639797012}
   suppressAllAutoSelections: 0
 --- !u!114 &2051540011717874475
 MonoBehaviour:
@@ -885,7 +951,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 117.14758
     y: 473.1309
-    width: 236.95633
+    width: 239.56502
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -914,7 +980,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -247.23264
     y: 940.94653
-    width: 247.8259
+    width: 251.73892
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -943,7 +1009,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 135.94891
     y: 1080.107
-    width: 197.82594
+    width: 199.56506
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1091,7 +1157,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -198.9635
     y: 471.13913
-    width: 236.95633
+    width: 239.56502
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1243,7 +1309,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 140.79376
     y: 155.48444
-    width: 186.95639
+    width: 187.39116
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -1286,7 +1352,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 106.80523
     y: 347.13687
-    width: 260.86935
+    width: 263.91284
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -1643,6 +1709,70 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &6898341527639797012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3812695053084132212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 133
+  indentLevel: 0
+  variable: {fileID: 3221129458199398346}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &7008680346689278894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1674,7 +1804,7 @@ MonoBehaviour:
       jadeSad: Oh\u2026\r\nAva: Don\u2019t worry about it. He\u2019s just in kayfabe
       all the time.\r\nJade jadeNeutral: How is he in real life?\r\nAva avaHappy:
       Anyway\u2026 \r\nAva: Let\u2019s go inside so you can get ready for your match!\r\nJade:
-      Wait, but my question\u2014\r\n"
+      Wait, but my question\u2014\r\nJade hide:\nAva hide:\n"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -1807,7 +1937,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 80.31731
     y: 1240.957
-    width: 263.04327
+    width: 267.39108
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -1923,12 +2053,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 287.08563
+      value: 126.216286
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: 434.71405
+      value: -1132.6752
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -1964,7 +2094,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 3221129459005777476}
+      objectReference: {fileID: 7008680346689278894}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -1979,7 +2109,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 3221129459005777479}
+      objectReference: {fileID: 1999136430555601209}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[4]

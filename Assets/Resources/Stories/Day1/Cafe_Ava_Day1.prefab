@@ -16,7 +16,12 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: 'Ava avaSad: Awww, that''s okay. Rest up! I''ll text you then.'
+    stringVal: 'Ava avaSad: Awww, that''s okay. Rest up! I''ll text you then.
+
+      Ava
+      hide:
+
+      Jade hide:'
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -198,7 +203,11 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: 'Ava avaHappy: Cool!'
+    stringVal: 'Ava avaHappy: Cool!
+
+      Ava hide:
+
+      Jade hide:'
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -227,7 +236,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 159.40567
     y: 737.64417
-    width: 177.78464
+    width: 178.06721
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -281,7 +290,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 272.94064
     y: 1024.6544
-    width: 174.42189
+    width: 174.69702
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -420,7 +429,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 137.08437
     y: 835.1607
-    width: 189.55429
+    width: 189.86287
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -547,7 +556,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -18.399689
     y: 517.5698
-    width: 152.564
+    width: 152.79079
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -660,7 +669,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 195.71962
     y: 524.006
-    width: 152.564
+    width: 152.79079
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -688,7 +697,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 139.33492
     y: 930.92664
-    width: 179.46602
+    width: 179.7523
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -716,7 +725,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 143.86996
     y: 411.75104
-    width: 177.78464
+    width: 178.06721
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -835,7 +844,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 401.0633
     y: 529.71436
-    width: 152.564
+    width: 152.79079
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -892,7 +901,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 153.80315
     y: 310.77002
-    width: 157.60812
+    width: 157.84607
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -1077,7 +1086,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 196.44096
     y: 647.6638
-    width: 135.75021
+    width: 135.93985
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1146,8 +1155,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 23.123077
-    y: 1017.7289
-    width: 174.42189
+    y: 1015.6225
+    width: 174.69702
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1278,17 +1287,17 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 135.39702
+      value: 197.78024
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: 14.672499
+      value: -886.76385
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: zoom
-      value: 0.59475064
+      value: 0.47475073
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -1304,7 +1313,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 5339854179224591545}
+      objectReference: {fileID: -5777020484695663835}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -1319,7 +1328,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 5339854179224591526}
+      objectReference: {fileID: 8482844487837882881}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

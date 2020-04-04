@@ -115,7 +115,8 @@ MonoBehaviour:
       nice enough.\r\nJade jadeNeutral: Dante, huh? When can I meet him?\r\nAva:
       Well, I can try to get in touch with him and set something up by tomorrow.\nAva:
       I\u2019ll text you in the morning! \nAva avaHappy: I\u2019m going to get going
-      though. Take care, Jade~\r\nJade jadeHappy: See you later, Ava!\r\n"
+      though. Take care, Jade~\r\nJade jadeHappy: See you later, Ava!\r\nAva hide:\nJade
+      hide:\n"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -142,7 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 129.67902
+    x: 131.24152
     y: 515.78436
     width: 208.75003
     height: 40
@@ -477,7 +478,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 7978296649918453245}
+      objectReference: {fileID: 7978296649918453240}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -492,7 +493,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 7978296649918453246}
+      objectReference: {fileID: 7978296649918453241}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

@@ -62,7 +62,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 114.118484
     y: 1406.4043
-    width: 245.91821
+    width: 251.73895
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -116,7 +116,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 100.26756
     y: 1013.5727
-    width: 245.91821
+    width: 251.73895
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -145,7 +145,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -135.30557
     y: 715.1695
-    width: 188.7754
+    width: 190.86943
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -173,7 +173,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -75.32515
     y: 1106.7869
-    width: 188.7754
+    width: 192.60857
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -335,7 +335,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 155.61118
     y: 1576.8947
-    width: 182.2448
+    width: 185.65205
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -505,7 +505,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 126.117615
     y: 717.6439
-    width: 188.7754
+    width: 190.86943
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -642,7 +642,7 @@ MonoBehaviour:
       and everything. He\u2019s been here long enough! \nAva avaHappy: I gotta go
       do some grocery shopping in the meantime. I\u2019ll text you later! See ya!
       >happy<\r\nJade: Alright! Bye-bye! \nJade: I guess I\u2019ll just relax before
-      heading over to the gym.\r\n"
+      heading over to the gym.\r\nAva hide:\nJade hide:\n"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -766,7 +766,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 92.99481
     y: 617.2098
-    width: 244.28555
+    width: 249.99982
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -795,7 +795,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 328.13113
     y: 1109.8392
-    width: 188.7754
+    width: 192.60857
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -823,7 +823,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 89.39332
     y: 421.64148
-    width: 244.28555
+    width: 248.26068
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -946,7 +946,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 127.679016
     y: 312.78436
-    width: 167.55093
+    width: 169.9999
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -974,7 +974,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 124.52437
     y: 504.4441
-    width: 180.61214
+    width: 182.1738
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1136,7 +1136,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 393.7048
     y: 719.4961
-    width: 190.40805
+    width: 190.86943
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1164,7 +1164,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 135.2086
     y: 1250.7604
-    width: 182.2448
+    width: 185.65205
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1247,7 +1247,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 129.84868
     y: 885.67523
-    width: 180.61214
+    width: 183.91292
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1389,12 +1389,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -1414,17 +1414,17 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 88.39903
+      value: 159.2064
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: -446.80527
+      value: -1369.7415
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: zoom
-      value: 0.4900004
+      value: 0.4600004
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -1440,7 +1440,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5738328547405707805}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]

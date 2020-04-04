@@ -234,7 +234,8 @@ MonoBehaviour:
       Oh, let me get ready. Is this for the match planning thing? \r\nAva: No no!
       We can\u2019t do that in public, remember? We\u2019re just hanging out until
       then so you two can get to know each other! \u2267\u25E1\u2266\r\nJade: Oh,
-      okay. I\u2019ll be over in like 30.\r\nAva: Awesome! I\u2019ll meet you there!\r\n"
+      okay. I\u2019ll be over in like 30.\r\nAva: Awesome! I\u2019ll meet you there!\r\nAva
+      hide:\nJade hide:"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -492,12 +493,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 32.791138
+      value: 22.55348
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: -162.96057
+      value: -437.91473
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -518,7 +519,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 2194332103878688842}
+      objectReference: {fileID: 722985461160549942}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
