@@ -463,9 +463,16 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Jade jadeNeutral: Man, I\u2019m so nervous\u2026\r\nJade: I\u2019d
-      never get up this early to go out, but I just can\u2019t shake this feeling.\r\nJade:
-      Eh, maybe I should see if Dante is available.\r"
+    stringVal: "Dante danteNeutral right:\nJade jadeHappy left: Hey Dante!\r\nDante
+      danteHappy: Hey Jade!\r\nDante: I know you\u2019re a little nervous, but don\u2019t
+      be! It\u2019s your first win! You should be beyond excited!\r\nJade jadeNeutral:
+      Yeah, I know\u2026 I just can\u2019t help it much, you know?\r\nDante danteNeutral:
+      Yeah, I get you. I remember when I got my first win in AOW. It was a long time
+      coming.\r\nJade: What exactly happened?\r\nDante: Well, I don\u2019t know if
+      I\u2019ve told you yet or not, but I used to be a jobber for a few months.\r\nDante
+      danteHappy: I think I did say that it was because of my talking that I got
+      more popular.\r\nDante danteNeutral: But before then, I was mostly just a jobber
+      getting beat up often.\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -557,7 +564,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 202.50511
-    y: 486.50217
+    y: 522.243
     width: 196.53761
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
@@ -852,7 +859,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -877,12 +884,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 500.36642
+      value: 119.130394
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: -233.96887
+      value: -138.6599
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -903,7 +910,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5323425272583300228}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -918,7 +925,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: -5165830311616369313}
+      objectReference: {fileID: 5323425272583300231}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

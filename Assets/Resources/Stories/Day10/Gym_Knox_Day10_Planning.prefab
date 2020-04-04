@@ -192,7 +192,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 130.68668
     y: 2294.517
-    width: 199.43958
+    width: 186.3554
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -387,7 +387,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 127.56292
     y: 931.60803
-    width: 309.0286
+    width: 287.89664
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -487,7 +487,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -53.036835
     y: 1573.8275
-    width: 249.25276
+    width: 232.77425
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -569,7 +569,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 148.38512
     y: 673.3517
-    width: 309.0286
+    width: 286.44604
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -664,7 +664,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 117.76272
     y: 1950.9764
-    width: 309.0286
+    width: 286.44604
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -739,7 +739,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 176.81252
     y: 1731.8947
-    width: 199.43958
+    width: 186.3554
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -788,7 +788,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 164.74316
     y: 1039.7285
-    width: 247.26024
+    width: 231.32365
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -867,7 +867,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 215.85562
     y: 566.8935
-    width: 241.28265
+    width: 225.5213
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -953,7 +953,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 97.916
     y: 1412.9452
-    width: 309.0286
+    width: 286.44604
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -1072,7 +1072,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -142.94495
     y: 2109.37
-    width: 249.25276
+    width: 234.22482
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1100,7 +1100,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 350.908
     y: 1571.5533
-    width: 249.25276
+    width: 232.77425
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1128,7 +1128,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -445.10107
     y: 1291.2588
-    width: 199.43958
+    width: 184.9048
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1384,7 +1384,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 165.96648
     y: 2109.6528
-    width: 249.25276
+    width: 234.22482
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1412,7 +1412,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 464.6979
     y: 1042.1761
-    width: 249.25276
+    width: 231.32365
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1470,7 +1470,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 115.2334
     y: 453.68185
-    width: 307.03607
+    width: 284.99545
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -1564,14 +1564,15 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Knox: Oi, Jade!\r\nJade: Hey Knox!\r\nKnox knoxHappy: It\u2019s going
-      to be awesome working with you, that\u2019s for sure. You ready to get started?\r\nJade
-      jadeHappy: Yeah, let\u2019s make a\u2026 uhh\u2026\r\nJade: Slobber\u2026 Knocker!\r\nKnox:
-      Yep! That\u2019s the spirit.\r\nKnox knoxNeutral: Alright, so this is your
-      first match you\u2019re gonna win, right?\r\nJade: Right.\r\nKnox: Nice, so
-      I think we should have a longer match to make the crowd feel like you\u2019ve
-      earned it, especially against Inferno.\r\nJade: Yeah, that makes sense.\r\nKnox:
-      So, I\u2019m thinking a 90 second match. What do you think so far?\r"
+    stringVal: "Jade jadeNeutral left:\nKnox knoxNeutral right: Oi, Jade!\r\nJade:
+      Hey Knox!\r\nKnox knoxHappy: It\u2019s going to be awesome working with you,
+      that\u2019s for sure. You ready to get started?\r\nJade jadeHappy: Yeah, let\u2019s
+      make a\u2026 uhh\u2026\r\nJade: Slobber\u2026 Knocker!\r\nKnox: Yep! That\u2019s
+      the spirit.\r\nKnox knoxNeutral: Alright, so this is your first match you\u2019re
+      gonna win, right?\r\nJade: Right.\r\nKnox: Nice, so I think we should have
+      a longer match to make the crowd feel like you\u2019ve earned it, especially
+      against Inferno.\r\nJade: Yeah, that makes sense.\r\nKnox: So, I\u2019m thinking
+      a 90 second match. What do you think so far?\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -1621,7 +1622,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 125.164795
     y: 328.98257
-    width: 247.26024
+    width: 228.42247
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -1649,7 +1650,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 486.62927
     y: 2105.301
-    width: 251.24529
+    width: 234.22482
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1677,7 +1678,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -130.39154
     y: 1033.0735
-    width: 247.26024
+    width: 231.32365
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1705,7 +1706,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -155.53467
     y: 555.5975
-    width: 241.28265
+    width: 225.5213
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1787,7 +1788,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 154.28622
     y: 1191.9447
-    width: 309.0286
+    width: 287.89664
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -1815,7 +1816,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 738.1199
     y: 767.446
-    width: 197.44704
+    width: 183.45421
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1890,17 +1891,17 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 1118.4515
+      value: 180.48613
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: -787.7321
+      value: 4.038719
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: zoom
-      value: 0.40150008
+      value: 0.5515
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -1916,7 +1917,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: -1460969634342730341}
+      objectReference: {fileID: 6836518063543257382}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -1931,7 +1932,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 7658811398630952139}
+      objectReference: {fileID: 1804049930474075955}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

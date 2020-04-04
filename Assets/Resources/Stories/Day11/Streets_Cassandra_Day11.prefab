@@ -149,10 +149,10 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Cassandra cassandraHappy: Well, well. I\u2019m surprised to see you
-      around here. How are you?\r\nJade jadeAngry: \u2026\r\nCassandra cassandraAngry:
-      What?\r\nJade: You know, the card you told me about Friday was wrong?\r\nCassandra
-      cassandraNeutral: Oh, was it? Oops, my bad.\r"
+    stringVal: "Cassandra cassandraHappy right: Well, well. I\u2019m surprised to
+      see you around here. How are you?\r\nJade jadeAngry left: \u2026\r\nCassandra
+      cassandraAngry: What?\r\nJade: You know, the card you told me about Friday
+      was wrong?\r\nCassandra cassandraNeutral: Oh, was it? Oops, my bad.\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -599,12 +599,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 500.36642
+      value: 142.95763
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: -233.96887
+      value: -64.19966
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -625,7 +625,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 438446016435402259}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -640,7 +640,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 438446016435402251}
+      objectReference: {fileID: 438446016435402256}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.data[1]

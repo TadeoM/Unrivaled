@@ -443,10 +443,10 @@ MonoBehaviour:
   conversationText:
     stringRef: {fileID: 0}
     stringVal: "Jade goes to the gym and starts stretching before a familiar face
-      walks by her and immediately goes to the mirror to do a few poses to himself.\r\nJade:
-      \u2026!\r\nJade: (Wait\u2026 what is he even doing?)\r\nSmooth Desire (looking
-      at the mirror still): I heard you\u2019re having a match tomorrow. Jade Valentine.
-      Do you feel prepared?\r"
+      walks by her and immediately goes to the mirror to do a few poses to himself.\r\nSmooth
+      Desire right:\nJade jadeNeutral left: \u2026!\r\nJade: (Wait\u2026 what is
+      he even doing?)\r\nSmooth Desire: I heard you\u2019re having a match tomorrow.
+      Jade Valentine. Do you feel prepared?\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -655,7 +655,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -706,7 +706,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 3172109815589560558}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -721,7 +721,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 9146877715852253801}
+      objectReference: {fileID: 3172109815589560557}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size
@@ -806,7 +806,7 @@ PrefabInstance:
     - target: {fileID: 4341892549899699295, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: m_Name
-      value: Gm_SmoothDesi
+      value: Gym_SmoothDesire_Day10
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549899699295, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}

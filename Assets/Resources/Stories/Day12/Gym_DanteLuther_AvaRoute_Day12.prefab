@@ -38,10 +38,11 @@ MonoBehaviour:
   conversationText:
     stringRef: {fileID: 0}
     stringVal: "Dante: But anyway, you want to work in with us? We can catch up.
-      You can tell Jade here some stories about D2 and D1.\r\nLuther lutherNeutral:
-      Sure, I\u2019d love to.\r\nJade jadeHappy: (Oh no\u2026)\r\nJade: Let\u2019s
-      do it!\r\nThe trio work out for about two hours, enjoying each other\u2019s
-      company as they do so.\r\n"
+      You can tell Jade here some stories about D2 and D1.\r\nDante hide:\nDante
+      danteNeutral \"offscreen right\":\nLuther lutherNeutral: Sure, I\u2019d love
+      to.\r\nJade jadeHappy: (Oh no\u2026)\r\nJade: Let\u2019s do it!\r\nThe trio
+      work out for about two hours, enjoying each other\u2019s company as they do
+      so.\r\n"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -54,6 +55,27 @@ MonoBehaviour:
   fadeWhenDone:
     booleanRef: {fileID: 0}
     booleanVal: 1
+--- !u!114 &-732123956873293082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694973083947254648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 33
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 8040136857488138334}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!114 &172701952399175285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,22 +267,29 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Dante danteHappy: What\u2019s up, Jade?\r\nJade jadeHappy: Hey Dante.\r\nDante
-      danteNeutral: How are you feeling? Ready to go?\r\nJade jadeNeutral: I guess
-      that depends on what we\u2019re doing.\r\nDante danteHappy: \u2026\r\nJade
-      jadeSad: \u2026\r\nDante: Chest and biceps.\r\nJade jadeNeutral: Oh, thank
-      God\u2026\r\nDante: Haha! Don\u2019t worry, I know how much you hate doing
-      legs. Switched it up for you.\r\nDante danteNeutral: Alright, let\u2019s get
-      it started then.\r\nJade jadeNeutral: Let\u2019s do it!\r\nDante and Jade workout
-      for about 20 minutes before Luther comes to the bench they\u2019re rotating
-      on. He looks quite happy.\r\nLuther lutherHappy: Dante, my man.\r\nDante danteHappy:
-      Yo, Luther! What\u2019s up?\r\nLuther: You know, the usual.\r\nDante: Ah yeah,
-      just being the champ and all haha!\r\nDante danteNeutral: Jade, this is the
-      D1 champ, Luther!\r\nJade jadeHappy: Hi Luther, we\u2019ve actually met before.
-      Remember?\r\nLuther lutherNeutral: I do, actually. We worked out together.\r\nLuther:
-      You were pretty strong.\r\nDante: Oh worm? Guess we\u2019ll have to up the
-      intensity.\r\nJade: (Thanks, Luther\u2026)\r\nLuther: What about you two? How\u2019s
-      it going?\r\nDante: Eh, you know, just grinding.\r"
+    stringVal: "Jade jadeNeutral left:\nDante danteHappy right: What\u2019s up, Jade?\r\nJade
+      jadeHappy: Hey Dante.\r\nDante danteNeutral: How are you feeling? Ready to
+      go?\r\nJade jadeNeutral: I guess that depends on what we\u2019re doing.\r\nDante
+      danteHappy: \u2026\r\nJade jadeSad: \u2026\r\nDante: Chest and biceps.\r\nJade
+      jadeNeutral: Oh, thank God\u2026\r\nDante: Haha! Don\u2019t worry, I know how
+      much you hate doing legs. Switched it up for you.\r\nDante danteNeutral: Alright,
+      let\u2019s get it started then.\r\nJade jadeNeutral: Let\u2019s do it!\r\nDante
+      and Jade workout for about 20 minutes before Luther comes to the bench they\u2019re
+      rotating on. He looks quite happy.\r\n\nDante hide:\nDante danteNeutral \"offscreen
+      right\":\nLuther lutherHappy right: Dante, my man.\r\nLuther hide:\nLuther
+      lutherHappy \"offscreen right\":\nDante danteHappy: Yo, Luther! What\u2019s
+      up?\r\nDante hide:\nDante danteHappy \"offscreen right\":\nLuther: You know,
+      the usual.\r\nLuther hide:\nLuther lutherHappy \"offscreen right\":\nDante:
+      Ah yeah, just being the champ and all haha!\r\nDante danteNeutral: Jade, this
+      is the D1 champ, Luther!\r\nJade jadeHappy: Hi Luther, we\u2019ve actually
+      met before. Remember?\r\nDante hide:\nDante danteNeutral \"offscreen right\":\nLuther
+      lutherNeutral: I do, actually. We worked out together.\r\nLuther: You were
+      pretty strong.\r\nLuther hide:\nLuther lutherNeutral \"offscreen right\":\nDante:
+      Oh worm? Guess we\u2019ll have to up the intensity.\r\nDante hide:\nDante danteNeutral
+      \"offscreen right\":\nJade: (Thanks, Luther\u2026)\r\nLuther: What about you
+      two? How\u2019s it going?\r\nLuther hide:\nLuther lutherNeutral \"offscreen
+      right\":\nDante: Eh, you know, just grinding.\r\nDante hide:\nDante danteNeutral
+      \"offscreen right\":"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -372,13 +401,16 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Luther lutherHappy: Nice.\r\nDante: It took Luther quite a long time
-      to get to the top, even with his background.\r\nJade jadeNeutral: What was
-      his background?\r\nDante: Oh, you haven\u2019t heard? He was a champion boxer
-      in a mixed league.\r\nJade: Wait, are you serious?\r\nDante: Yeah man, he was
-      a beast.\r\nLuther lutherNeutral: You\u2019re too kind, Dante.\r\nDante: Bro!
-      You were! How is an all-organic going to just whoop people in a mixed league?\r\nDante:
-      Probably inspired millions.\r\nJade: Damn\u2026\r\n"
+    stringVal: "Dante hide:\nDante danteNeutral \"offscreen right\":\nLuther lutherHappy:
+      Nice.\r\nLuther hide:\nLuther lutherHappy \"offscreen right\":\nDante: It took
+      Luther quite a long time to get to the top, even with his background.\r\nJade
+      jadeNeutral: What was his background?\r\nDante: Oh, you haven\u2019t heard?
+      He was a champion boxer in a mixed league.\r\nJade: Wait, are you serious?\r\nDante:
+      Yeah man, he was a beast.\r\nDante hide:\nDante danteNeutral \"offscreen right\":\nLuther
+      lutherNeutral: You\u2019re too kind, Dante.\r\nLuther hide:\nLuther lutherNeutral
+      \"offscreen right\":\nDante: Bro! You were! How is an all-organic going to
+      just whoop people in a mixed league?\r\nDante: Probably inspired millions.\r\nJade:
+      Damn\u2026\r\n"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -407,13 +439,16 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Luther lutherNeutral: I\u2019m sure it\u2019s not as bad as you think
-      it is.\r\nLuther: Didn\u2019t you just lose to Ava?\r\nJade jadeNeutral: Yeah\u2026\r\nLuther:
-      Yeah, not a big deal.\r\nLuther: It\u2019s not like she\u2019s some nobody.\r\nDante
-      danteNeutral: I heard somewhere that the plan is for her to beat everyone in
-      the division eventually.\r\nJade: Oh\u2026 Really? She never told me that.\r\nLuther:
-      Probably because she doesn\u2019t know. AOW keeps things tight.\r\nDante: Yeah,
-      I don\u2019t know if it\u2019s true or not.\r"
+    stringVal: "Dante hide:\nDante danteNeutral \"offscreen right\":\nLuther lutherNeutral:
+      I\u2019m sure it\u2019s not as bad as you think it is.\r\nLuther: Didn\u2019t
+      you just lose to Ava?\r\nJade jadeNeutral: Yeah\u2026\r\nLuther: Yeah, not
+      a big deal.\r\nLuther: It\u2019s not like she\u2019s some nobody.\r\nLuther
+      hide:\nLuther lutherNeutral \"offscreen right\":\nDante danteNeutral: I heard
+      somewhere that the plan is for her to beat everyone in the division eventually.\r\nDante
+      hide:\nDante danteNeutral \"offscreen right\":\nJade: Oh\u2026 Really? She
+      never told me that.\r\nLuther: Probably because she doesn\u2019t know. AOW
+      keeps things tight.\r\nLuther hide:\nLuther lutherNeutral \"offscreen right\":\nDante:
+      Yeah, I don\u2019t know if it\u2019s true or not.\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -518,27 +553,6 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
---- !u!114 &-732123956873293082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 694973083947254648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 33
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 8040136857488138334}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
 --- !u!1001 &3883380594596218663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -562,7 +576,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -613,7 +627,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: -3268889573953149131}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]

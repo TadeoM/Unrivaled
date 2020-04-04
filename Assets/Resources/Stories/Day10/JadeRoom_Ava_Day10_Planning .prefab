@@ -105,7 +105,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 411.99307
     y: 1319.9473
-    width: 266
+    width: 272.85718
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -162,7 +162,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 547.7296
     y: 1484.0151
-    width: 278
+    width: 281.4286
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -455,7 +455,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -910.0676
     y: 758.3549
-    width: 272
+    width: 278.57147
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -630,7 +630,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -572.9334
     y: 764.57446
-    width: 266
+    width: 272.85718
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -659,7 +659,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 116.664795
     y: 904.7478
-    width: 220.00002
+    width: 224.28574
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -687,7 +687,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -206.29121
     y: 765.79395
-    width: 266
+    width: 272.85718
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -716,7 +716,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -589.5199
     y: 906.9523
-    width: 280
+    width: 284.28574
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -766,7 +766,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 69.81501
     y: 633.28125
-    width: 278
+    width: 281.4286
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -1151,7 +1151,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -208.87654
     y: 1436.2516
-    width: 266
+    width: 272.85718
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1243,7 +1243,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 549.4116
     y: 1636.3059
-    width: 268
+    width: 275.7143
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1322,7 +1322,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 109.23468
     y: 509.91626
-    width: 256
+    width: 261.4286
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1375,7 +1375,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 90.99036
     y: 1142.8197
-    width: 278
+    width: 281.4286
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -1606,7 +1606,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 77.21227
     y: 304.51385
-    width: 278
+    width: 281.4286
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -1711,7 +1711,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -251.95844
     y: 506.03818
-    width: 256
+    width: 261.4286
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1770,7 +1770,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 127.67902
     y: 162.04181
-    width: 228.00002
+    width: 232.85716
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -1798,13 +1798,13 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: ">knock knock knock<\r\nJade jadeHappy: Hey Ava!\r\nAva avaHappy:
-      Yoooo!\r\nAva avaNeutral: Are you ready for the big plan? I\u2019m actually
-      extremely excited!\r\nAva avaHappy: I\u2019m so glad we get to wrestle each
-      other.\r\nJade: Yeah, let\u2019s do it!\r\nAva avaNeutral: Mkay, so the match
-      is supposed to be a squash match. AOW told me they wanted it to be like 20
-      seconds. So, at 20 seconds, I\u2019ll just hit my finisher and I\u2019m going
-      to pin.\r\nAva: Does that sound good with you?\r"
+    stringVal: ">knock knock knock<\r\nAva avaHappy right:\nJade jadeHappy left:
+      Hey Ava!\r\nAva avaHappy: Yoooo!\r\nAva avaNeutral: Are you ready for the big
+      plan? I\u2019m actually extremely excited!\r\nAva avaHappy: I\u2019m so glad
+      we get to wrestle each other.\r\nJade: Yeah, let\u2019s do it!\r\nAva avaNeutral:
+      Mkay, so the match is supposed to be a squash match. AOW told me they wanted
+      it to be like 20 seconds. So, at 20 seconds, I\u2019ll just hit my finisher
+      and I\u2019m going to pin.\r\nAva: Does that sound good with you?\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -1921,7 +1921,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 183.52838
     y: 1813.3715
-    width: 220.00002
+    width: 224.28574
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1995,7 +1995,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -549.12933
     y: 647.19696
-    width: 280
+    width: 284.28574
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -2119,7 +2119,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -2134,17 +2134,17 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 1231.8787
+      value: 1004.79346
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: 43.64631
+      value: 226.65326
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: zoom
-      value: 0.39999998
+      value: 0.27999997
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -2175,7 +2175,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6975647493843017366}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -2190,7 +2190,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: -595046305534951137}
+      objectReference: {fileID: 6975647493843017365}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[4]

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 10
   indentLevel: 0
-  text: Why did AOW make you be a jobber?
+  text: "Oh, you don\u2019t like her either?"
   description: 
   targetBlock: {fileID: 728315320337300779}
   hideIfVisited: 0
@@ -62,9 +62,13 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Jade jadeNeutral: Man, I\u2019m so nervous\u2026\r\nJade: I\u2019d
-      never get up this early to go out, but I just can\u2019t shake this feeling.\r\nJade:
-      Eh, maybe I should see if Dante is available.\r"
+    stringVal: "Jade jadeNeutral left:\nAva avaHappy right: Whew! I finally got here.
+      Sorry, it was like 25 minutes.\r\nJade jadeHappy: Haha, you\u2019re fine.\r\nAva
+      avaNeutral: Alright, let\u2019s just keep walking around to burn that nervous
+      energy.\r\nJade jadeNeutral: By the way, Ava\u2026 Who are you facing tonight?\r\nAva:
+      Uhh, I\u2019m facing a Dante tonight and then interrupting another match. I
+      think it\u2019s Cassandra\u2019s?\r\nAva avaAngry: I kind of hope it\u2019s
+      Cassandra\u2019s. I want to teach her a bit of a lesson.\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -134,7 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 9
   indentLevel: 0
-  text: "That must\u2019ve sucked\u2026"
+  text: "What do you mean \u201Cteach her a lesson?\u201D"
   description: 
   targetBlock: {fileID: 3246425786718379800}
   hideIfVisited: 0
@@ -549,7 +553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 31
   indentLevel: 0
-  text: Because of the legs?
+  text: " What do you mean \u201Cteach her a lesson?\u201D"
   description: 
   targetBlock: {fileID: 8474505917217219704}
   hideIfVisited: 0
@@ -855,12 +859,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -880,12 +884,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 500.36642
+      value: 211.461
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: -233.96887
+      value: -128.23546
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -906,7 +910,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 101575049341612197}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -921,7 +925,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 8126479854814083454}
+      objectReference: {fileID: 101575049341612198}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size
