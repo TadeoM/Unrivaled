@@ -27,6 +27,14 @@ public class CombatManager : MonoBehaviour
         Recover,
         Block
     }
+
+    enum animationTiming
+    {
+        preAnim,
+        anim,
+        postAnim,
+        waiting
+    }
     public enum WrestlerState
     {
         standing,
@@ -51,6 +59,8 @@ public class CombatManager : MonoBehaviour
     private Vector3 startingPlayerPos;
     private Vector3 startingOppoPos;
 
+
+
     //animation
     private AnimatorControllerParameter[] playerAnimParams;
     private Animator playerAnimRef;
@@ -71,6 +81,9 @@ public class CombatManager : MonoBehaviour
     private MatchState matchState;
     private WrestlerState playerState;
     private WrestlerState enemyState;
+    private animationTiming playerAnimTiming;
+    private animationTiming oppoAnimTiming;
+
 
     private DialogueManager dialogueManager;
     //CONSTANTS
@@ -100,13 +113,13 @@ public class CombatManager : MonoBehaviour
     //private Vector3 right3Button = new Vector3(-5f, 0.5f, 0f);
 
     private Vector3[] buttonPlacement = {
-                                        new Vector3(0f, -2.5f, -1.5f),
-                                        new Vector3(-1.75f, -1.5f, -1f),
+                                        new Vector3(0f, -1.5f, -4.5f),
+                                        new Vector3(-1.75f, -1.25f, -1f),
                                         new Vector3(-2f, -0.5f, -0.5f),
                                         new Vector3(-3f, 0.5f, 0f),
                                         new Vector3(3f, 0.5f, 0f),
                                         new Vector3(2f, -0.5f, -0.5f),
-                                        new Vector3(1.75f, -1.5f, -1f)
+                                        new Vector3(1.75f, -1.25f, -1f)
 
                                         };
 
@@ -294,7 +307,7 @@ public class CombatManager : MonoBehaviour
             buttons[i].transform.GetChild(0).GetComponent<TextMesh>().text = possiblePlayerMoves[i];
             buttons[i].transform.position = playerRef.transform.position + buttonPlacement[i];
         }
-        buttons[0].transform.localScale = new Vector3(1.6f, 1.6f, 1.6f);
+        buttons[0].transform.localScale = new Vector3(1f, 1f, 1f);
         
 
     }
@@ -315,9 +328,9 @@ public class CombatManager : MonoBehaviour
             {
                 //set scale
                 if (i == currentCenterButton)
-                    buttons[i].transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+                    buttons[i].transform.localScale = new Vector3(0.9f, 0.9f, 0.9f);
                 else
-                    buttons[i].transform.localScale = Vector3.one;
+                    buttons[i].transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
 
 
                 if (i - currentCenterButton == -1)
@@ -641,8 +654,14 @@ public class CombatManager : MonoBehaviour
         #region player animating
         if (playerMove == "Attack")
         {
+            //walk first
+            //if()come back here list
             transitionToAnimation(animation.Attack, "femHit", true);
+            if(playerAnimTiming == animationTiming.preAnim)
+            {
+                playerAnimRef.Play("femWalk");
 
+            }
         }
         else if(playerMove == "Block")
         {
@@ -677,7 +696,7 @@ public class CombatManager : MonoBehaviour
 
     }
 
-
+    
 
     void transitionToAnimation(animation anim, string newAnimationName,bool isPlayer)
     {
@@ -687,6 +706,8 @@ public class CombatManager : MonoBehaviour
             {
                 playerAnimRef.Play(newAnimationName);
                 currentPlayerAnim = anim;
+                if(anim== animation.Attack || anim == animation.Finisher || anim == animation.Pin || anim == animation.Pinned)
+                    playerAnimTiming = animationTiming.preAnim;
             }
         }
         else
@@ -695,6 +716,8 @@ public class CombatManager : MonoBehaviour
             {
                 oppoAnimRef.Play(newAnimationName);
                 currentOppoAnim = anim;
+                oppoAnimTiming = animationTiming.preAnim;
+
             }
         }
     }
