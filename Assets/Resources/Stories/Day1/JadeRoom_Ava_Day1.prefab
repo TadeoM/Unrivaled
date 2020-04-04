@@ -82,7 +82,7 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Jade: Ah\u2026 maybe I should\u2019ve just gone back to the gym.\r\nJade:
+    stringVal: "\nJade: Ah\u2026 maybe I should\u2019ve just gone back to the gym.\r\nJade:
       It was a bit rude to just blow her off like that I think.\r\n*Bzzz Bzzz*\r\nJade:
       Oh-- It\u2019s Ava.\r\nAva: So, I forgot to tell you something pretty important.
       It\u2019s about AOW stuff.\r\nJade: What is it?\r\nAva: Well, idk if you guys
@@ -208,7 +208,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 129.67902
     y: 515.78436
-    width: 249.27275
+    width: 248.18184
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -310,7 +310,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 103.679016
     y: 418.78436
-    width: 281.27277
+    width: 280.90912
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -376,7 +376,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -422,7 +422,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2089466281}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
