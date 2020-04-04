@@ -610,6 +610,7 @@ public class CombatManager : MonoBehaviour
             Destroy(gameObject);
         }
         possiblePlayerMoves = null;
+
         //Debug.Log("Stamina" + Player.stamina);
         //Debug.Log("Audience Interest" + audienceInterest);
         Debug.Log("Player Move: " + playerMove + "\nEnemy Move: " + enemyMove);
@@ -622,9 +623,9 @@ public class CombatManager : MonoBehaviour
         {
             if (dialogueManager.flowchart != null)
             {
-                dialogueManager.ResetBlocks();
-                dialogueManager.StopDialogue();
-                dialogueManager.StartDialogue();
+                //dialogueManager.ResetBlocks();
+                //dialogueManager.StopDialogue();
+                //dialogueManager.StartDialogue();
             }
         }
         catch (System.Exception)
@@ -632,7 +633,7 @@ public class CombatManager : MonoBehaviour
 
             Debug.LogWarning("uh oh, dialogue manager issues!!!!!");
         }
-        
+
     }
 
     //this method is to be used for positioning during action phase. The actual choosing of the animation should be able to be done through editor's animator.

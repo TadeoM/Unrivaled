@@ -56,7 +56,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 103.679016
     y: 418.78436
-    width: 222.57147
+    width: 230.00003
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -115,7 +115,8 @@ MonoBehaviour:
       nice enough.\r\nJade jadeNeutral: Dante, huh? When can I meet him?\r\nAva:
       Well, I can try to get in touch with him and set something up by tomorrow.\nAva:
       I\u2019ll text you in the morning! \nAva avaHappy: I\u2019m going to get going
-      though. Take care, Jade~\r\nJade jadeHappy: See you later, Ava!\r\n"
+      though. Take care, Jade~\r\nJade jadeHappy: See you later, Ava!\r\nAva hide:\nJade
+      hide:\n"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -142,9 +143,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 129.67902
+    x: 131.24152
     y: 515.78436
-    width: 202.00005
+    width: 208.75003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -243,17 +244,17 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Ava avaHappy: So anyway, I wanted to give you some contacts and all
-      that. \nAva: Do you know who you\u2019re going to be working with?\r\nJade:
-      Can\u2019t say that I do.\r\nAva: Really? When did you get hired?\r\nJade:
-      Tuesday.\r\nAva: Oh, I guess that makes sense. They aren\u2019t the most transparent
-      group. Just kind of show up Sunday and go for it. \nAva avaHappy: Anyway, speaking
-      of Sunday\u2026\nAva avaNeutral: Wait\u2014What day did the higher ups tell
-      you to start?\r\nJade: Sunday.\r\nAva avaHappy: Great!\nAva avaNeutral: Let
-      me explain how AOW does things. \nAva: So, each Sunday you\u2019re required
-      to meet with the person/people you\u2019ll be performing with. It can be anywhere
-      discreet, really. Though, a lot of people tend to do it at the gym or in their
-      rooms at home.\r\n"
+    stringVal: "Jade jadeNeutral left:\nAva avaHappy right: So anyway, I wanted to
+      give you some contacts and all that. \nAva: Do you know who you\u2019re going
+      to be working with?\r\nJade: Can\u2019t say that I do.\r\nAva: Really? When
+      did you get hired?\r\nJade: Tuesday.\r\nAva: Oh, I guess that makes sense.
+      They aren\u2019t the most transparent group. Just kind of show up Sunday and
+      go for it. \nAva avaHappy: Anyway, speaking of Sunday\u2026\nAva avaNeutral:
+      Wait\u2014What day did the higher ups tell you to start?\r\nJade: Sunday.\r\nAva
+      avaHappy: Great!\nAva avaNeutral: Let me explain how AOW does things. \nAva:
+      So, each Sunday you\u2019re required to meet with the person/people you\u2019ll
+      be performing with. It can be anywhere discreet, really. Though, a lot of people
+      tend to do it at the gym or in their rooms at home.\r\n"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -282,7 +283,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 127.679016
     y: 313.78436
-    width: 168.85718
+    width: 172.50003
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -401,8 +402,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scope: 0
-  key: backGround
-  value: enterName
+  key: background
+  value: gymBackground
 --- !u!1001 &7646934138285983604
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -426,12 +427,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -451,17 +452,17 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: -72.816414
+      value: -53.204895
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: -238.31798
+      value: -225.9206
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: zoom
-      value: 0.6999998
+      value: 0.63999987
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -477,7 +478,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 7978296649918453240}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
