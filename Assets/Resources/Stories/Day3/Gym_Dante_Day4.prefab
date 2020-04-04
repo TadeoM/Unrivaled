@@ -167,7 +167,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 342.40625
     y: 523.05707
-    width: 195.45456
+    width: 197.27274
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -279,24 +279,24 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Jade jadeHappy: Hey Dante!\r\nDante jadeHappy: Oh, yo, what\u2019s
-      up Jade?\r\nDante:  A little earlier than expected. I was just doing a bit
-      of stretching.\r\nJade jadeNautral: Well, I like to be early often. You know
-      what they say, \u201CEarly is on-time, on-time is late.\u201D\r\nDante: Yeah,
-      I hear ya.\r\nJade: What\u2019s the plan for today?\r\nDante: Well\u2026 Three
-      sets of squats, 100 reps, 50 reps, and 25 reps, respectively. Deadlift 3 sets
-      of 12, leg curls 3 sets of 12, leg press 3 sets of 12. Rest for a minute each
-      and go again for 3 rounds. And for now, we\u2019ll stop at 5 sets of 10 for
-      squats, each set getting more difficult. \r\nDante: This isn\u2019t my usual
-      routine, but it\u2019ll help get you going.\r\nJade jadeAngry: Wait, there\u2019s
-      no way-\r\nDante danteHappy: It\u2019s leg day.\r\nJade jadeSad: Well, I guess
-      I can give it a shot.\r\nDante works Jade to the bone. She\u2019s unable to
-      finish the workout but gets about halfway there before her legs give up on
-      her.\r\nJade jadeAngry: *pant* *pant* Damn. Do you always do this every Monday?\r\nDante
-      danteHappy: Yeah, you did alright though. >happy<\r\nJade jadeNeutral: Thanks\u2026
-      I guess? I didn\u2019t even get halfway through.\r\nDante: Don\u2019t discredit
-      yourself. A lot of people can\u2019t even get through the first 100. I\u2019m
-      talking AOW athletes can\u2019t do it.\r\n"
+    stringVal: "Jade jadeHappy left: Hey Dante!\r\nDante jadeHappy right: Oh, yo,
+      what\u2019s up Jade?\r\nDante:  A little earlier than expected. I was just
+      doing a bit of stretching.\r\nJade jadeNautral: Well, I like to be early often.
+      You know what they say, \u201CEarly is on-time, on-time is late.\u201D\r\nDante:
+      Yeah, I hear ya.\r\nJade: What\u2019s the plan for today?\r\nDante: Well\u2026
+      Three sets of squats, 100 reps, 50 reps, and 25 reps, respectively. Deadlift
+      3 sets of 12, leg curls 3 sets of 12, leg press 3 sets of 12. Rest for a minute
+      each and go again for 3 rounds. And for now, we\u2019ll stop at 5 sets of 10
+      for squats, each set getting more difficult. \r\nDante: This isn\u2019t my
+      usual routine, but it\u2019ll help get you going.\r\nJade jadeAngry: Wait,
+      there\u2019s no way-\r\nDante danteHappy: It\u2019s leg day.\r\nJade jadeSad:
+      Well, I guess I can give it a shot.\r\nDante works Jade to the bone. She\u2019s
+      unable to finish the workout but gets about halfway there before her legs give
+      up on her.\r\nJade jadeAngry: *pant* *pant* Damn. Do you always do this every
+      Monday?\r\nDante danteHappy: Yeah, you did alright though. >happy<\r\nJade
+      jadeNeutral: Thanks\u2026 I guess? I didn\u2019t even get halfway through.\r\nDante:
+      Don\u2019t discredit yourself. A lot of people can\u2019t even get through
+      the first 100. I\u2019m talking AOW athletes can\u2019t do it.\r\n"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -410,7 +410,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 204.04265
     y: 322.87527
-    width: 150.36365
+    width: 151.81819
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -438,11 +438,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 4.224457
     y: 524.87524
-    width: 195.45456
+    width: 197.27274
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 5
+  itemId: 28
   blockName: Gym_Dante_Day4_RouteA
   description: 
   eventHandler: {fileID: 0}
@@ -492,7 +492,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 165.49718
     y: 427.87524
-    width: 227.45456
+    width: 230.00002
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -624,11 +624,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 204.22447
     y: 624.875
-    width: 160.54547
+    width: 162.72728
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 5
+  itemId: 29
   blockName: Gym_Dante_Day4_1
   description: 
   eventHandler: {fileID: 0}
@@ -695,12 +695,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -746,7 +746,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 512934263204037384}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -761,7 +761,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 512934263204037392}
+      objectReference: {fileID: 512934263204037387}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

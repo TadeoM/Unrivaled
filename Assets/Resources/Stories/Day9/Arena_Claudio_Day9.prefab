@@ -37,7 +37,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 213.31085
     y: 531.2682
-    width: 171.0662
+    width: 168.65863
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -223,7 +223,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -0.77851105
     y: 532.64374
-    width: 171.0662
+    width: 168.65863
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -291,7 +291,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 211.06763
     y: 297.8069
-    width: 166.93893
+    width: 165.21925
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -340,15 +340,15 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Jade jadeHappy: Wow, I can\u2019t believe they let me in by myself
-      this time!\r\nJade jadeNeutral: It\u2019s so weird seeing it be so empty though.
-      Oh! There are already a few guys here. One\u2019s in the ring already.\r\nJade:
+    stringVal: "Jade jadeHappy left: Wow, I can\u2019t believe they let me in by
+      myself this time!\r\nJade jadeNeutral: It\u2019s so weird seeing it be so empty
+      though. Oh! There are already a few guys here. One\u2019s in the ring already.\r\nJade:
       Is he\u2026? Oh! He\u2019s practicing a promo. Script in hand and all. I\u2019ll
       just go take a seat.\r\nJade goes to take a seat with the small crowd of producers
       and other wrestlers near the front, facing the wrestler in the ring cutting
-      his promo.\r\n??? claudioAngry: You see this here? This is a check for 1 million
-      scripts. I\u2019ll gladly give it away to any one of the broke nobodies in
-      the locker room if any of you think you can take this title from me!\r\n???
+      his promo.\r\n??? claudioAngry right: You see this here? This is a check for
+      1 million scripts. I\u2019ll gladly give it away to any one of the broke nobodies
+      in the locker room if any of you think you can take this title from me!\r\n???
       claudioSad: No, that\u2019s not it\u2026\r\nProducer: You\u2019re doing fine,
       Claudio. Try making it sound a little more\u2026 pompous? I don\u2019t know.
       I thought it was good.\r\nClaudio claudioNeutral: Thank you, but I still don\u2019t
@@ -420,7 +420,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 151.64175
     y: 415.25125
-    width: 243.98106
+    width: 240.88562
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -560,7 +560,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 207.55223
     y: 644.0682
-    width: 177.94496
+    width: 175.53738
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -613,7 +613,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 415.63486
     y: 527.1293
-    width: 172.44196
+    width: 168.65863
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -669,7 +669,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -720,7 +720,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 3215381704317040079}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -735,7 +735,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 7514992053180049548}
+      objectReference: {fileID: 3215381704317040076}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

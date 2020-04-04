@@ -199,7 +199,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 414.75012
     y: 514.4411
-    width: 197.42227
+    width: 199.17729
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -449,19 +449,20 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Ava avaHappy: Heyyy!\r\nJade jadeNeutral: Hey, Ava.\r\nAva avaNeutral:
-      So, what\u2019s bugging you, generally?\r\nJade: Well, it\u2019s like\u2026\r\nJade:
-      That match Monday was so much better than anything I\u2019ve ever done, right?\r\nJade:
-      And it\u2019s only Division 3! There are two more divisions above!\r\nJade:
-      Since I didn\u2019t get a match last week, I just feel so out of place.\r\nAva:
-      Yeah, that makes sense but you know, the different divisions aren\u2019t necessarily
-      skill level. It\u2019s mostly just popularity.\r\nAva: A D3 vs a D1 can be
-      the same as two D3s. Everyone is relatively the same in the ring, it\u2019s
-      about the connection with the fans.\r\nAva avaHappy: And you\u2019re still
-      new and learning. It\u2019s only your second week, y\u2019know?\r\nAva avaNeutral:
-      For me at least, I haven\u2019t even had a match in 3 weeks so, I\u2019m still
-      waiting.\r\nAva avaSad: I think they\u2019re still worried about my leg.\r\nAva
-      avaHappy: But yeah! Don\u2019t get discouraged, you\u2019re here for a reason!\r"
+    stringVal: "Jade jadeNeutral left:\nAva avaHappy right: Heyyy!\r\nJade jadeNeutral:
+      Hey, Ava.\r\nAva avaNeutral: So, what\u2019s bugging you, generally?\r\nJade:
+      Well, it\u2019s like\u2026\r\nJade: That match Monday was so much better than
+      anything I\u2019ve ever done, right?\r\nJade: And it\u2019s only Division 3!
+      There are two more divisions above!\r\nJade: Since I didn\u2019t get a match
+      last week, I just feel so out of place.\r\nAva: Yeah, that makes sense but
+      you know, the different divisions aren\u2019t necessarily skill level. It\u2019s
+      mostly just popularity.\r\nAva: A D3 vs a D1 can be the same as two D3s. Everyone
+      is relatively the same in the ring, it\u2019s about the connection with the
+      fans.\r\nAva avaHappy: And you\u2019re still new and learning. It\u2019s only
+      your second week, y\u2019know?\r\nAva avaNeutral: For me at least, I haven\u2019t
+      even had a match in 3 weeks so, I\u2019m still waiting.\r\nAva avaSad: I think
+      they\u2019re still worried about my leg.\r\nAva avaHappy: But yeah! Don\u2019t
+      get discouraged, you\u2019re here for a reason!\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -490,7 +491,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 199.34265
     y: 299.15912
-    width: 172.8519
+    width: 174.31442
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -571,7 +572,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 183.79236
     y: 517.2468
-    width: 196.25226
+    width: 197.71477
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -649,7 +650,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 165.10504
     y: 401.23407
-    width: 227.84274
+    width: 229.89027
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -678,7 +679,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -60.92417
     y: 515.7845
-    width: 196.25226
+    width: 197.71477
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -728,7 +729,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -779,7 +780,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 224104751578937020}
+      objectReference: {fileID: 1827086466074352809}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -794,7 +795,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: -6751598105827189327}
+      objectReference: {fileID: 1827086466074352810}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

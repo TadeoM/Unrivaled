@@ -16,7 +16,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 416.21265
     y: 514.4411
-    width: 209.12245
+    width: 212.34
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -91,7 +91,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -60.92417
     y: 515.7845
-    width: 207.95244
+    width: 210.87747
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -282,7 +282,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 165.10504
     y: 401.23407
-    width: 239.54292
+    width: 243.05298
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -351,7 +351,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 183.79236
     y: 517.2468
-    width: 207.95244
+    width: 210.87747
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -452,20 +452,20 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Dante danteHappy: Yo, Jade!\r\nJade jadeHappy: Yo!\r\nDante danteNeutral:
-      Man, the city\u2019s a bit brighter than usual tonight. Not raining either.\r\nJade
-      jadeNeutral: For once\u2026 But you know, it rained even more in Cascadia.\r\nDante
-      danteHappy: Haha, yeah, I remember!\r\nDante danteNeutral: So tell me, Jade.
-      What\u2019s got you down?\r\nJade: Well, it\u2019s like\u2026\r\nJade: That
-      match Monday with you and Knox was so much better than anything I\u2019ve ever
-      done, right?\r\nJade: And it\u2019s only Division 3! There are two more divisions
-      above!\r\nJade: Since I didn\u2019t get a match last week, I just feel so out
-      of place.\r\nDante danteHappy: Well, thank you for the compliment.\r\nDante
-      danteNeutral: But, you know that the different divisions aren\u2019t really
-      tied to skill, right?\r\nDante: They\u2019re tied to the popularity with the
-      fans or marketability, those kinds of things.\r\nDante: Once you get big, you
-      move up the divisions.\r\nDante: A dude in D3 can go just like a D1 guy.\r\nDante
-      danteHappy: Don\u2019t get discouraged about it.\r"
+    stringVal: "Jade jadeNeutral left:\nDante danteHappy right: Yo, Jade!\r\nJade
+      jadeHappy: Yo!\r\nDante danteNeutral: Man, the city\u2019s a bit brighter than
+      usual tonight. Not raining either.\r\nJade jadeNeutral: For once\u2026 But
+      you know, it rained even more in Cascadia.\r\nDante danteHappy: Haha, yeah,
+      I remember!\r\nDante danteNeutral: So tell me, Jade. What\u2019s got you down?\r\nJade:
+      Well, it\u2019s like\u2026\r\nJade: That match Monday with you and Knox was
+      so much better than anything I\u2019ve ever done, right?\r\nJade: And it\u2019s
+      only Division 3! There are two more divisions above!\r\nJade: Since I didn\u2019t
+      get a match last week, I just feel so out of place.\r\nDante danteHappy: Well,
+      thank you for the compliment.\r\nDante danteNeutral: But, you know that the
+      different divisions aren\u2019t really tied to skill, right?\r\nDante: They\u2019re
+      tied to the popularity with the fans or marketability, those kinds of things.\r\nDante:
+      Once you get big, you move up the divisions.\r\nDante: A dude in D3 can go
+      just like a D1 guy.\r\nDante danteHappy: Don\u2019t get discouraged about it.\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -515,7 +515,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 199.34265
     y: 299.15912
-    width: 184.55208
+    width: 187.47711
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -708,7 +708,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -759,7 +759,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 842919626707334769}
+      objectReference: {fileID: 3569242038197606012}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -774,7 +774,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 1067595085048261294}
+      objectReference: {fileID: 3569242038197606015}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size
@@ -859,7 +859,7 @@ PrefabInstance:
     - target: {fileID: 4341892549899699295, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: m_Name
-      value: Cafe_SmoothDesire_Day8
+      value: Streets_Dante_Day8
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549899699295, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}

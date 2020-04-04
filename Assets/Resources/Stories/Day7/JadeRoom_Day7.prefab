@@ -31,7 +31,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 42.914894
     y: 524.55963
-    width: 191.57217
+    width: 191.86469
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -58,7 +58,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 199.34265
     y: 299.15912
-    width: 168.17181
+    width: 168.46432
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -89,11 +89,12 @@ MonoBehaviour:
     stringVal: "Jade has the TV on while she\u2019s in her bed, still trying to wake
       up when a commercial for AOW comes on.\r\nAnnouncer: Who will come out on top
       in Dante\u2019s Inferno?! The hottest feud of the year will be happening tonight!
-      Don\u2019t miss this and more on AOW!\r\nJade jadeNeutral: Hm\u2026 I wonder
-      how long the feud has gone on for. I\u2019ll ask them later.\r\nJade jadeSad:
-      I kind of don\u2019t want to get out of bed though. I can already tell I\u2019m
-      going to hurt every time I take a step.\r\nJade jadeNeutral: Do I have to get
-      out of bed though?\r\n*Bzzz Bzzz*\r\nJade: Well, let\u2019s see.\r\n"
+      Don\u2019t miss this and more on AOW!\r\nJade jadeNeutral left: Hm\u2026 I
+      wonder how long the feud has gone on for. I\u2019ll ask them later.\r\nJade
+      jadeSad: I kind of don\u2019t want to get out of bed though. I can already
+      tell I\u2019m going to hurt every time I take a step.\r\nJade jadeNeutral:
+      Do I have to get out of bed though?\r\n*Bzzz Bzzz*\r\nJade: Well, let\u2019s
+      see.\r\n"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -168,7 +169,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 349.05756
     y: 524.55945
-    width: 191.57217
+    width: 191.86469
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -245,7 +246,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 169.49261
     y: 412.93427
-    width: 223.16267
+    width: 224.04018
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -447,12 +448,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -498,7 +499,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 2350933310444903963}
+      objectReference: {fileID: 2350933310444903938}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -513,7 +514,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 2350933310444903962}
+      objectReference: {fileID: 2350933310444903937}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

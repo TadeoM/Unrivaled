@@ -110,7 +110,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 299.1147
     y: 464.93417
-    width: 223.11465
+    width: 213.26515
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -203,10 +203,10 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Jade jadeAngry: Agh! I totally embarrassed myself!\r\nJade: Hopefully
-      Dante isn\u2019t too upset\u2026 or Ava. Ugh, I\u2019ll have to pay more attention
-      next time.\r\nJade: Hmm\u2026 No texts. I\u2019m not sure what I want to do
-      today though. Maybe I should go to the gym and train some more?\r\n"
+    stringVal: "Jade jadeAngry left: Agh! I totally embarrassed myself!\r\nJade:
+      Hopefully Dante isn\u2019t too upset\u2026 or Ava. Ugh, I\u2019ll have to pay
+      more attention next time.\r\nJade: Hmm\u2026 No texts. I\u2019m not sure what
+      I want to do today though. Maybe I should go to the gym and train some more?\r\n"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -235,7 +235,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 140.79376
     y: 155.48444
-    width: 194.2622
+    width: 184.69376
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -295,7 +295,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -44.865234
     y: 472.77847
-    width: 223.11465
+    width: 213.26515
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -388,7 +388,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 106.80523
     y: 347.13687
-    width: 248.03267
+    width: 235.71411
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -507,7 +507,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -517,17 +517,17 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 261.54996
+      value: 258.6638
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: 101.28692
+      value: -61.716583
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: zoom
-      value: 0.6100004
+      value: 0.49000046
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -558,7 +558,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 7330788807011146904}
+      objectReference: {fileID: 7330788807011146881}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -573,7 +573,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 7330788807011146905}
+      objectReference: {fileID: 7330788807011146882}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[4]

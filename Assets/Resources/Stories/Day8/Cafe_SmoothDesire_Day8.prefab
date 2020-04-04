@@ -76,7 +76,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 183.25488
     y: 441.024
-    width: 218.48259
+    width: 210.32059
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -103,28 +103,27 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Jade: Two drinks in already and I\u2019m\u2026\r\nJade: Ugh\u2026\r\nJade:
-      Maybe I shouldn\u2019t have done this.\r\n(Music change and lighting change
-      for Smooth Desire)\r\nThe Smooth Desire comes to the bar table and sits beside
-      Jade.\r\nSmooth Desire: Barkeep, one Vieux Carr\xE9.\r\nJade: Oh\u2014H-Hey
-      Desire!\r\nSmooth Desire: \u2026\r\nSmooth Desire: Are you a supporter of The
-      Desire?\r\nJade: Well, I mean, yeah, but like, we\u2019ve met?\r\nSmooth Desire:
-      The Desire has no recollection of this.\r\nSmooth Desire: What is your name?\r\nJade
-      finishes her drink, which was just rum on the rocks.\r\nJade: Jade\u2026 Valentine\u2026
-      ugh\u2026\r\nSmooth Desire: Oh\u2026\r\nSmooth Desire: Yeah, The Desire remembers
-      you. Weren\u2019t you the fanatic?\r\nJade: Fanatic? No no no, I\u2019m no
-      fanatic!\r\nSmooth Desire: Oh. That was a mistake then. Brilliant.\r\nSmooth
-      Desire: Jade, tell me. How are you doing? I heard you didn\u2019t get a match
-      last Monday.\r\nJade jadeAngry: Yeah, and I\u2019m pissed about it. Can\u2019t
-      you tell?\r\nSmooth Desire: Mmm.\r\nSmooth Desire: Yes.\r\nJade: I thought
-      so. I\u2019m just like\u2026\r\nJade: Out of place, you know?\r\nSmooth Desire:
-      You\u2019re in AOW with The Smooth Desire. That\u2019s natural.\r\nSmooth Desire:
-      Everyone is out of place in my eyes.\r\nSmooth Desire: You\u2019ll get\u2026
-      closer.\r\nSmooth Desire: One day.\r\nJade jadeNeutral: You really think so?\r\nSmooth
-      Desire: No.\r\nSmooth Desire: At least, not to me. To others? Absolutely.\r\nJade:
-      Well\u2026 better than nothin\u2019, I guess\u2026\r\nJade: Can I get another
-      drink, bartender?\r\nSmooth Desire: Barkeep, put that lady\u2019s drink on
-      my tab.\r\nJade: Hey thanks\u2026\r"
+    stringVal: "Jade jadeNeutral left: Two drinks in already and I\u2019m\u2026\r\nJade:
+      Ugh\u2026\r\nJade: Maybe I shouldn\u2019t have done this.\r\n(Music change
+      and lighting change for Smooth Desire)\r\nThe Smooth Desire comes to the bar
+      table and sits beside Jade.\r\nSmoothDesire smoothDesireNeutral right: Barkeep,
+      one Vieux Carr\xE9.\r\nJade: Oh\u2014H-Hey Desire!\r\nSmoothDesire: \u2026\r\nSmoothDesire:
+      Are you a supporter of The Desire?\r\nJade: Well, I mean, yeah, but like, we\u2019ve
+      met?\r\nSmoothDesire: The Desire has no recollection of this.\r\nSmoothDesire:
+      What is your name?\r\nJade finishes her drink, which was just rum on the rocks.\r\nJade:
+      Jade\u2026 Valentine\u2026 ugh\u2026\r\nSmoothDesire: Oh\u2026\r\nSmoothDesire:
+      Yeah, The Desire remembers you. Weren\u2019t you the fanatic?\r\nJade: Fanatic?
+      No no no, I\u2019m no fanatic!\r\nSmoothDesire: Oh. That was a mistake then.
+      Brilliant.\r\nSmoothDesire: Jade, tell me. How are you doing? I heard you didn\u2019t
+      get a match last Monday.\r\nJade jadeAngry: Yeah, and I\u2019m pissed about
+      it. Can\u2019t you tell?\r\nSmoothDesire: Mmm.\r\nSmoothDesire: Yes.\r\nJade:
+      I thought so. I\u2019m just like\u2026\r\nJade: Out of place, you know?\r\nSmoothDesire:
+      You\u2019re in AOW with The Smooth Desire. That\u2019s natural.\r\nSmoothDesire:
+      Everyone is out of place in my eyes.\r\nSmoothDesire: You\u2019ll get\u2026
+      closer.\r\nSmoothDesire: One day.\r\nJade jadeNeutral: You really think so?\r\nSmoothDesire:
+      No.\r\nSmoothDesire: At least, not to me. To others? Absolutely.\r\nJade: Well\u2026
+      better than nothin\u2019, I guess\u2026\r\nJade: Can I get another drink, bartender?\r\nSmoothDesire:
+      Barkeep, put that lady\u2019s drink on my tab.\r\nJade: Hey thanks\u2026\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -175,12 +174,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -200,17 +199,17 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 133.70517
+      value: 145.39563
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: -142.48523
+      value: -65.032135
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: zoom
-      value: 0.68375015
+      value: 0.6237502
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -226,7 +225,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5918786123218838747}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]

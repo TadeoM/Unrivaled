@@ -46,7 +46,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 196.4176
     y: 299.15912
-    width: 195.08223
+    width: 194.78973
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -74,32 +74,32 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Ava avaAngry: \u2026\r\nJade: Hey Ava\u2026.\r\nAva avaHappy: Oooh,
-      this is a nice place though!\r\nJade: Thanks, sorry it\u2019s a bit messy.
-      Want to tell me what happened though?\r\nAva avaAngry: Oh, yeah! I do!\r\nAva:
-      So, wrestling fans can be freaking stupid!\r\nAva: I was doing some autographs
-      and photos acting like a bad guy, right?\r\nAva: Then, I took a photo with
-      some dude, words were exchanged after the picture, and then he swung at me!\r\nJade
-      jadeAngry: Damn, really? What happened afterwards?\r\nAva: I knocked him out!\r\nJade:
-      Woah!\r\nAva: Then security made us both leave. It\u2019s not my fault though!
-      He threw first.\r\nJade: Yeah, it was just self-defense.\r\nAva: Ugh, that
-      got me so mad\u2026\r\nAva: Hopefully I don\u2019t get punished too severely.\r\nJade:
-      Punished? But it wasn\u2019t even your fault!\r\nAva avaNeutral: Yeah, but
-      AOW is liable for those kinds of things.\r\nAva avaHappy: Anyway, it felt good
-      to get that off my chest. Thanks for listening to me!\r\nJade jadeNeutral:
-      I see\u2026 That was a pretty fast turnaround.\r\nAva avaNeutral: It is what
-      it is, honestly.\r\nAva: Oh! Before I forget, you do know that you have to
-      show up to the show even if you\u2019re not having a match, right? Be backstage
-      just in case.\r\nJade: Yeah, they did that at my old promotion too.\r\nAva:
-      Honestly, I\u2019m pretty excited to just watch the main event. I was told
-      Knox is going to run a big promo after he wins.\r\nJade: I thought he wasn\u2019t
-      very good at them?\r\nAva: He isn\u2019t, but I bet he\u2019s gotten better
-      if they\u2019re giving him the last scene!\r\nJade: Nice. I\u2019m going to
-      get changed real quick and we can leave soon.\r\nAva: Sure. Do you have any
-      snacks by the way?\r\nJade: Yeah, I have\u2026 uh\u2026\r\nJade: A lot of honey
-      buns\u2026\r\nAva: Oh? A lot?\r\nJade: A lot.\r\nAva avaHappy: Alright, I\u2019m
-      going to have a few\r\nJade: Don\u2019t eat too many of them, please.\r\nAva:
-      Don\u2019t worry!\r"
+    stringVal: "Jade jadeNeutral left:\nAva avaAngry right: \u2026\r\nJade: Hey Ava\u2026.\r\nAva
+      avaHappy: Oooh, this is a nice place though!\r\nJade: Thanks, sorry it\u2019s
+      a bit messy. Want to tell me what happened though?\r\nAva avaAngry: Oh, yeah!
+      I do!\r\nAva: So, wrestling fans can be freaking stupid!\r\nAva: I was doing
+      some autographs and photos acting like a bad guy, right?\r\nAva: Then, I took
+      a photo with some dude, words were exchanged after the picture, and then he
+      swung at me!\r\nJade jadeAngry: Damn, really? What happened afterwards?\r\nAva:
+      I knocked him out!\r\nJade: Woah!\r\nAva: Then security made us both leave.
+      It\u2019s not my fault though! He threw first.\r\nJade: Yeah, it was just self-defense.\r\nAva:
+      Ugh, that got me so mad\u2026\r\nAva: Hopefully I don\u2019t get punished too
+      severely.\r\nJade: Punished? But it wasn\u2019t even your fault!\r\nAva avaNeutral:
+      Yeah, but AOW is liable for those kinds of things.\r\nAva avaHappy: Anyway,
+      it felt good to get that off my chest. Thanks for listening to me!\r\nJade
+      jadeNeutral: I see\u2026 That was a pretty fast turnaround.\r\nAva avaNeutral:
+      It is what it is, honestly.\r\nAva: Oh! Before I forget, you do know that you
+      have to show up to the show even if you\u2019re not having a match, right?
+      Be backstage just in case.\r\nJade: Yeah, they did that at my old promotion
+      too.\r\nAva: Honestly, I\u2019m pretty excited to just watch the main event.
+      I was told Knox is going to run a big promo after he wins.\r\nJade: I thought
+      he wasn\u2019t very good at them?\r\nAva: He isn\u2019t, but I bet he\u2019s
+      gotten better if they\u2019re giving him the last scene!\r\nJade: Nice. I\u2019m
+      going to get changed real quick and we can leave soon.\r\nAva: Sure. Do you
+      have any snacks by the way?\r\nJade: Yeah, I have\u2026 uh\u2026\r\nJade: A
+      lot of honey buns\u2026\r\nAva: Oh? A lot?\r\nJade: A lot.\r\nAva avaHappy:
+      Alright, I\u2019m going to have a few\r\nJade: Don\u2019t eat too many of them,
+      please.\r\nAva: Don\u2019t worry!\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -201,12 +201,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -252,7 +252,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 3089901965806352926}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -267,7 +267,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 3089901965806352925}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

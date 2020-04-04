@@ -82,12 +82,12 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "\nJade: Ah\u2026 maybe I should\u2019ve just gone back to the gym.\r\nJade:
-      It was a bit rude to just blow her off like that I think.\r\n*Bzzz Bzzz*\r\nJade:
-      Oh-- It\u2019s Ava.\r\nAva: So, I forgot to tell you something pretty important.
-      It\u2019s about AOW stuff.\r\nJade: What is it?\r\nAva: Well, idk if you guys
-      planned things or anything like that in Cascadia, but AOW is *SUPER* strict
-      about planning and all that.\r\n"
+    stringVal: "Jade jadeNeutral left: Ah\u2026 maybe I should\u2019ve just gone
+      back to the gym.\r\nJade: It was a bit rude to just blow her off like that
+      I think.\r\n*Bzzz Bzzz*\r\nJade: Oh-- It\u2019s Ava.\r\nAva avaNeutral right:
+      So, I forgot to tell you something pretty important. It\u2019s about AOW stuff.\r\nJade:
+      What is it?\r\nAva: Well, idk if you guys planned things or anything like that
+      in Cascadia, but AOW is *SUPER* strict about planning and all that.\r\n"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1

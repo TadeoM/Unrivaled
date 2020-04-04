@@ -16,7 +16,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 222.32986
     y: 879.95276
-    width: 162.32173
+    width: 164.07675
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -69,7 +69,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 427.0353
     y: 519.55994
-    width: 197.42227
+    width: 199.17729
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -82,6 +82,27 @@ MonoBehaviour:
   - {fileID: 5927945589998928322}
   - {fileID: -6871362091922545613}
   suppressAllAutoSelections: 0
+--- !u!114 &-6871362091922545613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8447520951335559180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 42
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 4048339708514328847}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!114 &-6788548929707435062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98,7 +119,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 170.4798
     y: 766.86505
-    width: 229.01276
+    width: 231.3528
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -306,7 +327,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 169.49261
     y: 412.93427
-    width: 227.84274
+    width: 229.89027
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -360,7 +381,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 185.25491
     y: 518.70935
-    width: 196.25226
+    width: 197.71477
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -444,8 +465,8 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Jade jadeHappy: Hey Dante!\r\nDante danteHappy: Yo!\r\nDante: Man,
-      I\u2019m starving. Haven\u2019t eaten all day, honestly.\r\nJade jadeNeutral:
+    stringVal: "Jade jadeHappy left: Hey Dante!\r\nDante danteHappy right: Yo!\r\nDante:
+      Man, I\u2019m starving. Haven\u2019t eaten all day, honestly.\r\nJade jadeNeutral:
       Really? What were you up to?\r\nDante danteNeutral: Got distracted walking
       around town, talking to people, and a few people stopping me too.\r\nJade:
       Oh man, pretty popular I see.\r\nDante: Just a little bit. Again, it depends
@@ -507,7 +528,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 199.34265
     y: 299.15912
-    width: 172.8519
+    width: 174.31442
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -705,7 +726,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -60.92421
     y: 521.6346
-    width: 196.25226
+    width: 197.71477
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -733,7 +754,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 202.32983
     y: 631.3237
-    width: 161.1517
+    width: 162.61423
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -746,6 +767,27 @@ MonoBehaviour:
   - {fileID: 7191128989808302571}
   - {fileID: -6188842513233412001}
   suppressAllAutoSelections: 0
+--- !u!114 &4382038733904697852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8447520951335559180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 43
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 4048339708514328847}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!114 &5226197946334767903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -950,48 +992,6 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
---- !u!114 &-6871362091922545613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8447520951335559180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 42
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 4048339708514328847}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
---- !u!114 &4382038733904697852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8447520951335559180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 43
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 4048339708514328847}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
 --- !u!1001 &5294579261966476371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1040,12 +1040,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 133.70517
+      value: 117.721344
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: -142.48523
+      value: -258.31284
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -1066,7 +1066,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: -6464606561786005543}
+      objectReference: {fileID: 1034243424060696692}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -1081,7 +1081,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: -6788548929707435062}
+      objectReference: {fileID: 1034243424060696695}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

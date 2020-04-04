@@ -1,5 +1,102 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6593664213662510706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4869325027858000985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 98
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Luther: Word gets around.\r\nJade: I mean, I guess?\r\nLuther: I\u2019m
+      joking. Ava told me about it before she made her debut to D3.\r\nJade: Oh\u2026\r\nLuther:
+      Anyway, thanks for letting me work in. I\u2019ll see you around.\nJade: Yeah
+      no problem, Luther\u2026 I\u2019ll see you around too!\r\nJade: (The champ,
+      huh? I need to work a bit harder to get to his level\u2026)\r"
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &-2392418680824627344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4869325027858000985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 97
+  indentLevel: 0
+  variable: {fileID: 1676518795798056010}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: move:taunt:1-10;
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &38181025423019386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46,7 +143,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 115.50824
     y: 478.04892
-    width: 200.81958
+    width: 195.90155
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -178,7 +275,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -149.7832
     y: 467.86044
-    width: 200.81958
+    width: 195.90155
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -241,7 +338,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 140.79376
     y: 155.48444
-    width: 171.96713
+    width: 168.03271
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -269,25 +366,25 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Jade works on the bench press for a bit before she gets approached
-      by a huge figure.\r\n???: Hey, uh, can I work in? (This is Luther, he can come
-      on screen)\r\nJade: Huh? Oh su\u2014sure\u2026 (Jesus Christ, this guy is gigantic!)\r\n???:
-      Thanks.\r\nJade: (Wait\u2014No way. Is he\u2026 Is he racking 270 pounds?!)
-      Damn\u2026\r\n???: Just a warm up.\r\nJade: (What\u2026)\r\n??? lutherAngry:
-      Hmph\u2026!\r\nJade: (1\u20262\u20263\u20264\u20265...) \r\nJade: \u2026 (He
-      just keeps going\u2026 13\u202614\u202615)\r\n??? lutherNeutral: Whew. You
-      can go ahead.\r\nJade: Oh, yeah. Thanks for unracking too.\r\n???: No problem.\r\nJade:
-      Uh, leave those two on.\r\n???: You sure?\r\nJade: Yeah, I think I can handle
-      it.\r\n???: Alright. I\u2019ll spot you.\r\nJade: Thanks. (135\u2026 I can
-      do this.)\r\nJade jadeAngry: Hrrg\u2026\r\n??? lutherAngry: One down, let\u2019s
-      get four more!\r\nJade: Uggh!\r\n???: Two, come on, let\u2019s go!\r\nJade:
-      Ffffuuu\u2014\r\n???: Three, two more, push it! Grind it out!\r\nJade: Takeittakeit
-      Takeit Take it!\r\n??? lutherSad: Man, you almost had it.\r\nJade jadeSad:
-      I went in over my head\u2026\r\n??? lutherNeutral: It\u2019s okay. You\u2019ll
-      be able to get 10 reps very soon. Just keep at it.\r\nJade jadeNeutral: (He\u2019s
-      putting on 360\u2026) Hey, what\u2019s your name anyway?\r\nLuther: Luther.\r\nJade:
-      Wait\u2014Luther? As in Frognado? The Division 1 Champion? *Luther?!*\r\nLuther:
-      Yeah.\r\nLuther lutherAngry: Humph\u2026\r\nJade: (1\u20262\u20263\u20264\u2026)
+    stringVal: "Jade jadeNeutral left:\nJade works on the bench press for a bit before
+      she gets approached by a huge figure.\r\n???: Hey, uh, can I work in? (This
+      is Luther, he can come on screen)\r\nJade: Huh? Oh su\u2014sure\u2026 (Jesus
+      Christ, this guy is gigantic!)\r\n???: Thanks.\r\nJade: (Wait\u2014No way.
+      Is he\u2026 Is he racking 270 pounds?!) Damn\u2026\r\n???: Just a warm up.\r\nJade:
+      (What\u2026)\r\n??? lutherAngry: Hmph\u2026!\r\nJade: (1\u20262\u20263\u20264\u20265...)
+      \r\nJade: \u2026 (He just keeps going\u2026 13\u202614\u202615)\r\n??? lutherNeutral:
+      Whew. You can go ahead.\r\nJade: Oh, yeah. Thanks for unracking too.\r\n???:
+      No problem.\r\nJade: Uh, leave those two on.\r\n???: You sure?\r\nJade: Yeah,
+      I think I can handle it.\r\n???: Alright. I\u2019ll spot you.\r\nJade: Thanks.
+      (135\u2026 I can do this.)\r\nJade jadeAngry: Hrrg\u2026\r\n??? lutherAngry:
+      One down, let\u2019s get four more!\r\nJade: Uggh!\r\n???: Two, come on, let\u2019s
+      go!\r\nJade: Ffffuuu\u2014\r\n???: Three, two more, push it! Grind it out!\r\nJade:
+      Takeittakeit Takeit Take it!\r\n??? lutherSad: Man, you almost had it.\r\nJade
+      jadeSad: I went in over my head\u2026\r\n??? lutherNeutral: It\u2019s okay.
+      You\u2019ll be able to get 10 reps very soon. Just keep at it.\r\nJade jadeNeutral:
+      (He\u2019s putting on 360\u2026) Hey, what\u2019s your name anyway?\r\nLuther:
+      Luther.\r\nJade: Wait\u2014Luther? As in Frognado? The Division 1 Champion?
+      *Luther?!*\r\nLuther: Yeah.\r\nLuther lutherAngry: Humph\u2026\r\nJade: (1\u20262\u20263\u20264\u2026)
       \r\nJade: (aaaaand\u2026 5. Holy shit, he\u2019s strong)\r\nLuther lutherNeutral:
       What about you? What\u2019s your name?\r\nJade: Jade, Jade Valentine!\r\nLuther:
       Oh, are you Ava\u2019s student?\r"
@@ -340,7 +437,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 106.80523
     y: 347.13687
-    width: 225.7376
+    width: 220.4917
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -438,6 +535,34 @@ MonoBehaviour:
   scope: 0
   key: avaMeter
   value: 0
+--- !u!114 &4886786588072121476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4869325027858000985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 366.9378
+    y: 477.69647
+    width: 195.90155
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 80
+  blockName: Gym_Luther_Day3_C_Route
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 8215048648654261822}
+  - {fileID: -2392418680824627344}
+  suppressAllAutoSelections: 0
 --- !u!114 &5834834573853662239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -527,34 +652,6 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
---- !u!114 &4886786588072121476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4869325027858000985}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 366.9378
-    y: 477.69647
-    width: 202.13106
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 80
-  blockName: Gym_Luther_Day3_C_Route
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 8215048648654261822}
-  - {fileID: -2392418680824627344}
-  suppressAllAutoSelections: 0
 --- !u!114 &8215048648654261822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -576,103 +673,6 @@ MonoBehaviour:
       thanks for letting me work in. I\u2019ll see you around.\nJade: Yeah no problem,
       Luther\u2026 I\u2019ll see you around too!\r\nJade: (The champ, huh? I need
       to work a bit harder to get to his level\u2026)\r"
-  clearPrevious:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  waitForInput:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  waitForSeconds:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  fadeWhenDone:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
---- !u!114 &-2392418680824627344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4869325027858000985}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 97
-  indentLevel: 0
-  variable: {fileID: 1676518795798056010}
-  setOperator: 0
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 0
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: move:taunt:1-10;
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
---- !u!114 &-6593664213662510706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4869325027858000985}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 98
-  indentLevel: 0
-  conversationText:
-    stringRef: {fileID: 0}
-    stringVal: "Luther: Word gets around.\r\nJade: I mean, I guess?\r\nLuther: I\u2019m
-      joking. Ava told me about it before she made her debut to D3.\r\nJade: Oh\u2026\r\nLuther:
-      Anyway, thanks for letting me work in. I\u2019ll see you around.\nJade: Yeah
-      no problem, Luther\u2026 I\u2019ll see you around too!\r\nJade: (The champ,
-      huh? I need to work a bit harder to get to his level\u2026)\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -708,12 +708,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -764,7 +764,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 3320459285127644983}
+      objectReference: {fileID: 3320459285127644974}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -779,7 +779,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 3320459285127644982}
+      objectReference: {fileID: 3320459285127644973}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[4]

@@ -103,36 +103,36 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Ava avaSad: Hm, show\u2019s been a bit off tonight. What do you think?\r\nJade:
-      The crowd seems to be waiting for the main event, they\u2019re so quiet.\r\nAva
-      avaNeutral: Well, good thing they\u2019re next.\r\nAn announcer steps into
-      the middle of the ring, microphone in hand.\r\nAnnouncer: Ladies and gentlemen,
-      we have our main event next!\r\nAnnouncer: Introducing first\u2026 (Dante\u2019s
-      theme plays, with fans booing)\r\nAnnouncer: From [stillneednames], he is the
-      number three contender for the AOW championship, with a record of 10-1, D-800!\r\nAva:
-      Man, they\u2019re way louder than usual\u2026\r\nAnnouncer: His challenger\u2026
-      \r\nAnnouncer: From [name], he is the current number two contender for the
-      AOW championship, with a record of 15-2, Inferno!!\r\nJade: Geez, I can barely
-      hear myself think!\r\nAva: It\u2019s wild, right?\r\nAva: Alright, here they
-      go!\r\nJade watches the match intensely, it lasts about 30 minutes, with Knox
-      winning in a very close fashion, the audience goes wild.\r\nAva avaHappy: That
-      was amazing!\r\nJade jadeHappy: Yeah, it was awesome!\r\nAn interviewer meets
-      Knox in the middle of the ring as Dante rolls out, leaving Knox and the interviewer
-      alone in the ring.\r\nInterviewer: Inferno, you\u2019ve ascended through the
-      fire and flames and have successfully dragged Dante into his own Inferno. What
-      do you have to say about that and your future opponents?\r\nKnox: *pant* Well\u2026
-      *pant*\r\nKnox: It\u2019s been clear since I\u2019ve laid eyes on him that
-      he ain\u2019t got what it takes to be in the ring with me.\r\nKnox: And I proved
-      that tonight, didn\u2019t I?! (crowd cheers)\r\nKnox: Anyone in the back who\u2019s
-      trying to get to the title is gonna have to go through me, and trust me, that\u2019s
-      going to be the last decision you\u2019ll make in AOW!\r\nInterviewer: That\u2019s
-      a little harsh, don\u2019t you think Inferno?\r\nKnox knoxSad: You know what?
-      You\u2019re right\u2026 I\u2019d actually like to apologize then\u2026\r\nKnox
-      knoxAngry: To fuckin\u2019 nobody! Inferno does whatever the fuck he wants!
-      Anyone in the back, come at me! I\u2019m itchin\u2019 for a fight!\r\nKnox
-      gets out of the ring to loud cheers as he exits up the ramp.\r\nAva avaHappy:
-      Holy shit, that was nice!\r\nJade jadeHappy: Yeah, I thought he was bad at
-      those.\r\nAva avaNeutral: Me too! You should ask him about it later.\r\nJade
+    stringVal: "Jade jadeNeutral left:\nAva avaSad right: Hm, show\u2019s been a
+      bit off tonight. What do you think?\r\nJade: The crowd seems to be waiting
+      for the main event, they\u2019re so quiet.\r\nAva avaNeutral: Well, good thing
+      they\u2019re next.\r\nAn announcer steps into the middle of the ring, microphone
+      in hand.\r\nAnnouncer: Ladies and gentlemen, we have our main event next!\r\nAnnouncer:
+      Introducing first\u2026 (Dante\u2019s theme plays, with fans booing)\r\nAnnouncer:
+      From [stillneednames], he is the number three contender for the AOW championship,
+      with a record of 10-1, D-800!\r\nAva: Man, they\u2019re way louder than usual\u2026\r\nAnnouncer:
+      His challenger\u2026 \r\nAnnouncer: From [name], he is the current number two
+      contender for the AOW championship, with a record of 15-2, Inferno!!\r\nJade:
+      Geez, I can barely hear myself think!\r\nAva: It\u2019s wild, right?\r\nAva:
+      Alright, here they go!\r\nJade watches the match intensely, it lasts about
+      30 minutes, with Knox winning in a very close fashion, the audience goes wild.\r\nAva
+      avaHappy: That was amazing!\r\nJade jadeHappy: Yeah, it was awesome!\r\nAn
+      interviewer meets Knox in the middle of the ring as Dante rolls out, leaving
+      Knox and the interviewer alone in the ring.\r\nInterviewer: Inferno, you\u2019ve
+      ascended through the fire and flames and have successfully dragged Dante into
+      his own Inferno. What do you have to say about that and your future opponents?\r\nKnox:
+      *pant* Well\u2026 *pant*\r\nKnox: It\u2019s been clear since I\u2019ve laid
+      eyes on him that he ain\u2019t got what it takes to be in the ring with me.\r\nKnox:
+      And I proved that tonight, didn\u2019t I?! (crowd cheers)\r\nKnox: Anyone in
+      the back who\u2019s trying to get to the title is gonna have to go through
+      me, and trust me, that\u2019s going to be the last decision you\u2019ll make
+      in AOW!\r\nInterviewer: That\u2019s a little harsh, don\u2019t you think Inferno?\r\nKnox
+      knoxSad: You know what? You\u2019re right\u2026 I\u2019d actually like to apologize
+      then\u2026\r\nKnox knoxAngry: To fuckin\u2019 nobody! Inferno does whatever
+      the fuck he wants! Anyone in the back, come at me! I\u2019m itchin\u2019 for
+      a fight!\r\nKnox gets out of the ring to loud cheers as he exits up the ramp.\r\nAva
+      avaHappy: Holy shit, that was nice!\r\nJade jadeHappy: Yeah, I thought he was
+      bad at those.\r\nAva avaNeutral: Me too! You should ask him about it later.\r\nJade
       jadeHappy: I will, I will. Thanks for coming with me to the show, by the way!\r\nAva
       avaHappy: Of course, any time! Catch you later, Jade!\r"
   clearPrevious:
@@ -185,7 +185,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -236,7 +236,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 7249649563558341115}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]

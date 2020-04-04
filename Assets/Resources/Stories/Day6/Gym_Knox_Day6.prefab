@@ -125,7 +125,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 219.56032
     y: 644.09076
-    width: 218.16328
+    width: 205.10205
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -154,7 +154,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 236.55476
     y: 955.40784
-    width: 219.79593
+    width: 207.14287
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -246,7 +246,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 246.0426
     y: 804.87537
-    width: 154.4898
+    width: 145.91837
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -481,7 +481,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 478.7697
     y: 1103.0571
-    width: 187.14287
+    width: 178.57143
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -613,7 +613,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 247.86078
     y: 523.05725
-    width: 154.4898
+    width: 145.91837
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -657,11 +657,12 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Knox: Oi, Jade!\r\nJade: Hey, sorry I\u2019m a little late\u2026\r\nKnox:
-      That\u2019s fine, but we\u2019ll have to go rapid fire from here, it\u2019s
-      chest and biceps today.\r\nJade: Wait\u2014\r\nKnox knoxAngry: It\u2019s chest
-      and bicep day.\r\nJade: O-Okay\u2026\r\nKnox knoxHappy: I\u2019m just messin\u2019
-      with ya.\r\nKnox knoxNeutral: Did you have something else in mind?\r"
+    stringVal: "Jade jadeNeutral left:\nKnox knoxNeutral right: Oi, Jade!\r\nJade:
+      Hey, sorry I\u2019m a little late\u2026\r\nKnox: That\u2019s fine, but we\u2019ll
+      have to go rapid fire from here, it\u2019s chest and biceps today.\r\nJade:
+      Wait\u2014\r\nKnox knoxAngry: It\u2019s chest and bicep day.\r\nJade: O-Okay\u2026\r\nKnox
+      knoxHappy: I\u2019m just messin\u2019 with ya.\r\nKnox knoxNeutral: Did you
+      have something else in mind?\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -775,7 +776,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 245.86082
     y: 306.51163
-    width: 143.06123
+    width: 135.7143
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -803,7 +804,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 60.163788
     y: 1092.0933
-    width: 187.14287
+    width: 178.57143
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -856,7 +857,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 212.76994
     y: 404.23895
-    width: 218.16328
+    width: 205.10205
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -961,6 +962,27 @@ MonoBehaviour:
   fadeWhenDone:
     booleanRef: {fileID: 0}
     booleanVal: 1
+--- !u!114 &6488918337439188915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5315590791294695461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 42
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: -4276974796644083460}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!114 &8206492086590752488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -986,27 +1008,6 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
---- !u!114 &6488918337439188915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5315590791294695461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 42
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: -4276974796644083460}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
 --- !u!1001 &8468251555460217978
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1030,12 +1031,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -1081,7 +1082,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4480548750665170536}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -1096,7 +1097,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: -457579306764319410}
+      objectReference: {fileID: 4480548750665170539}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

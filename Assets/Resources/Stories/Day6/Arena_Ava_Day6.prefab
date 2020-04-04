@@ -54,6 +54,27 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
+--- !u!114 &-120645498432597013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5291989801393696283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 29
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 3027879068201301764}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!114 &152311262817349992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,7 +91,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 462.40622
     y: 519.4208
-    width: 191.09093
+    width: 193.63638
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -271,7 +292,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 16.951721
     y: 515.78436
-    width: 189.63638
+    width: 191.81819
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -346,22 +367,22 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Ava avaHappy: I told you we\u2019d get in here fine!\r\nJade: Honestly,
-      I\u2019m not sure why I didn\u2019t believe you.\r\nJade: Why did you want
-      to come here anyway? It\u2019s all\u2026 quiet and empty.\r\nAva: Well, we
-      can give you a nice, shiny new finisher!\r\nJade: But, I already have one\u2026\r\nAva
-      avaNeutral: It\u2019s not shiny though!\r\nJade: It\u2019s\u2026 it\u2019s
-      a shining wizard\u2026\r\nAva: Damn\u2026 Well, new promotion equals new finisher
-      anyway.\r\nAva: At least, that\u2019s how I always went about it.\r\nJade:
-      Is your finisher still a Moonsault?\r\nAva avaHappy: Nope! I had to tone it
-      down a little for D3. Most people tend to stick to something similar.\r\nAva
-      avaNeutral: However, I have an idea for you.\r\nAva: You\u2019re pretty strong,
-      right?\r\nJade: I mean\u2014It depends.\r\nAva: You can lift me, right?\r\nJade
-      jadeHappy: Oh, yeah, I think so.\r\nAva avaHappy: Perfect! I have the perfect
-      move then.\r\nAva: It\u2019s a really old school move, nobody really uses it
-      anymore. I\u2019m sure the fans would love it if you did it!\r\nAva avaNeurtal:
-      It\u2019s called Go 2 Sleep, or GTS for short.\r\nAva avaHappy: It\u2019s a
-      knee strike.\r"
+    stringVal: "Jade jadeNeutral left:\nAva avaHappy right: I told you we\u2019d
+      get in here fine!\r\nJade: Honestly, I\u2019m not sure why I didn\u2019t believe
+      you.\r\nJade: Why did you want to come here anyway? It\u2019s all\u2026 quiet
+      and empty.\r\nAva: Well, we can give you a nice, shiny new finisher!\r\nJade:
+      But, I already have one\u2026\r\nAva avaNeutral: It\u2019s not shiny though!\r\nJade:
+      It\u2019s\u2026 it\u2019s a shining wizard\u2026\r\nAva: Damn\u2026 Well, new
+      promotion equals new finisher anyway.\r\nAva: At least, that\u2019s how I always
+      went about it.\r\nJade: Is your finisher still a Moonsault?\r\nAva avaHappy:
+      Nope! I had to tone it down a little for D3. Most people tend to stick to something
+      similar.\r\nAva avaNeutral: However, I have an idea for you.\r\nAva: You\u2019re
+      pretty strong, right?\r\nJade: I mean\u2014It depends.\r\nAva: You can lift
+      me, right?\r\nJade jadeHappy: Oh, yeah, I think so.\r\nAva avaHappy: Perfect!
+      I have the perfect move then.\r\nAva: It\u2019s a really old school move, nobody
+      really uses it anymore. I\u2019m sure the fans would love it if you did it!\r\nAva
+      avaNeurtal: It\u2019s called Go 2 Sleep, or GTS for short.\r\nAva avaHappy:
+      It\u2019s a knee strike.\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -390,7 +411,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 245.86082
     y: 306.51163
-    width: 144.54547
+    width: 146.36365
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -522,7 +543,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 212.76994
     y: 404.23895
-    width: 221.63638
+    width: 224.54547
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -581,7 +602,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 249.67899
     y: 643.05707
-    width: 154.72728
+    width: 157.27274
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -593,6 +614,27 @@ MonoBehaviour:
   - {fileID: 316503805376156283}
   - {fileID: 5555994215510412749}
   suppressAllAutoSelections: 0
+--- !u!114 &3894927788997582857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5291989801393696283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 28
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 3027879068201301764}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!114 &4239767505836944118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -665,48 +707,6 @@ MonoBehaviour:
   fadeWhenDone:
     booleanRef: {fileID: 0}
     booleanVal: 1
---- !u!114 &3894927788997582857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5291989801393696283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 28
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 3027879068201301764}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
---- !u!114 &-120645498432597013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5291989801393696283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 29
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 3027879068201301764}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
 --- !u!1001 &8444650531705612868
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -730,7 +730,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -781,7 +781,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 2588640793239633155}
+      objectReference: {fileID: 2588640793239633157}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -796,7 +796,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 3027879068201301764}
+      objectReference: {fileID: 2588640793239633158}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

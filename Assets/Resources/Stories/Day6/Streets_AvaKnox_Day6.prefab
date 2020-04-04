@@ -244,13 +244,14 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Jade: Hm\u2026 it\u2019s so weird seeing things always so lit, even
-      in the morning.\r\nJade: I guess it\u2019s dark enough, but still.\r\nJade
-      jadeHappy: It\u2019s nice to take a walk from time to time though. Get that\u2026
-      \u201Cfresh\u201D air.\r\nJade: Laurentia is so different compared to Cascadia
-      though. Hopefully, I can explore more if I get to D2 or D1 and get more money.\r\nJade:
-      Maybe I should actually message Knox to take up his training offer, he might
-      be free before his meeting.\r\nAva: But also, Ava could probably train me better\u2026\r\n"
+    stringVal: "Jade jadeNeutral left: Hm\u2026 it\u2019s so weird seeing things
+      always so lit, even in the morning.\r\nJade: I guess it\u2019s dark enough,
+      but still.\r\nJade jadeHappy: It\u2019s nice to take a walk from time to time
+      though. Get that\u2026 \u201Cfresh\u201D air.\r\nJade: Laurentia is so different
+      compared to Cascadia though. Hopefully, I can explore more if I get to D2 or
+      D1 and get more money.\r\nJade: Maybe I should actually message Knox to take
+      up his training offer, he might be free before his meeting.\r\nJade: But also,
+      Ava could probably train me better\u2026\r\n"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -277,9 +278,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 245.86082
+    x: 244.04265
     y: 306.51163
-    width: 125.63637
+    width: 124.54546
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -539,12 +540,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 48.739418
+      value: 141.91193
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: -16.980639
+      value: 9.761114
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -565,7 +566,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 7237372720837372807}
+      objectReference: {fileID: 7237372720837372801}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -580,7 +581,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 7237372720837372825}
+      objectReference: {fileID: 7237372720837372802}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

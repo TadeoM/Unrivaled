@@ -58,7 +58,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 216.75023
     y: 531.2682
-    width: 161.43593
+    width: 161.77988
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -194,7 +194,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 151.64175
     y: 415.25125
-    width: 294.8839
+    width: 290.75665
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -244,24 +244,24 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Jade: Whew, finally back\u2026\r\n>knock knock<\r\nJade: Damn, didn\u2019t
-      even get time to get ready!\r\nJade jadeHappy: Yo, Dante! And Knox! What\u2019s
-      up, guys?\r\nKnox jadeHappy: Jade I got some news!\r\nDante danteHappy: He\u2019s
-      got some big news!\r\nKnox: The match card came in and you\u2019re gonna face
-      me on Sunday! And you get to win! Ain\u2019t that amazing?!\r\nJade: Wait,
-      really?! No way!!\r\nIf Player Went to Caf\xE9: Jade: (What was that Cassandra
-      girl on about\u2026)\r\nDante: And you were worried about not being good enough
-      in your match and getting another one.\r\n \r\nDante: This match is for the
-      #2 contender!\r\nJade: How though?!\r\nDante: Because Claudio beat me, I dropped
-      down and you moved up!\r\nJade: Damn, that\u2019s crazy!\r\nJade: Holy shit\u2026
-      I\u2019m moving up!\r\nKnox: You got drinks around here?\r\nJade jadeNeutral:
-      Uhh, I have a little bit of vodka left.\r\nKnox: Let\u2019s take a few shots
-      to celebrate, eh?\r\nJade jadeHappy: Sure!\r\nThe trio take a few shots together
-      and about an hour passes and they\u2019re all sitting on the couch watching
-      a movie together, with pizza that they ended up having delivered.\r\nKnox knoxNeutral:
-      So tell me, Jade. I know you came over from Cascadia. I\u2019m curious about
-      the differences between there and here.\r\nKnox: Must be wild, huh?\r\nJade:
-      Well, uh\u2026\r\nJade: \u2018scuse me.\r"
+    stringVal: "Jade jadeNeutral left: Whew, finally back\u2026\r\n>knock knock<\r\nJade:
+      Damn, didn\u2019t even get time to get ready!\r\nJade jadeHappy right: Yo,
+      Dante! And Knox! What\u2019s up, guys?\r\nKnox jadeHappy: Jade I got some news!\r\nDante
+      danteHappy: He\u2019s got some big news!\r\nKnox: The match card came in and
+      you\u2019re gonna face me on Sunday! And you get to win! Ain\u2019t that amazing?!\r\nJade:
+      Wait, really?! No way!!\r\nIf Player Went to Caf\xE9: Jade: (What was that
+      Cassandra girl on about\u2026)\r\nDante: And you were worried about not being
+      good enough in your match and getting another one.\r\n \r\nDante: This match
+      is for the #2 contender!\r\nJade: How though?!\r\nDante: Because Claudio beat
+      me, I dropped down and you moved up!\r\nJade: Damn, that\u2019s crazy!\r\nJade:
+      Holy shit\u2026 I\u2019m moving up!\r\nKnox: You got drinks around here?\r\nJade
+      jadeNeutral: Uhh, I have a little bit of vodka left.\r\nKnox: Let\u2019s take
+      a few shots to celebrate, eh?\r\nJade jadeHappy: Sure!\r\nThe trio take a few
+      shots together and about an hour passes and they\u2019re all sitting on the
+      couch watching a movie together, with pizza that they ended up having delivered.\r\nKnox
+      knoxNeutral: So tell me, Jade. I know you came over from Cascadia. I\u2019m
+      curious about the differences between there and here.\r\nKnox: Must be wild,
+      huh?\r\nJade: Well, uh\u2026\r\nJade: \u2018scuse me.\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -290,7 +290,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 137.12091
     y: 297.8069
-    width: 312.76868
+    width: 307.95355
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -388,7 +388,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -0.77851105
     y: 532.64374
-    width: 161.43593
+    width: 161.77988
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -590,7 +590,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 207.55223
     y: 644.0682
-    width: 228.8478
+    width: 225.40842
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -618,7 +618,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 413.91516
     y: 527.1293
-    width: 162.81168
+    width: 161.77988
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -674,7 +674,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -725,7 +725,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2331200483391581169}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -740,7 +740,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 7246256161009399474}
+      objectReference: {fileID: 2331200483391581170}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

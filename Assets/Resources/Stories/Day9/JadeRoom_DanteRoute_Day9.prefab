@@ -253,7 +253,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 153.36145
     y: 413.53156
-    width: 221.96902
+    width: 220.24934
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -307,7 +307,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 476.38876
     y: 527.51306
-    width: 162.81168
+    width: 161.77988
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -415,7 +415,7 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Jade jadeHappy: Whew\u2026 That was a good night\u2019s sleep!\r\nJade:
+    stringVal: "Jade jadeHappy left: Whew\u2026 That was a good night\u2019s sleep!\r\nJade:
       Woke up at a decent time too.\r\nJade jadeNeutral: I know Dante and Knox said
       they wanted to come over and hang out, but that\u2019ll be in a few hours.
       Maybe I should\u2026\r"
@@ -468,7 +468,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 138.84062
     y: 309.84476
-    width: 239.8538
+    width: 237.44624
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -511,7 +511,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -30.013226
     y: 530.9241
-    width: 161.43593
+    width: 161.77988
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -598,7 +598,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 209.87126
     y: 536.4273
-    width: 161.43593
+    width: 161.77988
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -648,12 +648,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -699,7 +699,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6075091996211996372}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -714,7 +714,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 8658817959805847913}
+      objectReference: {fileID: 6075091996211996375}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

@@ -138,7 +138,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 216.75023
     y: 531.2682
-    width: 161.43593
+    width: 161.77988
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -150,6 +150,27 @@ MonoBehaviour:
   - {fileID: 1806262198148325557}
   - {fileID: 509842944756018790}
   suppressAllAutoSelections: 0
+--- !u!114 &13551849082358317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2957333837352874330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 38
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 6325529157783317515}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!114 &205238587057520094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,6 +186,27 @@ MonoBehaviour:
   scope: 0
   key: goToCombat
   value: 0
+--- !u!114 &509842944756018790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2957333837352874330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 37
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 6325529157783317515}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!114 &1162576298252634184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,7 +284,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -0.77851105
     y: 532.64374
-    width: 161.43593
+    width: 161.77988
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -315,7 +357,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 174.9541
     y: 309.84476
-    width: 254.98709
+    width: 254.64314
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -343,8 +385,8 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Jade jadeNeutral: Whew, took a bit to get back, but I\u2019m right
-      on time\r\n>knock knock<\r\nJade jadeHappy: Oh, it\u2019s probably Ava!\r\nAva
+    stringVal: "Jade jadeNeutral left: Whew, took a bit to get back, but I\u2019m
+      right on time\r\n>knock knock<\r\nJade jadeHappy: Oh, it\u2019s probably Ava!\r\nAva
       avaHappy: Hiiiiii!\r\nJade: Hiiiiii!\r\nAva avaNeutral: Cutting to the point
       before we do anything else\u2026\r\nAva avaHappy: I have the match card! It
       just went out like 30 minutes ago.\r\nAva: Let\u2019s go through it together.\r\nJade:
@@ -426,7 +468,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 151.64175
     y: 415.25125
-    width: 249.48407
+    width: 247.76439
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -546,7 +588,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 207.55223
     y: 644.0682
-    width: 183.44797
+    width: 182.41615
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -574,7 +616,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 413.91516
     y: 527.1293
-    width: 162.81168
+    width: 161.77988
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -607,48 +649,6 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
---- !u!114 &509842944756018790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2957333837352874330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 37
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 6325529157783317515}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
---- !u!114 &13551849082358317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2957333837352874330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 38
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 6325529157783317515}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
 --- !u!1001 &1534336804533499141
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -672,7 +672,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -723,7 +723,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 3191405310045960074}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -738,7 +738,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 7539007992824392393}
+      objectReference: {fileID: 3191405310045960073}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

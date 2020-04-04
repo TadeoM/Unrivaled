@@ -76,24 +76,24 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Jade: (The crowd seems to be waiting for the main event, they\u2019re
-      so quiet\u2026)\r\nAn announcer steps into the middle of the ring, microphone
-      in hand.\r\nAnnouncer: Ladies and gentlemen, we have our main event next!\r\nAnnouncer:
-      Introducing first\u2026\r\nAnnouncer: From [stillneednames], he is the number
-      three contender for the AOW championship, with a record of 10-1, D-800!\r\nAnnouncer:
-      His challenger\u2026\r\nAnnouncer: From [name], he is the current number two
-      contender for the AOW championship, with a record of 15-2, Inferno!!\r\nJade:
-      (Geez, I can barely hear myself think!)\r\nJade watches the match intensely,
-      it lasts about 30 minutes, with Knox winning in a very close fashion, the audience
-      goes wild.\r\nJade jadeHappy: That was awesome!\r\nAn interviewer meets Knox
-      in the middle of the ring as Dante rolls out, leaving Knox and the interviewer
-      alone in the ring.\r\nInterviewer: Inferno, you\u2019ve ascended through the
-      fire and flames and have successfully dragged Dante into his own Inferno. What
-      do you have to say about that and your future opponents?\r\nKnox: *pant* Well\u2026
-      *pant*\r\nKnox: It\u2019s been clear since I\u2019ve laid eyes on him that
-      he ain\u2019t got what it takes to be in the ring with me.\r\nKnox: And I proved
-      that tonight, didn\u2019t I?!\r\nKnox: Anyone in the back who\u2019s trying
-      to get to the title is gonna have to go through me, and trust me, that\u2019s
+    stringVal: "Jade jadeNeutral left: (The crowd seems to be waiting for the main
+      event, they\u2019re so quiet\u2026)\r\nAn announcer steps into the middle of
+      the ring, microphone in hand.\r\nAnnouncer: Ladies and gentlemen, we have our
+      main event next!\r\nAnnouncer: Introducing first\u2026\r\nAnnouncer: From [stillneednames],
+      he is the number three contender for the AOW championship, with a record of
+      10-1, D-800!\r\nAnnouncer: His challenger\u2026\r\nAnnouncer: From [name],
+      he is the current number two contender for the AOW championship, with a record
+      of 15-2, Inferno!!\r\nJade: (Geez, I can barely hear myself think!)\r\nJade
+      watches the match intensely, it lasts about 30 minutes, with Knox winning in
+      a very close fashion, the audience goes wild.\r\nJade jadeHappy: That was awesome!\r\nAn
+      interviewer meets Knox in the middle of the ring as Dante rolls out, leaving
+      Knox and the interviewer alone in the ring.\r\nInterviewer: Inferno, you\u2019ve
+      ascended through the fire and flames and have successfully dragged Dante into
+      his own Inferno. What do you have to say about that and your future opponents?\r\nKnox:
+      *pant* Well\u2026 *pant*\r\nKnox: It\u2019s been clear since I\u2019ve laid
+      eyes on him that he ain\u2019t got what it takes to be in the ring with me.\r\nKnox:
+      And I proved that tonight, didn\u2019t I?!\r\nKnox: Anyone in the back who\u2019s
+      trying to get to the title is gonna have to go through me, and trust me, that\u2019s
       going to be the last decision you\u2019ll make in AOW!\r\nInterviewer: That\u2019s
       a little harsh, don\u2019t you think Inferno?\r\nKnox knoxSad: You know what?
       You\u2019re right\u2026 I\u2019d actually like to apologize then\u2026\r\nKnox
@@ -132,7 +132,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 183.25488
     y: 441.024
-    width: 140.09138
+    width: 140.67639
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -181,7 +181,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -232,7 +232,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8578781794475548352}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
