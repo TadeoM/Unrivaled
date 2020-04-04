@@ -377,6 +377,31 @@ MonoBehaviour:
   - {fileID: 615518758736480830}
   - {fileID: 2769974011918124465}
   suppressAllAutoSelections: 0
+--- !u!114 &4029438991975234103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7723651325167312683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 47
+  indentLevel: 0
+  text: Nah, I just forgot for a bit
+  description: 
+  targetBlock: {fileID: 2494097959765416517}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!114 &5333494346085341443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -492,12 +517,14 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: 'Jade jadeHappy: Hey Ava!
+    stringVal: 'Ava avaNeutral right:
 
-      Ava avaHappy: Hey hey hey!
+      Jade jadeHappy left: Hey Ava!
 
       Ava
-      avaNeutral: Guess what happened yesterday!
+      avaHappy right: Hey hey hey!
+
+      Ava avaNeutral: Guess what happened yesterday!
 
 '
   clearPrevious:
@@ -548,7 +575,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 149.63757
-    y: 288.9959
+    y: 284.92673
     width: 251.83109
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
@@ -692,21 +719,6 @@ MonoBehaviour:
   fadeWhenDone:
     booleanRef: {fileID: 0}
     booleanVal: 1
---- !u!114 &9056031361855161508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7723651325167312683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scope: 0
-  key: goToCombat
-  value: 0
 --- !u!114 &8430886397847063914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -732,7 +744,7 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
---- !u!114 &4029438991975234103
+--- !u!114 &9056031361855161508
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -741,22 +753,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7723651325167312683}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 47
-  indentLevel: 0
-  text: Nah, I just forgot for a bit
-  description: 
-  targetBlock: {fileID: 2494097959765416517}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
+  scope: 0
+  key: goToCombat
+  value: 0
 --- !u!1001 &6300091334346496884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -780,7 +782,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -831,7 +833,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 615518758736480830}
+      objectReference: {fileID: 5998370132223397616}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -846,7 +848,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 6362986825113158526}
+      objectReference: {fileID: 5998370132223397619}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

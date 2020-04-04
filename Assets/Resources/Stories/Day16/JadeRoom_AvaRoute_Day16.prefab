@@ -218,11 +218,12 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "TV: Unbelievably developments last night with Jade turning her frustrations
-      onto D-800 in her first win last night and aligning with Sweet Spike. \r\nJade
-      jadeNeutral: My first win, but\u2026 It feels weird.\r\nJade jadeNeutral: I\u2019m
-      surprised nothing went too badly though. I think I got the right reaction.\r\nJade
-      jadeHappy: Still, it *is* a first win. Maybe I should celebrate with someone.\r"
+    stringVal: "Jade jadeNeutral left:\nTV: Unbelievably developments last night
+      with Jade turning her frustrations onto D-800 in her first win last night and
+      aligning with Sweet Spike. \r\nJade jadeNeutral: My first win, but\u2026 It
+      feels weird.\r\nJade jadeNeutral: I\u2019m surprised nothing went too badly
+      though. I think I got the right reaction.\r\nJade jadeHappy: Still, it *is*
+      a first win. Maybe I should celebrate with someone.\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -569,7 +570,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 1998317427175598427}
+      objectReference: {fileID: 3142742610355053410}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -584,7 +585,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 2373081254834941676}
+      objectReference: {fileID: 3142742610355053409}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

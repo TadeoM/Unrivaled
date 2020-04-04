@@ -120,10 +120,10 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Jade jadeHappy: I still can\u2019t believe I\u2019m going to be #1
-      contender!\r\nJade: All that hard work is starting to pay off!\r\nJade jadeNeutral:
-      But it\u2019s against Cassandra\u2026\r\nJade: I have a few hours beforehand,
-      just need to kill some time.\r"
+    stringVal: "Jade jadeHappy left: I still can\u2019t believe I\u2019m going to
+      be #1 contender!\r\nJade: All that hard work is starting to pay off!\r\nJade
+      jadeNeutral: But it\u2019s against Cassandra\u2026\r\nJade: I have a few hours
+      beforehand, just need to kill some time.\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -554,7 +554,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 696433529350917329}
+      objectReference: {fileID: 723952399242221445}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -569,7 +569,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 8910745579059594032}
+      objectReference: {fileID: 723952399242221446}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

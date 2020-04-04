@@ -66,7 +66,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 197.18861
     y: 717.32886
-    width: 197.72897
+    width: 196.50949
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -160,7 +160,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 193.56984
     y: 446.29355
-    width: 196.53761
+    width: 195.05891
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -229,7 +229,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 176.44327
     y: 247.29822
-    width: 240.61803
+    width: 240.02718
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -257,29 +257,36 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Ava: Man\u2026 I can\u2019t believe you got in AOW in time to see
-      the photoshoot!\r\nJade: What\u2019s the big deal with the photoshoot?\r\nAva:
-      Well, every year during the summer, AOW has a supershow with the most popular
-      wrestlers in each division.\r\nAva: The biggest match is a triple threat with
-      the three champions from each division.\r\nJade: Ohhh, I remember!\r\nJade:
-      Damn, weren\u2019t you in one of the triple threats?\r\nAva avaHappy: Yep!
-      It was against Smooth Desire representing D3 and a guy named Sammy representing
-      D2. Desire won that match.\r\nAva: They\u2019re about to start promoting it
-      for this year, so they\u2019re taking the pictures of the champions.\r\nClaudio
-      claudioHappy: Oh, hello Jade! I\u2019m surprised to see you here.\r\nJade jadeHappy:
+    stringVal: "Jade jadeNeutral left:\nAva avaHappy right: Man\u2026 I can\u2019t
+      believe you got in AOW in time to see the photoshoot!\r\nJade: What\u2019s
+      the big deal with the photoshoot?\r\nAva avaNeutral: Well, every year during
+      the summer, AOW has a supershow with the most popular wrestlers in each division.\r\nAva:
+      The biggest match is a triple threat with the three champions from each division.\r\nJade:
+      Ohhh, I remember!\r\nJade: Damn, weren\u2019t you in one of the triple threats?\r\nAva
+      avaHappy: Yep! It was against Smooth Desire representing D3 and a guy named
+      Sammy representing D2. Desire won that match.\r\nAva: They\u2019re about to
+      start promoting it for this year, so they\u2019re taking the pictures of the
+      champions.\r\nAva hide: \nAva avaHappy \"offscreen right\":\nClaudio claudioHappy
+      right: Oh, hello Jade! I\u2019m surprised to see you here.\r\nJade jadeHappy:
       Hey Claudio!\r\nClaudio claudioNeutral: I don\u2019t believe I\u2019ve met
-      you before, Miss.\r\nAva avaHappy: My name\u2019s Ava, nice to meet you!\r\nClaudio:
-      Hold on, Sweet Spike Ava? Oh, dear. I\u2019m so sorry! I hadn\u2019t seen you
-      in a long time, I completely forgot your look changed!\r\nAva: Haha, that\u2019s
-      fine. It makes sense, they made me change a lot of stuff.\r\nClaudio claudioNeutral:
-      My goodness, Jade, you\u2019re in the right company!\r\nJade: Well, she\u2019s
-      helped me a lot as my mentor!\r\nAva avaNeutral: So, where\u2019s Luther and
-      Desire?\r\nClaudio: Ah, they haven\u2019t arrived yet. I\u2019m not sure when
-      they will.\r\nJade jadeNeutral: Have you guys started shooting yet?\r\nClaudio:
-      No, actually. They told me to get a pump at the machines before we start.\r\nClaudio
-      claudioSad: I also have to get into character. So very dreadful.\r\nAva avaNeutral:
-      They still got you on that money character, huh?\r\nClaudio claudioNeutral:
-      Ah, yes. It\u2019s quite bothersome to do it. It\u2019s so\u2026\r"
+      you before, Miss.\r\nClaudio hide:\nClaudio claudioNeutral \"offscreen right\":\nAva
+      avaHappy: My name\u2019s Ava, nice to meet you!\r\nAva hide: \nAva avaHappy
+      \"offscreen right\":\nClaudio: Hold on, Sweet Spike Ava? Oh, dear. I\u2019m
+      so sorry! I hadn\u2019t seen you in a long time, I completely forgot your look
+      changed!\r\nClaudio hide:\nClaudio claudioNeutral \"offscreen right\":\nAva:
+      Haha, that\u2019s fine. It makes sense, they made me change a lot of stuff.\r\nAva
+      hide: \nAva avaHappy \"offscreen right\":\nClaudio claudioNeutral: My goodness,
+      Jade, you\u2019re in the right company!\r\nClaudio hide:\nClaudio claudioNeutral
+      \"offscreen right\":\nJade: Well, she\u2019s helped me a lot as my mentor!\r\nAva
+      avaNeutral: So, where\u2019s Luther and Desire?\r\nAva hide: \nAva avaNeutral
+      \"offscreen right\":\nClaudio: Ah, they haven\u2019t arrived yet. I\u2019m
+      not sure when they will.\r\nJade jadeNeutral: Have you guys started shooting
+      yet?\r\nClaudio: No, actually. They told me to get a pump at the machines before
+      we start.\r\nClaudio claudioSad: I also have to get into character. So very
+      dreadful.\r\nClaudio hide:\nClaudio claudioSad \"offscreen right\":\nAva avaNeutral:
+      They still got you on that money character, huh?\r\nAva hide: \nAva avaNeutral
+      \"offscreen right\":\nClaudio claudioNeutral: Ah, yes. It\u2019s quite bothersome
+      to do it. It\u2019s so\u2026\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -352,8 +359,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 227.61899
-    y: 597.9384
+    x: 222.17928
+    y: 596.1252
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -412,21 +419,26 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Claudio claudioHappy: Precisely!\r\nClaudio claudioNeutral: Alas,
-      I must still play the role. I will do the best job I can at it too.\r\nAva
-      avaHappy: Well, I think you\u2019re doing great, Claudio!\r\nClaudio claudioHappy:
-      Thank you, Ava.\r\nClaudio claudioNeutral: For now, I shall go workout for
-      a moment to get that pump. Take care you two.\r\nJade jadeHappy: See you later,
-      Claudio!\r\nJade jadeNeutral: I like him, he\u2019s pretty nice.\r\nAva avaNeutral:
-      Yeah, he\u2019s really earned his spot.\r\nAva: I wonder when the others are
-      goi\u2014\r\nJade: Well\u2026\r\nAva avaHappy: Desire! What\u2019s up?\r\nSmooth
-      Desire: Hello Ava.\r\nJade jadeNeutral: Uh\u2026\r\nJade jadeHappy: Hey Smooth
-      Desire!\r\nSmooth Desire: Hello Jade.\r\nAva avaNeutral: So, are you excited
-      for the supershow in the summer?\r\nSmooth Desire: Excited? No.\r\nSmooth Desire:
+    stringVal: "Claudio claudioHappy right: Precisely!\r\nClaudio claudioNeutral:
+      Alas, I must still play the role. I will do the best job I can at it too.\r\nClaudio
+      hide: \nClaudio claudioNeutral \"offscreen right\":\nAva avaHappy right: Well,
+      I think you\u2019re doing great, Claudio!\r\nAva hide: \nAva avaHappy \"offscreen
+      right\":\nClaudio claudioHappy right: Thank you, Ava.\r\nClaudio claudioNeutral:
+      For now, I shall go workout for a moment to get that pump. Take care you two.\r\nClaudio
+      hide:\nJade jadeHappy: See you later, Claudio!\r\nJade jadeNeutral: I like
+      him, he\u2019s pretty nice.\r\nAva avaNeutral right: Yeah, he\u2019s really
+      earned his spot.\r\nAva: I wonder when the others are goi\u2014\r\n\n-- Desire
+      music hits\n\nJade: Well\u2026\r\nAva avaHappy: Desire! What\u2019s up?\r\nAva
+      hide:\nAva avaHappy \"offscreen right\":\nSmooth Desire right: Hello Ava.\r\nJade
+      jadeNeutral: Uh\u2026\r\nJade jadeHappy: Hey Smooth Desire!\r\nSmooth Desire:
+      Hello Jade.\r\nSmooth Desire hide:\nSmooth Desire \"offscreen right\":\nAva
+      avaNeutral: So, are you excited for the supershow in the summer?\r\nAva hide:\nAva
+      avaNeutral \"offscreen right\":\nSmooth Desire: Excited? No.\r\nSmooth Desire:
       How can I be excited when the show does not even have a name?\r\nSmooth Desire:
-      There\u2019s no aesthetic. There\u2019s no atmosphere. There\u2019s no ambiance.\r\nAva:
-      Yeah, that\u2019s true.\r\nAva: I heard the triple threat might be a tables
-      match.\r"
+      There\u2019s no aesthetic. There\u2019s no atmosphere. There\u2019s no ambiance.\r\nSmooth
+      Desire hide:\nSmooth Desire \"offscreen right\":\nAva: Yeah, that\u2019s true.\r\nAva:
+      I heard the triple threat might be a tables match.\r\nAva hide:\nAva avaNeutral
+      \"offscreen right\":"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -480,7 +492,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 474.94934
     y: 792.5696
-    width: 127.438576
+    width: 128.33182
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -529,13 +541,17 @@ MonoBehaviour:
       Desire: I have never been in a tables match. There\u2019s no way to prepare
       for the feeling or the threat of those tables.\r\nJade: Do you know who\u2019s
       going to win and who\u2019s going through the table?\r\nSmooth Desire: \u2026\r\nSmooth
-      Desire: If I knew, I would not be worrying about my preparation.\r\nAva avaHappy:
-      Yeah, you always have to go out there, ready to win.\r\nSmooth Desire: Exactly.\r\nJade:
-      (Ohhh\u2026)\r\nJade: Well, good luck\u2026 When the time comes!\r\nSmooth
-      Desire: Thank you, Jade.\r\nAva avaNeutral: It was awesome talking with you
-      as always, Desire!\r\nSmooth Desire: Likewise, Ava.\r\nJade jadeSad: I still
-      don\u2019t get him\u2026\r\nAva: Just treat everything like it\u2019s real
-      around him\u2026\r\nAva: Then things will make more sense.\r\nJade: I guess\u2026\r"
+      Desire: If I knew, I would not be worrying about my preparation.\r\nSmooth
+      Desire hide:\nSmooth Desire \"offscreen right\":\nAva avaHappy: Yeah, you always
+      have to go out there, ready to win.\r\nAva hide:\nAva avaHappy \"offscreen
+      right\":\nSmooth Desire: Exactly.\r\nJade: (Ohhh\u2026)\r\nJade: Well, good
+      luck\u2026 When the time comes!\r\nSmooth Desire: Thank you, Jade.\r\nSmooth
+      Desire hide:\nSmooth Desire \"offscreen right\":\nAva avaNeutral: It was awesome
+      talking with you as always, Desire!\r\nAva hide:\nAva avaNeutral \"offscreen
+      right\":\nSmooth Desire: Likewise, Ava.\nSmooth Desire hide:\r\nJade jadeSad:
+      I still don\u2019t get him\u2026\r\nAva: Just treat everything like it\u2019s
+      real around him\u2026\r\nAva: Then things will make more sense.\r\nJade: I
+      guess\u2026\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -709,17 +725,17 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 52.11627
+      value: 234.99782
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: -35.904842
+      value: -170.24564
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: zoom
-      value: 0.67149997
+      value: 0.5515001
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}

@@ -76,30 +76,30 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Tadeo: One\u2026!\r\nCJ: Two\u2026!\r\nTadeo: \u2026Three!! Ladies
-      and gentlemen, Jade is your new #1 contender for the AOW Championship!\r\nJade
-      jadeHappy: \u2026!!!\r\nCJ: The crowd is going absolutely ballistic here in
-      the AOW arena!\r\nTadeo: Jade has every right to celebrate here. Going on a
-      tear here since her debut, she\u2019s worked her way up to the top spot!\r\nCJ:
-      Congratulations to her! You can just see the emotion on her face and how much
-      this win meant for her.\r\n(Claudio\u2019s music hits)\r\nTadeo: Hold on. Are
-      you kidding me?\r\nTadeo: It is!\r\nTadeo: The AOW Champion, Dirty Wolf, is
-      here in the arena!\r\nCJ: The crowd just went from roaring cheers to roaring
-      boos, it\u2019s full of ghosts here!\r\nTadeo: Hold on, Dirty Wolf has a microphone
-      in his hand!\r\nClaudio: You know, Jade. I\u2019ve been watching your matches
-      this entire time. I knew these other idiots wouldn\u2019t have a chance against
-      me.\r\nClaudio: I got the best trainer.\r\nCrowd: WHAT?\r\nClaudio: I got the
-      best equipment.\r\nCrowd: WHAT?\r\nClaudio: I got the best gym.\r\nCrowd: WHAT?\r\nClaudio:
-      I got the best everything money can buy. And you?\r\nClaudio: Yeah, you got
-      heart alright, but I\u2019ve proven time and time again you don\u2019t need
-      a heart to keep this shiny prize around your waist.\r\nClaudio: Keep eyes in
-      the back of your head in the next few weeks, Jade. Always remember, everyone
-      has a price.\r\nCJ: And the boos continue after those spooky words from Dirty
-      Wolf!\r\nTadeo: Amazing performance from Jade tonight with some not-so-savory
-      words from Dirty Wolf. I\u2019m certainly excited for the championship bout
-      whenever it may be.\r\nCJ: Most definitely.\r\nTadeo: Thank you for joining
-      us ladies and gentlemen, we\u2019ve been your commentators, Tadeo and CJ. Signing
-      off.\r"
+    stringVal: "Jade jadeNeutral left:\nTadeo: One\u2026!\r\nCJ: Two\u2026!\r\nTadeo:
+      \u2026Three!! Ladies and gentlemen, Jade is your new #1 contender for the AOW
+      Championship!\r\nJade jadeHappy left: \u2026!!!\r\nCJ: The crowd is going absolutely
+      ballistic here in the AOW arena!\r\nTadeo: Jade has every right to celebrate
+      here. Going on a tear here since her debut, she\u2019s worked her way up to
+      the top spot!\r\nCJ: Congratulations to her! You can just see the emotion on
+      her face and how much this win meant for her.\r\n-- Claudio's music hits\nTadeo:
+      Hold on. Are you kidding me?\r\nTadeo: It is!\r\nTadeo: The AOW Champion, Dirty
+      Wolf, is here in the arena!\r\nCJ: The crowd just went from roaring cheers
+      to roaring boos, it\u2019s full of ghosts here!\r\nTadeo: Hold on, Dirty Wolf
+      has a microphone in his hand!\r\nClaudio claudioNeutral right: You know, Jade.
+      I\u2019ve been watching your matches this entire time. I knew these other idiots
+      wouldn\u2019t have a chance against me.\r\nClaudio: I got the best trainer.\r\nCrowd:
+      WHAT?\r\nClaudio: I got the best equipment.\r\nCrowd: WHAT?\r\nClaudio: I got
+      the best gym.\r\nCrowd: WHAT?\r\nClaudio: I got the best everything money can
+      buy. And you?\r\nClaudio: Yeah, you got heart alright, but I\u2019ve proven
+      time and time again you don\u2019t need a heart to keep this shiny prize around
+      your waist.\r\nClaudio: Keep eyes in the back of your head in the next few
+      weeks, Jade. Always remember, everyone has a price.\r\nCJ: And the boos continue
+      after those spooky words from Dirty Wolf!\r\nTadeo: Amazing performance from
+      Jade tonight with some not-so-savory words from Dirty Wolf. I\u2019m certainly
+      excited for the championship bout whenever it may be.\r\nCJ: Most definitely.\r\nTadeo:
+      Thank you for joining us ladies and gentlemen, we\u2019ve been your commentators,
+      Tadeo and CJ. Signing off.\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1

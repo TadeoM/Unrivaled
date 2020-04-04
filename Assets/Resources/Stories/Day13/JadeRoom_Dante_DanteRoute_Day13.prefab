@@ -182,17 +182,18 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Jade jadeHappy: Hey Dante.\r\nDante danteHappy: Yo.\r\nJade jadeNeutral:
-      So, what\u2019s the deal with this match? Why couldn\u2019t you just text it
-      to me.\r\nDante: Well\u2026\r\nDante: It looks like AOW wants you to be #1
-      contender!\r\nJade: Hold on\u2026\r\nJade jadeHappy: Are you serious?!\r\nDante:
-      Yes! They just sent it out.\r\nJade: NO WAY!!\r\nDante: Congrats, Jade!\r\nDante:
-      I think there are also details of Claudio coming in after the match to stare
-      down with you.\r\nDante: That\u2019s crazy, honestly, I think you\u2019re gonna
-      be the next champion soon!\r\nJade: AHHHH!!\r\nJade: Man\u2026 Now I\u2019m
-      so glad you told me in person.\r\nJade jadeNeutral: Who am I facing for #1
-      contender?\r\nDante danteNeutral: Well, you have to beat the #1 contender to
-      be the #1 contender.\r\nDante: That would be Cassandra\u2026\r\n"
+    stringVal: "Dante danteNeutral right:\nJade jadeHappy left: Hey Dante.\r\nDante
+      danteHappy right: Yo.\r\nJade jadeNeutral: So, what\u2019s the deal with this
+      match? Why couldn\u2019t you just text it to me.\r\nDante: Well\u2026\r\nDante:
+      It looks like AOW wants you to be #1 contender!\r\nJade: Hold on\u2026\r\nJade
+      jadeHappy: Are you serious?!\r\nDante: Yes! They just sent it out.\r\nJade:
+      NO WAY!!\r\nDante: Congrats, Jade!\r\nDante: I think there are also details
+      of Claudio coming in after the match to stare down with you.\r\nDante: That\u2019s
+      crazy, honestly, I think you\u2019re gonna be the next champion soon!\r\nJade:
+      AHHHH!!\r\nJade: Man\u2026 Now I\u2019m so glad you told me in person.\r\nJade
+      jadeNeutral: Who am I facing for #1 contender?\r\nDante danteNeutral: Well,
+      you have to beat the #1 contender to be the #1 contender.\r\nDante: That would
+      be Cassandra\u2026\r\n"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -679,7 +680,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -730,7 +731,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 110656956337785010}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -745,7 +746,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 8082708789059755015}
+      objectReference: {fileID: 110656956337785009}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

@@ -189,7 +189,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 191.74596
     y: 706.6208
-    width: 199.64926
+    width: 197.58305
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -218,10 +218,11 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Cassandra: But of course! Some people just need to know to be better.\r\nJade
-      jadeAngry: Like, you, right?\r\nCassandra cassandraAngry: \u2026\r\nCassandra
-      cassandraHappy: You know, you\u2019re right. Always think about improving.\r\nCassandra
-      cassandraNeutral: Anyway, I\u2019ll leave you be, Jade. See you soon!\r"
+    stringVal: "Cassandra right: But of course! Some people just need to know to
+      be better.\r\nJade jadeAngry: Like, you, right?\r\nCassandra cassandraAngry:
+      \u2026\r\nCassandra cassandraHappy: You know, you\u2019re right. Always think
+      about improving.\r\nCassandra cassandraNeutral: Anyway, I\u2019ll leave you
+      be, Jade. See you soon!\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -250,11 +251,11 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Cassandra cassandraAngry: Tch, winning titles means nothing, it\u2019s
-      just who gets picked to win is all. It\u2019s all fake anyway.\r\nJade jadeAngry:
-      How can you say that when people obviously get hurt?\r\nJade: When people who
-      have the most time and dedication to make the fans happy get rewarded like
-      Ava?\r\nJade: As far as I know, you\u2019re the only one who\u2019s gotten
+    stringVal: "Cassandra cassandraAngry right: Tch, winning titles means nothing,
+      it\u2019s just who gets picked to win is all. It\u2019s all fake anyway.\r\nJade
+      jadeAngry: How can you say that when people obviously get hurt?\r\nJade: When
+      people who have the most time and dedication to make the fans happy get rewarded
+      like Ava?\r\nJade: As far as I know, you\u2019re the only one who\u2019s gotten
       hand-picked and spoiled.\r\nCassandra: You\u2014\r\nCassandra cassandraHappy:
       You know what? I\u2019ll just leave you be for now. No negativity.\r\nCassandra
       cassandraNeutral: I\u2019ll see you soon, Jade.\r"
@@ -506,7 +507,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 238.02252
     y: 617.6194
-    width: 128.56586
+    width: 130.88687
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -585,7 +586,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 193.56984
     y: 446.29355
-    width: 198.40218
+    width: 196.16399
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -638,8 +639,8 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Ava avaHappy: Heyyyy!\r\nJade jadeHappy: Heyyyy!\r\nAva: Are you
-      ready to celebrate?\r"
+    stringVal: "Jade jadeNeutral left:\nAva avaHappy right: Heyyyy!\r\nJade jadeHappy
+      left: Heyyyy!\r\nAva: Are you ready to celebrate?\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -689,7 +690,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 149.63757
     y: 288.9959
-    width: 291.93298
+    width: 291.24152
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -762,10 +763,10 @@ MonoBehaviour:
       jadeHappy: Well, sure.\r\nAva and Jade have a few drinks and enjoy some food
       that is good for the soul, but not the body. As they\u2019re eating and drinking,
       Cassandra walks into the cafe and immediately spots the pair.\r\nAva avaAngry:
-      \u2026\r\nJade jadeNeutral: Wait, wha\u2014Ohh..\r\nCassandra cassandraHappy:
-      Hey Jade!\r\nJade: Hi\u2026 Cassandra.\r\nCassandra cassandraNeutral: I saw
-      your match Monday. It was impressive how well you sold that beating. It actually
-      made Ava look competent.\r\nAva: \u2026!\r"
+      \u2026\r\nJade jadeNeutral: Wait, wha\u2014Ohh..\r\nCassandra cassandraHappy
+      right: Hey Jade!\r\nJade: Hi\u2026 Cassandra.\r\nCassandra cassandraNeutral:
+      I saw your match Monday. It was impressive how well you sold that beating.
+      It actually made Ava look competent.\r\nAva right: \u2026!\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -853,7 +854,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 537.86017
     y: 609.4999
-    width: 128.56586
+    width: 130.88687
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -908,7 +909,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -928,17 +929,17 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 65.338005
+      value: 577.96844
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: -0.360137
+      value: 150.75417
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: zoom
-      value: 0.6415
+      value: 0.5637504
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -954,7 +955,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6762086627489474704}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -969,7 +970,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 6243223702566905118}
+      objectReference: {fileID: 6762086627489474707}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

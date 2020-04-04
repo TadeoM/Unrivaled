@@ -535,34 +535,6 @@ MonoBehaviour:
   scope: 0
   key: avaMeter
   value: 0
---- !u!114 &4886786588072121476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4869325027858000985}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 366.9378
-    y: 477.69647
-    width: 195.90155
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 80
-  blockName: Gym_Luther_Day3_C_Route
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 8215048648654261822}
-  - {fileID: -2392418680824627344}
-  suppressAllAutoSelections: 0
 --- !u!114 &5834834573853662239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -779,7 +751,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 3320459285127644973}
+      objectReference: {fileID: 3320459285127644982}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[4]
