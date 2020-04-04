@@ -202,7 +202,6 @@ public class DialogueManager : MonoBehaviour
             if (character.gameObject.name == characterName)
             {
                 character.RelationshipMeter += increase;
-                character.StoreStats();
                 break;
             }
         }

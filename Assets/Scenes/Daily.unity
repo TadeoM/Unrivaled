@@ -121,111 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &160619081
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 722985461160549936, guid: 2f71ec053f77aa34c899dcde067b70a0,
-        type: 3}
-      propertyPath: nodeRect.x
-      value: 129.14154
-      objectReference: {fileID: 0}
-    - target: {fileID: 722985461160549939, guid: 2f71ec053f77aa34c899dcde067b70a0,
-        type: 3}
-      propertyPath: conversationText.stringVal
-      value: "Jade jadeNeutral left: Ugh. Man, yesterday was tough. I\u2019m still
-        sore. \nJade: Today\u2019s...  Sunday! It\u2019s planning day. I think I\u2019m
-        supposed to meet up with Dante, but I\u2019m not sure where. \nJade: Ava
-        didn\u2019t text me yesterday either. She was probably busy.\n*Bzzz Bzzz*\nJade:
-        Oh, right on time."
-      objectReference: {fileID: 0}
-    - target: {fileID: 722985461160549943, guid: 2f71ec053f77aa34c899dcde067b70a0,
-        type: 3}
-      propertyPath: itemId
-      value: 23
-      objectReference: {fileID: 0}
-    - target: {fileID: 6392343352101648120, guid: 2f71ec053f77aa34c899dcde067b70a0,
-        type: 3}
-      propertyPath: m_Name
-      value: JadeRoom_Ava_Day2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6392343352101845238, guid: 2f71ec053f77aa34c899dcde067b70a0,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6392343352101845238, guid: 2f71ec053f77aa34c899dcde067b70a0,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6392343352101845238, guid: 2f71ec053f77aa34c899dcde067b70a0,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6392343352101845238, guid: 2f71ec053f77aa34c899dcde067b70a0,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6392343352101845238, guid: 2f71ec053f77aa34c899dcde067b70a0,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6392343352101845238, guid: 2f71ec053f77aa34c899dcde067b70a0,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6392343352101845238, guid: 2f71ec053f77aa34c899dcde067b70a0,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6392343352101845238, guid: 2f71ec053f77aa34c899dcde067b70a0,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6392343352101845238, guid: 2f71ec053f77aa34c899dcde067b70a0,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6392343352101845238, guid: 2f71ec053f77aa34c899dcde067b70a0,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6392343352101845238, guid: 2f71ec053f77aa34c899dcde067b70a0,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6392343352111886558, guid: 2f71ec053f77aa34c899dcde067b70a0,
-        type: 3}
-      propertyPath: selectedCommands.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2f71ec053f77aa34c899dcde067b70a0, type: 3}
---- !u!114 &160619082 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6392343352111886558, guid: 2f71ec053f77aa34c899dcde067b70a0,
-    type: 3}
-  m_PrefabInstance: {fileID: 160619081}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &263522544
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,6 +157,82 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1680304231}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &660695171 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3376353549948826459, guid: 8e706bd9a2802264aa709bb2f6427681,
+    type: 3}
+  m_PrefabInstance: {fileID: 6900213823325433914}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &660695172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660695171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ef9731101048043a3768f71fa70d38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Smooth Desire
+--- !u!1 &679324912 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2842881409033828546, guid: 8e706bd9a2802264aa709bb2f6427681,
+    type: 3}
+  m_PrefabInstance: {fileID: 6900213823325433914}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &679324913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679324912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ef9731101048043a3768f71fa70d38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Knox
+--- !u!1 &700899051 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8174024281416136069, guid: 8e706bd9a2802264aa709bb2f6427681,
+    type: 3}
+  m_PrefabInstance: {fileID: 6900213823325433914}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &700899052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700899051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ef9731101048043a3768f71fa70d38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Ava
+--- !u!1 &829000786 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4993142908458931678, guid: 8e706bd9a2802264aa709bb2f6427681,
+    type: 3}
+  m_PrefabInstance: {fileID: 6900213823325433914}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &829000787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829000786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ef9731101048043a3768f71fa70d38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Dante
 --- !u!1 &990159170
 GameObject:
   m_ObjectHideFlags: 1
@@ -291,7 +262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 160619082}
+  selectedFlowchart: {fileID: 0}
 --- !u!4 &990159172
 Transform:
   m_ObjectHideFlags: 1
@@ -306,6 +277,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1017003327 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 297891739713416348, guid: 8e706bd9a2802264aa709bb2f6427681,
+    type: 3}
+  m_PrefabInstance: {fileID: 6900213823325433914}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1017003328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017003327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ef9731101048043a3768f71fa70d38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Luther
 --- !u!1 &1458642813
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,6 +379,25 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458642813}
   m_Enabled: 1
+--- !u!1 &1462568929 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1410842971682630305, guid: 8e706bd9a2802264aa709bb2f6427681,
+    type: 3}
+  m_PrefabInstance: {fileID: 6900213823325433914}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1462568930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462568929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ef9731101048043a3768f71fa70d38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Cassandra
 --- !u!1001 &1680304231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -640,7 +649,12 @@ PrefabInstance:
     - target: {fileID: 3376353549942802107, guid: 8e706bd9a2802264aa709bb2f6427681,
         type: 3}
       propertyPath: nameText
-      value: Velveteen
+      value: Smooth Desire
+      objectReference: {fileID: 0}
+    - target: {fileID: 3376353549948826459, guid: 8e706bd9a2802264aa709bb2f6427681,
+        type: 3}
+      propertyPath: m_Name
+      value: SmoothDesire
       objectReference: {fileID: 0}
     - target: {fileID: 4993142908465504318, guid: 8e706bd9a2802264aa709bb2f6427681,
         type: 3}
