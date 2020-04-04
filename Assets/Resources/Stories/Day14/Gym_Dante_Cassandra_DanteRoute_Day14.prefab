@@ -16,17 +16,17 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Dante danteNeutral: Anyway\u2026\r\nDante: Cassandra, I\u2019ll have
-      to catch you later. Jade and I were going to have a little workout.\r\nCassandra
+    stringVal: "Jade hidee:\nDante danteNeutral left: Anyway\u2026\r\nDante: Cassandra,
+      I\u2019ll have to catch you later. Jade and I were going to have a little workout.\r\nCassandra
       cassandraAngry: Oh.\r\nDante danteHappy: I\u2019ll see you later.\r\nCassandra:
-      Bye.\r\nDante danteNeutral: Whew\u2026\r\nJade: What was that about?\r\nDante:
-      Cassandra, man\u2026 Such a weird girl.\r\nDante: I think she\u2019s into me
-      but\u2026\r\nDante: I\u2019m not trying to be mean, you know?\r\nJade: Yeah\u2026
-      I get that.\r\nDante: Man\u2026 good luck planning with her, I heard she can
-      be a pain sometimes.\r\nDante danteHappy: Knowing you, I\u2019m sure you got
-      it.\r\nJade jadeHappy: Thanks, Dante.\r\nDante danteNeutral: You know, ever
-      since that first match, you\u2019ve done nothing but improve. I\u2019ve heard
-      people talk about you all the time.\r\nJade jadeNeutral: Really?!\r\nDante:
+      Bye.\r\nDante hide:\nDante danteNeutral right: Whew\u2026\r\nJade jadeNeutral
+      left: What was that about?\r\nDante: Cassandra, man\u2026 Such a weird girl.\r\nDante:
+      I think she\u2019s into me but\u2026\r\nDante: I\u2019m not trying to be mean,
+      you know?\r\nJade: Yeah\u2026 I get that.\r\nDante: Man\u2026 good luck planning
+      with her, I heard she can be a pain sometimes.\r\nDante danteHappy: Knowing
+      you, I\u2019m sure you got it.\r\nJade jadeHappy: Thanks, Dante.\r\nDante danteNeutral:
+      You know, ever since that first match, you\u2019ve done nothing but improve.
+      I\u2019ve heard people talk about you all the time.\r\nJade jadeNeutral: Really?!\r\nDante:
       Yeah! People in D1 even say some things, probably because of Luther.\r\nDante
       danteHappy: Still, people are noticing you and how good you can be, even AOW!\r\nDante
       danteNeutral: Make sure you don\u2019t waste the opportunity.\r\nJade jadeHappy:
@@ -152,9 +152,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 416.249
+    x: 410.14523
     y: 668.63324
-    width: 124.872826
+    width: 128.00647
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -246,9 +246,10 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Cassandra: Hi\u2026 Jade? Jade. Hi, Jade.\r\nJade jadeHappy: Thank
-      you for the opportunity Monday! I\u2019m excited to work with you.\r\nCassandra
-      cassandraHappy: Yeahh\u2026 Just meet me here later, okay?\r\n"
+    stringVal: "Dante hide:\nJade jadeHappy: Hey Cassandra!\nCassandra: Hi\u2026
+      Jade? Jade. Hi, Jade.\r\nJade jadeHappy left: Thank you for the opportunity
+      Monday! I\u2019m excited to work with you.\r\nCassandra cassandraHappy: Yeahh\u2026
+      Just meet me here later, okay?\r\n"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -277,7 +278,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 149.63757
     y: 288.9959
-    width: 308.79953
+    width: 311.75507
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -305,15 +306,16 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Cassandra cassandraAngry: What do you mean \u201CThat\u2019s not
-      how you do it?\u201D\r\nDante danteNeutral: I mean\u2026 it\u2019s not.\r\nCassandra:
-      That\u2019s what the AOW trainers were telling me how a match should go!\r\nDante:
-      Well, that\u2019s not always the perfect way to go about it, you know?\r\nDante:
-      It\u2019s whatever entertains the fans the most that\u2019s the better match.\r\nDante:
-      If I can show my momma something and she\u2019s like \u201CYeah, that was fun
-      to watch\u201D then that\u2019s a success for me.\r\nCassandra: \u2026\r\nCassandra
-      cassandraNeutral: I guess.\r\nDante danteHappy: Oh, hey Jade! Not sure if you\u2019ve
-      met, but this is Cassandra.\r"
+    stringVal: "Dante danteNeutral left:\nCassandra cassandraAngry right: What do
+      you mean \u201CThat\u2019s not how you do it?\u201D\r\nDante danteNeutral left:
+      I mean\u2026 it\u2019s not.\r\nCassandra: That\u2019s what the AOW trainers
+      were telling me how a match should go!\r\nDante: Well, that\u2019s not always
+      the perfect way to go about it, you know?\r\nDante: It\u2019s whatever entertains
+      the fans the most that\u2019s the better match.\r\nDante: If I can show my
+      momma something and she\u2019s like \u201CYeah, that was fun to watch\u201D
+      then that\u2019s a success for me.\r\nCassandra: \u2026\r\nCassandra cassandraNeutral:
+      I guess.\r\nDante danteHappy: Oh, hey Jade! Not sure if you\u2019ve met, but
+      this is Cassandra.\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -403,7 +405,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 195.20517
     y: 446.29355
-    width: 193.23497
+    width: 193.87862
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -485,8 +487,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 32.38719
-    y: 679.8443
-    width: 124.872826
+    y: 677.8097
+    width: 128.00647
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -514,10 +516,11 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Cassandra: Oh, it\u2019s you\u2026\r\nDante danteNeutral: Oh, man.\r\nCassandra:
+    stringVal: "Dante hide: \nJade jadeNeutral: Yeah\u2026 We\u2019ve met.\nCassandra:
+      Oh, it\u2019s you\u2026\r\nJade hide:\nDante danteNeutral: Oh, man.\r\nCassandra:
       No bad blood. Congrats on the match Monday. I\u2019m *so* excited for you.\r\nCassandra:
-      Jumping with joy.\r\nJade jadeNeutral: Thanks\u2026\r\nCassandraa: Just meet
-      me here later, okay?\r"
+      Jumping with joy.\r\nDante hide:\nJade jadeNeutral left: Thanks\u2026\r\nCassandraa:
+      Just meet me here later, okay?\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -593,17 +596,17 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 187.07214
+      value: 564.04626
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: 204.74136
+      value: 44.551167
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: zoom
-      value: 0.4915001
+      value: 0.4615001
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}

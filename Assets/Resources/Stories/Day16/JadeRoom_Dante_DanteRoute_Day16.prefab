@@ -867,14 +867,14 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Dante danteHappy: Yo.\r\nJade jadeHappy: Yo!\r\nDante danteNeutral:
-      I know we talked about it earlier, but how do you feel?\r\nJade: I feel great!\r\nJade:
-      I\u2019m excited, proud, relieved\u2026\r\nJade jadeNeutral: But I guess I\u2019m
-      a little nervous too.\r\nDante: Why?\r\nJade: Well, you know, it\u2019s been
-      such a fast rise, and I\u2019m not *that* experienced. What if I just crash
-      and burn?\r\nDante danteHappy: Heh\u2026\r\nDante danteNeutral: I think everyone
-      has that feeling when it comes to taking on big responsibilities. At least,
-      I know I do.\r\nDante: I don\u2019t think the higher-ups in AOW would\u2019ve
+    stringVal: "Jade jadeNeutral left:\nDante danteHappy right: Yo.\r\nJade jadeHappy
+      left: Yo!\r\nDante danteNeutral: I know we talked about it earlier, but how
+      do you feel?\r\nJade: I feel great!\r\nJade: I\u2019m excited, proud, relieved\u2026\r\nJade
+      jadeNeutral: But I guess I\u2019m a little nervous too.\r\nDante: Why?\r\nJade:
+      Well, you know, it\u2019s been such a fast rise, and I\u2019m not *that* experienced.
+      What if I just crash and burn?\r\nDante danteHappy: Heh\u2026\r\nDante danteNeutral:
+      I think everyone has that feeling when it comes to taking on big responsibilities.
+      At least, I know I do.\r\nDante: I don\u2019t think the higher-ups in AOW would\u2019ve
       picked you if they knew you wouldn\u2019t be successful. They\u2019ve done
       this for a very long time.\r\nDante: Some of them, longer than both of us have
       been alive. Sometimes, combined.\r\nDante: So, I don\u2019t think you need
@@ -1298,7 +1298,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -1349,7 +1349,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4701038663907608341}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -1364,7 +1364,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 2864026064842753200}
+      objectReference: {fileID: 4701038663907608342}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

@@ -143,13 +143,13 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Jade: Damn\u2026 how early am I?\r\nJade: \u2026\r\nJade: Maybe I
-      should text him.\r\nDante danteHappy: Yo! Jade!\r\nJade jadeHappy: Oh! There
-      you are. I was just about to text you.\r\nDante danteNeutral: My fault. Had
-      to take a call right before I was about to leave.\r\nJade jadeNeutral: That\u2019s
-      fine. It wasn\u2019t too long.\r\nDante: Oh, are you excited about tonight?\r\nJade:
-      A little? I\u2019m kind of worried, truth be told\u2026\r\nDante: Cassandra?\r\nJade:
-      Cassandra.\r\nDante: Well, how was planning with her?\r"
+    stringVal: "Jade left: Damn\u2026 how early am I?\r\nJade: \u2026\r\nJade: Maybe
+      I should text him.\r\nDante danteHappy right: Yo! Jade!\r\nJade jadeHappy:
+      Oh! There you are. I was just about to text you.\r\nDante danteNeutral: My
+      fault. Had to take a call right before I was about to leave.\r\nJade jadeNeutral:
+      That\u2019s fine. It wasn\u2019t too long.\r\nDante: Oh, are you excited about
+      tonight?\r\nJade: A little? I\u2019m kind of worried, truth be told\u2026\r\nDante:
+      Cassandra?\r\nJade: Cassandra.\r\nDante: Well, how was planning with her?\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -636,7 +636,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 6750583265704978996}
+      objectReference: {fileID: 439766583982976762}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -651,7 +651,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 6960379371523337567}
+      objectReference: {fileID: 439766583982976761}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

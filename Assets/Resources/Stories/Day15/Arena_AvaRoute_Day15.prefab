@@ -1,5 +1,69 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6148256364678010850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5013904259332196741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 19
+  indentLevel: 0
+  variable: {fileID: 8247520256406571547}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &6694058416491602369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76,33 +140,35 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Tadeo: Ladies and gentlemen, that\u2019s going to be it for the match.
-      After a hard-fought battle, Jade emerges as the victor!\r\nCJ: Jade\u2019s
-      first win too! Avenging her loss against D-800, that\u2019s a huge deal for
-      her.\r\nDante danteHappy: \u2026\r\nTadeo: Just great sportsmanship from D-800,
-      going for the handshake.\r\nJade jadeAngry: \u2026\r\nCJ: \u2026What\u2019s
-      Jade thinking about here?\r\nTadeo: Oh my God! Oh my God! She just attacked
-      D-800!\r\nTadeo: She\u2019s unloading a flurry of fists onto D-800, putting
-      all of her frustration out on him! The crowd reacting in kind, thunderous boos
-      here at AOW.\r\nCJ: Just a disgusting act. Winning and then just beating down
-      your opponent like that. I\u2019m at a loss for words\u2026\r\nTadeo: Jade
-      paces around the ring. Dante reels on the mat, unsure of what just happened.
-      Jade, just leave please. Just leave!\r\nCJ: Jade\u2019s getting out of the
-      ring and going up the ramp. Whew\u2026 It wasn\u2019t too bad.\r\nTadeo: Wait,
-      she\u2019s turning around. Going under the ring. Oh my God, she has a chair!
-      Oh my God!\r\nTadeo: Jesus Christ she just hit D-800 with a vicious chair shot!\r\nCJ:
-      She\u2019s picking him up?!\r\nTadeo: Oh, she\u2019s going for it, she\u2019s
-      going for it!\r\nCJ & Tadeo: GTS!\r\nCJ: Agh\u2026 My God.\r\nTadeo: Unbelievable.\r\n(Ava\u2019s
-      music plays)\r\nCJ: Hold on, wait a minute.\r\nAva avaHappy: \u2026\r\nTadeo:
-      Sweet Spike has shown up here tonight! Walking towards the ring with an uncharacteristic
-      smile.\r\nCJ: Is she clapping?\r\nTadeo: She goes into the ring and the two
-      women stare each other down.\r\nJade jadeHappy: \u2026\r\nCJ: Hold on\u2026
-      No\u2026\r\nTadeo: Ladies and gentlemen, Jade has just shook hands with Sweet
-      Spike. They have just shook hands and Sweet Spike raises Jade\u2019s arm. Jade
-      has just made a deal with the devil herself!\r\nCJ: I can\u2019t believe this!\r\nTadeo:
-      If Sweet Spike wasn\u2019t already feared by many, she will be now. She just
-      gained a follower.\r\nTadeo: Thank you for joining us ladies and gentlemen,
-      we\u2019ve been your commentators, Tadeo and CJ. Signing off.\r"
+    stringVal: "Jade jadeNeutral left:\nTadeo: Ladies and gentlemen, that\u2019s
+      going to be it for the match. After a hard-fought battle, Jade emerges as the
+      victor!\r\nCJ: Jade\u2019s first win too! Avenging her loss against D-800,
+      that\u2019s a huge deal for her.\r\nDante danteHappy right: \u2026\r\nTadeo:
+      Just great sportsmanship from D-800, going for the handshake.\r\nJade jadeAngry
+      left: \u2026\r\nCJ: \u2026What\u2019s Jade thinking about here?\r\nTadeo: Oh
+      my God! Oh my God! She just attacked D-800!\r\nDante danteSad: ...!\nTadeo:
+      She\u2019s unloading a flurry of fists onto D-800, putting all of her frustration
+      out on him! The crowd reacting in kind, thunderous boos here at AOW.\r\nCJ:
+      Just a disgusting act. Winning and then just beating down your opponent like
+      that. I\u2019m at a loss for words\u2026\r\nTadeo: Jade paces around the ring.
+      D-800 reels on the mat, unsure of what just happened. Jade, just leave please.
+      Just leave!\r\nCJ: Jade\u2019s getting out of the ring and going up the ramp.
+      Whew\u2026 It wasn\u2019t too bad.\r\nTadeo: Wait, she\u2019s turning around.
+      Going under the ring. Oh my God, she has a chair! Oh my God!\r\nTadeo: Jesus
+      Christ she just hit D-800 with a vicious chair shot!\r\nCJ: She\u2019s picking
+      him up?!\r\nTadeo: Oh, she\u2019s going for it, she\u2019s going for it!\r\nCJ
+      & Tadeo: GTS!\r\nCJ: Agh\u2026 My God.\r\nTadeo: Unbelievable.\r\n-- Ava's
+      music plays\nCJ: Hold on, wait a minute.\r\nDante hide:\nAva avaHappy right:
+      \u2026\r\nTadeo: Sweet Spike has shown up here tonight! Walking towards the
+      ring with an uncharacteristic smile.\r\nCJ: Is she clapping?\r\nTadeo: She
+      goes into the ring and the two women stare each other down.\r\nJade jadeHappy:
+      \u2026\r\nCJ: Hold on\u2026 No\u2026\r\nTadeo: Ladies and gentlemen, Jade has
+      just shook hands with Sweet Spike. They have just shook hands and Sweet Spike
+      raises Jade\u2019s arm. Jade has just made a deal with the devil herself!\r\nCJ:
+      I can\u2019t believe this!\r\nTadeo: If Sweet Spike wasn\u2019t already feared
+      by many, she will be now. She just gained a follower.\r\nTadeo: Thank you for
+      joining us ladies and gentlemen, we\u2019ve been your commentators, Tadeo and
+      CJ. Signing off.\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -158,70 +224,6 @@ MonoBehaviour:
   parentBlock: {fileID: 8247520256673950614}
   suppressBlockAutoSelect: 0
   waitForFrames: 1
---- !u!114 &-6148256364678010850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5013904259332196741}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 19
-  indentLevel: 0
-  variable: {fileID: 8247520256406571547}
-  setOperator: 0
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 0
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!1001 &8779054023572426202
 PrefabInstance:
   m_ObjectHideFlags: 0

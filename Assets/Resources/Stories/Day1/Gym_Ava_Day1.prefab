@@ -652,7 +652,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}

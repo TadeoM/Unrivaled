@@ -423,19 +423,19 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Ava avaHappy: Jade Jade Jade!\r\nJade jadeHappy: Ava\u2026 Ava\u2026
-      Ava?\r\nAva: The card got sent out a bit ago! It\u2019s going to be your first
-      win!\r\nJade: Hold on, really?!\r\nAva: Yeah! You face Dante again and beat
-      him!\r\nJade: Holy shit, that\u2019s awesome!\r\nAva: Right? You guys worked
-      pretty well together last time too. This time should be like\u2026 twice as
-      good!\r\nAva avaNeutral: Buuuut\u2026 stuff happens after the match too. I\u2019m
-      not sure if you\u2019ll like it.\r\nJade jadeNeutral: \u2026What is it?\r\nAva:
-      Well\u2026\r\nAva: AOW wants you to turn heel.\r\nJade jadeSad: \u2026\r\nAva:
-      You\u2019re supposed to attack Dante when he goes for a handshake and beat
-      him up.\r\nAva: Let the fans boo you and all that.\r\nAva avaHappy: Then I\u2019m
-      supposed to come out and say you did a good job and all. We align with each
-      other so you\u2019re like\u2026 my understudy in kayfabe too!\r\nAva avaNeutral:
-      What do you think?\r"
+    stringVal: "Jade jadeNeutral left: \nAva avaHappy right: Jade Jade Jade!\r\nJade
+      jadeHappy left: Ava\u2026 Ava\u2026 Ava?\r\nAva: The card got sent out a bit
+      ago! It\u2019s going to be your first win!\r\nJade: Hold on, really?!\r\nAva:
+      Yeah! You face Dante again and beat him!\r\nJade: Holy shit, that\u2019s awesome!\r\nAva:
+      Right? You guys worked pretty well together last time too. This time should
+      be like\u2026 twice as good!\r\nAva avaNeutral: Buuuut\u2026 stuff happens
+      after the match too. I\u2019m not sure if you\u2019ll like it.\r\nJade jadeNeutral:
+      \u2026What is it?\r\nAva: Well\u2026\r\nAva: AOW wants you to turn heel.\r\nJade
+      jadeSad: \u2026\r\nAva: You\u2019re supposed to attack Dante when he goes for
+      a handshake and beat him up.\r\nAva: Let the fans boo you and all that.\r\nAva
+      avaHappy: Then I\u2019m supposed to come out and say you did a good job and
+      all. We align with each other so you\u2019re like\u2026 my understudy in kayfabe
+      too!\r\nAva avaNeutral: What do you think?\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -673,12 +673,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -724,7 +724,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 6659108025491339646}
+      objectReference: {fileID: 5621130283015350782}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -739,7 +739,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 5004034790248375408}
+      objectReference: {fileID: 5621130283015350781}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

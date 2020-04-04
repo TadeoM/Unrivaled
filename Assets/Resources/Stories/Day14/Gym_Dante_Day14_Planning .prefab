@@ -1216,13 +1216,13 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Dante danteHappy: Jaaade, what\u2019s up?\r\nJade jadeHappy: Hey
-      Dante! Ava just told me to meet you here.\r\nDante danteNeutral: Yeah, y\u2019all
-      know me. Always grinding, you know?\r\nDante: Anyway, you excited?\r\nJade
-      jadeNeutral: Yeah! A little nervous though\u2026\r\nDante: Trust me, it\u2019s
-      gonna be great. Let\u2019s just get started.\r\nDante: Alright, let\u2019s
-      have our match be a callback to our first one, except longer. I\u2019m thinking
-      90 to 100 seconds, what about you?"
+    stringVal: "Jade jadeNeutral left:\nDante danteHappy right: Jaaade, what\u2019s
+      up?\r\nJade jadeHappy left: Hey Dante! Ava just told me to meet you here.\r\nDante
+      danteNeutral: Yeah, y\u2019all know me. Always grinding, you know?\r\nDante:
+      Anyway, you excited?\r\nJade jadeNeutral: Yeah! A little nervous though\u2026\r\nDante:
+      Trust me, it\u2019s gonna be great. Let\u2019s just get started.\r\nDante:
+      Alright, let\u2019s have our match be a callback to our first one, except longer.
+      I\u2019m thinking 90 to 100 seconds, what about you?"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -1952,12 +1952,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 1217.336
+      value: 1230.8497
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: -126.23368
+      value: 173.76634
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -1993,7 +1993,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 7262531979920960417}
+      objectReference: {fileID: 4093270751877107868}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -2008,7 +2008,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: -5669724942882716490}
+      objectReference: {fileID: 4093270751877107871}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[4]

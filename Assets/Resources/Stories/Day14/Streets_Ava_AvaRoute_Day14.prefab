@@ -69,17 +69,17 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Ava avaHappy: Heyy!\r\nJade jadeHappy: Hey Ava!\r\nAva avaNeutral:
-      Wanna hear something cool?\r\nJade: Well, of course!\r\nAva: Alright, so I
-      was coming here earlier, right?\r\nAva avaHappy: And a family recognized me
-      on the street!\r\nJade jadeHappy: For real?\r\nAva: Yeah! Their small daughter
-      remembered me from D1 and was like \u201CWhy did you dye your hair? Is your
-      leg okay?\u201D and all these other questions.\r\nAva: She was SO adorable
-      about it too. I took a picture with all of them and signed the back of her
-      comm card.\r\nJade jadeNeutral: How come they didn\u2019t know you were a heel
-      though? I mean, D3 is all over Laurentia\u2026\r\nAva avaNeutral: Apparently,
-      they were visiting from Dixon and have no idea what my character is now.\r\nAva:
-      I kind of miss those face days, honestly.\r\n"
+    stringVal: "Jade jadeNeutral:\nAva avaHappy right: Heyy!\r\nJade jadeHappy left:
+      Hey Ava!\r\nAva avaNeutral: Wanna hear something cool?\r\nJade: Well, of course!\r\nAva:
+      Alright, so I was coming here earlier, right?\r\nAva avaHappy: And a family
+      recognized me on the street!\r\nJade jadeHappy: For real?\r\nAva: Yeah! Their
+      small daughter remembered me from D1 and was like \u201CWhy did you dye your
+      hair? Is your leg okay?\u201D and all these other questions.\r\nAva: She was
+      SO adorable about it too. I took a picture with all of them and signed the
+      back of her comm card.\r\nJade jadeNeutral: How come they didn\u2019t know
+      you were a heel though? I mean, D3 is all over Laurentia\u2026\r\nAva avaNeutral:
+      Apparently, they were visiting from Dixon and have no idea what my character
+      is now.\r\nAva: I kind of miss those face days, honestly.\r\n"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -127,7 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 149.63757
+    x: 151.67216
     y: 288.9959
     width: 233.92673
     height: 40
@@ -724,7 +724,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 5938695384659316746}
+      objectReference: {fileID: 711222579019388100}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -739,7 +739,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 8024469382003332961}
+      objectReference: {fileID: 711222579019388103}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

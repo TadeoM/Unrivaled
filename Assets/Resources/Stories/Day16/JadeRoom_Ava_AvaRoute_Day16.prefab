@@ -331,17 +331,17 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Ava avaHappy: Hey hey!\r\nJade jadeHappy: Hey Ava!\r\nAva: Your match
-      last night was actually pretty good! I liked it a lot!\r\nAva: And the turn
-      was amazing, that crowd was *so* loud! You should be proud of yourself.\r\nJade
-      jadeNeutral: Yeah\u2026\r\nAva avaNeutral: How do you feel about it all?\r\nJade:
-      I don\u2019t really know\u2026\r\nJade: Like, I\u2019m happy that everything
-      went well, but I felt weird when I got boos.\r\nAva: You\u2019ll get used to
-      it. You know Claudio was the same way when he was told to be heel?\r\nJade:
-      Yeah\u2026 he seems like such a nice guy.\r\nAva: He really is! Though, it
-      was connecting with the fans, so they told him to go heel. And he like, shot
-      up in popularity because of it.\r\nAva avaHappy: So, you could be champion
-      soon.\r"
+    stringVal: "Jade jadeNeutral left:\nAva avaHappy right: Hey hey!\r\nJade jadeHappy
+      left: Hey Ava!\r\nAva: Your match last night was actually pretty good! I liked
+      it a lot!\r\nAva: And the turn was amazing, that crowd was *so* loud! You should
+      be proud of yourself.\r\nJade jadeNeutral: Yeah\u2026\r\nAva avaNeutral: How
+      do you feel about it all?\r\nJade: I don\u2019t really know\u2026\r\nJade:
+      Like, I\u2019m happy that everything went well, but I felt weird when I got
+      boos.\r\nAva: You\u2019ll get used to it. You know Claudio was the same way
+      when he was told to be heel?\r\nJade: Yeah\u2026 he seems like such a nice
+      guy.\r\nAva: He really is! Though, it was connecting with the fans, so they
+      told him to go heel. And he like, shot up in popularity because of it.\r\nAva
+      avaHappy: So, you could be champion soon.\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -391,12 +391,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 147.60298
     y: 286.96133
-    width: 274.61847
+    width: 263.2248
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
   itemId: 18
-  blockName: JadeRoom_Dante_DanteRoute_Day16_Init
+  blockName: JadeRoom_Ava_DanteRoute_Day16_Init
   description: 
   eventHandler: {fileID: 3839983630587373670}
   commandList:
@@ -1165,7 +1165,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 772210964870732323}
+      objectReference: {fileID: 3839983630587373672}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -1180,7 +1180,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 6997450317906641679}
+      objectReference: {fileID: 3839983630587373675}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.data[1]

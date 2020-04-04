@@ -17,21 +17,26 @@ MonoBehaviour:
   conversationText:
     stringRef: {fileID: 0}
     stringVal: "Knox knoxNeutral: I wonder what\u2019s going to be next for you,
-      Jade.\r\nJade jadeNeutral: Wait, what do you mean?\r\nDante danteNeutral: You
-      know, you\u2019re the number two contender now.\r\nJade: I am?!\r\nDante danteHappy:
-      Yeah, you beat me and Knox. That was 3 and 2. That\u2019s how it works.\r\nJade:
-      Holy shit\u2026\r\nKnox: You probably get to face Cassandra for number one
-      contender now!\r\nDante: Oooof\u2026\r\nJade: What do you mean \u201Coof?\u201D\r\nDante:
-      Cassandra is\u2026 something.\r\nKnox: Oh, just a little bit. Even in the ring,
-      she\u2019s surely something.\r\nJade: Like, in a good way or bad way?\r\nKnox:
-      Heh, you like getting hurt?\r\nDante danteHappy: C\u2019mon man, she\u2019s
-      not that bad.\r\nKnox knoxHappy: Well, maybe not physically\u2026 but\u2026\r\nJade:
-      Well, I\u2019ve heard she\u2019s kind of\u2026 out there.\r\nDante danteNeutral:
+      Jade.\r\nJade jadeNeutral: Wait, what do you mean?\r\nKnox hide: \nKnox knoxNeutral
+      \"offscreen right\":\nDante danteNeutral: You know, you\u2019re the number
+      two contender now.\r\nJade: I am?!\r\nDante danteHappy: Yeah, you beat me and
+      Knox. That was 3 and 2. That\u2019s how it works.\r\nJade: Holy shit\u2026\r\nDante
+      hide: \nDante danteHappy \"offscreen right\":\nKnox: You probably get to face
+      Cassandra for number one contender now!\r\nKnox hide: \nKnox knoxNeutral \"offscreen
+      right\":\nDante: Oooof\u2026\r\nJade: What do you mean \u201Coof?\u201D\r\nDante:
+      Cassandra is\u2026 something.\r\nDante hide: \nDante danteHappy \"offscreen
+      right\":\nKnox: Oh, just a little bit. Even in the ring, she\u2019s surely
+      something.\r\nJade: Like, in a good way or bad way?\r\nKnox: Heh, you like
+      getting hurt?\r\nKnox hide: \nKnox knoxNeutral \"offscreen right\":\nDante
+      danteHappy: C\u2019mon man, she\u2019s not that bad.\r\nDante hide: \nDante
+      danteHappy \"offscreen right\":\nKnox knoxHappy: Well, maybe not physically\u2026
+      but\u2026\r\nKnox hide: \nKnox knoxHappy \"offscreen right\":\nJade: Well,
+      I\u2019ve heard she\u2019s kind of\u2026 out there.\r\nDante danteNeutral:
       I bet.\r\nDante danteHappy: I think you\u2019ll do great if you have to face
-      her.\r\nDante: I can help you out with planning too, if you want.\r\nJade jadeHappy:
-      I might take you up on that.\r\nKnox: Enough with this talk about Cassandra.
-      Tonight is about Jade!\r\nDante: Hell yeah!\r\nKnox: Another round of shots
-      for everyone!\r"
+      her.\r\nDante: I can help you out with planning too, if you want.\r\nDante
+      hide: \nDante danteNeutral \"offscreen right\":\nJade jadeHappy: I might take
+      you up on that.\r\nKnox: Enough with this talk about Cassandra. Tonight is
+      about Jade!\r\nDante: Hell yeah!\r\nKnox: Another round of shots for everyone!\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -44,6 +49,27 @@ MonoBehaviour:
   fadeWhenDone:
     booleanRef: {fileID: 0}
     booleanVal: 1
+--- !u!114 &-3435138784874000164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6521299395873060082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 58
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: -1303445518522142947}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!114 &-2774443627640234485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,7 +106,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 250.26941
-    y: 1023.7196
+    y: 1018.56055
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -156,8 +182,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 102.78387
-    y: 914.4431
+    x: 80.427895
+    y: 919.6022
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -259,6 +285,27 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &2874406440580693542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6521299395873060082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 59
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: -1303445518522142947}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!114 &2991424884271145203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,9 +350,11 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Knox: You don\u2019t have to drink it, but they\u2019ll be there
-      for you!\r\nDante: Yeah, we\u2019ll take the leftovers if you don\u2019t want
-      them.\r\nJade: Aw, thanks. I guess I\u2019ll have one\u2026 or two\u2026\r\nJade:
+    stringVal: "Dante hide: \nDante danteNeutral \"offscreen right\":\nKnox: You
+      don\u2019t have to drink it, but they\u2019ll be there for you!\r\nKnox hide:
+      \nKnox knoxHappy \"offscreen right\":\nDante: Yeah, we\u2019ll take the leftovers
+      if you don\u2019t want them.\r\nDante hide: \nDante danteNeutral \"offscreen
+      right\":\nJade: Aw, thanks. I guess I\u2019ll have one\u2026 or two\u2026\r\nJade:
       Maybe three\u2026\r\nKnox: Yeahhh, that\u2019s the spirit!\r\n"
   clearPrevious:
     booleanRef: {fileID: 0}
@@ -335,11 +384,13 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Dante: Vodka, just like at your place.\r\nJade: Well\u2026 I do like
-      vodka\u2026\r\nKnox: You don\u2019t have to drink it if you don\u2019t want
-      to, but they\u2019ll be there for you!\r\nDante: Yeah, we\u2019ll take the
-      leftovers if you don\u2019t want them.\r\nJade: Well, I don\u2019t want you
-      guys drinking too much either\u2026\r"
+    stringVal: "Knox hide: \nKnox knoxHappy \"offscreen right\":\nDante: Vodka, just
+      like at your place.\r\nJade: Well\u2026 I do like vodka\u2026\r\nDante hide:
+      \nDante danteNeutral \"offscreen right\":\nKnox: You don\u2019t have to drink
+      it if you don\u2019t want to, but they\u2019ll be there for you!\r\nKnox hide:
+      \nKnox knoxHappy \"offscreen right\":\nDante: Yeah, we\u2019ll take the leftovers
+      if you don\u2019t want them.\r\nJade: Well, I don\u2019t want you guys drinking
+      too much either\u2026\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -368,7 +419,8 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: 'Dante: Of course, Jade!'
+    stringVal: "Knox hide: \nKnox knoxHappy \"offscreen right\":\nDante: Of course,
+      Jade!"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -422,10 +474,12 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Dante: Please\u2026 You had to take the W and you had to be in the
-      ring with him.\r\nKnox: You make it sound like I\u2019m rough!\r\nDante: Hey
-      man, I only get bruises from you!\r\nKnox: Ah, I\u2019m just messin\u2019 with
-      you in there.\r\n"
+    stringVal: "Knox hide: \nKnox knoxHappy \"offscreen right\":\nDante: Please\u2026
+      You had to take the W and you had to be in the ring with him.\r\nDante hide:
+      \nDante danteHappy \"offscreen right\":\nKnox: You make it sound like I\u2019m
+      rough!\r\nKnox hide: \nKnox knoxHappy \"offscreen right\":\nDante: Hey man,
+      I only get bruises from you!\r\nDante hide: \nDante danteHappy \"offscreen
+      right\":\nKnox: Ah, I\u2019m just messin\u2019 with you in there.\r\n"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -479,10 +533,10 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Jade: I\u2019ll probably take one or two\u2026\r\nJade: Maybe three\u2026\r\nDante:
-      Hell yeah!\r\nThe trio drinks for the next hour or so, eventually getting drunk
-      to the point of having the bartender call rides for them. It was a good night
-      regardless.\r"
+    stringVal: "Knox hide: \nKnox knoxHappy \"offscreen right\":\nJade: I\u2019ll
+      probably take one or two\u2026\r\nJade: Maybe three\u2026\r\nDante: Hell yeah!\r\nThe
+      trio drinks for the next hour or so, eventually getting drunk to the point
+      of having the bartender call rides for them. It was a good night regardless.\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -536,7 +590,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 207.33447
     y: 818.8576
-    width: 191.2919
+    width: 197.20549
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -565,7 +619,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 537.86017
     y: 609.4999
-    width: 127.18724
+    width: 131.16937
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -608,7 +662,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 257.07553
     y: 605.14856
-    width: 125.87898
+    width: 129.79364
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -636,12 +690,9 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: 'Dante: Nah, you were fine! You got the W at the end of the day.
-
-      Knox
-      knoxNeutral: I enjoyed it regardless, honest.
-
-'
+    stringVal: "Knox hide: \nKnox knoxHappy \"offscreen right\":\nDante: Nah, you
+      were fine! You got the W at the end of the day.\nDante hide: \nDante \"offscreen
+      right\":\nKnox knoxNeutral: I enjoyed it regardless, honest.\n"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -706,7 +757,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 193.56984
     y: 446.29355
-    width: 191.2919
+    width: 195.82974
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -800,12 +851,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 149.63757
     y: 288.9959
-    width: 280.25348
+    width: 281.12637
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
   itemId: 18
-  blockName: Cafe_AvaCassandra_AvaRoute_Day12_Init
+  blockName: Cafe_KnoxDante_DanteRoute_Day12_Init
   description: 
   eventHandler: {fileID: 8456292137347145424}
   commandList:
@@ -828,10 +879,12 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Knox knoxHappy: Well, look who it is!\r\nDante danteHappy: Ayyye!\r\nJade
-      jadeHappy: I see you guys started without me!\r\nKnox: Don\u2019t worry, we
-      got your drinks here ready and waiting.\r\nDante: Yo, you did awesome Monday.
-      Really put on a good show for the fans?\r"
+    stringVal: "Jade jadeNeutral left:\nKnox knoxHappy: Well, look who it is!\r\nKnox
+      hide: \nKnox \"offscreen right\":\nDante danteHappy right: Ayyye!\r\nJade jadeHappy:
+      I see you guys started without me!\r\nDante hide: \nDante \"offscreen right\":\nKnox
+      knoxHappy right: Don\u2019t worry, we got your drinks here ready and waiting.\r\nKnox
+      hide: \nKnox \"offscreen right\":\nDante danteHappy right: Yo, you did awesome
+      Monday. Really put on a good show for the fans?\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -911,7 +964,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 80.57903
     y: 598.9132
-    width: 125.87898
+    width: 129.79364
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -944,48 +997,6 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
---- !u!114 &-3435138784874000164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6521299395873060082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 58
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: -1303445518522142947}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
---- !u!114 &2874406440580693542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6521299395873060082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 59
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: -1303445518522142947}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
 --- !u!1001 &7404427388980064429
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1009,12 +1020,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -1034,17 +1045,17 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 317.40463
+      value: 454.32034
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: -210.29544
+      value: -393.82004
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: zoom
-      value: 0.6115
+      value: 0.58150005
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -1060,7 +1071,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5540082012051332358}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -1075,7 +1086,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 1430079440716553595}
+      objectReference: {fileID: -1303445518522142947}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

@@ -46,7 +46,7 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: ">bzz bzz<\r\nJade jadeNeutral: Mmh\u2026\r\n"
+    stringVal: ">bzz bzz<\r\nJade jadeNeutral left: Mmh\u2026\r\n"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -302,7 +302,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -353,7 +353,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 9222475749379842244}
+      objectReference: {fileID: 5413539848560152197}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -368,7 +368,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 8180994533968068907}
+      objectReference: {fileID: 5413539848560152198}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.data[1]
