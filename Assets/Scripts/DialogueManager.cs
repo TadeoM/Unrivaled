@@ -27,8 +27,8 @@ public class DialogueManager : MonoBehaviour
     {
         DontDestroyOnLoad(this);
         characters = GameObject.FindGameObjectWithTag("characters");
-       /* flowchart = GameObject.FindGameObjectWithTag("dialogue").GetComponent<Flowchart>();
-        GetVariables();*/ // uncomment these things for testing
+       flowchart = GameObject.FindGameObjectWithTag("dialogue").GetComponent<Flowchart>();
+        GetVariables(); // uncomment these things for testing
 
         if (!Directory.Exists(Application.dataPath + "/Resources/FightPlans/"))
         {
