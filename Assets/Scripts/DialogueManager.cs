@@ -16,6 +16,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject characters;
     public GameObject stage;
     public GameObject fadeImage;
+    public bool testing;
 
     private int opIndex = -1;
     private int backgroundIndex = -1;
@@ -27,8 +28,13 @@ public class DialogueManager : MonoBehaviour
     {
         DontDestroyOnLoad(this);
         characters = GameObject.FindGameObjectWithTag("characters");
-       flowchart = GameObject.FindGameObjectWithTag("dialogue").GetComponent<Flowchart>();
-        GetVariables(); // uncomment these things for testing
+        // only need to run this if you are testing something starting in the Daily Scene
+        // if you are running the game from the main menu, set testing to false
+        if (testing)
+        {
+            flowchart = GameObject.FindGameObjectWithTag("dialogue").GetComponent<Flowchart>();
+            GetVariables();
+        }
 
         if (!Directory.Exists(Application.dataPath + "/Resources/FightPlans/"))
         {
@@ -166,6 +172,9 @@ public class DialogueManager : MonoBehaviour
                     break;
             }
         }
+
+        SaveCharacters();
+
         // grab the day so that we can access the correct folder
         string[] temp = nextDialogueName.Split('_');
 
@@ -206,6 +215,22 @@ public class DialogueManager : MonoBehaviour
             }
         }
     }
+
+    /// <summary>
+    /// Gets a specified character and stores the stats for saving.
+    /// </summary>
+    /// <param name="characterName"></param>
+    /// <param name="increase"></param>
+    void SaveCharacters()
+    {
+        CharacterStats[] characterList = characters.GetComponentsInChildren<CharacterStats>();
+
+        foreach (CharacterStats character in characterList)
+        {
+            character.StoreStats();
+        }
+    }
+
     /// <summary>
     /// Gets variables for the flowchart
     /// </summary>

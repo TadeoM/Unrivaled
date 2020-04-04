@@ -163,7 +163,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6900213823325433914}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &660695172
+--- !u!114 &660695174
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -182,7 +182,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6900213823325433914}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &679324913
+--- !u!114 &679324915
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6900213823325433914}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &700899052
+--- !u!114 &700899054
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -220,7 +220,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6900213823325433914}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &829000787
+--- !u!114 &829000789
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -283,7 +283,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6900213823325433914}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1017003328
+--- !u!114 &1017003330
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -385,7 +385,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6900213823325433914}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1462568930
+--- !u!114 &1462568932
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -617,6 +617,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3625514019402651592, guid: 0dbe427fc66490d4088bf5c070a99861,
         type: 3}
+    - target: {fileID: 1483338950362034601, guid: 7e7511675ca35594a8738861dd3c816f,
+        type: 3}
+      propertyPath: testing
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1483338950362034602, guid: 7e7511675ca35594a8738861dd3c816f,
         type: 3}
       propertyPath: m_Name
@@ -654,7 +659,7 @@ PrefabInstance:
     - target: {fileID: 3376353549948826459, guid: 8e706bd9a2802264aa709bb2f6427681,
         type: 3}
       propertyPath: m_Name
-      value: SmoothDesire
+      value: Smooth Desire
       objectReference: {fileID: 0}
     - target: {fileID: 4993142908465504318, guid: 8e706bd9a2802264aa709bb2f6427681,
         type: 3}

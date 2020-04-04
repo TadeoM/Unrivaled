@@ -49,6 +49,29 @@ public class Menu : MonoBehaviour
         GameObject altemp = GameObject.FindGameObjectWithTag("diagManager");
         DialogueManager dialogueManager = GameObject.FindGameObjectWithTag("diagManager").GetComponent<DialogueManager>();
         dialogueManager.InitialStartLoad("Stories/" + folder + "/" + info[1]);
+        // get characters
+        GameObject charactersGameObject = GameObject.FindGameObjectWithTag("characters");
+        CharacterStats[] characters = charactersGameObject.GetComponentsInChildren<CharacterStats>();
+
+        foreach (CharacterStats character in characters)
+        {
+            using (StreamReader reader = new StreamReader(Application.dataPath + "/Resources/Saves/" + character.characterName + ".txt"))
+            {
+                string line = string.Empty;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    string[] lines = line.Split(':');
+                    int result = 0;
+                    bool success = int.TryParse(lines[1], out result);
+
+                    character.RelationshipMeter = result;
+                }
+            }
+            Debug.Log(character.characterName + ": " + character.RelationshipMeter);
+        }
+        // set their character meters to the correct values
+
+
         yield return null;
   
         Destroy(this);
