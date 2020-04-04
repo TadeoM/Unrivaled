@@ -15,7 +15,7 @@ public class CharacterStats : MonoBehaviour
 
     public void StoreStats()
     {
-        string path = Application.dataPath + "/Resources/CharacterStats/";
+        string path = Application.dataPath + "/Resources/Saves/";
         string textToMake = "meter:"+RelationshipMeter.ToString();
 
         if (!File.Exists(path))

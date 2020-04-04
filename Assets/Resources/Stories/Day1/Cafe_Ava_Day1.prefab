@@ -16,7 +16,12 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: 'Ava avaSad: Awww, that''s okay. Rest up! I''ll text you then.'
+    stringVal: 'Ava avaSad: Awww, that''s okay. Rest up! I''ll text you then.
+
+      Ava
+      hide:
+
+      Jade hide:'
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -198,7 +203,11 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: 'Ava avaHappy: Cool!'
+    stringVal: 'Ava avaHappy: Cool!
+
+      Ava hide:
+
+      Jade hide:'
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -783,9 +792,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 10
   indentLevel: 0
-  text: 'Yeah, just help me finish this set.
-
-'
+  text: "I\u2019m like the calm, silent, strong type.\n"
   description: 
   targetBlock: {fileID: 4713397446941626672}
   hideIfVisited: 0
@@ -810,7 +817,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 11
   indentLevel: 0
-  text: ...
+  text: "I think I\u2019m cute, but badass."
   description: 
   targetBlock: {fileID: 5339854179224591546}
   hideIfVisited: 0
@@ -1148,7 +1155,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 23.123077
-    y: 1017.7289
+    y: 1015.6225
     width: 174.69702
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1255,7 +1262,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -1280,12 +1287,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 103.16109
+      value: 197.78024
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: -418.6394
+      value: -886.76385
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -1306,7 +1313,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 4654605908985702230}
+      objectReference: {fileID: -5777020484695663835}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -1321,7 +1328,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: -4446815347225910677}
+      objectReference: {fileID: 8482844487837882881}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size
