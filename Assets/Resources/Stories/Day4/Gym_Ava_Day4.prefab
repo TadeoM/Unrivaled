@@ -16,7 +16,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 58.812145
     y: 1075.3574
-    width: 164.99994
+    width: 164.0983
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -197,7 +197,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 127.13312
     y: 681.5629
-    width: 219.99991
+    width: 213.93433
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -224,8 +224,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 122
   indentLevel: 0
-  text: "You\u2019re reign over the division is going to come to an end with my rise
-    to the top\u2026"
+  text: "Your reign over the division is going to come to an end with my rise to
+    the top\u2026"
   description: 
   targetBlock: {fileID: -9164975669906012146}
   hideIfVisited: 0
@@ -352,7 +352,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -3.7153425
     y: 584.2538
-    width: 163.74994
+    width: 162.78682
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -380,7 +380,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 279.77353
     y: 1060.8143
-    width: 164.99994
+    width: 164.0983
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -448,7 +448,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 140.48303
     y: 917.9258
-    width: 219.99991
+    width: 213.93433
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -477,7 +477,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 408.95068
     y: 392.80307
-    width: 191.24992
+    width: 187.70483
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -504,8 +504,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 146.62639
-    y: 494.76843
-    width: 219.99991
+    y: 496.33093
+    width: 212.62285
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -599,7 +599,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 308.75604
     y: 796.98035
-    width: 164.99994
+    width: 162.78682
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -749,7 +749,7 @@ MonoBehaviour:
       so how do you want to work on it?\r\nAva avaNeutral: So, the big thing about
       promos is that they have to be short and concise.\r\nAva: 30-90 seconds and
       explain the who, what, when, where, and why.\r\nAva: So, something like\u2014\r\nAva
-      avaAngry: D-800, next Monday in the ghost town known as [Ineedanamehere]\u2026\r\nAva:
+      avaAngry: D-800, next Monday in the ghost town known as Frostfall\u2026\r\nAva:
       I\u2019m going to expose you for the fraud you are! You always talk about yourself
       and how unlucky people like you are, and I\u2019m sick of it. \r\nAva: Next
       week, I\u2019m going to give you something to be sorry for. I\u2019m going
@@ -849,8 +849,8 @@ MonoBehaviour:
       avaNeutral: So, the big thing about promos is that they have to be short and
       concise.\r\nAva: 30-90 seconds and explain the who, what, when, where, and
       why.\r\nAva: So, something like\u2014\r\nAva avaAngry: D-800, next Monday in
-      the ghost town known as [Ineedanamehere]\u2026\r\nAva: I\u2019m going to expose
-      you for the fraud you are! You always talk about yourself and how unlucky people
+      the ghost town known as Frostfall\u2026\r\nAva: I\u2019m going to expose you
+      for the fraud you are! You always talk about yourself and how unlucky people
       like you are, and I\u2019m sick of it. \r\nAva: Next week, I\u2019m going to
       give you something to be sorry for. I\u2019m going to make you tap out in that
       submission match and put you right back at the bottom. \r\nAva: D-800, I\u2019m
@@ -887,7 +887,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -108.79962
     y: 389.01828
-    width: 191.24992
+    width: 187.70483
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -990,9 +990,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 140.79376
+    x: 139.23126
     y: 155.48444
-    width: 161.24994
+    width: 158.85239
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -1060,7 +1060,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 119.919975
     y: 275.00577
-    width: 218.74991
+    width: 212.62285
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -1123,7 +1123,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 379.03906
     y: 579.56537
-    width: 163.74994
+    width: 162.78682
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1326,7 +1326,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 33.58482
     y: 807.3529
-    width: 164.99994
+    width: 162.78682
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1391,7 +1391,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -1401,17 +1401,17 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 157.88472
+      value: 82.423676
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: -416.19302
+      value: -190.60403
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: zoom
-      value: 0.64000034
+      value: 0.6100004
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -1457,7 +1457,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 4315812196614716742}
+      objectReference: {fileID: 231853421553137109}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[4]
