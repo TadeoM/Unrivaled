@@ -186,7 +186,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 2011769519}
+  selectedFlowchart: {fileID: 5291989801403410493, guid: 484ce2af765a0db4cb77118c68765cce,
+    type: 3}
 --- !u!4 &990159172
 Transform:
   m_ObjectHideFlags: 1
@@ -451,22 +452,15 @@ PrefabInstance:
     - target: {fileID: 8759785488149608899, guid: a04306206131f7548a3abe39096da3a5,
         type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759785488149608899, guid: a04306206131f7548a3abe39096da3a5,
+        type: 3}
+      propertyPath: selectedCommands.Array.size
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a04306206131f7548a3abe39096da3a5, type: 3}
---- !u!114 &2011769519 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8759785488149608899, guid: a04306206131f7548a3abe39096da3a5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1834214716}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2077848273 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6900213822501333744, guid: 8e706bd9a2802264aa709bb2f6427681,

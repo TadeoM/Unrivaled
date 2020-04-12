@@ -20,7 +20,7 @@ MonoBehaviour:
       Jade.\r\nKnox: oh! Jade, I didn\u2019t think you\u2019d actually message\r\nKnox:
       wanna train, I assume?\r\nJade: Yeah, I think I\u2019d like to.\r\nKnox: anything
       particular?\r\nJade: Just a normal workout for you.\r\nKnox: alright, I\u2019ll
-      lead you then since I\u2019m going to no strain myself.\r\nJade: Sounds good
+      lead you then since I\u2019m going to light work myself.\r\nJade: Sounds good
       to me.\r\nKnox: meet me in the gym in around about 20 minutes.\r\nJade: Got
       it.\r\n"
   clearPrevious:
@@ -95,8 +95,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 4897824824312612095}
   - {fileID: -8465016328445453495}
+  - {fileID: 4897824824312612095}
   suppressAllAutoSelections: 0
 --- !u!114 &4897824824312612095
 MonoBehaviour:
@@ -380,8 +380,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 7237372720837372803}
   - {fileID: -4370604597528725888}
+  - {fileID: 7237372720837372803}
   suppressAllAutoSelections: 0
 --- !u!114 &7237372720837372807
 MonoBehaviour:
@@ -565,7 +565,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 7237372720837372807}
+      objectReference: {fileID: 7237372720837372803}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -580,7 +580,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 7237372720837372825}
+      objectReference: {fileID: 7237372720837372805}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size
@@ -665,7 +665,7 @@ PrefabInstance:
     - target: {fileID: 4341892549899699295, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: m_Name
-      value: Streets_AvaKnox_Day6
+      value: Streets_Day6
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549899699295, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}

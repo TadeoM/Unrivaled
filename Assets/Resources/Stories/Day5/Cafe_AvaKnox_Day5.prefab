@@ -16,26 +16,13 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Jade jadeNeutral: Eh, I hope so. I just feel like I did so badly
-      in my first match.\r\nJade: I mean, I had to right? They cut me off this show.\r\nAva
-      avaNeutral: Look at it this way.\r\nAva: I haven\u2019t had a match in about
-      three weeks, and I used to be a Division 1 champion, you remember that.\r\nAva
-      avaHappy: You don\u2019t have to wrestle every week, just be patient. You\u2019ll
-      get your time.\r\nJade jadeHappy: Yeah\u2026 Yeah, you\u2019re right!\r\nAva:
-      That\u2019s what I like to see.\r\nJade jadeNeutral: Oh, also, who did you
-      want me to meet?\r\nAva avaNeutral: Oh! He should be here any second. Really
-      nice guy I think!\r\nJade: What\u2019s his name?\r\nAva: Kno\u2014\r\nThe doors
-      to the caf\xE9 swing open with a loud bang as they hit the stoppers.\r\nA young,
-      toned man walks in and mouths \u201CI\u2019m sorry\u201D to the staff, who
-      look at him with menacing stares.\r\nHe looks over towards the girls\u2019
-      direction and goes to sit with Ava and Jade.\r\nAva avaHappy: Hey, Knox!\r\nKnox
-      knoxHappy: H-Hey Ava!!\r\nAva avaNeutral: So, Jade, this is one of the D3 guys.\r\nAva:
-      His in-ring name is Inferno\r\nKnox knoxNeutral: I\u2014Ahem. Nice to meet
-      ya!\r\nJade jadeHappy: Nice to meet you, Knox! My name is Jade Valentine\r\nJade
-      jadeNeutral: You\u2019re the one going to main event Monday with Dante, right?\r\nKnox:
-      Yep! I\u2019m actually super pumped for it!\r\nKnox: Dante is a bud, and I
-      love wrestling with him.\r\nKnox knoxHappy: It\u2019s going to be a fuckin\u2019
-      slobberknocker.\r\n"
+    stringVal: "Knox knoxNeutral: O-Old school stuff\u2026 Sorry.\r\nAva avaHappy:
+      Don\u2019t worry, I never heard of it either. I think it\u2019s pretty funny
+      though.\r\nKnox: F-FOR REA\u2014Uh\u2026 Really?\r\nKnox knoxHappy: I\u2019m
+      glad!\r\nAva avaNeutral: \u2026Yeah.\r\nJade: It\u2019s a little weird, but
+      it was kind of funny.\r\nKnox: Kind of?\r\nAva: Yeah, only kind of.\r\nKnox
+      knoxSad: Next time, I\u2019ll be funnier.\r\nKnox knoxNeutral: So, Jade, I
+      saw your first match by the way.\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -63,8 +50,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 411.27667
-    y: 1163.38
-    width: 177.21313
+    y: 1161.8175
+    width: 182.50003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -117,13 +104,25 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Knox knoxNeutral: O-Old school stuff\u2026 Sorry.\r\nAva avaHappy:
-      Don\u2019t worry, I never hear of these words either. I think they\u2019re
-      funny though.\r\nKnox: F-FOR REA\u2014Uh\u2026 Really?\r\nKnox knoxHappy: I\u2019m
-      glad!\r\nAva avaNeutral: \u2026Yeah.\r\nJade: It\u2019s a little weird, but
-      it was kind of funny.\r\nKnox: Kind of?\r\nAva: Yeah, only kind of.\r\nKnox
-      knoxSad: Next time, I\u2019ll be funnier.\r\nKnox knoxNeutral: So, Jade, I
-      saw your first match by the way.\r\n"
+    stringVal: "Jade jadeNeutral: Eh, I hope so. I just feel like I did so badly
+      in my first match if they cut me off this show.\r\nAva avaNeutral: Look at
+      it this way.\r\nAva: I haven\u2019t had a match in about three weeks, and I
+      used to be a Division 1 champion, you remember that.\r\nAva avaHappy: You don\u2019t
+      have to wrestle every week, just be patient. You\u2019ll get your time.\r\nJade
+      jadeHappy: Yeah\u2026 Yeah, you\u2019re right!\r\nAva: That\u2019s what I like
+      to see.\r\nJade jadeNeutral: Oh, also, who did you want me to meet?\r\nAva
+      avaNeutral: Oh! He should be here any second. Really nice guy I think!\r\nJade:
+      What\u2019s his name?\r\nAva: Kn\u2014\r\nThe doors to the caf\xE9 swing open
+      with a loud bang.\r\nA young, toned man walks in and mouths \u201CI\u2019m
+      sorry\u201D to the staff, who look at him with menacing stares.\r\nHe looks
+      over towards the girls\u2019 direction and goes to sit with Ava and Jade.\r\nAva
+      avaHappy: Hey, Knox!\r\nKnox knoxHappy: H-Hey Ava!!\r\nAva avaNeutral: So,
+      Jade, this is one of the D3 guys.\r\nAva: His in-ring name is Inferno\r\nKnox
+      knoxNeutral: I\u2014Ahem. Nice to meet ya!\r\nJade jadeHappy: Nice to meet
+      you, Knox! My name is Jade Valentine\r\nJade jadeNeutral: You\u2019re the one
+      going to main event Monday with Dante, right?\r\nKnox: Yep! I\u2019m actually
+      super pumped for it!\r\nKnox: Dante is a bud, and I love wrestling with him.\r\nKnox
+      knoxHappy: It\u2019s going to be a fuckin\u2019 slobberknocker.\r\n"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -136,70 +135,6 @@ MonoBehaviour:
   fadeWhenDone:
     booleanRef: {fileID: 0}
     booleanVal: 1
---- !u!114 &-7185124951107215104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8759785488143564773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 34
-  indentLevel: 0
-  variable: {fileID: 3817117882792379973}
-  setOperator: 0
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 0
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &-6697850226935981897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,7 +215,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 296.95142
     y: 933.9659
-    width: 175.90167
+    width: 182.50003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -290,7 +225,6 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: -8754020639032096703}
-  - {fileID: -7185124951107215104}
   - {fileID: -2374760032672730193}
   suppressAllAutoSelections: 0
 --- !u!114 &-5631650009919617950
@@ -449,7 +383,7 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
---- !u!114 &-1598858417965728094
+--- !u!114 &-2374760032672730193
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -458,61 +392,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 8759785488143564773}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 27
+  itemId: 48
   indentLevel: 0
-  variable: {fileID: 3817117882792379973}
-  setOperator: 0
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 0
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 7942903137121342937}
+  startLabel:
     stringRef: {fileID: 0}
     stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
+  startIndex: 0
+  callMode: 0
 --- !u!114 &-715247930448065573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -554,7 +445,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 71.4373
     y: 511.43262
-    width: 208.68855
+    width: 216.25003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -564,73 +455,8 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 6174100944911924174}
-  - {fileID: 1022753990672115369}
   - {fileID: -2601958143487754591}
   suppressAllAutoSelections: 0
---- !u!114 &1022753990672115369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8759785488143564773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 20
-  indentLevel: 0
-  variable: {fileID: 3817117882792379973}
-  setOperator: 0
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 0
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1903370272122105247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -743,7 +569,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 302.2245
     y: 288.32983
-    width: 164.09839
+    width: 170.00003
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -755,70 +581,6 @@ MonoBehaviour:
   - {fileID: 3817117883598759883}
   - {fileID: 3817117883598759882}
   suppressAllAutoSelections: 0
---- !u!114 &3817117883598759881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8759785488143564773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 14
-  indentLevel: 0
-  variable: {fileID: 3817117882792379973}
-  setOperator: 0
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 0
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &3817117883598759882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -911,7 +673,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 516.0577
     y: 508.89917
-    width: 208.68855
+    width: 216.25003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -921,7 +683,6 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 8893536448599875301}
-  - {fileID: 3817117883598759881}
   - {fileID: 2956975689235554550}
   suppressAllAutoSelections: 0
 --- !u!114 &3817117883598759890
@@ -965,7 +726,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 261.8608
     y: 395.14807
-    width: 238.8525
+    width: 248.75005
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -994,7 +755,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 256.40634
     y: 773.3293
-    width: 238.8525
+    width: 250.00005
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -1115,7 +876,7 @@ MonoBehaviour:
   indentLevel: 0
   text: Duh...
   description: 
-  targetBlock: {fileID: 0}
+  targetBlock: {fileID: 958095747848825731}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -1169,7 +930,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 78.48987
     y: 1162.8121
-    width: 220.49184
+    width: 228.75003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1180,7 +941,6 @@ MonoBehaviour:
   commandList:
   - {fileID: 6571294821191138783}
   - {fileID: -6697850226935981897}
-  - {fileID: -7336431067381836525}
   suppressAllAutoSelections: 0
 --- !u!114 &7942903137121342937
 MonoBehaviour:
@@ -1198,7 +958,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 252.76996
     y: 1049.693
-    width: 240.16397
+    width: 250.00005
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -1226,7 +986,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 304.22418
     y: 612.1479
-    width: 175.90167
+    width: 181.25003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1236,7 +996,6 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: -7810783519887657147}
-  - {fileID: -1598858417965728094}
   - {fileID: -2616997037711313987}
   suppressAllAutoSelections: 0
 --- !u!114 &8893536448599875301
@@ -1269,48 +1028,6 @@ MonoBehaviour:
   fadeWhenDone:
     booleanRef: {fileID: 0}
     booleanVal: 1
---- !u!114 &-7336431067381836525
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8759785488143564773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 47
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: -8454675875342283331}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
---- !u!114 &-2374760032672730193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8759785488143564773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 48
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 7942903137121342937}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
 --- !u!1001 &5030663962560363450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1334,12 +1051,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -1359,17 +1076,17 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 73.91737
+      value: 61.6223
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: -246.11389
+      value: -545.60693
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: zoom
-      value: 0.6099999
+      value: 0.63999987
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -1385,7 +1102,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5895897249900497295}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -1400,7 +1117,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 7942903137121342937}
+      objectReference: {fileID: -8454675875342283331}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size
