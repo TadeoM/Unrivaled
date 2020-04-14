@@ -1,5 +1,69 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-969877772657794412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6413985558132921559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 24
+  indentLevel: 0
+  variable: {fileID: 2350933310712315788}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1023214540103488598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31,7 +95,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 42.914894
     y: 524.55963
-    width: 191.57217
+    width: 191.86469
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -41,6 +105,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 8636626132714120266}
+  - {fileID: -969877772657794412}
   suppressAllAutoSelections: 0
 --- !u!114 &2350933310444903937
 MonoBehaviour:
@@ -58,7 +123,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 199.34265
     y: 299.15912
-    width: 168.17181
+    width: 168.46432
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -93,7 +158,8 @@ MonoBehaviour:
       how long the feud has gone on for. I\u2019ll ask them later.\r\nJade jadeSad:
       I kind of don\u2019t want to get out of bed though. I can already tell I\u2019m
       going to hurt every time I take a step.\r\nJade jadeNeutral: Do I have to get
-      out of bed though?\r\n*Bzzz Bzzz*\r\nJade: Well, let\u2019s see.\r\n"
+      out of bed though?\r\nJade: \u2026\r\nJade jadeHappy: Nope!\r\n*Bzzz Bzzz*\r\nJade:
+      Shit...\r\n"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -141,7 +207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 10
   indentLevel: 0
-  text: Message Ava
+  text: It's Ava
   description: 
   targetBlock: {fileID: 2350933310444903942}
   hideIfVisited: 0
@@ -168,7 +234,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 349.05756
     y: 524.55945
-    width: 191.57217
+    width: 191.86469
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -198,9 +264,9 @@ MonoBehaviour:
     stringRef: {fileID: 0}
     stringVal: "Ava: jade!1!!1 \u253B\u2501\u253B \uFE35\u30FD(`\u0414\xB4)\uFF89\uFE35
       \u253B\u2501\u253B\r\nJade: Wait, what happened?\r\nAva: i had to do an autograph
-      signing thing and someone tried to hit me!\r\nJade: What?!\r\nAva: yeah! im
-      so mad\r\nJade: Well\u2026 I\u2019m not sure what to say, do you want to talk
-      about it?\r\nAva: well yeah but idk where\r\nJade: Want to come over?\r\nAva:
+      signing thing and someone tried to hit me!\r!!\nJade: What?!\r\nAva: yeah!
+      im so mad\r\nJade: Well\u2026 I\u2019m not sure what to say, do you want to
+      talk about it?\r\nAva: well yeah but idk where\r\nJade: Want to come over?\r\nAva:
       sure just send me the address\r"
   clearPrevious:
     booleanRef: {fileID: 0}
@@ -245,7 +311,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 169.49261
     y: 412.93427
-    width: 223.16267
+    width: 224.04018
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -271,7 +337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 9
   indentLevel: 0
-  text: Message Dante
+  text: It's Dante
   description: 
   targetBlock: {fileID: 2303753697002939088}
   hideIfVisited: 0
@@ -452,7 +518,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -498,7 +564,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 2350933310444903963}
+      objectReference: {fileID: -969877772657794412}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
@@ -513,7 +579,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 2350933310444903962}
+      objectReference: {fileID: 2350933310444903942}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

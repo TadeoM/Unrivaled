@@ -79,8 +79,8 @@ MonoBehaviour:
     stringVal: "Jade: (The crowd seems to be waiting for the main event, they\u2019re
       so quiet\u2026)\r\nAn announcer steps into the middle of the ring, microphone
       in hand.\r\nAnnouncer: Ladies and gentlemen, we have our main event next!\r\nAnnouncer:
-      Introducing first\u2026\r\nAnnouncer: From [stillneednames], he is the number
-      three contender for the AOW championship, with a record of 10-1, D-800!\r\nAnnouncer:
+      Introducing first\u2026\r\nAnnouncer: From Voncour, he is the number three
+      contender for the AOW championship, with a record of 10-1, D-800!\r\nAnnouncer:
       His challenger\u2026\r\nAnnouncer: From [name], he is the current number two
       contender for the AOW championship, with a record of 15-2, Inferno!!\r\nJade:
       (Geez, I can barely hear myself think!)\r\nJade watches the match intensely,
@@ -142,6 +142,7 @@ MonoBehaviour:
   eventHandler: {fileID: 8578781794475548366}
   commandList:
   - {fileID: 8578781794475548352}
+  - {fileID: 8802757673979871283}
   suppressAllAutoSelections: 0
 --- !u!114 &8578781794475548366
 MonoBehaviour:
@@ -158,6 +159,70 @@ MonoBehaviour:
   parentBlock: {fileID: 8578781794475548355}
   suppressBlockAutoSelect: 0
   waitForFrames: 1
+--- !u!114 &8802757673979871283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4878747416433671082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 19
+  indentLevel: 0
+  variable: {fileID: 8578781793671315278}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!1001 &9220357898076291061
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -232,7 +297,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8802757673979871283}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
