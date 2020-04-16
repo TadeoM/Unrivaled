@@ -35,6 +35,9 @@ public class DialogueManager : MonoBehaviour
             flowchart = GameObject.FindGameObjectWithTag("dialogue").GetComponent<Flowchart>();
             GetVariables();
         }
+        fadeImage = Resources.Load<GameObject>("Prefabs/transition");
+        characters = GameObject.FindGameObjectWithTag("characters");
+        stage = GameObject.FindGameObjectWithTag("stage");
 
         if (!Directory.Exists(Application.dataPath + "/Resources/FightPlans/"))
         {
@@ -43,6 +46,10 @@ public class DialogueManager : MonoBehaviour
         if (!Directory.Exists(Application.dataPath + "/Resources/CharacterStats/"))
         {
             Directory.CreateDirectory(Application.dataPath + "/Resources/CharacterStats/");
+        }
+        if (!Directory.Exists(Application.dataPath + "/Resources/Saves/"))
+        {
+            Directory.CreateDirectory(Application.dataPath + "/Resources/Saves");
         }
         // at the end of using a flowchart, check the values of the relationship meter variables and add them to the corresponding character
     }

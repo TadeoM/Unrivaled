@@ -151,12 +151,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &369684274 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 110274, guid: c6289d5f8fa843145a2355af9cb09719,
-    type: 3}
-  m_PrefabInstance: {fileID: 1680304231}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &660695171 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3376353549948826459, guid: 8e706bd9a2802264aa709bb2f6427681,
@@ -409,6 +403,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stage
       objectReference: {fileID: 0}
+    - target: {fileID: 110274, guid: c6289d5f8fa843145a2355af9cb09719, type: 3}
+      propertyPath: m_TagString
+      value: stage
+      objectReference: {fileID: 0}
     - target: {fileID: 410270, guid: c6289d5f8fa843145a2355af9cb09719, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -610,17 +608,21 @@ PrefabInstance:
         type: 3}
       propertyPath: stage
       value: 
-      objectReference: {fileID: 369684274}
+      objectReference: {fileID: 0}
     - target: {fileID: 1483338950362034601, guid: 7e7511675ca35594a8738861dd3c816f,
         type: 3}
       propertyPath: fadeImage
       value: 
-      objectReference: {fileID: 3625514019402651592, guid: 0dbe427fc66490d4088bf5c070a99861,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 1483338950362034601, guid: 7e7511675ca35594a8738861dd3c816f,
         type: 3}
       propertyPath: testing
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1483338950362034601, guid: 7e7511675ca35594a8738861dd3c816f,
+        type: 3}
+      propertyPath: characters
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1483338950362034602, guid: 7e7511675ca35594a8738861dd3c816f,
         type: 3}
