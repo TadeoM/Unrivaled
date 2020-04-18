@@ -60,7 +60,7 @@ public class DialogueManager : MonoBehaviour
         if(flowchartVariables.Count > 0)
         {
             var temp = flowchartVariables[goToNextIndex].GetValue();
-            
+
             if (temp is System.Boolean)
             {
                 if (check && (bool)temp)
@@ -113,7 +113,7 @@ public class DialogueManager : MonoBehaviour
                     }
                 }
             }
-           
+
             if(backgroundIndex > 0)
             {
                 temp = flowchartVariables[backgroundIndex].GetValue();
@@ -133,13 +133,13 @@ public class DialogueManager : MonoBehaviour
         check = false;
         nextDialogueName = "";
         bool waitInCombat = false;
-        // go through all variables and respective 
+        // go through all variables and respective
         for (int i = 0; i < flowchartVariables.Count; i++)
         {
             switch (flowchartVariables[i].Key)
             {
                 case "nextDialogue":
-                    
+
                     nextDialogueName = flowchartVariables[i].GetValue() as string;
                     using (StreamWriter writer = new StreamWriter(Application.dataPath + "/Resources/Saves/save.txt"))
                     {
@@ -154,7 +154,7 @@ public class DialogueManager : MonoBehaviour
                     break;
                 case "lutherIncrease":
                     break;
-                case "goToCombat": 
+                case "goToCombat":
                     if((bool)flowchartVariables[i].GetValue() == true)
                         waitInCombat = true;
                     break;
@@ -192,7 +192,7 @@ public class DialogueManager : MonoBehaviour
 
             Flowchart newDialogue = Resources.Load<Flowchart>("Stories/"+ folder + "/" + nextDialogueName);
             StartCoroutine(Fade(newDialogue, waitInCombat));
-            
+
         }
         else
         {
@@ -200,7 +200,7 @@ public class DialogueManager : MonoBehaviour
 
             var newDialogue = Resources.Load<Flowchart>("Stories/" + folder + "/" + nextDialogueName);
 
-            StartCoroutine(Fade(newDialogue, waitInCombat));          
+            StartCoroutine(Fade(newDialogue, waitInCombat));
         }
     }
 
@@ -322,7 +322,7 @@ public class DialogueManager : MonoBehaviour
             DontDestroyOnLoad(Instantiate(characters));
             DontDestroyOnLoad(Instantiate(stage));
         }
-    
+
         GetVariables();
         yield return null;
     }

@@ -12,30 +12,62 @@ public class CombatManager : MonoBehaviour
         loading,
         ending          //may need to make more ending states
     }
+    enum animation
+    {
+        Idle,
+        Grounded,
+        Attack,
+        Walk,
+        Pin,
+        Pinned,
+        Finisher,
+        Sell,
+        Hurt,
+        Taunt,
+        Recover,
+        Block,
+        Kickout
+    }
 
+    enum animationTiming
+    {
+        preAnim,
+        anim,
+        postAnim,
+        waiting
+    }
     public enum WrestlerState
     {
         standing,
         grounded,
         pinned
     }
-    public int turnCount;           //how many turns the match has gone on for
-    public int tapCount;            //how many turns a pin has been happening
+    public int turnCount;                   //how many turns the match has gone on for
+    public int tapCount;                    //how many turns a pin has been happening
     public static float audienceInterest;
     public List<string> possiblePlayerMoves;
     public GameObject[] buttons;
     public GameObject playerRef;
-    private Animator playerAnimRef;
     public GameObject oppoRefGO;
     public Fighter oppoRef;
-    private Animator oppoAnimRef;
     public bool isPlayerPinned;
     public bool isOpponentPinned;
     public string currentBattleID;
     private int currentCenterButton;        //place in the button array that the player is currently hovering
-    private string playerMove;      //the action theplayer is going to take
-    private string enemyMove;       //the action the opponent is going to take
-    private float tempTimer;        //temp being used 
+    private string playerMove;              //the action theplayer is going to take
+    private string enemyMove;               //the action the opponent is going to take
+    private float tempTimer;                //temp being used
+    private Vector3 startingPlayerPos;
+    private Vector3 startingOppoPos;
+
+
+
+    //animation
+    private AnimatorControllerParameter[] playerAnimParams;
+    private Animator playerAnimRef;
+    private animation currentPlayerAnim;
+    private Animator oppoAnimRef;
+    private animation currentOppoAnim;
 
 
     //Combat UI Elements\
@@ -50,6 +82,9 @@ public class CombatManager : MonoBehaviour
     private MatchState matchState;
     private WrestlerState playerState;
     private WrestlerState enemyState;
+    private animationTiming playerAnimTiming;
+    private animationTiming oppoAnimTiming;
+
 
     private DialogueManager dialogueManager;
     //CONSTANTS
@@ -79,13 +114,13 @@ public class CombatManager : MonoBehaviour
     //private Vector3 right3Button = new Vector3(-5f, 0.5f, 0f);
 
     private Vector3[] buttonPlacement = {
-                                         new Vector3(0f, -3.5f, -1.5f),
-                                        new Vector3(-2.75f, -1.5f, -1f),
-                                        new Vector3(-4f, -0.5f, -0.5f),
-                                        new Vector3(-5f, 0.5f, 0f),
-                                        new Vector3(5f, 0.5f, 0f),
-                                        new Vector3(4f, -0.5f, -0.5f),
-                                        new Vector3(2.75f, -1.5f, -1f)
+                                        new Vector3(0f, -1.5f, -4.5f),
+                                        new Vector3(-1.75f, -1.25f, -1f),
+                                        new Vector3(-2f, -0.5f, -0.5f),
+                                        new Vector3(-3f, 0.5f, 0f),
+                                        new Vector3(3f, 0.5f, 0f),
+                                        new Vector3(2f, -0.5f, -0.5f),
+                                        new Vector3(1.75f, -1.25f, -1f)
 
                                         };
 
@@ -126,9 +161,11 @@ public class CombatManager : MonoBehaviour
         if(playerRef)
         {
             playerAnimRef = playerRef.GetComponentInChildren<Animator>();
+            oppoAnimRef = oppoRefGO.GetComponent<Animator>();
+            playerAnimParams = playerAnimRef.parameters;
             //playerAnimRef = playerRef.GetComponent<Animator>();
-
-
+            currentPlayerAnim = animation.Idle;
+            currentOppoAnim = animation.Idle;
         }
 
 
@@ -136,7 +173,16 @@ public class CombatManager : MonoBehaviour
 
         updateCombatUI();
         updatePossibleMoves();
-        dialogueManager = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
+        try
+        {
+            dialogueManager = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
+
+        }
+        catch (System.Exception)
+        {
+
+            
+        }
     }
 
 
@@ -148,8 +194,19 @@ public class CombatManager : MonoBehaviour
         switch (matchState)
         {
             case MatchState.decisionPhase:
-                setAllAnimsFalse(playerAnimRef);
-                playerAnimRef.SetBool("Idling", true);
+                if (playerState == WrestlerState.standing)
+                    transitionToAnimation(animation.Idle, "Jade_Idle", true);
+                else if (playerState == WrestlerState.pinned)
+                    transitionToAnimation(animation.Pinned, "Jade_Pinned", true);
+                else
+                    transitionToAnimation(animation.Grounded, "Jade_Grounded", true);
+
+                if (enemyState == WrestlerState.standing)
+                    transitionToAnimation(animation.Idle, "Dante_Idle", false);
+                else if (enemyState == WrestlerState.pinned)
+                    transitionToAnimation(animation.Pinned, "Dante_Pinned", false);
+                else
+                    transitionToAnimation(animation.Grounded, "Dante_Grounded", false);
                 //moving menu left and right logic
                 if (Input.GetKeyDown(KeyCode.A))
                 {
@@ -192,6 +249,19 @@ public class CombatManager : MonoBehaviour
             possiblePlayerMoves.Add("Release");
         }
         else if (playerState == WrestlerState.pinned)
+        {
+            //check if can kickout eligible
+            if (Player.stamina > 15f)
+            {
+                possiblePlayerMoves.Add("Kickout");
+
+            }
+
+            //check if can sell
+            possiblePlayerMoves.Add("Sell");
+
+        }
+        else if (playerState == WrestlerState.grounded)
         {
             //check if can kickout eligible
             if (Player.stamina > 15f)
@@ -258,9 +328,11 @@ public class CombatManager : MonoBehaviour
             buttons[i] = Instantiate(Resources.Load("Prefabs/buttonTEMP")) as GameObject;
             buttons[i].transform.GetChild(0).GetComponent<TextMesh>().text = possiblePlayerMoves[i];
             buttons[i].transform.position = playerRef.transform.position + buttonPlacement[i];
+            buttons[i].transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
+
         }
-        buttons[0].transform.localScale = new Vector3(1.6f, 1.6f, 1.6f);
-        
+        buttons[0].transform.localScale = new Vector3(0.9f, 0.9f, 0.9f);
+
 
     }
 
@@ -280,9 +352,9 @@ public class CombatManager : MonoBehaviour
             {
                 //set scale
                 if (i == currentCenterButton)
-                    buttons[i].transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+                    buttons[i].transform.localScale = new Vector3(0.9f, 0.9f, 0.9f);
                 else
-                    buttons[i].transform.localScale = Vector3.one;
+                    buttons[i].transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
 
 
                 if (i - currentCenterButton == -1)
@@ -315,9 +387,9 @@ public class CombatManager : MonoBehaviour
             {
                 //set scale
                 if (i == currentCenterButton)
-                    buttons[i].transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+                    buttons[i].transform.localScale = new Vector3(0.9f, 0.9f, 0.9f);
                 else
-                    buttons[i].transform.localScale = Vector3.one;
+                    buttons[i].transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
 
 
                 if (i - currentCenterButton == -1)
@@ -355,6 +427,12 @@ public class CombatManager : MonoBehaviour
         playerMove = possiblePlayerMoves[currentCenterButton];
 
         enemyMove=oppoRef.decideMove(playerMove, turnCount,playerState.ToString(),enemyState.ToString());
+
+        if(playerState==WrestlerState.pinned && playerMove=="Sell")
+        {
+            endMatch(false);
+            return;
+        }
 
         #region Global Move interaction
 
@@ -478,7 +556,7 @@ public class CombatManager : MonoBehaviour
                 else if(enemyMove=="Attack")
                 {
                     audienceInterest += 6f;
-                    playerState = WrestlerState.grounded;
+                    
                 }
                 else if (enemyMove == "Finisher")
                 {
@@ -553,13 +631,45 @@ public class CombatManager : MonoBehaviour
         turnCount++;
         updateCombatUI();
 
-        tempTimer = 10f;
+
+        tempTimer = 2f;
+
         matchState = MatchState.actionPhase;
         foreach (GameObject gameObject in buttons)
         {
             Destroy(gameObject);
         }
         possiblePlayerMoves = null;
+
+        //Debug.Log("Stamina" + Player.stamina);
+        //Debug.Log("Audience Interest" + audienceInterest);
+        Debug.Log("Player Move: " + playerMove + "\nEnemy Move: " + enemyMove);
+        
+        if(playerMove=="Finisher"   ||
+            playerMove=="Attack"    ||
+            playerMove=="Pin"       )
+        {
+            playerAnimTiming = animationTiming.preAnim;
+        }
+
+        //Debug.Log("Stamina" + Player.stamina);
+        //Debug.Log("Audience Interest" + audienceInterest);
+        //Debug.Log("Player Move: " + playerMove + "\nEnemy Move: " + enemyMove);
+        try
+        {
+            if (dialogueManager.flowchart != null)
+            {
+                //dialogueManager.ResetBlocks();
+                //dialogueManager.StopDialogue();
+                //dialogueManager.StartDialogue();
+            }
+        }
+        catch (System.Exception)
+        {
+
+            Debug.LogWarning("uh oh, dialogue manager issues!!!!!");
+        }
+
     }
 
     //this method is to be used for positioning during action phase. The actual choosing of the animation should be able to be done through editor's animator.
@@ -577,24 +687,184 @@ public class CombatManager : MonoBehaviour
         {
             tempTimer -= Time.deltaTime;
         }
-        if (playerMove == "Attack")
-        {
-            setAllAnimsFalse(playerAnimRef);
-            playerAnimRef.StopPlayback();
-            playerAnimRef.Play("femHit");
-            playerAnimRef.SetBool("Attacking", true);
 
+        #region player animating
+        if(playerAnimTiming == animationTiming.preAnim)
+        {
+            //transitionToAnimation(animation.Block, "Jade_Run", true);
+            playerAnimTiming = animationTiming.anim;
+
+            if (playerRef.transform.position.x   <   oppoRefGO.transform.position.x - 2f)
+            {
+                //playerRef.transform.position = playerRef.transform.position + Vector3.right * 0.02f;
+            }
+            else
+            {
+                playerAnimTiming=animationTiming.anim;
+            }
+
+        }
+        if (playerAnimTiming==animationTiming.anim)
+        {
+            string playerAnimName = "Jade_";
+            if (playerMove == "Attack")
+            {
+                //walk first
+                //if()come back here list
+                playerAnimName += "Hit";
+                transitionToAnimation(animation.Attack, playerAnimName, true);
+                if (playerAnimTiming == animationTiming.preAnim)
+                {
+                    playerAnimRef.Play("Jade_Walk");
+                    
+                }
+            }
+            else if (playerMove == "Block")
+            {
+                playerAnimName += "Block";
+                transitionToAnimation(animation.Block, playerAnimName, true);
+            }
+            else if (playerMove == "Taunt")
+            {
+                playerAnimName += "Taunt";
+                transitionToAnimation(animation.Taunt, playerAnimName, true);
+            }
+            else if (playerMove == "Pin")
+            {
+                playerAnimName += "Pin";
+                transitionToAnimation(animation.Pin, playerAnimName, true);
+            }
+            else if (playerMove == "Sell")
+            {
+                playerAnimName += "Sell";
+
+                transitionToAnimation(animation.Sell, playerAnimName, true);
+            }
+            else if (playerMove == "Finisher")
+            {
+                playerAnimName += "Hit";
+                transitionToAnimation(animation.Finisher, playerAnimName, true);
+            }
+            else if (playerMove == "Recover")
+            {
+                playerAnimName += "Recover";
+                transitionToAnimation(animation.Recover, playerAnimName, true);
+            }
+            else if (playerMove == "Kickout")
+            {
+                playerAnimName += "Kickout";
+                transitionToAnimation(animation.Kickout, playerAnimName, true);
+            }
+
+        }
+
+        #endregion
+
+
+
+        #region oppo animating
+        string oppoName = oppoRefGO.name;
+        string oppoAnimName = oppoName+"_";
+        if (enemyMove == "Attack")
+        {
+            //walk first
+            //if()come back here list
+            oppoAnimName += "Hit";
+            transitionToAnimation(animation.Attack, oppoAnimName, false);
+            if (playerAnimTiming == animationTiming.preAnim)
+            {
+                playerAnimRef.Play("Jade_Walk");
+
+            }
+        }
+        else if (enemyMove == "Block")
+        {
+            oppoAnimName += "Block";
+            transitionToAnimation(animation.Block, oppoAnimName, false);
+        }
+        else if (enemyMove == "Taunt")
+        {
+            oppoAnimName += "Taunt";
+            transitionToAnimation(animation.Taunt, oppoAnimName, false);
+        }
+        else if (enemyMove == "Pin")
+        {
+            oppoAnimName += "Pin";
+            transitionToAnimation(animation.Pin, oppoAnimName, false);
+        }
+        else if (enemyMove == "Sell")
+        {
+            oppoAnimName += "Sell";
+
+            transitionToAnimation(animation.Sell, oppoAnimName, false);
+        }
+        else if (enemyMove == "Finisher")
+        {
+            oppoAnimName += "Hit";
+            transitionToAnimation(animation.Finisher, oppoAnimName, false);
+        }
+        else if (enemyMove == "Recover")
+        {
+            oppoAnimName += "Recover";
+            transitionToAnimation(animation.Recover, oppoAnimName, false);
+        }
+        else if (enemyMove == "Kickout")
+        {
+            oppoAnimName += "Kickout";
+            transitionToAnimation(animation.Kickout, oppoAnimName, false);
+        }
+        #endregion
+
+    }
+
+    
+
+    void transitionToAnimation(animation anim, string newAnimationName,bool isPlayer)
+    {
+        if (isPlayer)
+        {
+            if(currentPlayerAnim!=anim)
+            {
+                Debug.Log(newAnimationName);
+                playerAnimRef.Play(newAnimationName);
+                currentPlayerAnim = anim;
+                if(anim== animation.Attack || anim == animation.Finisher || anim == animation.Pin || anim == animation.Pinned)
+                    playerAnimTiming = animationTiming.preAnim;
+            }
+        }
+        else
+        {
+            if (currentOppoAnim != anim)
+            {
+                Debug.Log("Oppo anim name:"+newAnimationName);
+
+                oppoAnimRef.Play(newAnimationName);
+                currentOppoAnim = anim;
+                oppoAnimTiming = animationTiming.preAnim;
+
+            }
         }
     }
 
-    //this method sets all the bools used to transition animations to false
-    void setAllAnimsFalse(Animator animRef)
+
+
+    void transitionToAnimation(animation anim, string newAnimationName, bool isPlayer,int frameDelay)
     {
-        //animRef.
-        for (int i = 0; i < animRef.parameterCount; i++)
+        if (isPlayer)
         {
-            //Debug.Log(animRef.parameters[i].nameHash);
-            
+            if (currentPlayerAnim != anim)
+            {
+                playerAnimRef.Play(newAnimationName);
+                currentPlayerAnim = anim;
+            }
+        }
+        else
+        {
+            if (currentOppoAnim != anim)
+            {
+                oppoAnimRef.Play(newAnimationName);
+                currentOppoAnim = anim;
+            }
         }
     }
 
@@ -612,6 +882,8 @@ public class CombatManager : MonoBehaviour
             endingText.GetComponent<TextMesh>().text = "You Lose :((";
 
         }
+
+        
     }
 
     void updateCombatUI()

@@ -15,18 +15,18 @@ public class CharacterStats : MonoBehaviour
 
     public void StoreStats()
     {
-        string path = Application.dataPath + "/Resources/Saves/";
-        string textToMake = "meter:"+RelationshipMeter.ToString();
-
-        if (!File.Exists(path))
-        {
-            File.WriteAllText(path + characterName + ".txt", textToMake);
-        }
-        else
-        {
-            string text = File.ReadAllText(path + characterName + ".txt");
-            text = text.Replace(text, textToMake);
-            File.WriteAllText(path + characterName + ".txt", text);
-        }
+        //string path = Application.dataPath + "/Resources/Saves/";
+        //string textToMake = "meter:"+RelationshipMeter.ToString();
+        //
+        //if (!File.Exists(path))
+        //{
+        //    File.WriteAllText(path + characterName + ".txt", textToMake);
+        //}
+        //else
+        //{
+        //    string text = File.ReadAllText(path + characterName + ".txt");
+        //    text = text.Replace(text, textToMake);
+        //    File.WriteAllText(path + characterName + ".txt", text);
+        //}
     }
 }

@@ -20,7 +20,7 @@ public class Dante : Fighter
     public override void readInPlanning(string path)
     {
         //waiting for Tadeo's planning implementation
-        string wholeDecisions = File.ReadAllText(path);
+        //string wholeDecisions = File.ReadAllText(path);
             //File.OpenRead(path);
         
         
@@ -38,9 +38,9 @@ public class Dante : Fighter
         {
             return "Attack";
         }
-        else if(turnCount>5 &&turnCount<9)
+        else if(turnCount>5 &&turnCount<8)
         {
-            readInPlanning("Gym_Dante_Day2_Planning");
+            //readInPlanning("Gym_Dante_Day2_Planning");
             if(playerMove=="Block"||playerMove=="Sell"||playerMove=="Taunt")
             {
                 return "Attack";
@@ -59,11 +59,11 @@ public class Dante : Fighter
             }
 
         }
-        else if(turnCount==9)
+        else if(turnCount==8)
         {
             return "Finisher";
         }
-
+        
         if (playerState == "grounded")
             return "Pin";
         else if (playerState == "pinned")
