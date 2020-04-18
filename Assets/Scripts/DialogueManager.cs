@@ -134,14 +134,14 @@ public class DialogueManager : MonoBehaviour
                 case "nextDialogue":
                     
                     nextDialogueName = flowchartVariables[i].GetValue() as string;
-                    using (StreamWriter writer = new StreamWriter(Application.dataPath + "/Resources/Saves/save.txt"))
-                    {
-                        writer.WriteLine(System.DateTime.Now);
-                        writer.WriteLine(nextDialogueName);
-                        writer.WriteLine("Daily");
-                        writer.WriteLine("Relationship Meter names");
-
-                    }
+                    //using (StreamWriter writer = new StreamWriter(Application.dataPath + "/Resources/Saves/save.txt"))
+                    //{
+                    //    writer.WriteLine(System.DateTime.Now);
+                    //    writer.WriteLine(nextDialogueName);
+                    //    writer.WriteLine("Daily");
+                    //    writer.WriteLine("Relationship Meter names");
+                    //
+                    //}
                     break;
                 case "avaIncrease":
                     break;
@@ -156,7 +156,7 @@ public class DialogueManager : MonoBehaviour
 
                     if (!File.Exists(path))
                     {
-                        File.WriteAllText(path + flowchart.GetName() + ".txt", organizedPlay);
+                        //File.WriteAllText(path + flowchart.GetName() + ".txt", organizedPlay);
                     }
                     break;
                 case "avaMeter":
