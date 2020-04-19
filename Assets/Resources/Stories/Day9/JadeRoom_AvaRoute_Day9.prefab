@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 28
   indentLevel: 0
   variable: {fileID: 5317250095584907515}
@@ -27,7 +27,7 @@ MonoBehaviour:
     floatVal: 0
   stringData:
     stringRef: {fileID: 0}
-    stringVal: 
+    stringVal:
   animatorData:
     animatorRef: {fileID: 0}
     animatorVal: {fileID: 0}
@@ -74,8 +74,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 27
   indentLevel: 0
   variable: {fileID: 5317250095584907515}
@@ -91,7 +91,7 @@ MonoBehaviour:
     floatVal: 0
   stringData:
     stringRef: {fileID: 0}
-    stringVal: 
+    stringVal:
   animatorData:
     animatorRef: {fileID: 0}
     animatorVal: {fileID: 0}
@@ -138,8 +138,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: -30.013226
@@ -150,7 +150,7 @@ MonoBehaviour:
   useCustomTint: 0
   itemId: 20
   blockName: JadeRoom_A_Route
-  description: 
+  description:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 8476548596360466103}
@@ -166,12 +166,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 9
   indentLevel: 0
   text: " Go to the Caf\xE9"
-  description: 
+  description:
   targetBlock: {fileID: 4807884929611414779}
   hideIfVisited: 0
   interactable:
@@ -191,8 +191,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: 151.64175
@@ -203,7 +203,7 @@ MonoBehaviour:
   useCustomTint: 1
   itemId: 1
   blockName: JadeRoom_Day9_ChoiceTree1
-  description: 
+  description:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 5317250094780674412}
@@ -220,8 +220,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 13
   indentLevel: 0
   conversationText:
@@ -250,8 +250,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: 479.82816
@@ -262,7 +262,7 @@ MonoBehaviour:
   useCustomTint: 0
   itemId: 5
   blockName: JadeRoom_C_Route
-  description: 
+  description:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 5317250094780674416}
@@ -278,12 +278,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 11
   indentLevel: 0
   text: ' Run errands and wait for Ava'
-  description: 
+  description:
   targetBlock: {fileID: 5317250094780674417}
   hideIfVisited: 0
   interactable:
@@ -303,12 +303,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 10
   indentLevel: 0
   text: Go to the arena
-  description: 
+  description:
   targetBlock: {fileID: 7327330477786308296}
   hideIfVisited: 0
   interactable:
@@ -328,15 +328,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 17
   indentLevel: 0
   targetFlowchart: {fileID: 0}
   targetBlock: {fileID: 5317250094780674413}
   startLabel:
     stringRef: {fileID: 0}
-    stringVal: 
+    stringVal:
   startIndex: 0
   callMode: 0
 --- !u!114 &5317250094780674421
@@ -349,8 +349,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 16
   indentLevel: 0
   conversationText:
@@ -380,8 +380,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: 174.9541
@@ -392,7 +392,7 @@ MonoBehaviour:
   useCustomTint: 1
   itemId: 18
   blockName: JadeRoom_Day9_Init
-  description: 
+  description:
   eventHandler: {fileID: 5317250094780674427}
   commandList:
   - {fileID: 5317250094780674421}
@@ -408,8 +408,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   parentBlock: {fileID: 5317250094780674422}
   suppressBlockAutoSelect: 0
   waitForFrames: 1
@@ -423,8 +423,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   scope: 1
   key: nextDialogue
   value: Cafe_Ava_Day1
@@ -438,8 +438,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   scope: 1
   key: goToNext
   value: 0
@@ -453,8 +453,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   scope: 0
   key: backGround
   value: enterName
@@ -468,8 +468,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 29
   indentLevel: 0
   variable: {fileID: 5317250095584907515}
@@ -485,7 +485,7 @@ MonoBehaviour:
     floatVal: 0
   stringData:
     stringRef: {fileID: 0}
-    stringVal: 
+    stringVal:
   animatorData:
     animatorRef: {fileID: 0}
     animatorVal: {fileID: 0}
@@ -532,19 +532,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
-    x: 208.15157
-    y: 539.86664
+    x: 209.87126
+    y: 536.4273
     width: 161.77988
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 23
   blockName: JadeRoom_B_Route
-  description: 
+  description:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 8976145834896598602}
@@ -560,8 +560,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   scope: 0
   key: goToCombat
   value: 0
@@ -575,8 +575,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 21
   indentLevel: 0
   conversationText:
@@ -604,8 +604,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 25
   indentLevel: 0
   conversationText:
@@ -687,32 +687,32 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 5317250095584907514}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 5317250095584907515}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 5317250094780674421}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
-      value: 
+      value:
       objectReference: {fileID: 5832363592683742854}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[3]
-      value: 
+      value:
       objectReference: {fileID: 7447172137368025889}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 7327330477786308296}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -722,12 +722,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.data[2]
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 201062584, guid: 39b6d48ecdc0f9c45b967c6d8ac21694,
         type: 3}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,

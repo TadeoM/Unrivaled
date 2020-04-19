@@ -167,8 +167,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07ef9731101048043a3768f71fa70d38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   characterName: Smooth Desire
 --- !u!1 &679324912 stripped
 GameObject:
@@ -186,8 +186,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07ef9731101048043a3768f71fa70d38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   characterName: Knox
 --- !u!1 &700899051 stripped
 GameObject:
@@ -205,8 +205,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07ef9731101048043a3768f71fa70d38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   characterName: Ava
 --- !u!1 &829000786 stripped
 GameObject:
@@ -224,8 +224,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07ef9731101048043a3768f71fa70d38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   characterName: Dante
 --- !u!1 &990159170
 GameObject:
@@ -254,9 +254,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 2331219387572361826, guid: b83df8e36d208974cae1d49d7c7f0ed9,
+  m_Name:
+  m_EditorClassIdentifier:
+  selectedFlowchart: {fileID: 5291989801403410493, guid: 484ce2af765a0db4cb77118c68765cce,
     type: 3}
 --- !u!4 &990159172
 Transform:
@@ -288,8 +288,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07ef9731101048043a3768f71fa70d38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   characterName: Luther
 --- !u!1 &1458642813
 GameObject:
@@ -390,8 +390,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07ef9731101048043a3768f71fa70d38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   characterName: Cassandra
 --- !u!1001 &1680304231
 PrefabInstance:
@@ -458,6 +458,121 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6289d5f8fa843145a2355af9cb09719, type: 3}
+--- !u!1001 &1834214716
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -5656776523512508678, guid: a04306206131f7548a3abe39096da3a5,
+        type: 3}
+      propertyPath: itemId
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 958095747848825731, guid: a04306206131f7548a3abe39096da3a5,
+        type: 3}
+      propertyPath: itemId
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817117883598759883, guid: a04306206131f7548a3abe39096da3a5,
+        type: 3}
+      propertyPath: conversationText.stringVal
+      value: "Jade jadeNeutral left:\nAva avaHappy right: Hey Jade!\r\nJade jadeNeutral
+        left: Hey Ava\u2026\r\nAva avaNeutral: Still bummed about the slot thing?\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869128578356829331, guid: a04306206131f7548a3abe39096da3a5,
+        type: 3}
+      propertyPath: itemId
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 7258205973723534948, guid: a04306206131f7548a3abe39096da3a5,
+        type: 3}
+      propertyPath: itemId
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 7942903137121342937, guid: a04306206131f7548a3abe39096da3a5,
+        type: 3}
+      propertyPath: itemId
+      value: 53
+      objectReference: {fileID: 0}
+    - target: {fileID: 8379186820151204973, guid: a04306206131f7548a3abe39096da3a5,
+        type: 3}
+      propertyPath: itemId
+      value: 54
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759785488143564773, guid: a04306206131f7548a3abe39096da3a5,
+        type: 3}
+      propertyPath: m_Name
+      value: Cafe_AvaKnox_Day5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759785488143757803, guid: a04306206131f7548a3abe39096da3a5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759785488143757803, guid: a04306206131f7548a3abe39096da3a5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759785488143757803, guid: a04306206131f7548a3abe39096da3a5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759785488143757803, guid: a04306206131f7548a3abe39096da3a5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759785488143757803, guid: a04306206131f7548a3abe39096da3a5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759785488143757803, guid: a04306206131f7548a3abe39096da3a5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759785488143757803, guid: a04306206131f7548a3abe39096da3a5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759785488143757803, guid: a04306206131f7548a3abe39096da3a5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759785488143757803, guid: a04306206131f7548a3abe39096da3a5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759785488143757803, guid: a04306206131f7548a3abe39096da3a5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759785488143757803, guid: a04306206131f7548a3abe39096da3a5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759785488149608899, guid: a04306206131f7548a3abe39096da3a5,
+        type: 3}
+      propertyPath: selectedBlocks.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759785488149608899, guid: a04306206131f7548a3abe39096da3a5,
+        type: 3}
+      propertyPath: selectedCommands.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a04306206131f7548a3abe39096da3a5, type: 3}
 --- !u!1 &2077848273 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6900213822501333744, guid: 8e706bd9a2802264aa709bb2f6427681,
@@ -474,8 +589,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07ef9731101048043a3768f71fa70d38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   characterName: Jade
 --- !u!1 &2100249037
 GameObject:
@@ -505,8 +620,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -524,8 +639,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
@@ -608,12 +723,12 @@ PrefabInstance:
     - target: {fileID: 1483338950362034601, guid: 7e7511675ca35594a8738861dd3c816f,
         type: 3}
       propertyPath: stage
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 1483338950362034601, guid: 7e7511675ca35594a8738861dd3c816f,
         type: 3}
       propertyPath: fadeImage
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 1483338950362034601, guid: 7e7511675ca35594a8738861dd3c816f,
         type: 3}
@@ -623,7 +738,7 @@ PrefabInstance:
     - target: {fileID: 1483338950362034601, guid: 7e7511675ca35594a8738861dd3c816f,
         type: 3}
       propertyPath: characters
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 1483338950362034602, guid: 7e7511675ca35594a8738861dd3c816f,
         type: 3}
@@ -742,7 +857,7 @@ PrefabInstance:
     - target: {fileID: 8174024281422135397, guid: 8e706bd9a2802264aa709bb2f6427681,
         type: 3}
       propertyPath: portraits.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 21300000, guid: 7c9738c3b9d30f3488e8cdaa354f67b6,
         type: 3}
     m_RemovedComponents: []

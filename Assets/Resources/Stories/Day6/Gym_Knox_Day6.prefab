@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 41
   indentLevel: 0
   targetFlowchart: {fileID: 0}
   targetBlock: {fileID: -457579306764319410}
   startLabel:
     stringRef: {fileID: 0}
-    stringVal: 
+    stringVal:
   startIndex: 0
   callMode: 0
 --- !u!114 &-7009058977949265696
@@ -31,12 +31,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 33
   indentLevel: 0
   text: "You know, screaming in my ear doesn\u2019t help."
-  description: 
+  description:
   targetBlock: {fileID: 693778231494411101}
   hideIfVisited: 0
   interactable:
@@ -56,12 +56,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 39
   indentLevel: 0
   text: "Damn, I guess the body doesn\u2019t just show up out of nowhere\u2026"
-  description: 
+  description:
   targetBlock: {fileID: 4480548750665170540}
   hideIfVisited: 0
   interactable:
@@ -81,8 +81,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 37
   indentLevel: 0
   conversationText:
@@ -119,8 +119,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: 219.56032
@@ -131,7 +131,7 @@ MonoBehaviour:
   useCustomTint: 1
   itemId: 1
   blockName: Gym_Knox_Day6_ChoiceTree2
-  description: 
+  description:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1875546141303779988}
@@ -148,8 +148,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: 236.55476
@@ -160,7 +160,7 @@ MonoBehaviour:
   useCustomTint: 1
   itemId: 1
   blockName: Gym_Knox_Day6_ChoiceTree3
-  description: 
+  description:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: -6457859753853796811}
@@ -176,12 +176,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 34
   indentLevel: 0
   text: Please, just stop yelling!
-  description: 
+  description:
   targetBlock: {fileID: 693778231494411101}
   hideIfVisited: 0
   interactable:
@@ -201,8 +201,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 27
   indentLevel: 0
   conversationText:
@@ -240,8 +240,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: 246.0426
@@ -252,10 +252,9 @@ MonoBehaviour:
   useCustomTint: 0
   itemId: 30
   blockName: Gym_Knox_Day6_2
-  description: 
+  description:
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 3943579207016185875}
   - {fileID: -5118738299696955181}
   - {fileID: -8586245464946963128}
   suppressAllAutoSelections: 0
@@ -269,8 +268,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 26
   indentLevel: 0
   variable: {fileID: 4480548751469436902}
@@ -286,7 +285,7 @@ MonoBehaviour:
     floatVal: 0
   stringData:
     stringRef: {fileID: 0}
-    stringVal: 
+    stringVal:
   animatorData:
     animatorRef: {fileID: 0}
     animatorVal: {fileID: 0}
@@ -333,8 +332,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   scope: 0
   key: goToCombat
   value: 0
@@ -348,22 +347,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 21
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
     stringVal: "Knox knoxHappy: You flatter me.\nKnox: Sorry I pushed you too hard,
-      but I feel you should keep sticking with it.\r\nKnox: Ya know\u2026 between
-      you and me...\r\nKnox: Luther was a lot smaller when he came to AOW. I gave
-      him a workout plan and boom\u2014\r\nKnox: D1 champ and *jacked*.\r\nJade:
-      No way\u2026!\r\nKnox knoxHappy: Yes way! I did a few nights ago, in the wee
-      hours of the morning.\r\nJade jadeAngry: \u2026Very funny.\r\nKnox: Hahah!
-      But seriously Jade, make sure you work hard and keep grinding. You could be
-      a D1 champ yourself.\r\nJade jadeNeutral: Thanks, Knox.\r\nKnox: Wanna get
-      some food? I\u2019ll pay since I worked you to the bone.\r\nJade jadeHappy:
-      Alright, sounds good to me.\r"
+      but I think you should stick with it.\nKnox: Ya know\u2026 between you and
+      me...\r\nKnox: Luther was a lot smaller when he came to AOW. I gave him a workout
+      plan and boom\u2014\r\nKnox: D1 champ and *jacked*.\r\nJade: No way\u2026!\r\nKnox
+      knoxHappy: Yes way! I did a few nights ago, in the wee hours of the morning.\r\nJade
+      jadeAngry: \u2026Very funny.\r\nKnox: Hahah! But seriously Jade, make sure
+      you work hard and keep grinding. You could be a D1 champ yourself.\r\nJade
+      jadeNeutral: Thanks, Knox.\r\nKnox: Wanna get some food? I\u2019ll pay since
+      I worked you to the bone.\r\nJade jadeHappy: Alright, sounds good to me.\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -376,70 +374,6 @@ MonoBehaviour:
   fadeWhenDone:
     booleanRef: {fileID: 0}
     booleanVal: 1
---- !u!114 &1848405245979578646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5315590791294695461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 20
-  indentLevel: 0
-  variable: {fileID: 4480548751469436902}
-  setOperator: 0
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 0
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1875546141303779988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -450,12 +384,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 32
   indentLevel: 0
   text: Could you maybe tone it down a little?
-  description: 
+  description:
   targetBlock: {fileID: 693778231494411101}
   hideIfVisited: 0
   interactable:
@@ -475,8 +409,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: 478.7697
@@ -487,11 +421,11 @@ MonoBehaviour:
   useCustomTint: 0
   itemId: 5
   blockName: Gym_Knox_Day6_RouteB
-  description: 
+  description:
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 838625415629713699}
   - {fileID: 672916600669552227}
+  - {fileID: 838625415629713699}
   suppressAllAutoSelections: 0
 --- !u!114 &2815882654081231259
 MonoBehaviour:
@@ -503,8 +437,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   scope: 0
   key: backGround
   value: enterName
@@ -518,12 +452,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 24
   indentLevel: 0
   text: Can we do cardio?
-  description: 
+  description:
   targetBlock: {fileID: 4019330415804232809}
   hideIfVisited: 0
   interactable:
@@ -533,70 +467,6 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
---- !u!114 &3943579207016185875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5315590791294695461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 36
-  indentLevel: 0
-  variable: {fileID: 4480548751469436902}
-  setOperator: 0
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 0
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &4019330415804232809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -607,8 +477,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: 247.86078
@@ -619,10 +489,9 @@ MonoBehaviour:
   useCustomTint: 0
   itemId: 30
   blockName: Gym_Knox_Day6_1
-  description: 
+  description:
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 1848405245979578646}
   - {fileID: 5825532573845687968}
   - {fileID: 6488918337439188915}
   suppressAllAutoSelections: 0
@@ -636,8 +505,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   parentBlock: {fileID: 4480548750665170539}
   suppressBlockAutoSelect: 0
   waitForFrames: 1
@@ -651,8 +520,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 16
   indentLevel: 0
   conversationText:
@@ -685,15 +554,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 17
   indentLevel: 0
   targetFlowchart: {fileID: 0}
   targetBlock: {fileID: 4480548750665170544}
   startLabel:
     stringRef: {fileID: 0}
-    stringVal: 
+    stringVal:
   startIndex: 0
   callMode: 0
 --- !u!114 &4480548750665170538
@@ -706,8 +575,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 14
   indentLevel: 0
   variable: {fileID: 4480548751469436902}
@@ -723,7 +592,7 @@ MonoBehaviour:
     floatVal: 0
   stringData:
     stringRef: {fileID: 0}
-    stringVal: 
+    stringVal:
   animatorData:
     animatorRef: {fileID: 0}
     animatorVal: {fileID: 0}
@@ -770,8 +639,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: 245.86082
@@ -782,7 +651,7 @@ MonoBehaviour:
   useCustomTint: 1
   itemId: 18
   blockName: Gym_Knox_Day6
-  description: 
+  description:
   eventHandler: {fileID: 4480548750665170534}
   commandList:
   - {fileID: 4480548750665170536}
@@ -798,8 +667,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: 60.163788
@@ -810,11 +679,11 @@ MonoBehaviour:
   useCustomTint: 0
   itemId: 23
   blockName: Gym_Knox_Day6_RouteA
-  description: 
+  description:
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 4480548750665170538}
   - {fileID: 1803187228734055273}
+  - {fileID: 4480548750665170538}
   suppressAllAutoSelections: 0
 --- !u!114 &4480548750665170542
 MonoBehaviour:
@@ -826,12 +695,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 10
   indentLevel: 0
   text: Chest and biceps are fine.
-  description: 
+  description:
   targetBlock: {fileID: 4019330415804232809}
   hideIfVisited: 0
   interactable:
@@ -851,8 +720,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: 212.76994
@@ -863,7 +732,7 @@ MonoBehaviour:
   useCustomTint: 1
   itemId: 1
   blockName: Gym_Knox_Day6_ChoiceTree1
-  description: 
+  description:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 4480548750665170545}
@@ -880,12 +749,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 9
   indentLevel: 0
   text: Kind of want to do legs.
-  description: 
+  description:
   targetBlock: {fileID: 4019330415804232809}
   hideIfVisited: 0
   interactable:
@@ -905,8 +774,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   scope: 1
   key: goToNext
   value: 0
@@ -920,11 +789,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   scope: 1
   key: nextDialogue
-  value: JadeRoom_Ava_Day2
+  value: JadeRoom_Day7
 --- !u!114 &5825532573845687968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -935,8 +804,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 22
   indentLevel: 0
   conversationText:
@@ -972,15 +841,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 42
   indentLevel: 0
   targetFlowchart: {fileID: 0}
   targetBlock: {fileID: -4276974796644083460}
   startLabel:
     stringRef: {fileID: 0}
-    stringVal: 
+    stringVal:
   startIndex: 0
   callMode: 0
 --- !u!114 &8206492086590752488
@@ -993,12 +862,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 40
   indentLevel: 0
   text: " I don\u2019t think\u2026 I don\u2019t think I can do that\u2026"
-  description: 
+  description:
   targetBlock: {fileID: 2296754475182944773}
   hideIfVisited: 0
   interactable:
@@ -1071,33 +940,33 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 4480548751469436903}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 4480548751469436902}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
-      value: 
-      objectReference: {fileID: 4480548750665170536}
+      value:
+      objectReference: {fileID: 1803187228734055273}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
-      value: 
+      value:
       objectReference: {fileID: 2815882654081231259}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[3]
-      value: 
+      value:
       objectReference: {fileID: 1206148903953904700}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
-      value: 
-      objectReference: {fileID: 4480548750665170539}
+      value:
+      objectReference: {fileID: 4480548750665170540}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size
@@ -1106,12 +975,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.data[2]
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 201062584, guid: 39b6d48ecdc0f9c45b967c6d8ac21694,
         type: 3}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,

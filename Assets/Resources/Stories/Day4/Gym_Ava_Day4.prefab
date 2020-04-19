@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: 58.812145
     y: 1075.3574
-    width: 164.28561
+    width: 161.47534
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 99
   blockName: Gym_Ava_Day4_A_3
-  description: 
+  description:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 4753304321453265210}
@@ -38,8 +38,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 129
   indentLevel: 0
   variable: {fileID: 4315812196347337931}
@@ -102,8 +102,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 126
   indentLevel: 0
   variable: {fileID: 4315812196347337931}
@@ -166,12 +166,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 112
   indentLevel: 0
   text: "I\u2019m not going to let you shove me around come next week in [name]!"
-  description: 
+  description:
   targetBlock: {fileID: 1916889093293319190}
   hideIfVisited: 0
   interactable:
@@ -191,19 +191,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: 127.13312
     y: 681.5629
-    width: 214.89781
+    width: 210.65564
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
   itemId: 81
   blockName: Gym_Ava_Day4_ChoiceTree3
-  description: 
+  description:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: -674581450640693221}
@@ -220,13 +220,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 122
   indentLevel: 0
-  text: "You\u2019re reign over the division is going to come to an end with my rise
-    to the top\u2026"
-  description: 
+  text: "Your reign over the division is going to come to an end with my rise to
+    the top\u2026"
+  description:
   targetBlock: {fileID: -9164975669906012146}
   hideIfVisited: 0
   interactable:
@@ -246,15 +246,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 132
   indentLevel: 0
   targetFlowchart: {fileID: 0}
   targetBlock: {fileID: 231853421553137109}
   startLabel:
     stringRef: {fileID: 0}
-    stringVal: 
+    stringVal:
   startIndex: 0
   callMode: 0
 --- !u!114 &-4855984623718615632
@@ -267,15 +267,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 131
   indentLevel: 0
   targetFlowchart: {fileID: 0}
   targetBlock: {fileID: -6765204901720827235}
   startLabel:
     stringRef: {fileID: 0}
-    stringVal: 
+    stringVal:
   startIndex: 0
   callMode: 0
 --- !u!114 &-3758533746990208741
@@ -288,8 +288,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 115
   indentLevel: 0
   conversationText:
@@ -317,8 +317,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 118
   indentLevel: 0
   conversationText:
@@ -346,19 +346,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: -3.7153425
     y: 584.2538
-    width: 162.65295
+    width: 159.836
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 99
   blockName: Gym_Ava_Day4_A_1
-  description: 
+  description:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1040565005253421388}
@@ -374,19 +374,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: 279.77353
     y: 1060.8143
-    width: 164.28561
+    width: 161.47534
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 99
   blockName: Gym_Ava_Day4_B_3
-  description: 
+  description:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 7126611620618427565}
@@ -402,12 +402,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 111
   indentLevel: 0
   text: "next week in [name], I\u2019m going to be the one to stand up to you!"
-  description: 
+  description:
   targetBlock: {fileID: 8367290320958889229}
   hideIfVisited: 0
   interactable:
@@ -427,11 +427,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   scope: 0
   key: organizedPlay
-  value: 
+  value:
 --- !u!114 &231853421553137109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -442,19 +442,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: 140.48303
     y: 917.9258
-    width: 214.89781
+    width: 210.65564
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
   itemId: 81
   blockName: Gym_Ava_Day4_ChoiceTree4
-  description: 
+  description:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 7143968245860155948}
@@ -471,19 +471,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: 408.95068
     y: 392.80307
-    width: 187.14273
+    width: 184.42615
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 74
   blockName: Gym_Ava_Day4_B_Route
-  description: 
+  description:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 3571043506692172773}
@@ -499,19 +499,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: 146.62639
-    y: 494.76843
-    width: 213.26517
+    y: 496.33093
+    width: 209.0163
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
   itemId: 81
   blockName: Gym_Ava_Day4_ChoiceTree2
-  description: 
+  description:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 3282665357704312479}
@@ -528,15 +528,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 104
   indentLevel: 0
   targetFlowchart: {fileID: 0}
   targetBlock: {fileID: 864448174638048912}
   startLabel:
     stringRef: {fileID: 0}
-    stringVal: 
+    stringVal:
   startIndex: 0
   callMode: 0
 --- !u!114 &1040565005253421388
@@ -549,8 +549,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 108
   indentLevel: 0
   conversationText:
@@ -578,8 +578,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   scope: 0
   key: goToCombat
   value: 0
@@ -593,19 +593,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: 308.75604
     y: 796.98035
-    width: 162.65295
+    width: 159.836
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 99
   blockName: Gym_Ava_Day4_B_2
-  description: 
+  description:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: -3449487465020593143}
@@ -621,12 +621,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 123
   indentLevel: 0
   text: "I\u2019m going to rise to the top no matter what\u2026"
-  description: 
+  description:
   targetBlock: {fileID: -2705383189482365944}
   hideIfVisited: 0
   interactable:
@@ -646,15 +646,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 105
   indentLevel: 0
   targetFlowchart: {fileID: 0}
   targetBlock: {fileID: 864448174638048912}
   startLabel:
     stringRef: {fileID: 0}
-    stringVal: 
+    stringVal:
   startIndex: 0
   callMode: 0
 --- !u!114 &2512662593382984374
@@ -667,8 +667,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   scope: 0
   key: backGround
   value: enterName
@@ -682,12 +682,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 101
   indentLevel: 0
   text: "Well, Ava, I may be an up-and-comer, but\u2026"
-  description: 
+  description:
   targetBlock: {fileID: -2937948529830414886}
   hideIfVisited: 0
   interactable:
@@ -707,12 +707,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 103
   indentLevel: 0
   text: "You are the biggest bully I\u2019ve ever met Ava, and\u2026"
-  description: 
+  description:
   targetBlock: {fileID: 6206284580279054063}
   hideIfVisited: 0
   interactable:
@@ -732,8 +732,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 98
   indentLevel: 0
   conversationText:
@@ -749,7 +749,7 @@ MonoBehaviour:
       so how do you want to work on it?\r\nAva avaNeutral: So, the big thing about
       promos is that they have to be short and concise.\r\nAva: 30-90 seconds and
       explain the who, what, when, where, and why.\r\nAva: So, something like\u2014\r\nAva
-      avaAngry: D-800, next Monday in the ghost town known as [Ineedanamehere]\u2026\r\nAva:
+      avaAngry: D-800, next Monday in the ghost town known as Frostfall\u2026\r\nAva:
       I\u2019m going to expose you for the fraud you are! You always talk about yourself
       and how unlucky people like you are, and I\u2019m sick of it. \r\nAva: Next
       week, I\u2019m going to give you something to be sorry for. I\u2019m going
@@ -781,15 +781,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 130
   indentLevel: 0
   targetFlowchart: {fileID: 0}
   targetBlock: {fileID: -6765204901720827235}
   startLabel:
     stringRef: {fileID: 0}
-    stringVal: 
+    stringVal:
   startIndex: 0
   callMode: 0
 --- !u!114 &4315812196347337930
@@ -802,11 +802,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   scope: 1
   key: nextDialogue
-  value: Combat_Ava_Day1
+  value: JadeRoom_Day5
 --- !u!114 &4315812196347337931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -817,8 +817,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   scope: 1
   key: goToNext
   value: 0
@@ -832,8 +832,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 13
   indentLevel: 0
   conversationText:
@@ -849,8 +849,8 @@ MonoBehaviour:
       avaNeutral: So, the big thing about promos is that they have to be short and
       concise.\r\nAva: 30-90 seconds and explain the who, what, when, where, and
       why.\r\nAva: So, something like\u2014\r\nAva avaAngry: D-800, next Monday in
-      the ghost town known as [Ineedanamehere]\u2026\r\nAva: I\u2019m going to expose
-      you for the fraud you are! You always talk about yourself and how unlucky people
+      the ghost town known as Frostfall\u2026\r\nAva: I\u2019m going to expose you
+      for the fraud you are! You always talk about yourself and how unlucky people
       like you are, and I\u2019m sick of it. \r\nAva: Next week, I\u2019m going to
       give you something to be sorry for. I\u2019m going to make you tap out in that
       submission match and put you right back at the bottom. \r\nAva: D-800, I\u2019m
@@ -881,19 +881,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: -108.79962
     y: 389.01828
-    width: 187.14273
+    width: 184.42615
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 80
   blockName: Gym_Ava_Day4_A_Route
-  description: 
+  description:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 4315812196614716736}
@@ -909,12 +909,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 10
   indentLevel: 0
   text: Worse how?
-  description: 
+  description:
   targetBlock: {fileID: 806021995247470634}
   hideIfVisited: 0
   interactable:
@@ -934,15 +934,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 17
   indentLevel: 0
   targetFlowchart: {fileID: 0}
   targetBlock: {fileID: 4315812196614716765}
   startLabel:
     stringRef: {fileID: 0}
-    stringVal: 
+    stringVal:
   startIndex: 0
   callMode: 0
 --- !u!114 &4315812196614716741
@@ -955,8 +955,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 16
   indentLevel: 0
   conversationText:
@@ -986,19 +986,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
-    x: 140.79376
+    x: 139.23126
     y: 155.48444
-    width: 159.38766
+    width: 156.55731
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
   itemId: 18
   blockName: Gym_Ava_Day4_Init
-  description: 
+  description:
   eventHandler: {fileID: 4315812196614716747}
   commandList:
   - {fileID: 4315812196614716741}
@@ -1014,8 +1014,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   parentBlock: {fileID: 4315812196614716742}
   suppressBlockAutoSelect: 0
   waitForFrames: 1
@@ -1029,12 +1029,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 9
   indentLevel: 0
   text: Well, that doesn't make me feel any better.
-  description: 
+  description:
   targetBlock: {fileID: 4315812196614716737}
   hideIfVisited: 0
   interactable:
@@ -1054,19 +1054,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: 119.919975
     y: 275.00577
-    width: 213.26517
+    width: 209.0163
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
   itemId: 106
   blockName: Gym_Ava_Day4_ChoiceTree1
-  description: 
+  description:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 4315812196614716764}
@@ -1083,8 +1083,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 125
   indentLevel: 0
   conversationText:
@@ -1118,19 +1118,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: 379.03906
     y: 579.56537
-    width: 162.65295
+    width: 159.836
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 99
   blockName: Gym_Ava_Day4_B_1
-  description: 
+  description:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 7489991181334344789}
@@ -1146,8 +1146,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   scope: 0
   key: avaMeter
   value: 0
@@ -1161,8 +1161,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 128
   indentLevel: 0
   conversationText:
@@ -1196,12 +1196,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 121
   indentLevel: 0
   text: "I\u2019m going to win and continue my climb to the top\u2026"
-  description: 
+  description:
   targetBlock: {fileID: -2705383189482365944}
   hideIfVisited: 0
   interactable:
@@ -1221,12 +1221,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 113
   indentLevel: 0
   text: "you\u2019re going to see what I\u2019m really made of in [name] next week!"
-  description: 
+  description:
   targetBlock: {fileID: 1916889093293319190}
   hideIfVisited: 0
   interactable:
@@ -1246,8 +1246,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 96
   indentLevel: 0
   conversationText:
@@ -1275,15 +1275,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 133
   indentLevel: 0
   targetFlowchart: {fileID: 0}
   targetBlock: {fileID: 231853421553137109}
   startLabel:
     stringRef: {fileID: 0}
-    stringVal: 
+    stringVal:
   startIndex: 0
   callMode: 0
 --- !u!114 &7981190249885344745
@@ -1296,12 +1296,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 102
   indentLevel: 0
   text: "Ava, I know I\u2019m new around here, but\u2026"
-  description: 
+  description:
   targetBlock: {fileID: -2937948529830414886}
   hideIfVisited: 0
   interactable:
@@ -1321,19 +1321,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: 33.58482
     y: 807.3529
-    width: 162.65295
+    width: 159.836
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 99
   blockName: Gym_Ava_Day4_A_2
-  description: 
+  description:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: -3758533746990208741}
@@ -1349,12 +1349,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 94
   indentLevel: 0
   text: I mean, I guess...
-  description: 
+  description:
   targetBlock: {fileID: 806021995247470634}
   hideIfVisited: 0
   interactable:
@@ -1402,22 +1402,22 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 146.65102
+      value: 82.423676
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: -948.1092
+      value: -190.60403
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: zoom
-      value: 0.49000046
+      value: 0.6100004
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[5]
-      value: 
+      value:
       objectReference: {fileID: 6212637901726250499}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -1432,87 +1432,87 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 4315812196347337930}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 4315812196347337931}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 4753304321453265210}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
-      value: 
+      value:
       objectReference: {fileID: 2512662593382984374}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[3]
-      value: 
+      value:
       objectReference: {fileID: 1546943606295967505}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
-      value: 
-      objectReference: {fileID: -9164975669906012146}
+      value:
+      objectReference: {fileID: 231853421553137109}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[4]
-      value: 
+      value:
       objectReference: {fileID: 194864819732870689}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.data[2]
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.data[3]
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.data[4]
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.data[5]
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.data[6]
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.data[7]
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.data[8]
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.data[9]
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.data[10]
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -1522,12 +1522,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.data[2]
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 201062584, guid: 39b6d48ecdc0f9c45b967c6d8ac21694,
         type: 3}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,

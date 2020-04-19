@@ -1,5 +1,69 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9137471791920463887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7142254166805151624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  itemId: 19
+  indentLevel: 0
+  variable: {fileID: 3089901966612716432}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal:
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &320468227450384458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10,8 +74,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   scope: 0
   key: goToCombat
   value: 0
@@ -25,8 +89,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   parentBlock: {fileID: 3089901965806352925}
   suppressBlockAutoSelect: 0
   waitForFrames: 1
@@ -40,8 +104,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: 196.4176
@@ -52,11 +116,12 @@ MonoBehaviour:
   useCustomTint: 1
   itemId: 18
   blockName: JadeRoom_Ava_Day7_Init
-  description: 
+  description:
   eventHandler: {fileID: 3089901965806352912}
   commandList:
   - {fileID: 3089901965806352926}
-  - {fileID: 3089901965806352927}
+  - {fileID: -9137471791920463887}
+  - {fileID: 1055187332605564069}
   suppressAllAutoSelections: 0
 --- !u!114 &3089901965806352926
 MonoBehaviour:
@@ -68,38 +133,38 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 16
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: "Jade jadeNeutral left:\nAva avaAngry right: \u2026\r\nJade: Hey Ava\u2026.\r\nAva
-      avaHappy: Oooh, this is a nice place though!\r\nJade: Thanks, sorry it\u2019s
-      a bit messy. Want to tell me what happened though?\r\nAva avaAngry: Oh, yeah!
-      I do!\r\nAva: So, wrestling fans can be freaking stupid!\r\nAva: I was doing
-      some autographs and photos acting like a bad guy, right?\r\nAva: Then, I took
-      a photo with some dude, words were exchanged after the picture, and then he
-      swung at me!\r\nJade jadeAngry: Damn, really? What happened afterwards?\r\nAva:
-      I knocked him out!\r\nJade: Woah!\r\nAva: Then security made us both leave.
-      It\u2019s not my fault though! He threw first.\r\nJade: Yeah, it was just self-defense.\r\nAva:
-      Ugh, that got me so mad\u2026\r\nAva: Hopefully I don\u2019t get punished too
-      severely.\r\nJade: Punished? But it wasn\u2019t even your fault!\r\nAva avaNeutral:
-      Yeah, but AOW is liable for those kinds of things.\r\nAva avaHappy: Anyway,
-      it felt good to get that off my chest. Thanks for listening to me!\r\nJade
-      jadeNeutral: I see\u2026 That was a pretty fast turnaround.\r\nAva avaNeutral:
-      It is what it is, honestly.\r\nAva: Oh! Before I forget, you do know that you
-      have to show up to the show even if you\u2019re not having a match, right?
-      Be backstage just in case.\r\nJade: Yeah, they did that at my old promotion
-      too.\r\nAva: Honestly, I\u2019m pretty excited to just watch the main event.
-      I was told Knox is going to run a big promo after he wins.\r\nJade: I thought
-      he wasn\u2019t very good at them?\r\nAva: He isn\u2019t, but I bet he\u2019s
-      gotten better if they\u2019re giving him the last scene!\r\nJade: Nice. I\u2019m
-      going to get changed real quick and we can leave soon.\r\nAva: Sure. Do you
-      have any snacks by the way?\r\nJade: Yeah, I have\u2026 uh\u2026\r\nJade: A
-      lot of honey buns\u2026\r\nAva: Oh? A lot?\r\nJade: A lot.\r\nAva avaHappy:
-      Alright, I\u2019m going to have a few\r\nJade: Don\u2019t eat too many of them,
-      please.\r\nAva: Don\u2019t worry!\r"
+    stringVal: "Ava avaAngry: \u2026\r\nJade: Hey Ava\u2026.\r\nAva avaHappy: Oooh,
+      this is a nice place though!\r\nJade: Thanks, sorry it\u2019s a bit messy.
+      Want to tell me what happened though?\r\nAva avaAngry: Oh, yeah! I do!\r\nAva:
+      So, wrestling fans can be freaking stupid!\r\nAva: I was doing some autographs
+      and photos acting like a bad guy, right?\r\nAva: Then, I took a photo with
+      some dude, words were exchanged after the picture, and then he swung at me!\r\nJade
+      jadeAngry: Damn, really? What happened afterwards?\r\nAva: I knocked him out!\r\nJade:
+      Woah!\r\nAva: Then security made us both leave. It\u2019s not my fault though!
+      He threw first.\r\nJade: Yeah, it was just self-defense.\r\nAva: Ugh, that
+      got me so mad\u2026\r\nAva: Hopefully I don\u2019t get punished too severely.\r\nJade:
+      Punished? But it wasn\u2019t even your fault!\r\nAva avaNeutral: Yeah, but
+      AOW is liable for those kinds of things.\r\nAva avaHappy: Anyway, it felt good
+      to get that off my chest. Thanks for listening to me!\r\nJade jadeNeutral:
+      I see\u2026 That was a pretty fast turnaround.\r\nAva avaNeutral: It is what
+      it is, honestly.\r\nAva: Oh! Before I forget, you do know that you have to
+      show up to the show even if you\u2019re not having a match, right? Be backstage
+      just in case.\r\nJade: Yeah, they did that at my old promotion too.\r\nAva:
+      Honestly, I\u2019m pretty excited to just watch the main event. I was told
+      Knox is going to run a big promo after he wins.\r\nJade: I thought he wasn\u2019t
+      very good at them?\r\nAva: He isn\u2019t, but I bet he\u2019s gotten better
+      if they\u2019re giving him the last scene!\r\nJade: Nice. I\u2019m going to
+      get changed real quick and we can leave soon.\r\nAva: Sure. Do you have any
+      snacks by the way?\r\nJade: Yeah, I have\u2026 uh\u2026\r\nJade: A lot of honey
+      buns\u2026\r\nAva: Oh? A lot?\r\nJade: A lot.\r\nAva avaHappy: Alright, I\u2019ll
+      have a few\r\nJade: Don\u2019t eat too many of them, please.\r\nAva: Don\u2019t
+      worry!\r"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -112,27 +177,6 @@ MonoBehaviour:
   fadeWhenDone:
     booleanRef: {fileID: 0}
     booleanVal: 1
---- !u!114 &3089901965806352927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7142254166805151624}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 17
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 0}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
 --- !u!114 &3089901966612716432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,8 +187,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   scope: 1
   key: goToNext
   value: 0
@@ -158,8 +202,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   scope: 1
   key: nextDialogue
   value: Cafe_AvaDante_Day2
@@ -173,11 +217,75 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   scope: 0
   key: backGround
   value: enterName
+--- !u!114 &1055187332605564069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7142254166805151624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  itemId: 20
+  indentLevel: 0
+  variable: {fileID: 3089901966612716433}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: Arena_Ava_Day7
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!1001 &6872460148465908695
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -241,32 +349,32 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 3089901966612716433}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 3089901966612716432}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
-      value: 
-      objectReference: {fileID: 3089901965806352926}
+      value:
+      objectReference: {fileID: 1055187332605564069}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
-      value: 
+      value:
       objectReference: {fileID: 3736743545012137453}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[3]
-      value: 
+      value:
       objectReference: {fileID: 320468227450384458}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 3089901965806352925}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -276,12 +384,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.data[2]
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 201062584, guid: 39b6d48ecdc0f9c45b967c6d8ac21694,
         type: 3}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
