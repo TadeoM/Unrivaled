@@ -187,7 +187,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 106.47108
     y: 779.4191
-    width: 289.9997
+    width: 260.61206
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -280,7 +280,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 150.25296
     y: 637.5241
-    width: 213.9998
+    width: 196.93864
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -444,7 +444,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 530.22406
     y: 933.7073
-    width: 271.99976
+    width: 245.9182
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -610,7 +610,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 318.28986
     y: 1397.2834
-    width: 271.99976
+    width: 247.55084
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -701,7 +701,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 412.22012
     y: 470.84387
-    width: 259.99976
+    width: 236.12228
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -729,7 +729,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -99.035126
     y: 1401.2368
-    width: 271.99976
+    width: 247.55084
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -757,7 +757,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 117.14758
     y: 473.1309
-    width: 257.99976
+    width: 234.48962
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -785,7 +785,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -247.23264
     y: 940.94653
-    width: 271.99976
+    width: 245.9182
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -813,7 +813,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 135.94885
     y: 1080.107
-    width: 215.9998
+    width: 196.93864
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -879,7 +879,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 1
   key: nextDialogue
-  value: Combat_Ava_Day1
+  value: JadeRoom_Day4_Well
 --- !u!114 &3221129459005777472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -896,7 +896,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -198.9635
     y: 471.13913
-    width: 257.99976
+    width: 234.48962
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1037,7 +1037,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 140.79376
     y: 155.48444
-    width: 201.99982
+    width: 185.51009
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -1080,7 +1080,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 106.80523
     y: 347.13687
-    width: 287.9997
+    width: 260.61206
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -1469,7 +1469,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 80.31731
     y: 1240.957
-    width: 289.9997
+    width: 262.2447
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -1575,7 +1575,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -1585,17 +1585,17 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 450.49783
+      value: 142.91174
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: -217.15588
+      value: -677.8473
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: zoom
-      value: 0.40000045
+      value: 0.49000046
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -1696,6 +1696,11 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[10]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: colorCommands
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}

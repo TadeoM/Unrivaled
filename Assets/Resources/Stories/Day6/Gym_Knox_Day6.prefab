@@ -792,7 +792,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 1
   key: nextDialogue
-  value: JadeRoom_Ava_Day2
+  value: JadeRoom_Day7
 --- !u!114 &5825532573845687968
 MonoBehaviour:
   m_ObjectHideFlags: 0

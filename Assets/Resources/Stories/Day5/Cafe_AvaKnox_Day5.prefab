@@ -51,7 +51,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 411.27667
     y: 1161.8175
-    width: 182.50003
+    width: 173.43753
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -215,7 +215,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 296.95142
     y: 933.9659
-    width: 182.50003
+    width: 171.87503
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -445,7 +445,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 71.4373
     y: 511.43262
-    width: 216.25003
+    width: 204.68753
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -522,7 +522,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 1
   key: nextDialogue
-  value: JadeRoom_Ava_Day2
+  value: Streets_Day6
 --- !u!114 &3817117882792379973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -569,7 +569,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 302.2245
     y: 288.32983
-    width: 170.00003
+    width: 160.93753
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -673,7 +673,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 516.0577
     y: 508.89917
-    width: 216.25003
+    width: 204.68753
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -726,7 +726,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 261.8608
     y: 395.14807
-    width: 248.75005
+    width: 234.37505
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -755,7 +755,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 256.40634
     y: 773.3293
-    width: 250.00005
+    width: 234.37505
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -930,7 +930,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 78.48987
     y: 1162.8121
-    width: 228.75003
+    width: 215.62503
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -958,7 +958,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 252.76996
     y: 1049.693
-    width: 250.00005
+    width: 235.93755
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -986,7 +986,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 304.22418
     y: 612.1479
-    width: 181.25003
+    width: 171.87503
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1051,7 +1051,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -1117,7 +1117,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: -8454675875342283331}
+      objectReference: {fileID: 7258205973723534948}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size
