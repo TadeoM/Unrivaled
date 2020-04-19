@@ -870,6 +870,7 @@ public class CombatManager : MonoBehaviour
 
     void endMatch(bool playerWin)
     {
+        dialogueManager.flowchartVariables[dialogueManager.goToNextIndex] = true;
         matchState = MatchState.ending;
         endingText.GetComponent<MeshRenderer>().enabled = true;
 
