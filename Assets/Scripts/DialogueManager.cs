@@ -290,9 +290,15 @@ public class DialogueManager : MonoBehaviour
         Instantiate(newBackground);
     }
 
-    public void InitialStartLoad(string location)
+    public void LoadFlowchart(string location)
     {
+        GameObject checker = GameObject.FindGameObjectWithTag("flowchart");
+        if (checker != null)
+        {
+            Destroy(checker);
+        }
         Flowchart newDialogue = Resources.Load<Flowchart>(location);
+        Debug.Log(location);
         flowchart = Instantiate(newDialogue);
         GetVariables();
     }
