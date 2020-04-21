@@ -195,18 +195,35 @@ public class CombatManager : MonoBehaviour
         {
             case MatchState.decisionPhase:
                 if (playerState == WrestlerState.standing)
+                {
                     transitionToAnimation(animation.Idle, "Jade_Idle", true);
-                else if (playerState == WrestlerState.pinned)
-                    transitionToAnimation(animation.Pinned, "Jade_Pinned", true);
-                else
-                    transitionToAnimation(animation.Grounded, "Jade_Grounded", true);
 
-                if (enemyState == WrestlerState.standing)
-                    transitionToAnimation(animation.Idle, "Dante_Idle", false);
-                else if (enemyState == WrestlerState.pinned)
-                    transitionToAnimation(animation.Pinned, "Dante_Pinned", false);
+                    if (enemyState == WrestlerState.standing)
+                        transitionToAnimation(animation.Idle, "Dante_Idle", false);
+                    else if (enemyState == WrestlerState.pinned)
+                        transitionToAnimation(animation.Pinned, "Dante_Pinned", false);
+                    else
+                        transitionToAnimation(animation.Grounded, "Dante_Grounded", false);
+                }
+                else if (playerState == WrestlerState.pinned)
+                {
+                    transitionToAnimation(animation.Pinned, "Jade_Pinned", true);
+                    transitionToAnimation(animation.Pin, "Dante_Pin", false);
+                }
                 else
-                    transitionToAnimation(animation.Grounded, "Dante_Grounded", false);
+                {
+                    transitionToAnimation(animation.Grounded, "Jade_Grounded", true);
+                    
+                    if (enemyState == WrestlerState.standing)
+                        transitionToAnimation(animation.Idle, "Dante_Idle", false);
+                    else if (enemyState == WrestlerState.pinned)
+                        transitionToAnimation(animation.Pinned, "Dante_Pinned", false);
+                    else
+                        transitionToAnimation(animation.Grounded, "Dante_Grounded", false);
+                }
+
+
+                
                 //moving menu left and right logic
                 if (Input.GetKeyDown(KeyCode.A))
                 {
@@ -870,7 +887,11 @@ public class CombatManager : MonoBehaviour
 
     void endMatch(bool playerWin)
     {
-        dialogueManager.flowchartVariables[dialogueManager.goToNextIndex] = true;
+        //dialogueManager.flowchartVariables[dialogueManager.goToNextIndex]. true;
+        //Debug.Log(dialogueManager.flowchartVariables[dialogueManager.goToNextIndex]);
+        //Debug.Log(dialogueManager.flowchartVariables[dialogueManager.goToNextIndex]);
+        //Debug.Log(dialogueManager.flowchartVariables[dialogueManager.goToNextIndex].GetValue());
+
         matchState = MatchState.ending;
         endingText.GetComponent<MeshRenderer>().enabled = true;
 

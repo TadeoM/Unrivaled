@@ -59,7 +59,10 @@ public class DialogueManager : MonoBehaviour
     {
         if(flowchartVariables.Count > 0)
         {
+            
             var temp = flowchartVariables[goToNextIndex].GetValue();
+
+           
 
             if (temp is System.Boolean)
             {
@@ -197,8 +200,9 @@ public class DialogueManager : MonoBehaviour
         else
         {
             string folder = temp[2];
+            Destroy(flowchart.gameObject);
 
-            var newDialogue = Resources.Load<Flowchart>("Stories/" + folder + "/" + nextDialogueName);
+            Flowchart newDialogue = Resources.Load<Flowchart>("Stories/" + "Combat" + "/" + nextDialogueName);
 
             StartCoroutine(Fade(newDialogue, waitInCombat));
         }
