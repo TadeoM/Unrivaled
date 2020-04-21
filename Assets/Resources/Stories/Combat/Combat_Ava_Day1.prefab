@@ -69,7 +69,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 201062587, guid: f00e7bd22836d09478bb370a8a1d4209, type: 3}
       propertyPath: conversationText.stringVal
-      value: 'jade tadeo left: He swings with a mighty blow!
+      value: '??? left: He swings with a mighty blow!
 
 '
       objectReference: {fileID: 0}
@@ -81,12 +81,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -133,6 +133,11 @@ PrefabInstance:
       propertyPath: variables.Array.data[3]
       value: 
       objectReference: {fileID: 6834170537987160329}
+    - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: variables.Array.data[4]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size
@@ -162,6 +167,11 @@ PrefabInstance:
         type: 3}
       propertyPath: blockName
       value: Combat_Ava_Day1_Init
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: nodeRect.width
+      value: 175.00003
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549899373137, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
