@@ -139,16 +139,7 @@ public class DialogueManager : MonoBehaviour
             switch (flowchartVariables[i].Key)
             {
                 case "nextDialogue":
-                    
                     nextDialogueName = flowchartVariables[i].GetValue() as string;
-                    using (StreamWriter writer = new StreamWriter(Application.dataPath + "/Resources/Saves/save.txt"))
-                    {
-                        writer.WriteLine(System.DateTime.Now);
-                        writer.WriteLine(nextDialogueName);
-                        writer.WriteLine("Daily");
-                        writer.WriteLine("Relationship Meter names");
-
-                    }
                     break;
                 case "avaIncrease":
                     break;
@@ -177,6 +168,20 @@ public class DialogueManager : MonoBehaviour
                     break;
                 default:
                     break;
+            }
+        }
+
+        using (StreamWriter writer = new StreamWriter(Application.dataPath + "/Resources/Saves/save.txt"))
+        {
+            writer.WriteLine(System.DateTime.Now);
+            writer.WriteLine(nextDialogueName);
+            if (waitInCombat)
+            {
+                writer.WriteLine("Combat");
+            }
+            else
+            {
+                writer.WriteLine("Daily");
             }
         }
 
@@ -277,6 +282,7 @@ public class DialogueManager : MonoBehaviour
     {
         currBackground = newBG;
         GameObject newBackground = Resources.Load<GameObject>("Prefabs/" + currBackground);
+        Destroy(GameObject.FindGameObjectWithTag("background"));
         Instantiate(newBackground);
     }
 
