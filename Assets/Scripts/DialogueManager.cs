@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEditor;
 using UnityEngine.SceneManagement;
 using Fungus;
+using System;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -60,7 +61,7 @@ public class DialogueManager : MonoBehaviour
         if(flowchartVariables.Count > 0)
         {
             var temp = flowchartVariables[goToNextIndex].GetValue();
-            
+
             if (temp is System.Boolean)
             {
                 if (check && (bool)temp)
@@ -97,7 +98,6 @@ public class DialogueManager : MonoBehaviour
                             }
                         }
 
-
                         if (!replace)
                         {
                             organizedPlay += (string)temp;
@@ -113,7 +113,7 @@ public class DialogueManager : MonoBehaviour
                     }
                 }
             }
-           
+
             if(backgroundIndex > 0)
             {
                 temp = flowchartVariables[backgroundIndex].GetValue();
@@ -133,7 +133,7 @@ public class DialogueManager : MonoBehaviour
         check = false;
         nextDialogueName = "";
         bool waitInCombat = false;
-        // go through all variables and respective 
+        // go through all variables and respective
         for (int i = 0; i < flowchartVariables.Count; i++)
         {
             switch (flowchartVariables[i].Key)
@@ -145,7 +145,7 @@ public class DialogueManager : MonoBehaviour
                     break;
                 case "lutherIncrease":
                     break;
-                case "goToCombat": 
+                case "goToCombat":
                     if((bool)flowchartVariables[i].GetValue() == true)
                         waitInCombat = true;
                     break;
@@ -188,25 +188,14 @@ public class DialogueManager : MonoBehaviour
         SaveCharacters();
 
         // grab the day so that we can access the correct folder
-        string[] temp = nextDialogueName.Split('_');
+              string[] temp = nextDialogueName.Split('_');
 
-        if (waitInCombat == false)
-        {
-            string folder = temp[2];
-            Destroy(flowchart.gameObject);
+        string folder = temp[2];
+        Destroy(flowchart.gameObject);
 
-            Flowchart newDialogue = Resources.Load<Flowchart>("Stories/"+ folder + "/" + nextDialogueName);
-            StartCoroutine(Fade(newDialogue, waitInCombat));
-            
-        }
-        else
-        {
-            string folder = temp[2];
+        Flowchart newDialogue = Resources.Load<Flowchart>("Stories/" + folder + "/" + nextDialogueName);
 
-            var newDialogue = Resources.Load<Flowchart>("Stories/" + folder + "/" + nextDialogueName);
-
-            StartCoroutine(Fade(newDialogue, waitInCombat));          
-        }
+        StartCoroutine(Fade(newDialogue, waitInCombat));
     }
 
     /// <summary>
@@ -249,6 +238,8 @@ public class DialogueManager : MonoBehaviour
     void GetVariables()
     {
         flowchartVariables = flowchart.Variables;
+        opIndex = -1;
+
         for (int i = 0; i < flowchartVariables.Count; i++)
         {
             switch (flowchartVariables[i].Key)
@@ -288,13 +279,12 @@ public class DialogueManager : MonoBehaviour
 
     public void LoadFlowchart(string location)
     {
-        GameObject checker = GameObject.FindGameObjectWithTag("flowchart");
+        GameObject checker = GameObject.FindGameObjectWithTag("dialogue");
         if (checker != null)
         {
             Destroy(checker);
         }
         Flowchart newDialogue = Resources.Load<Flowchart>(location);
-        Debug.Log(location);
         flowchart = Instantiate(newDialogue);
         GetVariables();
     }
@@ -314,8 +304,10 @@ public class DialogueManager : MonoBehaviour
         if (toCombat)
         {
             flowchart = null;
-            SceneManager.LoadScene("CombatTestScene");
+            SceneManager.LoadScene("Combat");
             yield return null;
+            characters = GameObject.FindGameObjectWithTag("characters");
+            stage = GameObject.FindGameObjectWithTag("stage");
         }
 
         for (float ft = time; ft >= 0; ft -= 1 * Time.deltaTime)
@@ -334,7 +326,7 @@ public class DialogueManager : MonoBehaviour
             DontDestroyOnLoad(Instantiate(characters));
             DontDestroyOnLoad(Instantiate(stage));
         }
-    
+
         GetVariables();
         yield return null;
     }

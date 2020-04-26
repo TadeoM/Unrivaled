@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 27
   indentLevel: 0
   conversationText:
@@ -39,12 +39,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 24
   indentLevel: 0
   text: "Interesting, how\u2019s it done?"
-  description: 
+  description:
   targetBlock: {fileID: 152311262817349992}
   hideIfVisited: 0
   interactable:
@@ -64,15 +64,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 29
   indentLevel: 0
   targetFlowchart: {fileID: 0}
   targetBlock: {fileID: 3027879068201301764}
   startLabel:
     stringRef: {fileID: 0}
-    stringVal: 
+    stringVal:
   startIndex: 0
   callMode: 0
 --- !u!114 &152311262817349992
@@ -85,8 +85,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: 462.40622
@@ -97,10 +97,9 @@ MonoBehaviour:
   useCustomTint: 0
   itemId: 5
   blockName: Arean_Ava_Day6_RouteC
-  description: 
+  description:
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 1612795613671109198}
   - {fileID: -7740554872230331122}
   - {fileID: 3894927788997582857}
   suppressAllAutoSelections: 0
@@ -114,8 +113,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 20
   indentLevel: 0
   variable: {fileID: 2588640793509125259}
@@ -131,7 +130,7 @@ MonoBehaviour:
     floatVal: 0
   stringData:
     stringRef: {fileID: 0}
-    stringVal: 
+    stringVal:
   animatorData:
     animatorRef: {fileID: 0}
     animatorVal: {fileID: 0}
@@ -178,8 +177,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 21
   indentLevel: 0
   conversationText:
@@ -207,75 +206,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   scope: 0
   key: goToCombat
   value: 0
---- !u!114 &1612795613671109198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5291989801393696283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 26
-  indentLevel: 0
-  variable: {fileID: 2588640793509125259}
-  setOperator: 0
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 0
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &2588640793239633153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -286,8 +221,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: 16.951721
@@ -298,10 +233,9 @@ MonoBehaviour:
   useCustomTint: 0
   itemId: 23
   blockName: Arena_Ava_Day6_RouteA
-  description: 
+  description:
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 2588640793239633159}
   - {fileID: 343572595379232772}
   - {fileID: -120645498432597013}
   suppressAllAutoSelections: 0
@@ -315,12 +249,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 10
   indentLevel: 0
   text: "Oh! I\u2019ve actually heard of this one before!"
-  description: 
+  description:
   targetBlock: {fileID: 3027879068201301764}
   hideIfVisited: 0
   interactable:
@@ -340,15 +274,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 17
   indentLevel: 0
   targetFlowchart: {fileID: 0}
   targetBlock: {fileID: 2588640793239633181}
   startLabel:
     stringRef: {fileID: 0}
-    stringVal: 
+    stringVal:
   startIndex: 0
   callMode: 0
 --- !u!114 &2588640793239633157
@@ -361,8 +295,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 16
   indentLevel: 0
   conversationText:
@@ -405,8 +339,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: 245.86082
@@ -417,76 +351,12 @@ MonoBehaviour:
   useCustomTint: 1
   itemId: 18
   blockName: Arena_Ava_Day6
-  description: 
+  description:
   eventHandler: {fileID: 2588640793239633163}
   commandList:
   - {fileID: 2588640793239633157}
   - {fileID: 2588640793239633156}
   suppressAllAutoSelections: 0
---- !u!114 &2588640793239633159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5291989801393696283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 14
-  indentLevel: 0
-  variable: {fileID: 2588640793509125259}
-  setOperator: 0
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 0
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &2588640793239633163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -497,8 +367,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   parentBlock: {fileID: 2588640793239633158}
   suppressBlockAutoSelect: 0
   waitForFrames: 1
@@ -512,12 +382,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 9
   indentLevel: 0
   text: ' G*T*S? Not G*2*S?'
-  description: 
+  description:
   targetBlock: {fileID: 2588640793239633153}
   hideIfVisited: 0
   interactable:
@@ -537,8 +407,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: 212.76994
@@ -549,7 +419,7 @@ MonoBehaviour:
   useCustomTint: 1
   itemId: 1
   blockName: Arena_Ava_Day6_ChoiceTree1
-  description: 
+  description:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 2588640793239633180}
@@ -566,11 +436,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   scope: 1
   key: nextDialogue
-  value: JadeRoom_Ava_Day2
+  value: JadeRoom_Day7
 --- !u!114 &2588640793509125259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -581,8 +451,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   scope: 1
   key: goToNext
   value: 0
@@ -596,8 +466,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nodeRect:
     serializedVersion: 2
     x: 249.67899
@@ -608,11 +478,11 @@ MonoBehaviour:
   useCustomTint: 0
   itemId: 5
   blockName: Arena_Ava_Day6_1
-  description: 
+  description:
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 316503805376156283}
   - {fileID: 5555994215510412749}
+  - {fileID: 316503805376156283}
   suppressAllAutoSelections: 0
 --- !u!114 &3894927788997582857
 MonoBehaviour:
@@ -624,15 +494,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 28
   indentLevel: 0
   targetFlowchart: {fileID: 0}
   targetBlock: {fileID: 3027879068201301764}
   startLabel:
     stringRef: {fileID: 0}
-    stringVal: 
+    stringVal:
   startIndex: 0
   callMode: 0
 --- !u!114 &4239767505836944118
@@ -645,8 +515,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   scope: 0
   key: backGround
   value: enterName
@@ -660,8 +530,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   itemId: 22
   indentLevel: 0
   conversationText:
@@ -770,32 +640,32 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2588640793509125258}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 2588640793509125259}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
-      value: 
-      objectReference: {fileID: 2588640793239633157}
+      value:
+      objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
-      value: 
+      value:
       objectReference: {fileID: 4239767505836944118}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[3]
-      value: 
+      value:
       objectReference: {fileID: 972692059199878993}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: 2588640793239633158}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -805,12 +675,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.data[2]
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.data[1]
-      value: 
+      value:
       objectReference: {fileID: 201062584, guid: 39b6d48ecdc0f9c45b967c6d8ac21694,
         type: 3}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,

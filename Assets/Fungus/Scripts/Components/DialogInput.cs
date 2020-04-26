@@ -183,6 +183,12 @@ namespace Fungus
             }
         }
 
+        public ClickMode ClickModeAccessor
+        {
+            get { return clickMode; }
+            set { clickMode = value; }
+        }
+
         #endregion
     }
 }

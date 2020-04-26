@@ -16,7 +16,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 189.23499
     y: 622.4115
-    width: 139.30232
+    width: 136.04651
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -209,7 +209,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 163.67958
     y: 415.25125
-    width: 183.95348
+    width: 177.90698
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -253,7 +253,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 173.2344
     y: 309.84476
-    width: 163.48837
+    width: 156.97675
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -417,7 +417,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 319.89697
     y: 524.07367
-    width: 157.90698
+    width: 152.32558
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -475,7 +475,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 18.138103
     y: 529.20435
-    width: 163.48837
+    width: 156.97675
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -719,7 +719,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: -8076860237431048634}
+      objectReference: {fileID: 2954321264608040053}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.size

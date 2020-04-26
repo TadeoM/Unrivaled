@@ -47,7 +47,8 @@ public class Menu : MonoBehaviour
         yield return null;
 
         GameObject altemp = GameObject.FindGameObjectWithTag("diagManager");
-        DialogueManager dialogueManager = GameObject.FindGameObjectWithTag("diagManager").GetComponent<DialogueManager>();
+        DialogueManager dialogueManager = Resources.Load<DialogueManager>("Prefabs/DialogueManager");
+        dialogueManager = Instantiate(dialogueManager);
         dialogueManager.LoadFlowchart("Stories/" + folder + "/" + info[1]);
         // get characters
         GameObject charactersGameObject = GameObject.FindGameObjectWithTag("characters");
@@ -85,7 +86,8 @@ public class Menu : MonoBehaviour
         yield return null;
        
         GameObject altemp = GameObject.FindGameObjectWithTag("diagManager");
-        DialogueManager dialogueManager = GameObject.FindGameObjectWithTag("diagManager").GetComponent<DialogueManager>();
+        DialogueManager dialogueManager = Resources.Load<DialogueManager>("Prefabs/DialogueManager");
+        dialogueManager = Instantiate(dialogueManager);
         dialogueManager.LoadFlowchart("Stories/Day1/Gym_Ava_Day1");
         yield return null;
 
