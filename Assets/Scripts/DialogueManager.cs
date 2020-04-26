@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEditor;
 using UnityEngine.SceneManagement;
 using Fungus;
+using System;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -59,10 +60,7 @@ public class DialogueManager : MonoBehaviour
     {
         if(flowchartVariables.Count > 0)
         {
-            
             var temp = flowchartVariables[goToNextIndex].GetValue();
-
-           
 
             if (temp is System.Boolean)
             {
@@ -99,7 +97,6 @@ public class DialogueManager : MonoBehaviour
                                 }
                             }
                         }
-
 
                         if (!replace)
                         {
@@ -191,26 +188,14 @@ public class DialogueManager : MonoBehaviour
         SaveCharacters();
 
         // grab the day so that we can access the correct folder
-        string[] temp = nextDialogueName.Split('_');
+              string[] temp = nextDialogueName.Split('_');
 
-        if (waitInCombat == false)
-        {
-            string folder = temp[2];
-            Destroy(flowchart.gameObject);
+        string folder = temp[2];
+        Destroy(flowchart.gameObject);
 
-            Flowchart newDialogue = Resources.Load<Flowchart>("Stories/"+ folder + "/" + nextDialogueName);
-            StartCoroutine(Fade(newDialogue, waitInCombat));
+        Flowchart newDialogue = Resources.Load<Flowchart>("Stories/" + folder + "/" + nextDialogueName);
 
-        }
-        else
-        {
-            string folder = temp[2];
-            Destroy(flowchart.gameObject);
-
-            Flowchart newDialogue = Resources.Load<Flowchart>("Stories/" + "Combat" + "/" + nextDialogueName);
-
-            StartCoroutine(Fade(newDialogue, waitInCombat));
-        }
+        StartCoroutine(Fade(newDialogue, waitInCombat));
     }
 
     /// <summary>
@@ -253,6 +238,8 @@ public class DialogueManager : MonoBehaviour
     void GetVariables()
     {
         flowchartVariables = flowchart.Variables;
+        opIndex = -1;
+
         for (int i = 0; i < flowchartVariables.Count; i++)
         {
             switch (flowchartVariables[i].Key)
@@ -292,13 +279,12 @@ public class DialogueManager : MonoBehaviour
 
     public void LoadFlowchart(string location)
     {
-        GameObject checker = GameObject.FindGameObjectWithTag("flowchart");
+        GameObject checker = GameObject.FindGameObjectWithTag("dialogue");
         if (checker != null)
         {
             Destroy(checker);
         }
         Flowchart newDialogue = Resources.Load<Flowchart>(location);
-        Debug.Log(location);
         flowchart = Instantiate(newDialogue);
         GetVariables();
     }
@@ -318,8 +304,10 @@ public class DialogueManager : MonoBehaviour
         if (toCombat)
         {
             flowchart = null;
-            SceneManager.LoadScene("CombatTestScene");
+            SceneManager.LoadScene("Combat");
             yield return null;
+            characters = GameObject.FindGameObjectWithTag("characters");
+            stage = GameObject.FindGameObjectWithTag("stage");
         }
 
         for (float ft = time; ft >= 0; ft -= 1 * Time.deltaTime)

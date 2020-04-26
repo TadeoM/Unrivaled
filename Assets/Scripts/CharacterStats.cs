@@ -7,6 +7,8 @@ public class CharacterStats : MonoBehaviour
 {
     public int RelationshipMeter { get; set; } // a number between 0 and 100
     public string characterName;
+    public Font characterFont;
+    public Color characterColor;
 
     // Start is called before the first frame update
     void Start()

@@ -7,6 +7,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
+
 namespace Fungus
 {
     /// <summary>
@@ -56,6 +57,9 @@ namespace Fungus
                 storyTextAdapter.Text = value;
             }
         }
+
+        protected string fullStoryText;
+
         public virtual RectTransform StoryTextRectTrans
         {
             get
@@ -463,6 +467,7 @@ namespace Fungus
         /// <param name="onComplete">Callback to execute when writing and player input have finished.</param>
         public virtual void Say(string text, bool clearPrevious, bool waitForInput, bool fadeWhenDone, bool stopVoiceover, bool waitForVO, AudioClip voiceOverClip, Action onComplete)
         {
+            fullStoryText = text;
             StartCoroutine(DoSay(text, clearPrevious, waitForInput, fadeWhenDone, stopVoiceover, waitForVO, voiceOverClip, onComplete));
         }
 
@@ -547,6 +552,12 @@ namespace Fungus
             StopAllCoroutines();
         }
 
+        public string GetStoryText { get { return fullStoryText; } }
+        public string GetNameString { get { return NameText; } }
+        public void SetNameFont(Font font)
+        {
+            nameText.font = font;
+        }
         #endregion
     }
 }

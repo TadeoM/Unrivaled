@@ -814,6 +814,7 @@ namespace Fungus
         /// This property is true when the writer is waiting for user input to continue.
         /// </summary>
         public virtual bool IsWaitingForInput { get { return isWaitingForInput; } }
+        public bool IsWaitingInput { get { return IsWaitingForInput; } }
 
         /// <summary>
         /// Pauses the writer.
