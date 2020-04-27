@@ -202,7 +202,7 @@ public class DialogueManager : MonoBehaviour
             string folder = temp[2];
             Destroy(flowchart.gameObject);
 
-            Flowchart newDialogue = Resources.Load<Flowchart>("Stories/" + "Combat" + "/" + nextDialogueName);
+            Flowchart newDialogue = Resources.Load<Flowchart>("Stories/" + folder + "/" + nextDialogueName);
 
             StartCoroutine(Fade(newDialogue, waitInCombat));
         }
