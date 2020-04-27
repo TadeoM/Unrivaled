@@ -53,6 +53,7 @@ public class CombatManager : MonoBehaviour
     public bool isPlayerPinned;
     public bool isOpponentPinned;
     public string currentBattleID;
+    private bool initialPause;              // make sure we've initially paused the game
     private int currentCenterButton;        //place in the button array that the player is currently hovering
     private string playerMove;              //the action theplayer is going to take
     private string enemyMove;               //the action the opponent is going to take
@@ -86,7 +87,7 @@ public class CombatManager : MonoBehaviour
     private animationTiming oppoAnimTiming;
 
 
-    private DialogueManager dialogueManager;
+    public DialogueManager dialogueManager;
     //CONSTANTS
     #region Constants
 
@@ -142,6 +143,7 @@ public class CombatManager : MonoBehaviour
         tapCount = 0;
         turnCount = 0;
         audienceInterest = 15f;
+        initialPause = false;
 
         Player.maxStamina = 100f;
         Player.stamina = Player.maxStamina;
@@ -173,23 +175,28 @@ public class CombatManager : MonoBehaviour
 
         updateCombatUI();
         updatePossibleMoves();
-        try
-        {
-            dialogueManager = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
 
-        }
-        catch (System.Exception)
-        {
-
-            
-        }
+        
     }
 
 
     // Update is called once per frame
     void Update()
     {
+        if(dialogueManager == null && GameObject.FindGameObjectWithTag("diagManager") != null)
+        {
+            dialogueManager = GameObject.FindGameObjectWithTag("diagManager").GetComponent<DialogueManager>();
+        }
+        if(dialogueManager != null && dialogueManager.sayDialog != null && initialPause == false)
+        {
+            dialogueManager.Pause();
+            initialPause = true;
+        }
 
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            endMatch(false);
+        }
         //Main Combat Switch statement
         switch (matchState)
         {
@@ -248,6 +255,7 @@ public class CombatManager : MonoBehaviour
             case MatchState.loading:
                 break;
             case MatchState.ending:
+                
                 break;
             default:
                 break;
@@ -904,8 +912,7 @@ public class CombatManager : MonoBehaviour
             endingText.GetComponent<TextMesh>().text = "You Lose :((";
 
         }
-
-        
+        dialogueManager.Unpause();
     }
 
     void updateCombatUI()
@@ -916,4 +923,6 @@ public class CombatManager : MonoBehaviour
 
         TimerGO.GetComponent<Text>().text = (turnCount * 5)+"";
     }
+
+
 }
