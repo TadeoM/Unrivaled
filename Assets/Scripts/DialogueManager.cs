@@ -195,7 +195,10 @@ public class DialogueManager : MonoBehaviour
 
         Flowchart newDialogue = Resources.Load<Flowchart>("Stories/" + folder + "/" + nextDialogueName);
 
-        StartCoroutine(Fade(newDialogue, waitInCombat));
+            Flowchart newDialogue = Resources.Load<Flowchart>("Stories/" + folder + "/" + nextDialogueName);
+
+            StartCoroutine(Fade(newDialogue, waitInCombat));
+        }
     }
 
     /// <summary>

@@ -1109,7 +1109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier:
   scope: 1
   key: nextDialogue
-  value: Combat_Ava_Day2
+  value: Combat_Dante_Day3
 --- !u!114 &5041598568586989669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2058,7 +2058,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
-      value: 
+      value:
       objectReference: {fileID: -23887933422399951}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
