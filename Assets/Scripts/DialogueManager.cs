@@ -10,15 +10,17 @@ using System;
 public class DialogueManager : MonoBehaviour
 {
     public Flowchart flowchart;
-    public string nextDialogueName;
-    public int goToNextIndex;
-    public bool check = true;
+    public SayDialog sayDialog;
     public List<Variable> flowchartVariables;
     public GameObject characters;
     public GameObject stage;
     public GameObject fadeImage;
     public bool testing;
+    public string nextDialogueName;
+    public int goToNextIndex;
+    public bool check = true;
 
+    private GameObject diagCanvas;
     private int opIndex = -1;
     private int backgroundIndex = -1;
     private string currBackground;
@@ -39,7 +41,9 @@ public class DialogueManager : MonoBehaviour
         fadeImage = Resources.Load<GameObject>("Prefabs/transition");
         characters = GameObject.FindGameObjectWithTag("characters");
         stage = GameObject.FindGameObjectWithTag("stage");
+        diagCanvas = GameObject.Find("DiagCanvas");
 
+        // create folders for saving and planning
         if (!Directory.Exists(Application.dataPath + "/Resources/FightPlans/"))
         {
             Directory.CreateDirectory(Application.dataPath + "/Resources/FightPlans");
@@ -52,26 +56,32 @@ public class DialogueManager : MonoBehaviour
         {
             Directory.CreateDirectory(Application.dataPath + "/Resources/Saves");
         }
-        // at the end of using a flowchart, check the values of the relationship meter variables and add them to the corresponding character
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(flowchartVariables.Count > 0)
+        if (sayDialog == null)
+        {
+            sayDialog = SayDialog.GetSayDialog();
+        }
+        if (flowchartVariables.Count > 0)
         {
             var temp = flowchartVariables[goToNextIndex].GetValue();
 
+            // check if next dialogue needs to be loaded and load it if it should
             if (temp is System.Boolean)
             {
                 if (check && (bool)temp)
                     GetNextDialogue();
             }
+            // does this scene have the organizedPlay variable, if it does, check for changes.
             if(opIndex > 0)
             {
                 temp = flowchartVariables[opIndex].GetValue();
                 if (temp is System.String)
                 {
+                    // if there's different planning text, then 
                     if (prevPlanning != (string)temp)
                     {
                         prevPlanning = temp.ToString();
@@ -85,19 +95,16 @@ public class DialogueManager : MonoBehaviour
                             {
                                 string[] newAction = temp.ToString().Split(':');
                                 string[] inspectAction = actions[i].Split(':');
-                                if (newAction[1].Contains("max") && inspectAction[1].Contains("max"))
-                                {
-                                    replace = true;
-                                    actions[i] = temp.ToString();
-                                }
-                                else if (newAction[2].Contains(inspectAction[2]))
+                                // if this involes the max time, or the 
+                                if ((newAction[1].Contains("max") && inspectAction[1].Contains("max"))
+                                    || newAction[2].Contains(inspectAction[2]))
                                 {
                                     replace = true;
                                     actions[i] = temp.ToString();
                                 }
                             }
                         }
-
+                        
                         if (!replace)
                         {
                             organizedPlay += (string)temp;
@@ -114,9 +121,11 @@ public class DialogueManager : MonoBehaviour
                 }
             }
 
+            // if there is a background variable, check for changes
             if(backgroundIndex > 0)
             {
                 temp = flowchartVariables[backgroundIndex].GetValue();
+                // change background if there is a new background
                 if (temp.ToString() != currBackground)
                 {
                     ChangeBackground(temp.ToString());
@@ -128,7 +137,7 @@ public class DialogueManager : MonoBehaviour
     /// <summary>
     /// Grabs the information needed to go to the next dialogue or to combat and saves relationship increases.
     /// </summary>
-    void GetNextDialogue()
+    public void GetNextDialogue()
     {
         check = false;
         nextDialogueName = "";
@@ -171,6 +180,9 @@ public class DialogueManager : MonoBehaviour
             }
         }
 
+        SaveCharacters();
+
+        // write to the save file with needed info
         using (StreamWriter writer = new StreamWriter(Application.dataPath + "/Resources/Saves/save.txt"))
         {
             writer.WriteLine(System.DateTime.Now);
@@ -185,10 +197,8 @@ public class DialogueManager : MonoBehaviour
             }
         }
 
-        SaveCharacters();
-
         // grab the day so that we can access the correct folder
-              string[] temp = nextDialogueName.Split('_');
+        string[] temp = nextDialogueName.Split('_');
 
         string folder = temp[2];
         Destroy(flowchart.gameObject);
@@ -272,6 +282,15 @@ public class DialogueManager : MonoBehaviour
         check = true;
     }
 
+    public void Pause()
+    {
+        sayDialog.Pause(diagCanvas);
+    }
+    public void Unpause()
+    {
+        sayDialog.Unpause(diagCanvas);
+    }
+
     void ChangeBackground(string newBG)
     {
         currBackground = newBG;
@@ -292,11 +311,12 @@ public class DialogueManager : MonoBehaviour
         GetVariables();
     }
 
-    IEnumerator Fade(Flowchart newDialogue, bool toCombat)
+    public IEnumerator Fade(Flowchart newDialogue, bool toCombat)
     {
         var tempOBJ = Instantiate(fadeImage);
         DontDestroyOnLoad(tempOBJ);
         float time = 2;
+        // begin fading
         for (float ft = 0; ft <= time; ft += 1 * Time.deltaTime)
         {
             Color temp = tempOBJ.GetComponent<SpriteRenderer>().color;
@@ -304,6 +324,7 @@ public class DialogueManager : MonoBehaviour
             tempOBJ.GetComponent<SpriteRenderer>().color = temp;
             yield return null;
         }
+        // if going to combat, load the combat scene
         if (toCombat)
         {
             flowchart = null;
@@ -311,8 +332,20 @@ public class DialogueManager : MonoBehaviour
             yield return null;
             characters = GameObject.FindGameObjectWithTag("characters");
             stage = GameObject.FindGameObjectWithTag("stage");
+            diagCanvas = GameObject.Find("DiagCanvas");
         }
+        else
+        {
+            flowchart = null;
+            SceneManager.LoadScene("Daily");
+            yield return null;
+            characters = GameObject.FindGameObjectWithTag("characters");
+            stage = GameObject.FindGameObjectWithTag("stage");
+            diagCanvas = GameObject.Find("DiagCanvas");
+        }
+        flowchartVariables = new List<Variable>();
 
+        // unfade
         for (float ft = time; ft >= 0; ft -= 1 * Time.deltaTime)
         {
             Color temp = tempOBJ.GetComponent<SpriteRenderer>().color;

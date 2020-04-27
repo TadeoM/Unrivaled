@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 
@@ -14,6 +15,7 @@ public class DialogueStorage : MonoBehaviour
     RectTransform contentRect;
     public GameObject characters;
     public Dictionary<string, Font> characterFonts;
+    bool paused = false;
 
     List<string> allDialogueSeen = new List<string>();
     private void Start() 
@@ -27,42 +29,50 @@ public class DialogueStorage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(contentRect == null)
+        if(SceneManager.GetActiveScene().name != "Combat")
         {
-            contentRect = GameObject.Find("AllDialogueContent").GetComponent<RectTransform>();
-        }
-        if(sayTemp == null)
-        {
-            sayTemp = SayDialog.GetSayDialog();
-        }
-        if(scrollView == null) {
-            scrollView = GameObject.Find("AllDialogueView");
-            scrollView.SetActive(false);
-        }
-        if(characters == null)
-        {
-            characters = GameObject.Find("Characters");
-            CharacterStats[] allChar = characters.GetComponentsInChildren<CharacterStats>();
-            foreach (CharacterStats character in allChar)
+            if (contentRect == null)
             {
-                characterFonts.Add(character.name.ToLower(), character.characterFont);
-                Debug.Log(character.characterFont);
+                contentRect = GameObject.Find("AllDialogueContent").GetComponent<RectTransform>();
+            }
+            if (sayTemp == null)
+            {
+                sayTemp = SayDialog.GetSayDialog();
+            }
+            if (scrollView == null)
+            {
+                scrollView = GameObject.Find("AllDialogueView");
+                scrollView.SetActive(false);
+            }
+            if (characters == null)
+            {
+                characters = GameObject.Find("Characters");
+                CharacterStats[] allChar = characters.GetComponentsInChildren<CharacterStats>();
+                foreach (CharacterStats character in allChar)
+                {
+                    characterFonts.Add(character.name.ToLower(), character.characterFont);
+                    Debug.Log(character.characterFont);
+                }
             }
         }
+        
         InputCheck();
     }
 
     void InputCheck()
     {
-        if (sayTemp.GetComponent<Writer>().IsWaitingInput 
+        if (SceneManager.GetActiveScene().name != "Combat")
+        {
+            if (sayTemp.GetComponent<Writer>().IsWaitingInput
             && sayTemp.gameObject.GetComponent<DialogInput>().ClickModeAccessor == ClickMode.ClickAnywhere
             && (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)))
-        {
-            UpdateList();
-        }
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            ToggleDisplayList();
+            {
+                UpdateList();
+            }
+            if (Input.GetKeyDown(KeyCode.L))
+            {
+                ToggleDisplayList();
+            }
         }
     }
 

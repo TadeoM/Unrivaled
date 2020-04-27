@@ -832,6 +832,16 @@ namespace Fungus
             }
         }
 
+        public void Pause()
+        {
+            Paused = true;
+        }
+        public void Unpause()
+        {
+            Paused = false;
+        }
+
+
         /// <summary>
         /// Writes text using a typewriter effect to a UI text object.
         /// </summary>

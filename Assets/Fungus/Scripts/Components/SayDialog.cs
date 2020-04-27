@@ -541,6 +541,26 @@ namespace Fungus
             GetWriter().Stop();
         }
 
+        public void Pause(GameObject stageChild)
+        {
+            dialogCanvas.enabled = false;
+            stageChild.SetActive(false);
+            GetWriter().Pause();
+        }
+        public void Unpause(GameObject stageChild)
+        {
+            dialogCanvas.enabled = true;
+            Debug.Log("BEfore: " + stageChild.activeSelf);
+            stageChild.SetActive(true);
+            Debug.Log("After: " + stageChild.activeSelf);
+            GetWriter().Unpause();
+        }
+
+        public bool IsPaused()
+        {
+            return GetWriter().Paused;
+        }
+
         /// <summary>
         /// Stops writing text and clears the Say Dialog.
         /// </summary>
