@@ -48,6 +48,7 @@ public class DialogueStorage : MonoBehaviour
             {
                 characters = GameObject.Find("Characters");
                 CharacterStats[] allChar = characters.GetComponentsInChildren<CharacterStats>();
+                //characterFonts.Clear();
                 foreach (CharacterStats character in allChar)
                 {
                     characterFonts.Add(character.name.ToLower(), character.characterFont);
