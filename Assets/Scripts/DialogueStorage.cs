@@ -23,7 +23,6 @@ public class DialogueStorage : MonoBehaviour
         newText = Resources.Load<GameObject>("Prefabs/AllDialoguePhrase");
         newName= Resources.Load<GameObject>("Prefabs/AllDialogueName");
         characterFonts = new Dictionary<string, Font>();
-        Debug.Log(characterFonts);
     }
 
     // Update is called once per frame
@@ -52,7 +51,6 @@ public class DialogueStorage : MonoBehaviour
                 foreach (CharacterStats character in allChar)
                 {
                     characterFonts.Add(character.name.ToLower(), character.characterFont);
-                    Debug.Log(character.characterFont);
                 }
             }
         }

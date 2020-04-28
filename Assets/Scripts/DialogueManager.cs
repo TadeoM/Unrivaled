@@ -350,8 +350,7 @@ public class DialogueManager : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name == "Combat")
         {
-            flowchart = null;
-            SceneManager.LoadScene("Daily");
+            SceneManager.LoadScene(1);
             yield return null;
             characters = GameObject.FindGameObjectWithTag("characters");
             stage = GameObject.FindGameObjectWithTag("stage");
@@ -368,7 +367,7 @@ public class DialogueManager : MonoBehaviour
         }
         Destroy(tempOBJ);
         flowchart = Instantiate(newDialogue);
-        flowchart.StopAllBlocks();
+        //flowchart.StopAllBlocks();
         if (toCombat)
         {
             DontDestroyOnLoad(flowchart);

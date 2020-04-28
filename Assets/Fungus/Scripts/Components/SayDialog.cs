@@ -550,9 +550,8 @@ namespace Fungus
         public void Unpause(GameObject stageChild)
         {
             dialogCanvas.enabled = true;
-            Debug.Log("BEfore: " + stageChild.activeSelf);
             stageChild.SetActive(true);
-            Debug.Log("After: " + stageChild.activeSelf);
+
             GetWriter().Unpause();
         }
 
