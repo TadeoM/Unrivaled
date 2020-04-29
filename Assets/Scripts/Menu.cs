@@ -62,20 +62,19 @@ public class Menu : MonoBehaviour
                 while ((line = reader.ReadLine()) != null)
                 {
                     string[] lines = line.Split(':');
-                    int result = 0;
-                    bool success = int.TryParse(lines[1], out result);
+                    int result;
+                    int.TryParse(lines[1], out result);
 
                     character.RelationshipMeter = result;
                 }
             }
-            Debug.Log(character.characterName + ": " + character.RelationshipMeter);
         }
         // set their character meters to the correct values
 
 
         yield return null;
   
-        Destroy(this);
+        Destroy(this.gameObject);
         yield return null;
     }
 
@@ -85,13 +84,12 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene(1);
         yield return null;
        
-        GameObject altemp = GameObject.FindGameObjectWithTag("diagManager");
         DialogueManager dialogueManager = Resources.Load<DialogueManager>("Prefabs/DialogueManager");
         dialogueManager = Instantiate(dialogueManager);
         dialogueManager.LoadFlowchart("Stories/Day1/Gym_Ava_Day1");
         yield return null;
 
-        Destroy(this);
+        Destroy(this.gameObject);
         yield return null;
     }
 }
