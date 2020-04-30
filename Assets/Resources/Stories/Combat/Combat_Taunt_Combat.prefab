@@ -354,7 +354,7 @@ PrefabInstance:
     - target: {fileID: 4341892549899699295, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: m_Name
-      value: Combat_Sell_Combat
+      value: Combat_Taunt_Combat
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549899699295, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}

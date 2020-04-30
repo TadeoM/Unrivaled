@@ -204,9 +204,27 @@ public class DialogueManager : MonoBehaviour
             {
                 writer.WriteLine(System.DateTime.Now);
                 writer.WriteLine(nextDialogueName);
-                if (waitInCombat)
+                if (SceneManager.GetActiveScene().name.Contains("Combat"))
                 {
-                    writer.WriteLine("Combat");
+                    writer.WriteLine(SceneManager.GetActiveScene().name);
+                }
+                else if(waitInCombat)
+                {
+                    switch (nextDialogueName)
+                    {
+                        case "Combat_Ava_Day2":
+                            SceneManager.LoadScene("Combat_Dante");
+                            break;
+                        case "Combat_Ava_Day11":
+                            SceneManager.LoadScene("Combat_Ava");
+                            break;
+                        case "Combat_Ava_Day15":
+                            SceneManager.LoadScene("Combat_Cassandra");
+                            break;
+                        default:
+                            SceneManager.LoadScene("Combat_Dante");
+                            break;
+                    }
                 }
                 else
                 {
@@ -390,11 +408,26 @@ public class DialogueManager : MonoBehaviour
             tempOBJ.GetComponent<SpriteRenderer>().color = temp;
             yield return null;
         }
-        // if going to combat, load the combat scene
+        // if going to combat, load the combat scene1
         if (toCombat)
         {
             flowchart = null;
-            SceneManager.LoadScene("Combat");
+            switch (nextDialogueName)
+            {
+                case "Combat_Ava_Day2":
+                    SceneManager.LoadScene("Combat_Dante");
+                    break;
+                case "Combat_Ava_Day11":
+                    SceneManager.LoadScene("Combat_Ava");
+                    break;
+                case "Combat_Ava_Day15":
+                    SceneManager.LoadScene("Combat_Cassandra");
+                    break;
+                default:
+                    SceneManager.LoadScene("Combat_Dante");
+                    break;
+            }
+            
             yield return null;
             characters = GameObject.FindGameObjectWithTag("characters");
             stage = GameObject.FindGameObjectWithTag("stage");
