@@ -403,7 +403,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 0
   key: background
-  value: gymBackground
+  value: gym
 --- !u!1001 &7646934138285983604
 PrefabInstance:
   m_ObjectHideFlags: 0
