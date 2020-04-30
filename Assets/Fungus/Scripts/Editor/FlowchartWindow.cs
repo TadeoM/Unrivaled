@@ -705,61 +705,67 @@ namespace Fungus.EditorUtils
         {
             // TODO: avoid calling some of these methods in OnGUI because it should be possible
             // to only call them when the window is initialized or a new flowchart is selected, etc.
-            if (HandleFlowchartSelectionChange()) return;
+           
 
-            if (flowchart == null)
+            if (Event.current.type == EventType.Layout)
             {
-                GUILayout.Label("No Flowchart scene object selected");
-                return;
-            }
+                if (HandleFlowchartSelectionChange()) return;
 
-            DeleteBlocks();
-
-            UpdateFilteredBlocks();
-
-            HandleEarlyEvents(Event.current);
-
-            // Draw background color / drop shadow
-            if (Event.current.type == EventType.Repaint)
-            {
-                UnityEditor.Graphs.Styles.graphBackground.Draw(
-                    new Rect(0, 17, position.width, position.height - 17), false, false, false, false
-                );
-            }
-
-            // Draw blocks and connections
-            DrawFlowchartView(Event.current);
-
-            // Draw selection box
-            if (Event.current.type == EventType.Repaint)
-            {
-                if (startSelectionBoxPosition.x >= 0 && startSelectionBoxPosition.y >= 0)
+                if (flowchart == null)
                 {
-                    GUI.Box(selectionBox, "", GUI.skin.FindStyle("SelectionRect"));
+                    GUILayout.Label("No Flowchart scene object selected");
+                    return;
+                }
+
+                DeleteBlocks();
+
+                UpdateFilteredBlocks();
+
+                HandleEarlyEvents(Event.current);
+
+                // Draw background color / drop shadow
+                if (Event.current.type == EventType.Repaint)
+                {
+                    UnityEditor.Graphs.Styles.graphBackground.Draw(
+                        new Rect(0, 17, position.width, position.height - 17), false, false, false, false
+                    );
+                }
+
+                // Draw blocks and connections
+                DrawFlowchartView(Event.current);
+
+                // Draw selection box
+                if (Event.current.type == EventType.Repaint)
+                {
+                    if (startSelectionBoxPosition.x >= 0 && startSelectionBoxPosition.y >= 0)
+                    {
+                        GUI.Box(selectionBox, "", GUI.skin.FindStyle("SelectionRect"));
+                    }
+                }
+
+                // Draw toolbar, search popup, and variables window
+                //  need try catch here as we are now invalidating the drawer if the target flowchart
+                //      has changed which makes unity GUILayouts upset and this function appears to 
+                //      actually get called partially outside our control
+                try
+                {
+                    DrawOverlay(Event.current);
+                }
+                catch (Exception)
+                {
+                    //Debug.Log("Failed to draw overlay in some way");
+                }
+
+                // Handle events for custom GUI
+                base.HandleEvents(Event.current);
+
+                if (forceRepaintCount > 0)
+                {
+                    // Redraw on next frame to get crisp refresh rate
+                    Repaint();
                 }
             }
-
-            // Draw toolbar, search popup, and variables window
-            //  need try catch here as we are now invalidating the drawer if the target flowchart
-            //      has changed which makes unity GUILayouts upset and this function appears to 
-            //      actually get called partially outside our control
-            try
-            {
-                DrawOverlay(Event.current);
-            }
-            catch (Exception)
-            {
-                //Debug.Log("Failed to draw overlay in some way");
-            }
-
-            // Handle events for custom GUI
-            base.HandleEvents(Event.current);
-
-            if (forceRepaintCount > 0)
-            {
-                // Redraw on next frame to get crisp refresh rate
-                Repaint();
-            }
+            
         }
 
         protected virtual void DrawOverlay(Event e)

@@ -198,13 +198,17 @@ public class DialogueManager : MonoBehaviour
         SaveCharacters();
 
         // write to the save file with needed info
-        if(SceneManager.GetActiveScene().name != "Combat")
+        if(!SceneManager.GetActiveScene().name.Contains("Combat") || flowchart.name.Contains("MatchEnd"))
         {
             using (StreamWriter writer = new StreamWriter(Application.dataPath + "/Resources/Saves/save.txt"))
             {
                 writer.WriteLine(System.DateTime.Now);
                 writer.WriteLine(nextDialogueName);
-                if (SceneManager.GetActiveScene().name.Contains("Combat"))
+                if (flowchart.name.Contains("MatchEnd"))
+                {
+                    writer.WriteLine("Daily");
+                }
+                else if (SceneManager.GetActiveScene().name.Contains("Combat"))
                 {
                     writer.WriteLine(SceneManager.GetActiveScene().name);
                 }
@@ -293,19 +297,19 @@ public class DialogueManager : MonoBehaviour
 
         for (int i = 0; i < flowchartVariables.Count; i++)
         {
-            switch (flowchartVariables[i].Key)
+            switch (flowchartVariables[i].Key.ToLower())
             {
-                case "nextDialogue":
+                case "nextdialogue":
                     nextDialogueName = flowchartVariables[i].GetValue() as string;
                     break;
-                case "goToNext":
+                case "gotonext":
                     goToNextIndex = i;
                     break;
-                case "avaIncrease":
+                case "avaincrease":
                     break;
-                case "lutherIncrease":
+                case "lutherincrease":
                     break;
-                case "organizedPlay":
+                case "organizedplay":
                     organizedPlay = flowchartVariables[i].GetValue() as string;
                     opIndex = i;
                     break;
@@ -340,7 +344,7 @@ public class DialogueManager : MonoBehaviour
 
     void ChangeBackground(string newBG)
     {
-        if(SceneManager.GetActiveScene().name != "Combat")
+        if(!SceneManager.GetActiveScene().name.Contains("Combat"))
         {
             currBackground = newBG;
             GameObject newBackground = Resources.Load<GameObject>("Prefabs/" + currBackground);
@@ -433,9 +437,9 @@ public class DialogueManager : MonoBehaviour
             stage = GameObject.FindGameObjectWithTag("stage");
             diagCanvas = GameObject.Find("DiagCanvas");
         }
-        else if (SceneManager.GetActiveScene().name == "Combat")
+        else if (SceneManager.GetActiveScene().name.Contains("Combat"))
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("Daily");
             yield return null;
             characters = GameObject.FindGameObjectWithTag("characters");
             stage = GameObject.FindGameObjectWithTag("stage");

@@ -974,7 +974,7 @@ public class CombatManager : MonoBehaviour
 
         matchState = MatchState.ending;
         endingText.GetComponent<MeshRenderer>().enabled = true;
-
+        dialogueManager.Unpause();
         string nextDiag ="";
         switch (oppoRef.name)
         {
@@ -1012,7 +1012,7 @@ public class CombatManager : MonoBehaviour
 
         }
         dialogueManager.LoadFlowchart("MatchEnd", nextDiag, "Jade", oppoRef.name);
-        dialogueManager.Unpause();
+        
     }
 
     void updateCombatUI()

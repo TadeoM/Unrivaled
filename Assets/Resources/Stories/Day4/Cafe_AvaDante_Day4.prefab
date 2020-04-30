@@ -41,7 +41,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 128.44458
     y: 497.95648
-    width: 245.40971
+    width: 240.16382
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -241,7 +241,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 163.65924
     y: 639.99146
-    width: 182.45894
+    width: 177.86877
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -383,7 +383,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 119.919975
     y: 275.00577
-    width: 245.40971
+    width: 240.16382
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -490,7 +490,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 140.79376
     y: 155.48444
-    width: 191.63925
+    width: 187.70483
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -518,7 +518,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -108.79962
     y: 385.89328
-    width: 200.81958
+    width: 195.90155
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -645,7 +645,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 408.95068
     y: 392.80307
-    width: 200.81958
+    width: 195.90155
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -737,7 +737,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
