@@ -32,37 +32,18 @@ public class Ava : Fighter
     {
         if (turnCount <= 1)
         {
-            return "Taunt";
-        }
-        else if (turnCount > 1 && turnCount <= 5)
-        {
             return "Attack";
         }
-        else if (turnCount > 5 && turnCount < 8)
+        else if (turnCount ==2)
         {
-            //readInPlanning("Gym_Dante_Day2_Planning");
-            if (playerMove == "Block" || playerMove == "Sell" || playerMove == "Taunt")
-            {
-                return "Attack";
-            }
-            else if (playerMove == "Attack" || playerMove == "Finisher")
-            {
-                return "Block";
-            }
-            else if (playerMove == "Pin")
-            {
-                return "Pin";
-            }
-            else if (playerMove == "Recover")
-            {
-                return "Taunt";
-            }
-
+            return "Recover";
         }
-        else if (turnCount == 8)
+        else if (turnCount >= 3 &&playerState!="pinned"&&playerState!="grounded")
         {
             return "Finisher";
+
         }
+        
 
         if (playerState == "grounded")
             return "Pin";

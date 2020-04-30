@@ -1260,7 +1260,7 @@ GameObject:
   - component: {fileID: 958385846}
   - component: {fileID: 958385849}
   m_Layer: 0
-  m_Name: Dante
+  m_Name: Cassandra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1276,7 +1276,7 @@ Animator:
   m_GameObject: {fileID: 958385845}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d6de61bc6fe228248a817f2e93f21e01, type: 2}
+  m_Controller: {fileID: 9100000, guid: fa0b467dcfed02e45afc372cb19f5529, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1359,12 +1359,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 958385845}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 683ee94247d59144cb38c1b2d32e9da4, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ebe78e0507cd394a8ec9fc69eff3685, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fighterName: 
-  maxStamina: 0
-  currentStamina: 0
+  fighterName: Cassandra
+  maxStamina: 200
+  currentStamina: 140
 --- !u!1 &978876936
 GameObject:
   m_ObjectHideFlags: 0
@@ -1565,7 +1565,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 289e2a543d71438449028a8bbdd0599d, type: 3}
+  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
