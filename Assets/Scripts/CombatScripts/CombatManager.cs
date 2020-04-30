@@ -119,12 +119,12 @@ public class CombatManager : MonoBehaviour
 
     private Vector3[] buttonPlacement = {
                                         new Vector3(0f, -1.5f, -4.5f),
-                                        new Vector3(-1.75f, -1.25f, -1f),
+                                        new Vector3(-2f, -0.5f, -0.5f),
                                         new Vector3(-2f, -0.5f, -0.5f),
                                         new Vector3(-3f, 0.5f, 0f),
                                         new Vector3(3f, 0.5f, 0f),
                                         new Vector3(2f, -0.5f, -0.5f),
-                                        new Vector3(1.75f, -1.25f, -1f)
+                                        new Vector3(2f, -0.5f, -0.5f)
 
                                         };
 
@@ -206,7 +206,7 @@ public class CombatManager : MonoBehaviour
                 if (playerState == WrestlerState.standing)
                 {
                     transitionToAnimation(animation.Idle, "Jade_Idle", true);
-
+                    MenuCuffing();
                     if (enemyState == WrestlerState.standing)
                         transitionToAnimation(animation.Idle, oppoRefGO.name+"_Idle", false);
                     else if (enemyState == WrestlerState.pinned)
@@ -225,7 +225,7 @@ public class CombatManager : MonoBehaviour
                 {
                     transitionToAnimation(animation.Pinned, "Jade_Pin", true);
                     transitionToAnimation(animation.Pin, oppoRefGO.name + "_Pinned", false);
-                    playerRef.transform.position = pindPos;
+                    playerRef.transform.position = pinPos;
                     oppoRefGO.transform.position = pinnedPos;
                 }
                 else 
@@ -652,8 +652,16 @@ public class CombatManager : MonoBehaviour
                 Debug.LogWarning("No accurate player move");
                 break;
         }
+        try
+        {
+            dialogueManager.LoadFlowchart(playerMove, enemyMove, "jade", oppoRef.name.ToLower());
 
-        dialogueManager.LoadFlowchart(playerMove, enemyMove, "jade", oppoRef.name.ToLower());
+        }
+        catch (System.Exception)
+        {
+
+            
+        }
         if(enemyMove=="Get Up" &&enemyState == WrestlerState.grounded)
         {
             enemyState = WrestlerState.standing;
@@ -914,11 +922,47 @@ public class CombatManager : MonoBehaviour
 
         if (currentCenterButton == 0)
         {
-            foreach (var item in buttons)
+            for (int i = 0; i < buttons.Length; i++)
             {
-
+                if (i != 0 && i != buttons.Length - 1 && i != 1)
+                {
+                    buttons[i].SetActive(false);
+                }
+                else
+                {
+                    buttons[i].SetActive(true);
+                }
             }
         }
+        else if (currentCenterButton == buttons.Length - 1)
+        {
+            for (int i = 0; i < buttons.Length; i++)
+            {
+                if (i != 0 && i != buttons.Length - 1 && i != buttons.Length-2)
+                {
+                    buttons[i].SetActive(false);
+                }
+                else
+                {
+                    buttons[i].SetActive(true);
+                }
+            }
+        }
+        else
+        {
+            for (int i = 0; i < buttons.Length; i++)
+            {
+                if (i != currentCenterButton && i != currentCenterButton - 1 && i != currentCenterButton + 1)
+                {
+                    buttons[i].SetActive(false);
+                }
+                else
+                {
+                    buttons[i].SetActive(true);
+                }
+            }
+        }
+
     }
 
     void endMatch(bool playerWin)

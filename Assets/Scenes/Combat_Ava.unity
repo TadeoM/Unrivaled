@@ -1260,7 +1260,7 @@ GameObject:
   - component: {fileID: 958385846}
   - component: {fileID: 958385849}
   m_Layer: 0
-  m_Name: Dante
+  m_Name: Ava
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1276,7 +1276,7 @@ Animator:
   m_GameObject: {fileID: 958385845}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d6de61bc6fe228248a817f2e93f21e01, type: 2}
+  m_Controller: {fileID: 9100000, guid: fb34a6efad69d454aade8cf1f31b8e9a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1345,7 +1345,7 @@ Transform:
   m_GameObject: {fileID: 958385845}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.25, y: -2.2, z: 0}
-  m_LocalScale: {x: -2.9812167, y: 2.9812164, z: 2.9812164}
+  m_LocalScale: {x: -2.7848737, y: 2.7848735, z: 2.7848735}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
@@ -1362,9 +1362,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 683ee94247d59144cb38c1b2d32e9da4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fighterName: 
-  maxStamina: 0
-  currentStamina: 0
+  fighterName: Ava
+  maxStamina: 200
+  currentStamina: 180
 --- !u!1 &978876936
 GameObject:
   m_ObjectHideFlags: 0
@@ -1519,8 +1519,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1209417863}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.033, y: -0.06, z: -1}
-  m_LocalScale: {x: 0.014843332, y: 0.014843332, z: 1.4843333}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalScale: {x: 0.018709, y: 0.018709, z: 1.8709}
   m_Children: []
   m_Father: {fileID: 1023920703}
   m_RootOrder: 0
