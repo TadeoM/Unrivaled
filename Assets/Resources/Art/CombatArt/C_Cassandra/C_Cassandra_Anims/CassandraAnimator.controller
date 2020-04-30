@@ -7,7 +7,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Dante_Block
+  m_Name: Cassandra_Block
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -20,7 +20,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 56b007afdc1c1fc47bdfa772acc29e50, type: 2}
+  m_Motion: {fileID: 7400000, guid: 291a7f0865e4de844a015d5a1154d883, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -33,7 +33,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Dante_Idle
+  m_Name: Cassandra_Idle
   m_Speed: 0.67
   m_CycleOffset: 0
   m_Transitions: []
@@ -46,7 +46,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: a62c05c7ddc73074d9cd6f531ebbee10, type: 2}
+  m_Motion: {fileID: 7400000, guid: 2872897731a6b9f49b24c687a1d8cb37, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -59,7 +59,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Dante_Taunt
+  m_Name: Cassandra_Taunt
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -72,7 +72,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: e257193339f30d54b938d7aa263a5c3d, type: 2}
+  m_Motion: {fileID: 7400000, guid: 482bf50417b199b49af95d733b702008, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -111,7 +111,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Dante_Pinned
+  m_Name: Cassandra_Pinned
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -124,7 +124,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: d67f7c7955e3c654cbfa91bc54b333a0, type: 2}
+  m_Motion: {fileID: 7400000, guid: 78e808add1834f14c9e2bfe2236e7cd6, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -137,7 +137,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Dante_Pin
+  m_Name: Cassandra_Pin
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -150,7 +150,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 52ef9f08178205d46905c1fc215b91f6, type: 2}
+  m_Motion: {fileID: 7400000, guid: 3b713b96ed9d22e40846741067bd5e0b, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -163,7 +163,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Dante_Finisher
+  m_Name: Cassandra_Finisher
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -176,7 +176,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: d1587b0acff31c841bdfed8c5416b25a, type: 2}
+  m_Motion: {fileID: 7400000, guid: 173bafe670c9a894cb6d85552d20b3eb, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -211,7 +211,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Jade_Recover
+  m_Name: Cassandra_Recover
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -224,7 +224,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 432553936300d6a449aa07a1a8b613c6, type: 2}
+  m_Motion: {fileID: 7400000, guid: 0001fe34c9b7c884ba9ca0a506401c7c, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -237,7 +237,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Dante_Grounded
+  m_Name: Cassandra_Grounded
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -250,7 +250,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 6cc624dbf7f638f4a9fd6a8874b21bb7, type: 2}
+  m_Motion: {fileID: 7400000, guid: 42f5c1a0d0d821544be82767d880aeac, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -263,7 +263,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Jade_Damage
+  m_Name: Cassandra_Damage
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -276,7 +276,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 4933a0ad3a3208244976edb183d30df8, type: 2}
+  m_Motion: {fileID: 7400000, guid: c5d57b6b33468e94cb1fa2b452ed25a5, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -289,7 +289,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Dante_Sell
+  m_Name: Cassandra_Sell
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -302,7 +302,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 01b21b2e3cd50d14e9a26372b46f6d4d, type: 2}
+  m_Motion: {fileID: 7400000, guid: d4372dbaca3f288449044fbbdc14ec8c, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -315,7 +315,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Dante_Hit
+  m_Name: Cassandra_Hit
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -328,7 +328,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: b5175331ffb8ef84883f2614c84c3087, type: 2}
+  m_Motion: {fileID: 7400000, guid: 4b1eed20a47226d48876c6e18f8377fb, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
