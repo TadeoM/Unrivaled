@@ -29,7 +29,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 0
   key: combatTextOG
-  value: 'Jade empty: [attacker] does a thing [defender]'
+  value: 'Jade empty: [attacker] manages to grab [defender]!'
 --- !u!114 &5139426570401589814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -354,7 +354,7 @@ PrefabInstance:
     - target: {fileID: 4341892549899699295, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: m_Name
-      value: Combat_Sell_Combat
+      value: Combat_Hold_Combat
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549899699295, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}

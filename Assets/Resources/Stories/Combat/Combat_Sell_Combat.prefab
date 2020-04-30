@@ -29,7 +29,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 0
   key: combatTextOG
-  value: 'Jade empty: [attacker] does a thing [defender]'
+  value: 'Jade empty: [attacker] really looks like they''re taking a beating from
+    [defender]!'
 --- !u!114 &5139426570401589814
 MonoBehaviour:
   m_ObjectHideFlags: 0

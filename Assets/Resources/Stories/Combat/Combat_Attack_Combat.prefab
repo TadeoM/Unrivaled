@@ -29,7 +29,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 0
   key: combatTextOG
-  value: 'Jade empty: [attacker] does a thing [defender]'
+  value: 'Jade empty: [attacker] punches [defender]!'
 --- !u!114 &5139426570401589814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,7 +179,7 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -194,12 +194,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 730.97205
+      value: 106.64779
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: 125.48747
+      value: 128.19017
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -354,7 +354,7 @@ PrefabInstance:
     - target: {fileID: 4341892549899699295, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: m_Name
-      value: Combat_Sell_Combat
+      value: Combat_Attack_Combat
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549899699295, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}

@@ -93,7 +93,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 0
   key: combatTextOG
-  value: 'empty: [attacker] defeated [defender]'
+  value: 'empty: [attacker] defeated [defender]!'
 --- !u!114 &6834170537987160329
 MonoBehaviour:
   m_ObjectHideFlags: 0

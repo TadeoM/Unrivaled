@@ -28,7 +28,7 @@ public class DialogueStorage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(SceneManager.GetActiveScene().name != "Combat")
+        if(!SceneManager.GetActiveScene().name.Contains("Combat"))
         {
             if (contentRect == null)
             {
@@ -53,25 +53,21 @@ public class DialogueStorage : MonoBehaviour
                     characterFonts.Add(character.name.ToLower(), character.characterFont);
                 }
             }
+            InputCheck();
         }
-        
-        InputCheck();
     }
 
     void InputCheck()
     {
-        if (SceneManager.GetActiveScene().name != "Combat")
+        if (sayTemp.GetComponent<Writer>().IsWaitingInput
+        && sayTemp.gameObject.GetComponent<DialogInput>().ClickModeAccessor == ClickMode.ClickAnywhere
+        && (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)))
         {
-            if (sayTemp.GetComponent<Writer>().IsWaitingInput
-            && sayTemp.gameObject.GetComponent<DialogInput>().ClickModeAccessor == ClickMode.ClickAnywhere
-            && (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)))
-            {
-                UpdateList();
-            }
-            if (Input.GetKeyDown(KeyCode.L))
-            {
-                ToggleDisplayList();
-            }
+            UpdateList();
+        }
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            ToggleDisplayList();
         }
     }
 
