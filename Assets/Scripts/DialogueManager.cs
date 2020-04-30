@@ -394,7 +394,22 @@ public class DialogueManager : MonoBehaviour
         if (toCombat)
         {
             flowchart = null;
-            SceneManager.LoadScene("Combat");
+            switch (nextDialogueName)
+            {
+                case "Combat_Ava_Day2":
+                    SceneManager.LoadScene("Combat_Dante");
+                    break;
+                case "Combat_Ava_Day11":
+                    SceneManager.LoadScene("Combat_Ava");
+                    break;
+                case "Combat_Ava_Day15":
+                    SceneManager.LoadScene("Combat_Cassandra");
+                    break;
+                default:
+                    SceneManager.LoadScene("Combat_Dante");
+                    break;
+            }
+            
             yield return null;
             characters = GameObject.FindGameObjectWithTag("characters");
             stage = GameObject.FindGameObjectWithTag("stage");

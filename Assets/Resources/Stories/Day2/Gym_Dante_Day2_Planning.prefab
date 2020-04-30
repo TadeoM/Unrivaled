@@ -666,6 +666,35 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
+--- !u!114 &-1672998057119981545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8662201529759679751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 95
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: 'Jade jadeNeutral left:'
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
 --- !u!114 &-934896304315779823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1155,7 +1184,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 127.67902
-    y: 162.04181
+    y: 158.47038
     width: 210
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
@@ -1165,6 +1194,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 5041598569391239653}
   commandList:
+  - {fileID: 0}
+  - {fileID: -1672998057119981545}
   - {fileID: 5041598569391239659}
   - {fileID: 5041598569391239658}
   suppressAllAutoSelections: 0
@@ -2018,12 +2049,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.x
-      value: 285.3131
+      value: 253.17027
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: scrollPos.y
-      value: 206.4395
+      value: 224.29657
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -2044,7 +2075,7 @@ PrefabInstance:
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 5041598569391239659}
+      objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
