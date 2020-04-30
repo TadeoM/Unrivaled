@@ -60,7 +60,10 @@ public class CombatManager : MonoBehaviour
     private float tempTimer;                //temp being used
     private Vector3 startingPlayerPos;
     private Vector3 startingOppoPos;
-
+    private Vector3 pinnedPos;
+    private Vector3 pinPos;
+    private Vector3 middleLeft;
+    private Vector3 middleRight;
 
 
     //animation
@@ -871,7 +874,7 @@ public class CombatManager : MonoBehaviour
         }
     }
 
-
+    
 
     void transitionToAnimation(animation anim, string newAnimationName, bool isPlayer,int frameDelay)
     {
@@ -893,6 +896,23 @@ public class CombatManager : MonoBehaviour
         }
     }
 
+    //stops displaying all combat menu things except for the currently select and one in each direction
+    void MenuCuffing()
+    {
+        if (matchState != MatchState.decisionPhase)
+        {
+            return;
+        }
+
+        if (currentCenterButton == 0)
+        {
+            foreach (var item in buttons)
+            {
+
+            }
+        }
+    }
+
     void endMatch(bool playerWin)
     {
         //dialogueManager.flowchartVariables[dialogueManager.goToNextIndex]. true;
@@ -905,11 +925,11 @@ public class CombatManager : MonoBehaviour
 
         if (playerWin)
         {
-            endingText.GetComponent<TextMesh>().text = "You win!!";
+            endingText.GetComponent<TextMesh>().text = "Jade wins!!";
         }
         else
         {
-            endingText.GetComponent<TextMesh>().text = "You Lose :((";
+            endingText.GetComponent<TextMesh>().text = oppoRefGO.name +" wins!!";
 
         }
         dialogueManager.Unpause();
@@ -921,7 +941,7 @@ public class CombatManager : MonoBehaviour
         staminaMeterFill.transform.localScale = new Vector3(Player.stamina / Player.maxStamina, staminaMeterFill.transform.localScale.y, 1f);
         audienceMeterFill.transform.localScale = new Vector3( (audienceInterest/100f)*audienceMeterFillStartingXScale , audienceMeterFill.transform.localScale.y, 1f);
 
-        TimerGO.GetComponent<Text>().text = (turnCount * 5)+"";
+        TimerGO.GetComponent<TextMesh>().text = (turnCount * 5)+"";
     }
 
 
