@@ -1260,7 +1260,7 @@ GameObject:
   - component: {fileID: 958385846}
   - component: {fileID: 958385849}
   m_Layer: 0
-  m_Name: Dante
+  m_Name: Knox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1276,7 +1276,7 @@ Animator:
   m_GameObject: {fileID: 958385845}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d6de61bc6fe228248a817f2e93f21e01, type: 2}
+  m_Controller: {fileID: 9100000, guid: 54c165bc6220ab64d86fd43065807195, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1344,7 +1344,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 958385845}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.24, y: -2.23, z: 0}
+  m_LocalPosition: {x: 3.25, y: -2.2, z: 0}
   m_LocalScale: {x: -2.9812167, y: 2.9812164, z: 2.9812164}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1390,7 +1390,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 978876936}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.78, y: -2.58, z: 0}
+  m_LocalPosition: {x: -3.75, y: -2.58, z: 0}
   m_LocalScale: {x: -0.5259956, y: 0.5259956, z: 0.5259956}
   m_Children:
   - {fileID: 1411501030}
@@ -1565,7 +1565,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 289e2a543d71438449028a8bbdd0599d, type: 3}
+  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2122,7 +2122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1943999428848982953, guid: 39b6d48ecdc0f9c45b967c6d8ac21694,
+  selectedFlowchart: {fileID: 1421802807407496942, guid: 194e64b35aacac64aacb954026e5b67f,
     type: 3}
 --- !u!4 &2145134250
 Transform:
