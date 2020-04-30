@@ -20,7 +20,7 @@ public class DialogueManager : MonoBehaviour
     public int goToNextIndex;
     public bool check = true;
 
-    private GameObject diagCanvas;
+    public GameObject diagCanvas;
     private int opIndex = -1;
     private int backgroundIndex = -1;
     private string currBackground;
@@ -61,12 +61,16 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (flowchart == null)
+            return;
         if (sayDialog == null)
         {
             sayDialog = SayDialog.GetSayDialog();
         }
+        //Debug.Log("HEllo");
         if (flowchartVariables.Count > 0)
         {
+            //Debug.Log(flowchartVariables[0]);
             if(flowchartVariables[0] != null)
             {
                 var temp = flowchartVariables[goToNextIndex].GetValue();
@@ -74,6 +78,7 @@ public class DialogueManager : MonoBehaviour
                 // check if next dialogue needs to be loaded and load it if it should
                 if (temp is System.Boolean)
                 {
+                    //Debug.Log((bool)temp);
                     if (check && (bool)temp)
                         GetNextDialogue();
                 }
@@ -143,6 +148,12 @@ public class DialogueManager : MonoBehaviour
     /// </summary>
     public void GetNextDialogue()
     {
+        if (nextDialogueName.Contains("none"))
+        {
+            Destroy(flowchart.gameObject);
+            return;
+        }
+            
         check = false;
         nextDialogueName = "";
         bool waitInCombat = false;
@@ -187,29 +198,37 @@ public class DialogueManager : MonoBehaviour
         SaveCharacters();
 
         // write to the save file with needed info
-        using (StreamWriter writer = new StreamWriter(Application.dataPath + "/Resources/Saves/save.txt"))
+        if(SceneManager.GetActiveScene().name != "Combat")
         {
-            writer.WriteLine(System.DateTime.Now);
-            writer.WriteLine(nextDialogueName);
-            if (waitInCombat)
+            using (StreamWriter writer = new StreamWriter(Application.dataPath + "/Resources/Saves/save.txt"))
             {
-                writer.WriteLine("Combat");
-            }
-            else
-            {
-                writer.WriteLine("Daily");
+                writer.WriteLine(System.DateTime.Now);
+                writer.WriteLine(nextDialogueName);
+                if (waitInCombat)
+                {
+                    writer.WriteLine("Combat");
+                }
+                else
+                {
+                    writer.WriteLine("Daily");
+                }
             }
         }
 
         // grab the day so that we can access the correct folder
         string[] temp = nextDialogueName.Split('_');
-
-        string folder = temp[2];
+        string folder;
+        folder = temp[2];
         Destroy(flowchart.gameObject);
-
         Flowchart newDialogue = Resources.Load<Flowchart>("Stories/" + folder + "/" + nextDialogueName);
-
-        StartCoroutine(Fade(newDialogue, waitInCombat));
+        if (folder != "Combat")
+        {
+            StartCoroutine(Fade(newDialogue, waitInCombat));
+        }
+        else
+        {
+            LoadFlowchart("Stories/" + folder + "/" + nextDialogueName);
+        }
     }
 
     /// <summary>
@@ -259,6 +278,7 @@ public class DialogueManager : MonoBehaviour
             switch (flowchartVariables[i].Key)
             {
                 case "nextDialogue":
+                    nextDialogueName = flowchartVariables[i].GetValue() as string;
                     break;
                 case "goToNext":
                     goToNextIndex = i;
@@ -320,9 +340,41 @@ public class DialogueManager : MonoBehaviour
         }
         Flowchart newDialogue = Resources.Load<Flowchart>(location);
         flowchart = Instantiate(newDialogue);
+
         GetVariables();
     }
-    void LoadFlowchart(Flowchart flowchart) { 
+    public void LoadFlowchart(string attackType, string retaliation, string jade, string opponent)
+    {
+        GameObject checker = GameObject.FindGameObjectWithTag("dialogue");
+        if (checker != null)
+        {
+            Destroy(checker.gameObject);
+        }
+        // grab the first attack to be shown and change to the correct attacker and defender
+        Flowchart newDialogue = Resources.Load<Flowchart>("Stories/Combat/Combat_" + attackType + "_Combat");
+        string stringToChange = newDialogue.GetStringVariable("combatTextOG");
+        string changedString = stringToChange.Replace("[attacker]", jade);
+        changedString = changedString.Replace("[defender]", opponent);
+
+        newDialogue.SetStringVariable("combatTextChanged", changedString);
+
+        Pause();
+
+        flowchart = Instantiate(newDialogue);
+        flowchart.SetStringVariable("nextDialogue", retaliation);
+        if (!retaliation.Contains("Day"))
+        {
+            flowchart.SetStringVariable("nextDialogue", "Combat_" + retaliation + "_Combat");
+            // change the next dialogue's text to have the correct attacker and defender
+            Flowchart nextDialogue = Resources.Load<Flowchart>("Stories/Combat/Combat_" + retaliation + "_Combat");
+            stringToChange = nextDialogue.GetStringVariable("combatTextOG");
+            changedString = stringToChange.Replace("[attacker]", opponent);
+            changedString = changedString.Replace("[defender]", jade);
+
+            nextDialogue.SetStringVariable("combatTextChanged", changedString);
+        }
+        Unpause();
+        GetVariables();
     }
 
     public IEnumerator Fade(Flowchart newDialogue, bool toCombat)
@@ -356,7 +408,11 @@ public class DialogueManager : MonoBehaviour
             stage = GameObject.FindGameObjectWithTag("stage");
             diagCanvas = GameObject.Find("DiagCanvas");
         }
-        flowchartVariables = new List<Variable>();
+        flowchartVariables.Clear();
+        flowchart = Instantiate(newDialogue);
+        GetVariables();
+        sayDialog = SayDialog.GetSayDialog();
+        Pause();
         // unfade
         for (float ft = time; ft >= 0; ft -= 1 * Time.deltaTime)
         {
@@ -366,7 +422,7 @@ public class DialogueManager : MonoBehaviour
             yield return null;
         }
         Destroy(tempOBJ);
-        flowchart = Instantiate(newDialogue);
+        
         //flowchart.StopAllBlocks();
         if (toCombat)
         {
@@ -376,6 +432,8 @@ public class DialogueManager : MonoBehaviour
         }
 
         GetVariables();
+        yield return null;
+        Unpause();
         yield return null;
     }
 }

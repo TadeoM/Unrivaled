@@ -93,7 +93,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 0
   key: backGround
-  value: enterName
+  value: gym
 --- !u!114 &8247520256406571546
 MonoBehaviour:
   m_ObjectHideFlags: 0

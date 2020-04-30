@@ -37,7 +37,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 213.31085
     y: 531.2682
-    width: 168.65863
+    width: 171.0662
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -223,7 +223,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -0.77851105
     y: 532.64374
-    width: 168.65863
+    width: 171.0662
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -291,7 +291,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 211.06763
     y: 297.8069
-    width: 165.21925
+    width: 166.93893
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -420,7 +420,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 151.64175
     y: 415.25125
-    width: 240.88562
+    width: 243.98106
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -512,7 +512,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 0
   key: backGround
-  value: enterName
+  value: gym
 --- !u!114 &5114295127068147955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -560,7 +560,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 207.55223
     y: 644.0682
-    width: 175.53738
+    width: 177.94496
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -613,7 +613,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 415.63486
     y: 527.1293
-    width: 168.65863
+    width: 172.44196
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9205339284991474188}
   - component: {fileID: 9205339284991474189}
   m_Layer: 0
-  m_Name: Background
+  m_Name: gym
   m_TagString: background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70,7 +70,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: 2640afb95a4fd5f4c8820218ddb72e79, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 55538bc7353899a4c9fed6f3788c574c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

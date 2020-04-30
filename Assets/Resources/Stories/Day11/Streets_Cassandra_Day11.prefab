@@ -247,7 +247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 0
   key: backGround
-  value: enterName
+  value: street
 --- !u!114 &2920211641532464199
 MonoBehaviour:
   m_ObjectHideFlags: 0

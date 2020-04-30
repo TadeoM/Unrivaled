@@ -44,7 +44,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 1
   key: nextDialogue
-  value: JadeRoom_Ava_Day1
+  value: none
 --- !u!114 &8089829103360529107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,14 +69,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 201062587, guid: f00e7bd22836d09478bb370a8a1d4209, type: 3}
       propertyPath: conversationText.stringVal
-      value: 'jade tadeo left: He swings with a mighty blow!
-
-'
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -163,6 +161,16 @@ PrefabInstance:
       propertyPath: blockName
       value: Combat_Ava_Day1_Init
       objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: nodeRect.width
+      value: 182.63162
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
+        type: 3}
+      propertyPath: commandList.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4341892549899373137, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -221,14 +229,15 @@ PrefabInstance:
     - target: {fileID: 4341892549899699295, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: m_Name
-      value: Combat_Ava_Day1
+      value: Combat_Ava_Day2
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549899699295, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: m_TagString
       value: dialogue
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 201062587, guid: f00e7bd22836d09478bb370a8a1d4209, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f00e7bd22836d09478bb370a8a1d4209, type: 3}
 --- !u!1 &5711990266591913978 stripped
 GameObject:

@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   itemId: 33
   indentLevel: 0
   conversationText:
@@ -45,19 +45,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
     x: 411.27667
     y: 1161.8175
-    width: 173.43753
+    width: 182.50003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 23
   blockName: Cafe_AvaKnox_Day5_3
-  description:
+  description: 
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 5895897249900497295}
@@ -73,12 +73,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   itemId: 37
   indentLevel: 0
   text: What did you think?
-  description:
+  description: 
   targetBlock: {fileID: -8454675875342283331}
   hideIfVisited: 0
   interactable:
@@ -98,8 +98,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   itemId: 26
   indentLevel: 0
   conversationText:
@@ -145,8 +145,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   itemId: 40
   indentLevel: 0
   variable: {fileID: 3817117882792379973}
@@ -162,7 +162,7 @@ MonoBehaviour:
     floatVal: 0
   stringData:
     stringRef: {fileID: 0}
-    stringVal:
+    stringVal: 
   animatorData:
     animatorRef: {fileID: 0}
     animatorVal: {fileID: 0}
@@ -209,19 +209,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
     x: 296.95142
     y: 933.9659
-    width: 171.87503
+    width: 182.50003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 23
   blockName: Cafe_AvaKnox_Day5_2
-  description:
+  description: 
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: -8754020639032096703}
@@ -237,12 +237,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   itemId: 29
   indentLevel: 0
   text: A... What?
-  description:
+  description: 
   targetBlock: {fileID: -5656776523512508678}
   hideIfVisited: 0
   interactable:
@@ -262,12 +262,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   itemId: 30
   indentLevel: 0
   text: Slobber... knocker...
-  description:
+  description: 
   targetBlock: {fileID: -5656776523512508678}
   hideIfVisited: 0
   interactable:
@@ -287,8 +287,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   itemId: 43
   indentLevel: 0
   variable: {fileID: 3817117882792379973}
@@ -304,7 +304,7 @@ MonoBehaviour:
     floatVal: 0
   stringData:
     stringRef: {fileID: 0}
-    stringVal:
+    stringVal: 
   animatorData:
     animatorRef: {fileID: 0}
     animatorVal: {fileID: 0}
@@ -351,15 +351,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   itemId: 46
   indentLevel: 0
   targetFlowchart: {fileID: 0}
   targetBlock: {fileID: 4869128578356829331}
   startLabel:
     stringRef: {fileID: 0}
-    stringVal:
+    stringVal: 
   startIndex: 0
   callMode: 0
 --- !u!114 &-2601958143487754591
@@ -372,15 +372,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   itemId: 45
   indentLevel: 0
   targetFlowchart: {fileID: 0}
   targetBlock: {fileID: 8379186820151204973}
   startLabel:
     stringRef: {fileID: 0}
-    stringVal:
+    stringVal: 
   startIndex: 0
   callMode: 0
 --- !u!114 &-2374760032672730193
@@ -393,15 +393,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   itemId: 48
   indentLevel: 0
   targetFlowchart: {fileID: 0}
   targetBlock: {fileID: 7942903137121342937}
   startLabel:
     stringRef: {fileID: 0}
-    stringVal:
+    stringVal: 
   startIndex: 0
   callMode: 0
 --- !u!114 &-715247930448065573
@@ -414,12 +414,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   itemId: 36
   indentLevel: 0
   text: Oh God.
-  description:
+  description: 
   targetBlock: {fileID: 7258205973723534948}
   hideIfVisited: 0
   interactable:
@@ -439,19 +439,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
     x: 71.4373
     y: 511.43262
-    width: 204.68753
+    width: 216.25003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 23
   blockName: Cafe_AvaKnox_Day5_RouteA
-  description:
+  description: 
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 6174100944911924174}
@@ -467,8 +467,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   scope: 0
   key: goToCombat
   value: 0
@@ -482,15 +482,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   itemId: 44
   indentLevel: 0
   targetFlowchart: {fileID: 0}
   targetBlock: {fileID: 8379186820151204973}
   startLabel:
     stringRef: {fileID: 0}
-    stringVal:
+    stringVal: 
   startIndex: 0
   callMode: 0
 --- !u!114 &3297546967738249272
@@ -503,11 +503,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   scope: 0
   key: backGround
-  value: enterName
+  value: cafe
 --- !u!114 &3817117882792379972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -518,8 +518,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   scope: 1
   key: nextDialogue
   value: Streets_Day6
@@ -533,8 +533,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   scope: 1
   key: goToNext
   value: 0
@@ -548,8 +548,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   parentBlock: {fileID: 3817117883598759880}
   suppressBlockAutoSelect: 0
   waitForFrames: 1
@@ -563,19 +563,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
     x: 302.2245
     y: 288.32983
-    width: 160.93753
+    width: 170.00003
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
   itemId: 18
   blockName: Cafe_AvaKnox_Day5
-  description:
+  description: 
   eventHandler: {fileID: 3817117883598759877}
   commandList:
   - {fileID: 3817117883598759883}
@@ -591,15 +591,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   itemId: 17
   indentLevel: 0
   targetFlowchart: {fileID: 0}
   targetBlock: {fileID: 3817117883598759891}
   startLabel:
     stringRef: {fileID: 0}
-    stringVal:
+    stringVal: 
   startIndex: 0
   callMode: 0
 --- !u!114 &3817117883598759883
@@ -612,8 +612,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   itemId: 16
   indentLevel: 0
   conversationText:
@@ -642,12 +642,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   itemId: 10
   indentLevel: 0
   text: How could you tell?
-  description:
+  description: 
   targetBlock: {fileID: 3817117883598759887}
   hideIfVisited: 0
   interactable:
@@ -667,19 +667,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
     x: 516.0577
     y: 508.89917
-    width: 204.68753
+    width: 216.25003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 5
   blockName: Cafe_AvaKnox_Day5_RouteB
-  description:
+  description: 
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 8893536448599875301}
@@ -695,12 +695,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   itemId: 9
   indentLevel: 0
   text: Yeah...
-  description:
+  description: 
   targetBlock: {fileID: 958095747848825731}
   hideIfVisited: 0
   interactable:
@@ -720,19 +720,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
     x: 261.8608
     y: 395.14807
-    width: 234.37505
+    width: 248.75005
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
   itemId: 1
   blockName: Cafe_AvaKnox_Day5_ChoiceTree1
-  description:
+  description: 
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 3817117883598759890}
@@ -749,19 +749,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
     x: 256.40634
     y: 773.3293
-    width: 234.37505
+    width: 250.00005
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
   itemId: 1
   blockName: Cafe_AvaKnox_Day5_ChoiceTree2
-  description:
+  description: 
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: -5631650009919617950}
@@ -778,12 +778,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   itemId: 31
   indentLevel: 0
   text: What did you just say?
-  description:
+  description: 
   targetBlock: {fileID: -5656776523512508678}
   hideIfVisited: 0
   interactable:
@@ -803,8 +803,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   itemId: 42
   indentLevel: 0
   conversationText:
@@ -840,8 +840,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   itemId: 21
   indentLevel: 0
   conversationText:
@@ -870,12 +870,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   itemId: 24
   indentLevel: 0
   text: Duh...
-  description:
+  description: 
   targetBlock: {fileID: 958095747848825731}
   hideIfVisited: 0
   interactable:
@@ -895,8 +895,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   itemId: 39
   indentLevel: 0
   conversationText:
@@ -924,19 +924,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
     x: 78.48987
     y: 1162.8121
-    width: 215.62503
+    width: 228.75003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 23
   blockName: Cafe_AvaKnox_Day5_RouteA_2
-  description:
+  description: 
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 6571294821191138783}
@@ -952,19 +952,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
     x: 252.76996
     y: 1049.693
-    width: 235.93755
+    width: 250.00005
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
   itemId: 1
   blockName: Cafe_AvaKnox_Day5_ChoiceTree3
-  description:
+  description: 
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: -715247930448065573}
@@ -980,19 +980,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
     x: 304.22418
     y: 612.1479
-    width: 171.87503
+    width: 181.25003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 23
   blockName: Cafe_AvaKnox_Day5_1
-  description:
+  description: 
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: -7810783519887657147}
@@ -1008,8 +1008,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   itemId: 22
   indentLevel: 0
   conversationText:
@@ -1091,32 +1091,32 @@ PrefabInstance:
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 3817117882792379972}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[1]
-      value:
+      value: 
       objectReference: {fileID: 3817117882792379973}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedCommands.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 5895897249900497295}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[2]
-      value:
+      value: 
       objectReference: {fileID: 3297546967738249272}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: variables.Array.data[3]
-      value:
+      value: 
       objectReference: {fileID: 1903370272122105247}
     - target: {fileID: 4341892549888410233, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: selectedBlocks.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 7258205973723534948}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
@@ -1126,12 +1126,12 @@ PrefabInstance:
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.data[2]
-      value:
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,
         type: 3}
       propertyPath: commandList.Array.data[1]
-      value:
+      value: 
       objectReference: {fileID: 201062584, guid: 39b6d48ecdc0f9c45b967c6d8ac21694,
         type: 3}
     - target: {fileID: 4341892549888417667, guid: f00e7bd22836d09478bb370a8a1d4209,

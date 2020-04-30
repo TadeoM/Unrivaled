@@ -58,7 +58,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 216.75023
     y: 531.2682
-    width: 161.77988
+    width: 161.43593
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -194,7 +194,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 151.64175
     y: 415.25125
-    width: 290.75665
+    width: 294.8839
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -290,7 +290,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 137.12091
     y: 297.8069
-    width: 307.95355
+    width: 312.76868
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -388,7 +388,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -0.77851105
     y: 532.64374
-    width: 161.77988
+    width: 161.43593
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -478,7 +478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 0
   key: backGround
-  value: enterName
+  value: jadeRoom
 --- !u!114 &4583081220533315311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -590,7 +590,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 207.55223
     y: 644.0682
-    width: 225.40842
+    width: 228.8478
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -618,7 +618,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 413.91516
     y: 527.1293
-    width: 161.77988
+    width: 162.81168
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0

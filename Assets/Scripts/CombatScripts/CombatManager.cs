@@ -155,7 +155,6 @@ public class CombatManager : MonoBehaviour
         enemyState = WrestlerState.standing;
 
         oppoRef = oppoRefGO.GetComponent<Fighter>();
-        Debug.Log(oppoRef);
 
         staminaMeterFill = GameObject.FindGameObjectWithTag("MeterFill");
         audienceMeterFill = GameObject.FindGameObjectWithTag("audienceMeter");
@@ -645,7 +644,7 @@ public class CombatManager : MonoBehaviour
                 break;
         }
 
-
+        dialogueManager.LoadFlowchart(playerMove, enemyMove, "jade", oppoRef.name.ToLower());
         if(enemyMove=="Get Up" &&enemyState == WrestlerState.grounded)
         {
             enemyState = WrestlerState.standing;
@@ -671,7 +670,7 @@ public class CombatManager : MonoBehaviour
 
         //Debug.Log("Stamina" + Player.stamina);
         //Debug.Log("Audience Interest" + audienceInterest);
-        Debug.Log("Player Move: " + playerMove + "\nEnemy Move: " + enemyMove);
+        //Debug.Log("Player Move: " + playerMove + "\nEnemy Move: " + enemyMove);
         
         if(playerMove=="Finisher"   ||
             playerMove=="Attack"    ||
@@ -695,7 +694,7 @@ public class CombatManager : MonoBehaviour
         catch (System.Exception)
         {
 
-            Debug.LogWarning("uh oh, dialogue manager issues!!!!!");
+            //Debug.LogWarning("uh oh, dialogue manager issues!!!!!");
         }
 
     }
@@ -853,7 +852,7 @@ public class CombatManager : MonoBehaviour
         {
             if(currentPlayerAnim!=anim)
             {
-                Debug.Log(newAnimationName);
+                //Debug.Log(newAnimationName);
                 playerAnimRef.Play(newAnimationName);
                 currentPlayerAnim = anim;
                 if(anim== animation.Attack || anim == animation.Finisher || anim == animation.Pin || anim == animation.Pinned)
@@ -864,7 +863,7 @@ public class CombatManager : MonoBehaviour
         {
             if (currentOppoAnim != anim)
             {
-                Debug.Log("Oppo anim name:"+newAnimationName);
+                //Debug.Log("Oppo anim name:"+newAnimationName);
 
                 oppoAnimRef.Play(newAnimationName);
                 currentOppoAnim = anim;
@@ -923,6 +922,33 @@ public class CombatManager : MonoBehaviour
         matchState = MatchState.ending;
         endingText.GetComponent<MeshRenderer>().enabled = true;
 
+        string nextDiag ="";
+        switch (oppoRef.name)
+        {
+            case "Dante":
+                nextDiag = "JadeRoom_Jade_Day4";
+                if (playerWin)
+                {
+                    nextDiag += "_Poor";
+                }
+                else
+                {
+                    nextDiag += "_Well";
+
+                }
+                break;
+            case "Knox":
+                break;
+            case "Ava":
+                nextDiag = "JadeRoom_AvaRoute_Day12";
+                break;
+            case "Cassandra":
+                nextDiag = "JadeRoom_AvaRoute_Day16";
+                break;
+            default:
+                break;
+        }
+        // must load correct flowchart, but also get the correct day, so depending on the opponent, the next flowchart must but be the correct day.
         if (playerWin)
         {
             endingText.GetComponent<TextMesh>().text = "Jade wins!!";
@@ -932,6 +958,7 @@ public class CombatManager : MonoBehaviour
             endingText.GetComponent<TextMesh>().text = oppoRefGO.name +" wins!!";
 
         }
+        dialogueManager.LoadFlowchart("MatchEnd", nextDiag, "Jade", oppoRef.name);
         dialogueManager.Unpause();
     }
 

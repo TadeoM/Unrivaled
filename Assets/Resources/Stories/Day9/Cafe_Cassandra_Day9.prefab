@@ -144,7 +144,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -30.013226
     y: 530.9241
-    width: 128.92778
+    width: 128.62994
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -212,7 +212,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 174.9541
     y: 309.84476
-    width: 203.38794
+    width: 201.30305
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
@@ -304,7 +304,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 153.36145
     y: 415.25125
-    width: 259.97766
+    width: 257.29712
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -385,7 +385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 0
   key: backGround
-  value: enterName
+  value: cafe
 --- !u!114 &7207657685762019226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -417,7 +417,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 338.8482
     y: 524.3895
-    width: 128.92778
+    width: 128.62994
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0

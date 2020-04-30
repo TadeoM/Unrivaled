@@ -16,7 +16,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 416.21265
     y: 514.4411
-    width: 212.34
+    width: 209.12245
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -91,7 +91,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -60.92417
     y: 515.7845
-    width: 210.87747
+    width: 207.95244
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -240,7 +240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 0
   key: backGround
-  value: enterName
+  value: street
 --- !u!114 &3156827460263689321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,7 +282,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 165.10504
     y: 401.23407
-    width: 243.05298
+    width: 239.54292
     height: 40
   tint: {r: 0.124955505, g: 0.32413647, b: 0.9811321, a: 1}
   useCustomTint: 1
@@ -351,7 +351,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 183.79236
     y: 517.2468
-    width: 210.87747
+    width: 207.95244
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -515,7 +515,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 199.34265
     y: 299.15912
-    width: 187.47711
+    width: 184.55208
     height: 40
   tint: {r: 0.039159846, g: 0.754717, b: 0.22986965, a: 1}
   useCustomTint: 1
