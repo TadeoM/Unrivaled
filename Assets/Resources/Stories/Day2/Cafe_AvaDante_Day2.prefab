@@ -1365,7 +1365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 0
   key: background
-  value: gymBackground
+  value: cafe
 --- !u!1001 &4202369793936629807
 PrefabInstance:
   m_ObjectHideFlags: 0

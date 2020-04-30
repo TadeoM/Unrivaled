@@ -335,7 +335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 0
   key: background
-  value: gymBackground
+  value: jadeRoom
 --- !u!114 &2194332103878688842
 MonoBehaviour:
   m_ObjectHideFlags: 0

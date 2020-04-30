@@ -20,7 +20,7 @@ public class DialogueManager : MonoBehaviour
     public int goToNextIndex;
     public bool check = true;
 
-    private GameObject diagCanvas;
+    public GameObject diagCanvas;
     private int opIndex = -1;
     private int backgroundIndex = -1;
     private string currBackground;
@@ -409,6 +409,10 @@ public class DialogueManager : MonoBehaviour
             diagCanvas = GameObject.Find("DiagCanvas");
         }
         flowchartVariables.Clear();
+        flowchart = Instantiate(newDialogue);
+        GetVariables();
+        sayDialog = SayDialog.GetSayDialog();
+        Pause();
         // unfade
         for (float ft = time; ft >= 0; ft -= 1 * Time.deltaTime)
         {
@@ -418,8 +422,7 @@ public class DialogueManager : MonoBehaviour
             yield return null;
         }
         Destroy(tempOBJ);
-
-        flowchart = Instantiate(newDialogue);
+        
         //flowchart.StopAllBlocks();
         if (toCombat)
         {
@@ -429,6 +432,8 @@ public class DialogueManager : MonoBehaviour
         }
 
         GetVariables();
+        yield return null;
+        Unpause();
         yield return null;
     }
 }
