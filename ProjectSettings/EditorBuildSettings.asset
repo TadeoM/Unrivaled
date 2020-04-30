@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Combat_Dante.unity
     guid: efab488f1f22d0744977c8772a13b29d
+  - enabled: 1
+    path: Assets/Scenes/Combat_Cassandra.unity
+    guid: f1914ad5c7667a24cbb2e45f630e2543
+  - enabled: 1
+    path: Assets/Scenes/Combat_Ava.unity
+    guid: a28b397bef8f16e428ed0ad29f212127
   m_configObjects: {}
