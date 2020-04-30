@@ -208,27 +208,36 @@ public class CombatManager : MonoBehaviour
                     transitionToAnimation(animation.Idle, "Jade_Idle", true);
 
                     if (enemyState == WrestlerState.standing)
-                        transitionToAnimation(animation.Idle, "Dante_Idle", false);
+                        transitionToAnimation(animation.Idle, oppoRefGO.name+"_Idle", false);
                     else if (enemyState == WrestlerState.pinned)
-                        transitionToAnimation(animation.Pinned, "Dante_Pinned", false);
+                        transitionToAnimation(animation.Pinned, oppoRefGO.name + "_Pinned", false);
                     else
-                        transitionToAnimation(animation.Grounded, "Dante_Grounded", false);
+                        transitionToAnimation(animation.Grounded, oppoRefGO.name + "_Grounded", false);
                 }
                 else if (playerState == WrestlerState.pinned)
                 {
                     transitionToAnimation(animation.Pinned, "Jade_Pinned", true);
-                    transitionToAnimation(animation.Pin, "Dante_Pin", false);
+                    transitionToAnimation(animation.Pin, oppoRefGO.name + "_Pin", false);
+                    playerRef.transform.position = pinnedPos;
+                    oppoRefGO.transform.position = pinPos;
                 }
-                else
+                else if (enemyState == WrestlerState.pinned)
+                {
+                    transitionToAnimation(animation.Pinned, "Jade_Pin", true);
+                    transitionToAnimation(animation.Pin, oppoRefGO.name + "_Pinned", false);
+                    playerRef.transform.position = pindPos;
+                    oppoRefGO.transform.position = pinnedPos;
+                }
+                else 
                 {
                     transitionToAnimation(animation.Grounded, "Jade_Grounded", true);
                     
                     if (enemyState == WrestlerState.standing)
-                        transitionToAnimation(animation.Idle, "Dante_Idle", false);
+                        transitionToAnimation(animation.Idle, oppoRefGO.name + "_Idle", false);
                     else if (enemyState == WrestlerState.pinned)
-                        transitionToAnimation(animation.Pinned, "Dante_Pinned", false);
+                        transitionToAnimation(animation.Pinned, oppoRefGO.name + "_Pinned", false);
                     else
-                        transitionToAnimation(animation.Grounded, "Dante_Grounded", false);
+                        transitionToAnimation(animation.Grounded, oppoRefGO.name + "_Grounded", false);
                 }
 
 
